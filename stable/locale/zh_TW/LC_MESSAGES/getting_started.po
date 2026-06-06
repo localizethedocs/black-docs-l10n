@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../getting_started.md:5
 msgid "Do you like the _Black_ code style?"
-msgstr ""
+msgstr "您喜歡 _Black_ 的程式碼風格嗎？"
 
 #: ../../../getting_started.md:7
 msgid ""

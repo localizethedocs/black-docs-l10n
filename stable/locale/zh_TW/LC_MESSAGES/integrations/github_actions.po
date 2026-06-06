@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../integrations/github_actions.md:1
 msgid "GitHub Actions integration"
-msgstr ""
+msgstr "GitHub Actions 整合"
 
 #: ../../../integrations/github_actions.md:3
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../integrations/github_actions.md:6
 msgid "Compatibility"
-msgstr ""
+msgstr "相容性"
 
 #: ../../../integrations/github_actions.md:8
 msgid ""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../../integrations/github_actions.md:94
 msgid "CLI Options"
-msgstr ""
+msgstr "CLI 選項"
 
 #: ../../../integrations/github_actions.md:96
 msgid ""

@@ -158,7 +158,7 @@ msgstr ""
 #: ../../../../CHANGES.md:1182 ../../../../CHANGES.md:1233
 #: ../../../../CHANGES.md:1293 ../../../../CHANGES.md:1328
 msgid "Preview style"
-msgstr ""
+msgstr "預覽風格"
 
 #: ../../../../CHANGES.md:43
 msgid ""

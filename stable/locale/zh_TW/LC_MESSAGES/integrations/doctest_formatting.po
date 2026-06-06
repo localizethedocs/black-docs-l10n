@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:1
 msgid "Doctest Formatting"
-msgstr ""
+msgstr "Doctest 格式化"
 
 #: ../../../integrations/doctest_formatting.md:3
 msgid ""
@@ -73,6 +73,9 @@ msgid ""
 "print(\"Hello world!\")\n"
 "```\n"
 msgstr ""
+"```python\n"
+"print(\"Hello world!\")\n"
+"```\n"
 
 #: ../../../integrations/doctest_formatting.md:32
 #: ../../../integrations/doctest_formatting.md:99
@@ -80,6 +83,8 @@ msgid ""
 ".. code-block:: python\n"
 "    print(\"Hello world!\")\n"
 msgstr ""
+".. code-block:: python\n"
+"    print(\"Hello world!\")\n"
 
 #: ../../../integrations/doctest_formatting.md:37
 msgid ""
@@ -87,6 +92,9 @@ msgid ""
 "print(\"Hello world!\")\n"
 "\\end{minted}\n"
 msgstr ""
+"\\begin{minted}{python}\n"
+"print(\"Hello world!\")\n"
+"\\end{minted}\n"
 
 #: ../../../integrations/doctest_formatting.md:43
 msgid ""
@@ -101,12 +109,17 @@ msgid ""
 ">>> print(\"Hello world!\")\n"
 "```\n"
 msgstr ""
+"```python\n"
+">>> print(\"Hello world!\")\n"
+"```\n"
 
 #: ../../../integrations/doctest_formatting.md:52
 msgid ""
 ".. code-block:: pycon\n"
 "    >>> print(\"Hello world!\")\n"
 msgstr ""
+".. code-block:: pycon\n"
+"    >>> print(\"Hello world!\")\n"
 
 #: ../../../integrations/doctest_formatting.md:57
 msgid ""
@@ -120,10 +133,19 @@ msgid ""
 "    \"\"\"\n"
 "    return n + 1\n"
 msgstr ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    ```pycon\n"
+"    >>> add_one(1) == 2\n"
+"    ```\n"
+"    \"\"\"\n"
+"    return n + 1\n"
 
 #: ../../../integrations/doctest_formatting.md:69
 msgid "blackdoc"
-msgstr ""
+msgstr "blackdoc"
 
 #: ../../../integrations/doctest_formatting.md:71
 msgid ""
@@ -150,6 +172,13 @@ msgid ""
 "    \"\"\"\n"
 "    return n + 1\n"
 msgstr ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    >>> add_one(1) == 2\n"
+"    \"\"\"\n"
+"    return n + 1\n"
 
 #: ../../../integrations/doctest_formatting.md:89
 msgid ""

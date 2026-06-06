@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../usage_and_configuration/index.md:26
 msgid "{doc}`File collection and discovery <file_collection_and_discovery>`"
-msgstr ""
+msgstr "{doc}`檔案收集與探索 <file_collection_and_discovery>`"
 
 #: ../../../usage_and_configuration/index.md:27
 msgid "{doc}`Black as a server (blackd) <./black_as_a_server>`"
