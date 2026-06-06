@@ -1,0 +1,47 @@
+{
+  "po" : 
+  {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_CN" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_TW" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    }
+  },
+  "pot" : 
+  {
+    "branch" : "main",
+    "commit" : 
+    {
+      "date" : "2026-06-03 15:18:14 -0500",
+      "hash" : "ce1897a8f20d0f64844dd666d07f4003500d0e09",
+      "title" : "fix quadratic backtracking in debug f-string quote detection (#5165)"
+    }
+  },
+  "type" : "branch",
+  "version" : "latest"
+}

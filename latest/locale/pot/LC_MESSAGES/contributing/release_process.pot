@@ -1,0 +1,399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing/release_process.md:1
+msgid "Release process"
+msgstr ""
+
+#: ../../../contributing/release_process.md:3
+msgid ""
+"_Black_ has had a lot of work done into standardizing and automating its "
+"release process. This document sets out to explain how everything works and "
+"how to release _Black_ using said automation."
+msgstr ""
+
+#: ../../../contributing/release_process.md:7
+msgid "Release cadence"
+msgstr ""
+
+#: ../../../contributing/release_process.md:9
+msgid ""
+"**We aim to release whatever is on `main` every 1-2 months.** This ensures "
+"merged improvements and bugfixes are shipped to users reasonably quickly, "
+"while not massively fracturing the user-base with too many versions. This "
+"also keeps the workload on maintainers consistent and predictable."
+msgstr ""
+
+#: ../../../contributing/release_process.md:14
+msgid ""
+"If there's not much new on `main` to justify a release, it's acceptable to "
+"skip a month's release. Ideally January releases should not be skipped "
+"because as per our [stability policy](labels/stability-policy), the first "
+"release in a new calendar year may make changes to the _stable_ style. While "
+"the policy applies to the first release (instead of only January releases), "
+"confining changes to the stable style to January will keep things "
+"predictable (and nicer) for users."
+msgstr ""
+
+#: ../../../contributing/release_process.md:21
+msgid ""
+"Unless there is a serious regression or bug that requires immediate "
+"patching, **there should not be more than one release per month**. While "
+"version numbers are cheap, releases require a maintainer to both commit to "
+"do the actual cutting of a release, but also to be able to deal with the "
+"potential fallout post-release. Releasing more frequently than monthly nets "
+"rapidly diminishing returns."
+msgstr ""
+
+#: ../../../contributing/release_process.md:27
+msgid "Cutting a release"
+msgstr ""
+
+#: ../../../contributing/release_process.md:29
+msgid ""
+"**You must have `write` permissions for the _Black_ repository to cut a "
+"release.**"
+msgstr ""
+
+#: ../../../contributing/release_process.md:31
+msgid ""
+"The 10,000 foot view of the release process is that you prepare a release PR "
+"and then publish a [GitHub Release]. This triggers [release automation]"
+"(#release-workflows) that builds all release artifacts and publishes them to "
+"the various platforms we publish to."
+msgstr ""
+
+#: ../../../contributing/release_process.md:35
+msgid ""
+"We now have a `scripts/release.py` script to help with cutting the release "
+"PRs."
+msgstr ""
+
+#: ../../../contributing/release_process.md:37
+msgid "`python3 scripts/release.py --help` is your friend."
+msgstr ""
+
+#: ../../../contributing/release_process.md:38
+msgid ""
+"`release.py` has only been tested in Python 3.12+ (so get with the times :D)"
+msgstr ""
+
+#: ../../../contributing/release_process.md:40
+msgid "To cut a release:"
+msgstr ""
+
+#: ../../../contributing/release_process.md:42
+msgid "Determine the release's version number"
+msgstr ""
+
+#: ../../../contributing/release_process.md:43
+msgid ""
+"**_Black_ follows the [CalVer] versioning standard using the `YY.M.N` "
+"format**"
+msgstr ""
+
+#: ../../../contributing/release_process.md:44
+msgid ""
+"So unless there already has been a release during this month, `N` should be "
+"`0`"
+msgstr ""
+
+#: ../../../contributing/release_process.md:45
+msgid "Example: the first release in January, 2026 → `26.1.0`"
+msgstr ""
+
+#: ../../../contributing/release_process.md:46
+msgid ""
+"`release.py` will calculate this and log it to stdout for your copy-paste "
+"pleasure"
+msgstr ""
+
+#: ../../../contributing/release_process.md:47
+msgid ""
+"Double-check that no changelog entries since the last release were put in "
+"the wrong section (e.g., run `git diff origin/stable CHANGES.md`)"
+msgstr ""
+
+#: ../../../contributing/release_process.md:49
+msgid ""
+"File a PR editing `CHANGES.md` and the docs to version the latest changes"
+msgstr ""
+
+#: ../../../contributing/release_process.md:50
+msgid "Run `python3 scripts/release.py [--debug]` to generate most changes"
+msgstr ""
+
+#: ../../../contributing/release_process.md:51
+msgid "If `release.py` fails manually edit; otherwise, yay, skip this step!"
+msgstr ""
+
+#: ../../../contributing/release_process.md:52
+msgid "Replace the `## Unreleased` header with the version number"
+msgstr ""
+
+#: ../../../contributing/release_process.md:53
+msgid "Remove any empty sections for the current release"
+msgstr ""
+
+#: ../../../contributing/release_process.md:54
+msgid ""
+"(_optional_) Read through and copy-edit the changelog (eg. by moving "
+"entries, fixing typos, or rephrasing entries)"
+msgstr ""
+
+#: ../../../contributing/release_process.md:56
+msgid ""
+"Update references to the latest version in {doc}`/integrations/"
+"source_version_control` and {doc}`/usage_and_configuration/the_basics`"
+msgstr ""
+
+#: ../../../contributing/release_process.md:59
+msgid "Example PR: [GH-4563]"
+msgstr ""
+
+#: ../../../contributing/release_process.md:60
+msgid "Once the release PR is merged, wait until all CI passes"
+msgstr ""
+
+#: ../../../contributing/release_process.md:61
+msgid ""
+"If CI does not pass, **stop** and investigate the failure(s) as generally "
+"we'd want to fix failing CI before cutting a release"
+msgstr ""
+
+#: ../../../contributing/release_process.md:63
+msgid "[Draft a new GitHub Release][new-release]"
+msgstr ""
+
+#: ../../../contributing/release_process.md:64
+msgid ""
+"Click `Choose a tag` and type in the version number, then select the `Create "
+"new tag: YY.M.N on publish` option that appears"
+msgstr ""
+
+#: ../../../contributing/release_process.md:66
+msgid "Verify that the new tag targets the `main` branch"
+msgstr ""
+
+#: ../../../contributing/release_process.md:67
+msgid ""
+"Make sure the release title is set to the version (`YY.M.N`), as otherwise "
+"the default title is the last commit's title"
+msgstr ""
+
+#: ../../../contributing/release_process.md:69
+msgid ""
+"Copy and paste the _raw changelog Markdown_ for the current release into the "
+"description box"
+msgstr ""
+
+#: ../../../contributing/release_process.md:71
+msgid ""
+"Publish the GitHub Release, triggering [release automation](#release-"
+"workflows) that will handle the rest"
+msgstr ""
+
+#: ../../../contributing/release_process.md:73
+msgid ""
+"Once CI is done add + PR a new empty template for the next release to "
+"CHANGES.md _(Template is able to be copy pasted from release.py should we "
+"fail)_"
+msgstr ""
+
+#: ../../../contributing/release_process.md:75
+msgid "`python3 scripts/release.py --add-changes-template|-a [--debug]`"
+msgstr ""
+
+#: ../../../contributing/release_process.md:76
+msgid "Should that fail, please return to copy + paste"
+msgstr ""
+
+#: ../../../contributing/release_process.md:77
+msgid ""
+"At this point, you're basically done. It's good practice to go and [watch "
+"and verify that all the release workflows pass][black-actions], although you "
+"will receive a GitHub notification should something fail."
+msgstr ""
+
+#: ../../../contributing/release_process.md:80
+msgid ""
+"If something fails, don't panic. Please go read the respective workflow's "
+"logs and configuration file to reverse-engineer your way to a fix/solution."
+msgstr ""
+
+#: ../../../contributing/release_process.md:83
+msgid ""
+"Congratulations! You've successfully cut a new release of _Black_. Go and "
+"stand up and take a break, you deserve it."
+msgstr ""
+
+#: ../../../contributing/release_process.md:87
+msgid ""
+"Once the release artifacts reach PyPI, you may see new issues being filed "
+"indicating regressions. While regressions are not great, they don't "
+"automatically mean a hotfix release is warranted. Unless the regressions are "
+"serious and impact many users, a hotfix release is probably unnecessary."
+msgstr ""
+
+#: ../../../contributing/release_process.md:92
+msgid ""
+"In the end, use your best judgement and ask other maintainers for their "
+"thoughts."
+msgstr ""
+
+#: ../../../contributing/release_process.md:95
+msgid "Release workflows"
+msgstr ""
+
+#: ../../../contributing/release_process.md:97
+msgid ""
+"All of _Black_'s release automation uses [GitHub Actions]. All workflows are "
+"therefore configured using YAML files in the `.github/workflows` directory "
+"of the _Black_ repository."
+msgstr ""
+
+#: ../../../contributing/release_process.md:101
+msgid "They are triggered by the publication of a [GitHub Release]."
+msgstr ""
+
+#: ../../../contributing/release_process.md:103
+msgid "Below are descriptions of our release workflows."
+msgstr ""
+
+#: ../../../contributing/release_process.md:105
+msgid "build and publish"
+msgstr ""
+
+#: ../../../contributing/release_process.md:107
+msgid ""
+"This is our main workflow. It builds an [sdist] and [wheels] to upload to "
+"PyPI where the vast majority of users will download Black from. It's divided "
+"into three job groups:"
+msgstr ""
+
+#: ../../../contributing/release_process.md:110
+msgid "sdist + pure wheel"
+msgstr ""
+
+#: ../../../contributing/release_process.md:112
+msgid ""
+"This single job builds the sdist and pure Python wheel (i.e., a wheel that "
+"only contains Python code) using [Hatch]. These artifacts are general-"
+"purpose and can be used on basically any platform supported by Python."
+msgstr ""
+
+#: ../../../contributing/release_process.md:116
+msgid "generate wheels matrix / mypyc wheels (…)"
+msgstr ""
+
+#: ../../../contributing/release_process.md:118
+msgid ""
+"We use [mypyc] to compile _Black_ into a CPython C extension for "
+"significantly improved performance. Wheels built with mypyc are platform and "
+"Python version specific. [Supported platforms are documented in the FAQ]"
+"(labels/mypyc-support)."
+msgstr ""
+
+#: ../../../contributing/release_process.md:122
+msgid ""
+"These matrix jobs use [cibuildwheel] which handles the complicated task of "
+"building C extensions for many environments for us. Since building these "
+"wheels is slow, there are multiple mypyc wheels jobs (hence the term "
+"\"matrix\") that build for a specific platform (as noted in the job name in "
+"parentheses)."
+msgstr ""
+
+#: ../../../contributing/release_process.md:127
+msgid "publish-hatch / publish-mypyc"
+msgstr ""
+
+#: ../../../contributing/release_process.md:129
+msgid ""
+"These jobs upload the built sdist and all wheels to PyPI using [Trusted "
+"publishing][trusted-publishing]."
+msgstr ""
+
+#: ../../../contributing/release_process.md:132
+msgid "publish binaries"
+msgstr ""
+
+#: ../../../contributing/release_process.md:134
+msgid ""
+"This workflow builds native executables for multiple platforms using "
+"[PyInstaller]. This allows people to download the executable for their "
+"platform and run _Black_ without a [Python runtime](https://wiki.python.org/"
+"moin/PythonImplementations) installed."
+msgstr ""
+
+#: ../../../contributing/release_process.md:138
+msgid ""
+"The created binaries are stored on the associated GitHub Release for "
+"download over _IPv4 only_ (GitHub still does not have IPv6 access 😢)."
+msgstr ""
+
+#: ../../../contributing/release_process.md:141
+msgid "docker"
+msgstr ""
+
+#: ../../../contributing/release_process.md:143
+msgid ""
+"This workflow uses the QEMU powered `buildx` feature of Docker to upload an "
+"`arm64` and `amd64`/`x86_64` build of the official _Black_ Docker image™."
+msgstr ""
+
+#: ../../../contributing/release_process.md:146
+msgid ""
+"_Currently this workflow uses an API Token associated with @cooperlees "
+"account_"
+msgstr ""
+
+#: ../../../contributing/release_process.md:149
+msgid "This also runs on each push to `main`."
+msgstr ""
+
+#: ../../../contributing/release_process.md:152
+msgid "post release"
+msgstr ""
+
+#: ../../../contributing/release_process.md:154
+msgid ""
+"This workflow runs a few miscellaneous jobs related to repository "
+"maintenance."
+msgstr ""
+
+#: ../../../contributing/release_process.md:156
+msgid "update-stable"
+msgstr ""
+
+#: ../../../contributing/release_process.md:158
+msgid ""
+"Updates the `stable` branch by force pushing it to the most recent tag. This "
+"saves us from remembering to update the branch sometime after cutting the "
+"release."
+msgstr ""
+
+#: ../../../contributing/release_process.md:161
+msgid "new-changelog"
+msgstr ""
+
+#: ../../../contributing/release_process.md:163
+msgid ""
+"Opens a new PR to add the \"Unreleased\" section back to the changelog. The "
+"PR is intentionally not auto-merged, in case there's an issue and the "
+"release needs to be re-cut."
+msgstr ""
