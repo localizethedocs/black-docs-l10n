@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing/gauging_changes.md:1
+msgid "Gauging changes"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:3
+msgid ""
+"A lot of the time, your change will affect formatting and/or performance. "
+"Quantifying these changes is hard, so we have tooling to help make it easier."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:6
+msgid ""
+"It's recommended you evaluate the quantifiable changes your _Black_ "
+"formatting modification causes before submitting a PR. Think about if the "
+"change seems disruptive enough to cause frustration to projects that are "
+"already \"Black-formatted\"."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:10
+msgid "diff-shades"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:12
+msgid ""
+"diff-shades is a tool that runs _Black_ across a list of open-source "
+"projects recording the results. The main highlight feature of diff-shades is "
+"being able to compare two revisions of _Black_. This is incredibly useful as "
+"it allows us to see what exact changes will occur, say merging a certain PR."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:17
+msgid ""
+"For more information, please see the [diff-shades documentation][diff-"
+"shades]."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:19
+msgid "CI integration"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:21
+msgid ""
+"diff-shades is also the tool behind the \"diff-shades results comparing ..."
+"\" comments on PRs. The project has a GitHub Actions workflow that analyzes "
+"and compares two revisions of _Black_ according to these rules:"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "Baseline revision"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "Target revision"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "On PRs"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "latest commit on PR base branch"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "PR commit with `main` merged"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "On pushes (main only)"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "latest PyPI version"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:0
+msgid "the pushed commit"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:30
+msgid ""
+"For pushes to main, there's only one analysis job named `preview-new-"
+"changes` where the preview style is used for all projects."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:33
+msgid ""
+"For PRs they get one more analysis job: `assert-no-changes`. It's similar to "
+"`preview-new-changes` but runs with the stable code style. It will fail if "
+"changes were made. This makes sure code won't be reformatted again and again "
+"within the same year in accordance to Black's stability policy."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:38
+msgid ""
+"Additionally for PRs, a PR comment will be posted embedding a summary "
+"previewing any changes in both styles and links to further information. The "
+"next time the workflow is triggered on the same PR, it'll update the pre-"
+"existing diff-shades comment."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:43
+msgid ""
+"Jobs will only fail intentionally if a file failed to format while "
+"analyzing, or if changes were made to the stable style. Otherwise a failure "
+"indicates a bug in the workflow."
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:48
+msgid "The workflow uploads several artifacts upon completion:"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:50
+msgid "HTML diffs (.html)"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:51
+msgid "handy for pushes where there's no PR to post a comment"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:52
+msgid "The raw analyses (.json)"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:53
+msgid ""
+"in case you want to do further analysis using the collected data locally"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:54
+msgid ""
+"`.preview.pr-comment.md` and `.stable.pr-comment.md` (if triggered by a PR)"
+msgstr ""
+
+#: ../../../contributing/gauging_changes.md:55
+msgid "used to generate the PR comment and shouldn't be downloaded"
+msgstr ""
