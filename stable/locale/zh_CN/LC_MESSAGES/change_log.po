@@ -1,0 +1,5401 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../CHANGES.md:2
+msgid "Change Log"
+msgstr ""
+
+#: ../../../../CHANGES.md:4
+msgid "Version 26.5.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:6 ../../../../CHANGES.md:32 ../../../../CHANGES.md:82
+#: ../../../../CHANGES.md:101 ../../../../CHANGES.md:226
+#: ../../../../CHANGES.md:259 ../../../../CHANGES.md:310
+#: ../../../../CHANGES.md:383 ../../../../CHANGES.md:424
+#: ../../../../CHANGES.md:451 ../../../../CHANGES.md:498
+#: ../../../../CHANGES.md:513 ../../../../CHANGES.md:540
+#: ../../../../CHANGES.md:563 ../../../../CHANGES.md:651
+#: ../../../../CHANGES.md:709 ../../../../CHANGES.md:750
+#: ../../../../CHANGES.md:815 ../../../../CHANGES.md:906
+#: ../../../../CHANGES.md:985 ../../../../CHANGES.md:1039
+#: ../../../../CHANGES.md:1177 ../../../../CHANGES.md:1225
+msgid "Stable style"
+msgstr ""
+
+#: ../../../../CHANGES.md:8
+msgid ""
+"Fix unstable formatting of annotated assignments whose subscript annotation "
+"contains an inline comment (e.g. `x: list[  # pyright: ignore[...]`) ([#5130]"
+"(https://github.com/psf/black/pull/5130))"
+msgstr ""
+
+#: ../../../../CHANGES.md:10
+msgid ""
+"Preserve inline comments (including `# type: ignore`) immediately before a "
+"`# fmt: skip` line, avoiding AST equivalence failures ([#5139](https://"
+"github.com/psf/black/pull/5139))"
+msgstr ""
+
+#: ../../../../CHANGES.md:13 ../../../../CHANGES.md:51
+#: ../../../../CHANGES.md:116 ../../../../CHANGES.md:243
+#: ../../../../CHANGES.md:279 ../../../../CHANGES.md:399
+#: ../../../../CHANGES.md:439 ../../../../CHANGES.md:455
+#: ../../../../CHANGES.md:693 ../../../../CHANGES.md:732
+#: ../../../../CHANGES.md:798 ../../../../CHANGES.md:859
+#: ../../../../CHANGES.md:933 ../../../../CHANGES.md:1107
+#: ../../../../CHANGES.md:1193 ../../../../CHANGES.md:1310
+#: ../../../../CHANGES.md:1355 ../../../../CHANGES.md:1441
+#: ../../../../CHANGES.md:1488 ../../../../CHANGES.md:1545
+#: ../../../../CHANGES.md:1642
+msgid "Packaging"
+msgstr ""
+
+#: ../../../../CHANGES.md:15
+msgid ""
+"Correct the version in the published executables ([#5137](https://github.com/"
+"psf/black/pull/5137))"
+msgstr ""
+
+#: ../../../../CHANGES.md:17 ../../../../CHANGES.md:73
+#: ../../../../CHANGES.md:152 ../../../../CHANGES.md:355
+#: ../../../../CHANGES.md:557 ../../../../CHANGES.md:808
+#: ../../../../CHANGES.md:964 ../../../../CHANGES.md:1017
+#: ../../../../CHANGES.md:1134 ../../../../CHANGES.md:1259
+#: ../../../../CHANGES.md:1343 ../../../../CHANGES.md:1451
+#: ../../../../CHANGES.md:1648 ../../../../CHANGES.md:1663
+msgid "Documentation"
+msgstr ""
+
+#: ../../../../CHANGES.md:19
+msgid ""
+"Add Neovim integration guide covering conform.nvim, ALE, and simple command "
+"approaches ([#5124](https://github.com/psf/black/pull/5124))"
+msgstr ""
+
+#: ../../../../CHANGES.md:22
+msgid "Version 26.5.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:24 ../../../../CHANGES.md:161
+#: ../../../../CHANGES.md:222 ../../../../CHANGES.md:254
+#: ../../../../CHANGES.md:305 ../../../../CHANGES.md:361
+#: ../../../../CHANGES.md:415 ../../../../CHANGES.md:494
+#: ../../../../CHANGES.md:530 ../../../../CHANGES.md:613
+#: ../../../../CHANGES.md:699 ../../../../CHANGES.md:745
+#: ../../../../CHANGES.md:789 ../../../../CHANGES.md:901
+#: ../../../../CHANGES.md:973 ../../../../CHANGES.md:1024
+#: ../../../../CHANGES.md:1172 ../../../../CHANGES.md:1216
+#: ../../../../CHANGES.md:1374
+msgid "Highlights"
+msgstr ""
+
+#: ../../../../CHANGES.md:26
+msgid ""
+"Add support for unpacking in comprehensions (PEP 798) and for lazy imports "
+"(PEP 810), both new syntactic features in Python 3.15 ([#5048](https://"
+"github.com/psf/black/pull/5048))"
+msgstr ""
+
+#: ../../../../CHANGES.md:28
+msgid ""
+"Python 3.15 is now supported. Compiled wheels are not yet provided for "
+"Python 3.15, so performance may be slower than on existing Python versions. "
+"Wheels will be provided once Python 3.15 is later in its release cycle. "
+"([#5127](https://github.com/psf/black/pull/5127))"
+msgstr ""
+
+#: ../../../../CHANGES.md:34
+msgid ""
+"Fix `# fmt: skip` being ignored in nested `if` expressions with "
+"parenthesized `in` clauses ([#4903](https://github.com/psf/black/pull/4903))"
+msgstr ""
+
+#: ../../../../CHANGES.md:36
+msgid ""
+"Add syntactic support for Python 3.15 ([#5048](https://github.com/psf/black/"
+"pull/5048))"
+msgstr ""
+
+#: ../../../../CHANGES.md:37
+msgid ""
+"Fix crash when an f-string follows a `# fmt: off` comment inside brackets "
+"([#5097](https://github.com/psf/black/pull/5097))"
+msgstr ""
+
+#: ../../../../CHANGES.md:38
+msgid ""
+"Preserve multiline compound statement headers when `# fmt: skip` is placed "
+"on the colon line ([#5117](https://github.com/psf/black/pull/5117))"
+msgstr ""
+
+#: ../../../../CHANGES.md:41 ../../../../CHANGES.md:108
+#: ../../../../CHANGES.md:234 ../../../../CHANGES.md:265
+#: ../../../../CHANGES.md:325 ../../../../CHANGES.md:390
+#: ../../../../CHANGES.md:430 ../../../../CHANGES.md:517
+#: ../../../../CHANGES.md:568 ../../../../CHANGES.md:602
+#: ../../../../CHANGES.md:664 ../../../../CHANGES.md:715
+#: ../../../../CHANGES.md:759 ../../../../CHANGES.md:793
+#: ../../../../CHANGES.md:819 ../../../../CHANGES.md:870
+#: ../../../../CHANGES.md:917 ../../../../CHANGES.md:990
+#: ../../../../CHANGES.md:1072 ../../../../CHANGES.md:1140
+#: ../../../../CHANGES.md:1182 ../../../../CHANGES.md:1233
+#: ../../../../CHANGES.md:1293 ../../../../CHANGES.md:1328
+msgid "Preview style"
+msgstr ""
+
+#: ../../../../CHANGES.md:43
+msgid ""
+"Improve heuristics around whether blank lines should appear before, within "
+"and after groups of same-name decorated functions (such as `@overload` "
+"groups) in `.pyi` stub files ([#5021](https://github.com/psf/black/"
+"pull/5021))"
+msgstr ""
+
+#: ../../../../CHANGES.md:46
+msgid ""
+"Fix blank lines being removed between a function and a decorated class in `."
+"pyi` stub files ([#5092](https://github.com/psf/black/pull/5092))"
+msgstr ""
+
+#: ../../../../CHANGES.md:48
+msgid ""
+"Prevent string merger from creating unsplittable long lines when a pragma "
+"comment (e.g. `# type: ignore`) follows the closing bracket ([#5096](https://"
+"github.com/psf/black/pull/5096))"
+msgstr ""
+
+#: ../../../../CHANGES.md:53
+msgid "Run CI on 3.15 ([#5127](https://github.com/psf/black/pull/5127))"
+msgstr ""
+
+#: ../../../../CHANGES.md:55 ../../../../CHANGES.md:130
+#: ../../../../CHANGES.md:212 ../../../../CHANGES.md:283
+#: ../../../../CHANGES.md:444 ../../../../CHANGES.md:588
+#: ../../../../CHANGES.md:839 ../../../../CHANGES.md:947
+#: ../../../../CHANGES.md:1119 ../../../../CHANGES.md:1269
+#: ../../../../CHANGES.md:1306 ../../../../CHANGES.md:1351
+#: ../../../../CHANGES.md:1430
+msgid "Output"
+msgstr ""
+
+#: ../../../../CHANGES.md:57
+msgid ""
+"Improve parse error readability by showing multi-line output with an error "
+"pointer. ([#5068](https://github.com/psf/black/pull/5068))"
+msgstr ""
+
+#: ../../../../CHANGES.md:59
+msgid ""
+"Add `SourceASTParseError` to distinguish source parse failures from internal "
+"safety errors, improving error reporting when Black's lenient parser accepts "
+"input that `ast.parse()` rejects ([#5080](https://github.com/psf/black/"
+"pull/5080))"
+msgstr ""
+
+#: ../../../../CHANGES.md:63 ../../../../CHANGES.md:93
+#: ../../../../CHANGES.md:137 ../../../../CHANGES.md:288
+#: ../../../../CHANGES.md:475 ../../../../CHANGES.md:886
+#: ../../../../CHANGES.md:952 ../../../../CHANGES.md:1202
+#: ../../../../CHANGES.md:1246 ../../../../CHANGES.md:1527
+#: ../../../../CHANGES.md:1567 ../../../../CHANGES.md:1637
+msgid "_Blackd_"
+msgstr ""
+
+#: ../../../../CHANGES.md:65
+msgid ""
+"Return HTTP 400 (Bad Request) for source parse failures instead of HTTP 500, "
+"keeping HTTP 500 only for genuine internal safety errors ([#5080](https://"
+"github.com/psf/black/pull/5080))"
+msgstr ""
+
+#: ../../../../CHANGES.md:68 ../../../../CHANGES.md:142
+#: ../../../../CHANGES.md:216 ../../../../CHANGES.md:247
+#: ../../../../CHANGES.md:293 ../../../../CHANGES.md:348
+#: ../../../../CHANGES.md:408 ../../../../CHANGES.md:507
+#: ../../../../CHANGES.md:523 ../../../../CHANGES.md:593
+#: ../../../../CHANGES.md:686 ../../../../CHANGES.md:737
+#: ../../../../CHANGES.md:782 ../../../../CHANGES.md:802
+#: ../../../../CHANGES.md:846 ../../../../CHANGES.md:890
+#: ../../../../CHANGES.md:957 ../../../../CHANGES.md:1011
+#: ../../../../CHANGES.md:1128 ../../../../CHANGES.md:1165
+#: ../../../../CHANGES.md:1206 ../../../../CHANGES.md:1263
+#: ../../../../CHANGES.md:1301 ../../../../CHANGES.md:1347
+#: ../../../../CHANGES.md:1447 ../../../../CHANGES.md:1510
+#: ../../../../CHANGES.md:1537 ../../../../CHANGES.md:1572
+#: ../../../../CHANGES.md:1593 ../../../../CHANGES.md:1618
+msgid "Integrations"
+msgstr ""
+
+#: ../../../../CHANGES.md:70
+msgid ""
+"Added documentation for doctest formatting tools and updated the "
+"integrations index to match ([#4916](https://github.com/psf/black/pull/4916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:75
+msgid ""
+"Use \"Version X.Y.Z\" headings in changelog for stable permalink anchors on "
+"ReadTheDocs ([#5063](https://github.com/psf/black/pull/5063))"
+msgstr ""
+
+#: ../../../../CHANGES.md:77
+msgid ""
+"Note in the editor integrations that the SublimeText `sublack` plugin is "
+"archived and unmaintained ([#5082](https://github.com/psf/black/pull/5082))"
+msgstr ""
+
+#: ../../../../CHANGES.md:80
+msgid "Version 26.3.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:84
+msgid ""
+"Prevent Jupyter notebook magic masking collisions from corrupting cells by "
+"using exact-length placeholders for short magics and aborting if a "
+"placeholder can no longer be unmasked safely ([#5038](https://github.com/psf/"
+"black/pull/5038))"
+msgstr ""
+
+#: ../../../../CHANGES.md:88 ../../../../CHANGES.md:275
+#: ../../../../CHANGES.md:578 ../../../../CHANGES.md:606
+#: ../../../../CHANGES.md:677 ../../../../CHANGES.md:727
+#: ../../../../CHANGES.md:773 ../../../../CHANGES.md:828
+#: ../../../../CHANGES.md:877 ../../../../CHANGES.md:923
+#: ../../../../CHANGES.md:1102 ../../../../CHANGES.md:1152
+#: ../../../../CHANGES.md:1187 ../../../../CHANGES.md:1250
+#: ../../../../CHANGES.md:1335 ../../../../CHANGES.md:1419
+msgid "Configuration"
+msgstr ""
+
+#: ../../../../CHANGES.md:90
+msgid ""
+"Always hash cache filename components derived from `--python-cell-magics` so "
+"custom magic names cannot affect cache paths ([#5038](https://github.com/psf/"
+"black/pull/5038))"
+msgstr ""
+
+#: ../../../../CHANGES.md:95
+msgid ""
+"Disable browser-originated requests by default, add configurable origin "
+"allowlisting and request body limits, and bound executor submissions to "
+"improve backpressure ([#5039](https://github.com/psf/black/pull/5039))"
+msgstr ""
+
+#: ../../../../CHANGES.md:99
+msgid "Version 26.3.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:103
+msgid ""
+"Don't double-decode input, causing non-UTF-8 files to be corrupted ([#4964]"
+"(https://github.com/psf/black/pull/4964))"
+msgstr ""
+
+#: ../../../../CHANGES.md:104
+msgid ""
+"Fix crash on standalone comment in lambda default arguments ([#4993](https://"
+"github.com/psf/black/pull/4993))"
+msgstr ""
+
+#: ../../../../CHANGES.md:105
+msgid ""
+"Preserve parentheses when `# type: ignore` comments would be merged with "
+"other comments on the same line, preventing AST equivalence failures ([#4888]"
+"(https://github.com/psf/black/pull/4888))"
+msgstr ""
+
+#: ../../../../CHANGES.md:110
+msgid ""
+"Fix bug where `if` guards in `case` blocks were incorrectly split when the "
+"pattern had a trailing comma ([#4884](https://github.com/psf/black/"
+"pull/4884))"
+msgstr ""
+
+#: ../../../../CHANGES.md:112
+msgid ""
+"Fix `string_processing` crashing on unassigned long string literals with "
+"trailing commas (one-item tuples) ([#4929](https://github.com/psf/black/"
+"pull/4929))"
+msgstr ""
+
+#: ../../../../CHANGES.md:114
+msgid ""
+"Simplify implementation of the power operator \"hugging\" logic ([#4918]"
+"(https://github.com/psf/black/pull/4918))"
+msgstr ""
+
+#: ../../../../CHANGES.md:118
+msgid ""
+"Fix shutdown errors in PyInstaller builds on macOS by disabling "
+"multiprocessing in frozen environments ([#4930](https://github.com/psf/black/"
+"pull/4930))"
+msgstr ""
+
+#: ../../../../CHANGES.md:121 ../../../../CHANGES.md:344
+#: ../../../../CHANGES.md:404 ../../../../CHANGES.md:471
+#: ../../../../CHANGES.md:488 ../../../../CHANGES.md:550
+#: ../../../../CHANGES.md:778 ../../../../CHANGES.md:863
+#: ../../../../CHANGES.md:881 ../../../../CHANGES.md:942
+#: ../../../../CHANGES.md:1282 ../../../../CHANGES.md:1411
+msgid "Performance"
+msgstr ""
+
+#: ../../../../CHANGES.md:123
+msgid ""
+"Introduce winloop for windows as an alternative to uvloop ([#4996](https://"
+"github.com/psf/black/pull/4996))"
+msgstr ""
+
+#: ../../../../CHANGES.md:124
+msgid ""
+"Remove deprecated function `uvloop.install()` in favor of `uvloop."
+"new_event_loop()` ([#4996](https://github.com/psf/black/pull/4996))"
+msgstr ""
+
+#: ../../../../CHANGES.md:126
+msgid ""
+"Rename `maybe_install_uvloop` function to `maybe_use_uvloop` to simplify "
+"loop installation and creation of either a uvloop/winloop eventloop or "
+"default eventloop ([#4996](https://github.com/psf/black/pull/4996))"
+msgstr ""
+
+#: ../../../../CHANGES.md:132
+msgid ""
+"Emit a clear warning when the target Python version is newer than the "
+"running Python version, since AST safety checks cannot parse newer syntax. "
+"Also replace the misleading \"INTERNAL ERROR\" message with an actionable "
+"error explaining the version mismatch ([#4983](https://github.com/psf/black/"
+"pull/4983))"
+msgstr ""
+
+#: ../../../../CHANGES.md:139
+msgid ""
+"Introduce winloop to be used when windows in use which enables blackd to run "
+"faster on windows when winloop is installed. ([#4996](https://github.com/psf/"
+"black/pull/4996))"
+msgstr ""
+
+#: ../../../../CHANGES.md:144
+msgid ""
+"Remove unused gallery script ([#5030](https://github.com/psf/black/"
+"pull/5030))"
+msgstr ""
+
+#: ../../../../CHANGES.md:145
+msgid ""
+"Harden parsing of `black` requirements in the GitHub Action when "
+"`use_pyproject` is enabled so that only version specifiers are accepted and "
+"direct references such as `black @ https://...` are rejected. Users should "
+"upgrade to the latest version of the action as soon as possible. This update "
+"is received automatically when using `psf/black@stable`, and is independent "
+"of the version of Black installed by the action. ([#5031](https://github.com/"
+"psf/black/pull/5031))"
+msgstr ""
+
+#: ../../../../CHANGES.md:154
+msgid ""
+"Expand preview style documentation with detailed examples for "
+"`wrap_comprehension_in`, `simplify_power_operator_hugging`, and "
+"`wrap_long_dict_values_in_parens` features ([#4987](https://github.com/psf/"
+"black/pull/4987))"
+msgstr ""
+
+#: ../../../../CHANGES.md:157
+msgid ""
+"Add detailed documentation for formatting Jupyter Notebooks ([#5009](https://"
+"github.com/psf/black/pull/5009))"
+msgstr ""
+
+#: ../../../../CHANGES.md:159
+msgid "Version 26.1.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:163
+msgid ""
+"Introduces the 2026 stable style ([#4892](https://github.com/psf/black/"
+"pull/4892)), stabilizing the following changes:"
+msgstr ""
+
+#: ../../../../CHANGES.md:165
+msgid ""
+"`always_one_newline_after_import`: Always force one blank line after import "
+"statements, except when the line after the import is a comment or an import "
+"statement ([#4489](https://github.com/psf/black/pull/4489))"
+msgstr ""
+
+#: ../../../../CHANGES.md:168
+msgid ""
+"`fix_fmt_skip_in_one_liners`: Fix `# fmt: skip` behavior on one-liner "
+"declarations, such as `def foo(): return \"mock\" # fmt: skip`, where "
+"previously the declaration would have been incorrectly collapsed ([#4800]"
+"(https://github.com/psf/black/pull/4800))"
+msgstr ""
+
+#: ../../../../CHANGES.md:171
+msgid ""
+"`fix_module_docstring_detection`: Fix module docstrings being treated as "
+"normal strings if preceded by comments ([#4764](https://github.com/psf/black/"
+"pull/4764))"
+msgstr ""
+
+#: ../../../../CHANGES.md:173
+msgid ""
+"`fix_type_expansion_split`: Fix type expansions split in generic functions "
+"([#4777](https://github.com/psf/black/pull/4777))"
+msgstr ""
+
+#: ../../../../CHANGES.md:174
+msgid ""
+"`multiline_string_handling`: Make expressions involving multiline strings "
+"more compact ([#1879](https://github.com/psf/black/pull/1879))"
+msgstr ""
+
+#: ../../../../CHANGES.md:176
+msgid ""
+"`normalize_cr_newlines`: Add `\\r` style newlines to the potential newlines "
+"to normalize file newlines both from and to ([#4710](https://github.com/psf/"
+"black/pull/4710))"
+msgstr ""
+
+#: ../../../../CHANGES.md:178
+msgid ""
+"`remove_parens_around_except_types`: Remove parentheses around multiple "
+"exception types in `except` and `except*` without `as` ([#4720](https://"
+"github.com/psf/black/pull/4720))"
+msgstr ""
+
+#: ../../../../CHANGES.md:180
+msgid ""
+"`remove_parens_from_assignment_lhs`: Remove unnecessary parentheses from the "
+"left-hand side of assignments while preserving magic trailing commas and "
+"intentional multiline formatting ([#4865](https://github.com/psf/black/"
+"pull/4865))"
+msgstr ""
+
+#: ../../../../CHANGES.md:183
+msgid ""
+"`standardize_type_comments`: Format type comments which have zero or more "
+"spaces between `#` and `type:` or between `type:` and value to `# type: "
+"(value)` ([#4645](https://github.com/psf/black/pull/4645))"
+msgstr ""
+
+#: ../../../../CHANGES.md:186
+msgid "The following change was not in any previous stable release:"
+msgstr ""
+
+#: ../../../../CHANGES.md:188
+msgid ""
+"Regenerated the `_width_table.py` and added tests for the Khmer language "
+"([#4253](https://github.com/psf/black/pull/4253))"
+msgstr ""
+
+#: ../../../../CHANGES.md:190
+msgid ""
+"This release alo bumps `pathspec` to v1 and fixes inconsistencies with Git's "
+"`.gitignore` logic ([#4958](https://github.com/psf/black/pull/4958)). Now, "
+"files will be ignored if a pattern matches them, even if the parent "
+"directory is directly unignored. For example, Black would previously format "
+"`exclude/not_this/foo.py` with this `.gitignore`:"
+msgstr ""
+
+#: ../../../../CHANGES.md:195
+msgid ""
+"exclude/\n"
+"!exclude/not_this/\n"
+msgstr ""
+
+#: ../../../../CHANGES.md:200
+msgid ""
+"Now, `exclude/not_this/foo.py` will remain ignored. To ensure `exclude/"
+"not_this/` and all of it's children are included in formatting (and in Git), "
+"use this `.gitignore`:"
+msgstr ""
+
+#: ../../../../CHANGES.md:203
+msgid ""
+"*/exclude/*\n"
+"!*/exclude/not_this/\n"
+msgstr ""
+
+#: ../../../../CHANGES.md:208
+msgid ""
+"This new behavior matches Git. The leading `*/` are only necessary if you "
+"wish to ignore matching subdirectories (like the previous behavior did), and "
+"not just matching root directories."
+msgstr ""
+
+#: ../../../../CHANGES.md:214
+msgid ""
+"Explicitly shutdown the multiprocessing manager when run in diff mode too "
+"([#4952](https://github.com/psf/black/pull/4952))"
+msgstr ""
+
+#: ../../../../CHANGES.md:218
+msgid ""
+"Upgraded PyPI upload workflow to use Trusted Publishing ([#4611](https://"
+"github.com/psf/black/pull/4611))"
+msgstr ""
+
+#: ../../../../CHANGES.md:220
+msgid "Version 25.12.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:224
+msgid ""
+"Black no longer supports running with Python 3.9 ([#4842](https://github.com/"
+"psf/black/pull/4842))"
+msgstr ""
+
+#: ../../../../CHANGES.md:228
+msgid ""
+"Fix bug where comments preceding `# fmt: off`/`# fmt: on` blocks were "
+"incorrectly removed, particularly affecting Jupytext's `# %% [markdown]` "
+"comments ([#4845](https://github.com/psf/black/pull/4845))"
+msgstr ""
+
+#: ../../../../CHANGES.md:230
+msgid ""
+"Fix crash when multiple `# fmt: skip` comments are used in a multi-part if-"
+"clause, on string literals, or on dictionary entries with long lines ([#4872]"
+"(https://github.com/psf/black/pull/4872))"
+msgstr ""
+
+#: ../../../../CHANGES.md:232
+msgid ""
+"Fix possible crash when `fmt: ` directives aren't on the top level ([#4856]"
+"(https://github.com/psf/black/pull/4856))"
+msgstr ""
+
+#: ../../../../CHANGES.md:236
+msgid ""
+"Fix `fmt: skip` skipping the line after instead of the line it's on ([#4855]"
+"(https://github.com/psf/black/pull/4855))"
+msgstr ""
+
+#: ../../../../CHANGES.md:237
+msgid ""
+"Remove unnecessary parentheses from the left-hand side of assignments while "
+"preserving magic trailing commas and intentional multiline formatting "
+"([#4865](https://github.com/psf/black/pull/4865))"
+msgstr ""
+
+#: ../../../../CHANGES.md:239
+msgid ""
+"Fix `fix_fmt_skip_in_one_liners` crashing on `with` statements ([#4853]"
+"(https://github.com/psf/black/pull/4853))"
+msgstr ""
+
+#: ../../../../CHANGES.md:240
+msgid ""
+"Fix `fix_fmt_skip_in_one_liners` crashing on annotated parameters ([#4854]"
+"(https://github.com/psf/black/pull/4854))"
+msgstr ""
+
+#: ../../../../CHANGES.md:241
+msgid ""
+"Fix new lines being added after imports with `# fmt: skip` on them ([#4894]"
+"(https://github.com/psf/black/pull/4894))"
+msgstr ""
+
+#: ../../../../CHANGES.md:245
+msgid ""
+"Releases now include arm64 Windows binaries and wheels ([#4814](https://"
+"github.com/psf/black/pull/4814))"
+msgstr ""
+
+#: ../../../../CHANGES.md:249
+msgid ""
+"Add `output-file` input to GitHub Action `psf/black` to write formatter "
+"output to a file for artifact capture and log cleanliness ([#4824](https://"
+"github.com/psf/black/pull/4824))"
+msgstr ""
+
+#: ../../../../CHANGES.md:252
+msgid "Version 25.11.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:256
+msgid ""
+"Enable base 3.14 support ([#4804](https://github.com/psf/black/pull/4804))"
+msgstr ""
+
+#: ../../../../CHANGES.md:257
+msgid ""
+"Add support for the new Python 3.14 t-string syntax introduced by PEP 750 "
+"([#4805](https://github.com/psf/black/pull/4805))"
+msgstr ""
+
+#: ../../../../CHANGES.md:261
+msgid ""
+"Fix bug where comments between `# fmt: off` and `# fmt: on` were reformatted "
+"([#4811](https://github.com/psf/black/pull/4811))"
+msgstr ""
+
+#: ../../../../CHANGES.md:262
+msgid ""
+"Comments containing fmt directives now preserve their exact formatting "
+"instead of being normalized ([#4811](https://github.com/psf/black/pull/4811))"
+msgstr ""
+
+#: ../../../../CHANGES.md:267
+msgid ""
+"Move `multiline_string_handling` from `--unstable` to `--preview` ([#4760]"
+"(https://github.com/psf/black/pull/4760))"
+msgstr ""
+
+#: ../../../../CHANGES.md:268
+msgid ""
+"Fix bug where module docstrings would be treated as normal strings if "
+"preceded by comments ([#4764](https://github.com/psf/black/pull/4764))"
+msgstr ""
+
+#: ../../../../CHANGES.md:270
+msgid ""
+"Fix bug where python 3.12 generics syntax split line happens weirdly ([#4777]"
+"(https://github.com/psf/black/pull/4777))"
+msgstr ""
+
+#: ../../../../CHANGES.md:271
+msgid ""
+"Standardize type comments to form `# type: <value>` ([#4645](https://github."
+"com/psf/black/pull/4645))"
+msgstr ""
+
+#: ../../../../CHANGES.md:272
+msgid ""
+"Fix `fix_fmt_skip_in_one_liners` preview feature to respect `# fmt: skip` "
+"for compound statements with semicolon-separated bodies ([#4800](https://"
+"github.com/psf/black/pull/4800))"
+msgstr ""
+
+#: ../../../../CHANGES.md:277
+msgid ""
+"Add `no_cache` option to control caching behavior. ([#4803](https://github."
+"com/psf/black/pull/4803))"
+msgstr ""
+
+#: ../../../../CHANGES.md:281
+msgid ""
+"Releases now include arm64 Linux binaries ([#4773](https://github.com/psf/"
+"black/pull/4773))"
+msgstr ""
+
+#: ../../../../CHANGES.md:285
+msgid ""
+"Write unchanged content to stdout when excluding formatting from stdin using "
+"pipes ([#4610](https://github.com/psf/black/pull/4610))"
+msgstr ""
+
+#: ../../../../CHANGES.md:290
+msgid ""
+"Implemented BlackDClient. This simple python client allows to easily send "
+"formatting requests to blackd ([#4774](https://github.com/psf/black/"
+"pull/4774))"
+msgstr ""
+
+#: ../../../../CHANGES.md:295
+msgid "Enable 3.14 base CI ([#4804](https://github.com/psf/black/pull/4804))"
+msgstr ""
+
+#: ../../../../CHANGES.md:296
+msgid ""
+"Enhance GitHub Action `psf/black` to support the `required-version` major-"
+"version-only \"stability\" format when using pyproject.toml ([#4770](https://"
+"github.com/psf/black/pull/4770))"
+msgstr ""
+
+#: ../../../../CHANGES.md:298
+msgid ""
+"Improve error message for vim plugin users. It now handles independently vim "
+"version"
+msgstr ""
+
+#: ../../../../CHANGES.md:299
+msgid ""
+"Vim: Warn on unsupported Vim and Python versions independently ([#4772]"
+"(https://github.com/psf/black/pull/4772))"
+msgstr ""
+
+#: ../../../../CHANGES.md:300
+msgid ""
+"Vim: Print the import paths when importing black fails ([#4675](https://"
+"github.com/psf/black/pull/4675))"
+msgstr ""
+
+#: ../../../../CHANGES.md:301
+msgid ""
+"Vim: Fix handling of virtualenvs that have a different Python version "
+"([#4675](https://github.com/psf/black/pull/4675))"
+msgstr ""
+
+#: ../../../../CHANGES.md:303
+msgid "Version 25.9.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:307
+msgid ""
+"Remove support for pre-python 3.7 `await/async` as soft keywords/variable "
+"names ([#4676](https://github.com/psf/black/pull/4676))"
+msgstr ""
+
+#: ../../../../CHANGES.md:312
+msgid ""
+"Fix crash while formatting a long `del` statement containing tuples ([#4628]"
+"(https://github.com/psf/black/pull/4628))"
+msgstr ""
+
+#: ../../../../CHANGES.md:313
+msgid ""
+"Fix crash while formatting expressions using the walrus operator in complex "
+"`with` statements ([#4630](https://github.com/psf/black/pull/4630))"
+msgstr ""
+
+#: ../../../../CHANGES.md:315
+msgid ""
+"Handle `# fmt: skip` followed by a comment at the end of file ([#4635]"
+"(https://github.com/psf/black/pull/4635))"
+msgstr ""
+
+#: ../../../../CHANGES.md:316
+msgid ""
+"Fix crash when a tuple appears in the `as` clause of a `with` statement "
+"([#4634](https://github.com/psf/black/pull/4634))"
+msgstr ""
+
+#: ../../../../CHANGES.md:317
+msgid ""
+"Fix crash when tuple is used as a context manager inside a `with` statement "
+"([#4646](https://github.com/psf/black/pull/4646))"
+msgstr ""
+
+#: ../../../../CHANGES.md:318
+msgid ""
+"Fix crash when formatting a `\\` followed by a `\\r` followed by a comment "
+"([#4663](https://github.com/psf/black/pull/4663))"
+msgstr ""
+
+#: ../../../../CHANGES.md:319
+msgid ""
+"Fix crash on a `\\\\r\\n` ([#4673](https://github.com/psf/black/pull/4673))"
+msgstr ""
+
+#: ../../../../CHANGES.md:320
+msgid ""
+"Fix crash on `await ...` (where `...` is a literal `Ellipsis`) ([#4676]"
+"(https://github.com/psf/black/pull/4676))"
+msgstr ""
+
+#: ../../../../CHANGES.md:321
+msgid ""
+"Fix crash on parenthesized expression inside a type parameter bound ([#4684]"
+"(https://github.com/psf/black/pull/4684))"
+msgstr ""
+
+#: ../../../../CHANGES.md:322
+msgid ""
+"Fix crash when using line ranges excluding indented single line decorated "
+"items ([#4670](https://github.com/psf/black/pull/4670))"
+msgstr ""
+
+#: ../../../../CHANGES.md:327
+msgid ""
+"Fix a bug where one-liner functions/conditionals marked with `# fmt: skip` "
+"would still be formatted ([#4552](https://github.com/psf/black/pull/4552))"
+msgstr ""
+
+#: ../../../../CHANGES.md:329
+msgid ""
+"Improve `multiline_string_handling` with ternaries and dictionaries ([#4657]"
+"(https://github.com/psf/black/pull/4657))"
+msgstr ""
+
+#: ../../../../CHANGES.md:330
+msgid ""
+"Fix a bug where `string_processing` would not split f-strings directly after "
+"expressions ([#4680](https://github.com/psf/black/pull/4680))"
+msgstr ""
+
+#: ../../../../CHANGES.md:332
+msgid ""
+"Wrap the `in` clause of comprehensions across lines if necessary ([#4699]"
+"(https://github.com/psf/black/pull/4699))"
+msgstr ""
+
+#: ../../../../CHANGES.md:333
+msgid ""
+"Remove parentheses around multiple exception types in `except` and `except*` "
+"without `as`. ([#4720](https://github.com/psf/black/pull/4720))"
+msgstr ""
+
+#: ../../../../CHANGES.md:335
+msgid ""
+"Add `\\r` style newlines to the potential newlines to normalize file "
+"newlines both from and to ([#4710](https://github.com/psf/black/pull/4710))"
+msgstr ""
+
+#: ../../../../CHANGES.md:338 ../../../../CHANGES.md:460
+#: ../../../../CHANGES.md:484 ../../../../CHANGES.md:502
+#: ../../../../CHANGES.md:832 ../../../../CHANGES.md:938
+#: ../../../../CHANGES.md:1007 ../../../../CHANGES.md:1159
+#: ../../../../CHANGES.md:1276 ../../../../CHANGES.md:1315
+#: ../../../../CHANGES.md:1363 ../../../../CHANGES.md:1396
+msgid "Parser"
+msgstr ""
+
+#: ../../../../CHANGES.md:340
+msgid ""
+"Rewrite tokenizer to improve performance and compliance ([#4536](https://"
+"github.com/psf/black/pull/4536))"
+msgstr ""
+
+#: ../../../../CHANGES.md:341
+msgid ""
+"Fix bug where certain unusual expressions (e.g., lambdas) were not accepted "
+"in type parameter bounds and defaults. ([#4602](https://github.com/psf/black/"
+"pull/4602))"
+msgstr ""
+
+#: ../../../../CHANGES.md:346
+msgid ""
+"Avoid using an extra process when running with only one worker ([#4734]"
+"(https://github.com/psf/black/pull/4734))"
+msgstr ""
+
+#: ../../../../CHANGES.md:350
+msgid ""
+"Fix the version check in the vim file to reject Python 3.8 ([#4567](https://"
+"github.com/psf/black/pull/4567))"
+msgstr ""
+
+#: ../../../../CHANGES.md:351
+msgid ""
+"Enhance GitHub Action `psf/black` to read Black version from an additional "
+"section in pyproject.toml: `[project.dependency-groups]` ([#4606](https://"
+"github.com/psf/black/pull/4606))"
+msgstr ""
+
+#: ../../../../CHANGES.md:353
+msgid ""
+"Build gallery docker image with python3-slim and reduce image size ([#4686]"
+"(https://github.com/psf/black/pull/4686))"
+msgstr ""
+
+#: ../../../../CHANGES.md:357
+msgid ""
+"Add FAQ entry for windows emoji not displaying ([#4714](https://github.com/"
+"psf/black/pull/4714))"
+msgstr ""
+
+#: ../../../../CHANGES.md:359
+msgid "Version 25.1.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:363
+msgid ""
+"This release introduces the new 2025 stable style ([#4558](https://github."
+"com/psf/black/pull/4558)), stabilizing the following changes:"
+msgstr ""
+
+#: ../../../../CHANGES.md:366
+msgid ""
+"Normalize casing of Unicode escape characters in strings to lowercase "
+"([#2916](https://github.com/psf/black/pull/2916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:367
+msgid ""
+"Fix inconsistencies in whether certain strings are detected as docstrings "
+"([#4095](https://github.com/psf/black/pull/4095))"
+msgstr ""
+
+#: ../../../../CHANGES.md:368
+msgid ""
+"Consistently add trailing commas to typed function parameters ([#4164]"
+"(https://github.com/psf/black/pull/4164))"
+msgstr ""
+
+#: ../../../../CHANGES.md:369
+msgid ""
+"Remove redundant parentheses in if guards for case blocks ([#4214](https://"
+"github.com/psf/black/pull/4214))"
+msgstr ""
+
+#: ../../../../CHANGES.md:370
+msgid ""
+"Add parentheses to if clauses in case blocks when the line is too long "
+"([#4269](https://github.com/psf/black/pull/4269))"
+msgstr ""
+
+#: ../../../../CHANGES.md:371
+msgid ""
+"Whitespace before `# fmt: skip` comments is no longer normalized ([#4146]"
+"(https://github.com/psf/black/pull/4146))"
+msgstr ""
+
+#: ../../../../CHANGES.md:372
+msgid ""
+"Fix line length computation for certain expressions that involve the power "
+"operator ([#4154](https://github.com/psf/black/pull/4154))"
+msgstr ""
+
+#: ../../../../CHANGES.md:374
+msgid ""
+"Check if there is a newline before the terminating quotes of a docstring "
+"([#4185](https://github.com/psf/black/pull/4185))"
+msgstr ""
+
+#: ../../../../CHANGES.md:375
+msgid ""
+"Fix type annotation spacing between `*` and more complex type variable tuple "
+"([#4440](https://github.com/psf/black/pull/4440))"
+msgstr ""
+
+#: ../../../../CHANGES.md:377
+msgid "The following changes were not in any previous release:"
+msgstr ""
+
+#: ../../../../CHANGES.md:379
+msgid ""
+"Remove parentheses around sole list items ([#4312](https://github.com/psf/"
+"black/pull/4312))"
+msgstr ""
+
+#: ../../../../CHANGES.md:380
+msgid ""
+"Generic function definitions are now formatted more elegantly: parameters "
+"are split over multiple lines first instead of type parameter definitions "
+"([#4553](https://github.com/psf/black/pull/4553))"
+msgstr ""
+
+#: ../../../../CHANGES.md:385
+msgid ""
+"Fix formatting cells in IPython notebooks with magic methods and starting or "
+"trailing empty lines ([#4484](https://github.com/psf/black/pull/4484))"
+msgstr ""
+
+#: ../../../../CHANGES.md:387
+msgid ""
+"Fix crash when formatting `with` statements containing tuple generators/"
+"unpacking ([#4538](https://github.com/psf/black/pull/4538))"
+msgstr ""
+
+#: ../../../../CHANGES.md:392
+msgid ""
+"Fix/remove string merging changing f-string quotes on f-strings with "
+"internal quotes ([#4498](https://github.com/psf/black/pull/4498))"
+msgstr ""
+
+#: ../../../../CHANGES.md:394
+msgid ""
+"Collapse multiple empty lines after an import into one ([#4489](https://"
+"github.com/psf/black/pull/4489))"
+msgstr ""
+
+#: ../../../../CHANGES.md:395
+msgid ""
+"Prevent `string_processing` and `wrap_long_dict_values_in_parens` from "
+"removing parentheses around long dictionary values ([#4377](https://github."
+"com/psf/black/pull/4377))"
+msgstr ""
+
+#: ../../../../CHANGES.md:397
+msgid ""
+"Move `wrap_long_dict_values_in_parens` from the unstable to preview style "
+"([#4561](https://github.com/psf/black/pull/4561))"
+msgstr ""
+
+#: ../../../../CHANGES.md:401
+msgid ""
+"Store license identifier inside the `License-Expression` metadata field, see "
+"[PEP 639](https://peps.python.org/pep-0639/). ([#4479](https://github.com/"
+"psf/black/pull/4479))"
+msgstr ""
+
+#: ../../../../CHANGES.md:406
+msgid ""
+"Speed up the `is_fstring_start` function in Black's tokenizer ([#4541]"
+"(https://github.com/psf/black/pull/4541))"
+msgstr ""
+
+#: ../../../../CHANGES.md:410
+msgid ""
+"If using stdin with `--stdin-filename` set to a force excluded path, stdin "
+"won't be formatted. ([#4539](https://github.com/psf/black/pull/4539))"
+msgstr ""
+
+#: ../../../../CHANGES.md:413
+msgid "Version 24.10.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:417
+msgid ""
+"Black is now officially tested with Python 3.13 and provides Python 3.13 "
+"mypyc-compiled wheels. ([#4436](https://github.com/psf/black/pull/4436)) "
+"([#4449](https://github.com/psf/black/pull/4449))"
+msgstr ""
+
+#: ../../../../CHANGES.md:419
+msgid ""
+"Black will issue an error when used with Python 3.12.5, due to an upstream "
+"memory safety issue in Python 3.12.5 that can cause Black's AST safety "
+"checks to fail. Please use Python 3.12.6 or Python 3.12.4 instead. ([#4447]"
+"(https://github.com/psf/black/pull/4447))"
+msgstr ""
+
+#: ../../../../CHANGES.md:422
+msgid ""
+"Black no longer supports running with Python 3.8 ([#4452](https://github.com/"
+"psf/black/pull/4452))"
+msgstr ""
+
+#: ../../../../CHANGES.md:426
+msgid ""
+"Fix crashes involving comments in parenthesised return types or `X | Y` "
+"style unions. ([#4453](https://github.com/psf/black/pull/4453))"
+msgstr ""
+
+#: ../../../../CHANGES.md:428
+msgid ""
+"Fix skipping Jupyter cells with unknown `%%` magic ([#4462](https://github."
+"com/psf/black/pull/4462))"
+msgstr ""
+
+#: ../../../../CHANGES.md:432
+msgid ""
+"Fix type annotation spacing between * and more complex type variable tuple "
+"(i.e. `def fn(*args: *tuple[*Ts, T]) -> None: pass`) ([#4440](https://github."
+"com/psf/black/pull/4440))"
+msgstr ""
+
+#: ../../../../CHANGES.md:435
+msgid "Caching"
+msgstr ""
+
+#: ../../../../CHANGES.md:437
+msgid ""
+"Fix bug where the cache was shared between runs with and without `--"
+"unstable` ([#4466](https://github.com/psf/black/pull/4466))"
+msgstr ""
+
+#: ../../../../CHANGES.md:441
+msgid ""
+"Upgrade version of mypyc used to 1.12 beta ([#4450](https://github.com/psf/"
+"black/pull/4450)) ([#4449](https://github.com/psf/black/pull/4449))"
+msgstr ""
+
+#: ../../../../CHANGES.md:442
+msgid ""
+"`blackd` now requires a newer version of aiohttp. ([#4451](https://github."
+"com/psf/black/pull/4451))"
+msgstr ""
+
+#: ../../../../CHANGES.md:446
+msgid ""
+"Added Python target version information on parse error ([#4378](https://"
+"github.com/psf/black/pull/4378))"
+msgstr ""
+
+#: ../../../../CHANGES.md:447
+msgid ""
+"Add information about Black version to internal error messages ([#4457]"
+"(https://github.com/psf/black/pull/4457))"
+msgstr ""
+
+#: ../../../../CHANGES.md:449
+msgid "Version 24.8.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:453
+msgid ""
+"Fix crash when `# fmt: off` is used before a closing parenthesis or bracket. "
+"([#4363](https://github.com/psf/black/pull/4363))"
+msgstr ""
+
+#: ../../../../CHANGES.md:457
+msgid ""
+"Packaging metadata updated: docs are explicitly linked, the issue tracker is "
+"now also linked. This improves the PyPI listing for Black. ([#4345](https://"
+"github.com/psf/black/pull/4345))"
+msgstr ""
+
+#: ../../../../CHANGES.md:462
+msgid ""
+"Fix regression where Black failed to parse a multiline f-string containing "
+"another multiline string ([#4339](https://github.com/psf/black/pull/4339))"
+msgstr ""
+
+#: ../../../../CHANGES.md:464
+msgid ""
+"Fix regression where Black failed to parse an escaped single quote inside an "
+"f-string ([#4401](https://github.com/psf/black/pull/4401))"
+msgstr ""
+
+#: ../../../../CHANGES.md:466
+msgid ""
+"Fix bug with Black incorrectly parsing empty lines with a backslash ([#4343]"
+"(https://github.com/psf/black/pull/4343))"
+msgstr ""
+
+#: ../../../../CHANGES.md:467
+msgid ""
+"Fix bugs with Black's tokenizer not handling `\\{` inside f-strings very "
+"well ([#4422](https://github.com/psf/black/pull/4422))"
+msgstr ""
+
+#: ../../../../CHANGES.md:468
+msgid ""
+"Fix incorrect line numbers in the tokenizer for certain tokens within f-"
+"strings ([#4423](https://github.com/psf/black/pull/4423))"
+msgstr ""
+
+#: ../../../../CHANGES.md:473
+msgid ""
+"Improve performance when a large directory is listed in `.gitignore` ([#4415]"
+"(https://github.com/psf/black/pull/4415))"
+msgstr ""
+
+#: ../../../../CHANGES.md:477
+msgid ""
+"Fix blackd (and all extras installs) for docker container ([#4357](https://"
+"github.com/psf/black/pull/4357))"
+msgstr ""
+
+#: ../../../../CHANGES.md:479
+msgid "Version 24.4.2"
+msgstr ""
+
+#: ../../../../CHANGES.md:481
+msgid ""
+"This is a bugfix release to fix two regressions in the new f-string parser "
+"introduced in 24.4.1."
+msgstr ""
+
+#: ../../../../CHANGES.md:486
+msgid ""
+"Fix regression where certain complex f-strings failed to parse ([#4332]"
+"(https://github.com/psf/black/pull/4332))"
+msgstr ""
+
+#: ../../../../CHANGES.md:490
+msgid ""
+"Fix bad performance on certain complex string literals ([#4331](https://"
+"github.com/psf/black/pull/4331))"
+msgstr ""
+
+#: ../../../../CHANGES.md:492
+msgid "Version 24.4.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:496
+msgid ""
+"Add support for the new Python 3.12 f-string syntax introduced by PEP 701 "
+"([#3822](https://github.com/psf/black/pull/3822))"
+msgstr ""
+
+#: ../../../../CHANGES.md:500
+msgid ""
+"Fix crash involving indented dummy functions containing newlines ([#4318]"
+"(https://github.com/psf/black/pull/4318))"
+msgstr ""
+
+#: ../../../../CHANGES.md:504
+msgid ""
+"Add support for type parameter defaults, a new syntactic feature added to "
+"Python 3.13 by PEP 696 ([#4327](https://github.com/psf/black/pull/4327))"
+msgstr ""
+
+#: ../../../../CHANGES.md:509
+msgid ""
+"Github Action now works even when `git archive` is skipped ([#4313](https://"
+"github.com/psf/black/pull/4313))"
+msgstr ""
+
+#: ../../../../CHANGES.md:511
+msgid "Version 24.4.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:515
+msgid ""
+"Fix unwanted crashes caused by AST equivalency check ([#4290](https://github."
+"com/psf/black/pull/4290))"
+msgstr ""
+
+#: ../../../../CHANGES.md:519
+msgid ""
+"`if` guards in `case` blocks are now wrapped in parentheses when the line is "
+"too long. ([#4269](https://github.com/psf/black/pull/4269))"
+msgstr ""
+
+#: ../../../../CHANGES.md:521
+msgid ""
+"Stop moving multiline strings to a new line unless inside brackets ([#4289]"
+"(https://github.com/psf/black/pull/4289))"
+msgstr ""
+
+#: ../../../../CHANGES.md:525
+msgid ""
+"Add a new option `use_pyproject` to the GitHub Action `psf/black`. This will "
+"read the Black version from `pyproject.toml`. ([#4294](https://github.com/"
+"psf/black/pull/4294))"
+msgstr ""
+
+#: ../../../../CHANGES.md:528
+msgid "Version 24.3.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:532
+msgid ""
+"This release is a milestone: it fixes Black's first CVE security "
+"vulnerability. If you run Black on untrusted input, or if you habitually put "
+"thousands of leading tab characters in your docstrings, you are strongly "
+"encouraged to upgrade immediately to fix [CVE-2024-21503](https://cve.mitre."
+"org/cgi-bin/cvename.cgi?name=CVE-2024-21503)."
+msgstr ""
+
+#: ../../../../CHANGES.md:537
+msgid ""
+"This release also fixes a bug in Black's AST safety check that allowed Black "
+"to make incorrect changes to certain f-strings that are valid in Python 3.12 "
+"and higher."
+msgstr ""
+
+#: ../../../../CHANGES.md:542
+msgid ""
+"Don't move comments along with delimiters, which could cause crashes ([#4248]"
+"(https://github.com/psf/black/pull/4248))"
+msgstr ""
+
+#: ../../../../CHANGES.md:543
+msgid ""
+"Strengthen AST safety check to catch more unsafe changes to strings. "
+"Previous versions of Black would incorrectly format the contents of certain "
+"unusual f-strings containing nested strings with the same quote type. Now, "
+"Black will crash on such strings until support for the new f-string syntax "
+"is implemented. ([#4270](https://github.com/psf/black/pull/4270))"
+msgstr ""
+
+#: ../../../../CHANGES.md:547
+msgid ""
+"Fix a bug where line-ranges exceeding the last code line would not work as "
+"expected ([#4273](https://github.com/psf/black/pull/4273))"
+msgstr ""
+
+#: ../../../../CHANGES.md:552
+msgid ""
+"Fix catastrophic performance on docstrings that contain large numbers of "
+"leading tab characters. This fixes [CVE-2024-21503](https://cve.mitre.org/"
+"cgi-bin/cvename.cgi?name=CVE-2024-21503). ([#4278](https://github.com/psf/"
+"black/pull/4278))"
+msgstr ""
+
+#: ../../../../CHANGES.md:559
+msgid ""
+"Note what happens when `--check` is used with `--quiet` ([#4236](https://"
+"github.com/psf/black/pull/4236))"
+msgstr ""
+
+#: ../../../../CHANGES.md:561
+msgid "Version 24.2.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:565
+msgid ""
+"Fixed a bug where comments where mistakenly removed along with redundant "
+"parentheses ([#4218](https://github.com/psf/black/pull/4218))"
+msgstr ""
+
+#: ../../../../CHANGES.md:570
+msgid ""
+"Move the `hug_parens_with_braces_and_square_brackets` feature to the "
+"unstable style due to an outstanding crash and proposed formatting tweaks "
+"([#4198](https://github.com/psf/black/pull/4198))"
+msgstr ""
+
+#: ../../../../CHANGES.md:572
+msgid ""
+"Fixed a bug where base expressions caused inconsistent formatting of \\*\\* "
+"in ternary expression ([#4154](https://github.com/psf/black/pull/4154))"
+msgstr ""
+
+#: ../../../../CHANGES.md:574
+msgid ""
+"Checking for newline before adding one on docstring that is almost at the "
+"line limit ([#4185](https://github.com/psf/black/pull/4185))"
+msgstr ""
+
+#: ../../../../CHANGES.md:576
+msgid ""
+"Remove redundant parentheses in `case` statement `if` guards ([#4214]"
+"(https://github.com/psf/black/pull/4214))."
+msgstr ""
+
+#: ../../../../CHANGES.md:580
+msgid ""
+"Fix issue where _Black_ would ignore input files in the presence of symlinks "
+"([#4222](https://github.com/psf/black/pull/4222))"
+msgstr ""
+
+#: ../../../../CHANGES.md:581
+msgid ""
+"_Black_ now ignores `pyproject.toml` that is missing a `tool.black` section "
+"when discovering project root and configuration. Since _Black_ continues to "
+"use version control as an indicator of project root, this is expected to "
+"primarily change behavior for users in a monorepo setup (desirably). If you "
+"wish to preserve previous behavior, simply add an empty `[tool.black]` to "
+"the previously discovered `pyproject.toml` ([#4204](https://github.com/psf/"
+"black/pull/4204))"
+msgstr ""
+
+#: ../../../../CHANGES.md:590
+msgid ""
+"Black will swallow any `SyntaxWarning`s or `DeprecationWarning`s produced by "
+"the `ast` module when performing equivalence checks ([#4189](https://github."
+"com/psf/black/pull/4189))"
+msgstr ""
+
+#: ../../../../CHANGES.md:595
+msgid ""
+"Add a JSONSchema and provide a validate-pyproject entry-point ([#4181]"
+"(https://github.com/psf/black/pull/4181))"
+msgstr ""
+
+#: ../../../../CHANGES.md:597
+msgid "Version 24.1.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:599
+msgid ""
+"Bugfix release to fix a bug that made Black unusable on certain file systems "
+"with strict limits on path length."
+msgstr ""
+
+#: ../../../../CHANGES.md:604
+msgid ""
+"Consistently add trailing comma on typed parameters ([#4164](https://github."
+"com/psf/black/pull/4164))"
+msgstr ""
+
+#: ../../../../CHANGES.md:608
+msgid ""
+"Shorten the length of the name of the cache file to fix crashes on file "
+"systems that do not support long paths ([#4176](https://github.com/psf/black/"
+"pull/4176))"
+msgstr ""
+
+#: ../../../../CHANGES.md:611
+msgid "Version 24.1.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:615
+msgid ""
+"This release introduces the new 2024 stable style ([#4106](https://github."
+"com/psf/black/pull/4106)), stabilizing the following changes:"
+msgstr ""
+
+#: ../../../../CHANGES.md:618 ../../../../CHANGES.md:1075
+msgid ""
+"Add parentheses around `if`-`else` expressions ([#2278](https://github.com/"
+"psf/black/pull/2278))"
+msgstr ""
+
+#: ../../../../CHANGES.md:619
+msgid ""
+"Dummy class and function implementations consisting only of `...` are "
+"formatted more compactly ([#3796](https://github.com/psf/black/pull/3796))"
+msgstr ""
+
+#: ../../../../CHANGES.md:621
+msgid ""
+"If an assignment statement is too long, we now prefer splitting on the right-"
+"hand side ([#3368](https://github.com/psf/black/pull/3368))"
+msgstr ""
+
+#: ../../../../CHANGES.md:623
+msgid ""
+"Hex codes in Unicode escape sequences are now standardized to lowercase "
+"([#2916](https://github.com/psf/black/pull/2916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:624
+msgid ""
+"Allow empty first lines at the beginning of most blocks ([#3967](https://"
+"github.com/psf/black/pull/3967), [#4061](https://github.com/psf/black/"
+"pull/4061))"
+msgstr ""
+
+#: ../../../../CHANGES.md:625
+msgid ""
+"Add parentheses around long type annotations ([#3899](https://github.com/psf/"
+"black/pull/3899))"
+msgstr ""
+
+#: ../../../../CHANGES.md:626
+msgid ""
+"Enforce newline after module docstrings ([#3932](https://github.com/psf/"
+"black/pull/3932), [#4028](https://github.com/psf/black/pull/4028))"
+msgstr ""
+
+#: ../../../../CHANGES.md:627
+msgid ""
+"Fix incorrect magic trailing comma handling in return types ([#3916](https://"
+"github.com/psf/black/pull/3916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:628
+msgid ""
+"Remove blank lines before class docstrings ([#3692](https://github.com/psf/"
+"black/pull/3692))"
+msgstr ""
+
+#: ../../../../CHANGES.md:629
+msgid ""
+"Wrap multiple context managers in parentheses if combined in a single `with` "
+"statement ([#3489](https://github.com/psf/black/pull/3489))"
+msgstr ""
+
+#: ../../../../CHANGES.md:631
+msgid ""
+"Fix bug in line length calculations for power operations ([#3942](https://"
+"github.com/psf/black/pull/3942))"
+msgstr ""
+
+#: ../../../../CHANGES.md:632 ../../../../CHANGES.md:992
+msgid ""
+"Add trailing commas to collection literals even if there's a comment after "
+"the last entry ([#3393](https://github.com/psf/black/pull/3393))"
+msgstr ""
+
+#: ../../../../CHANGES.md:634 ../../../../CHANGES.md:1239
+msgid ""
+"When using `--skip-magic-trailing-comma` or `-C`, trailing commas are "
+"stripped from subscript expressions with more than 1 element ([#3209]"
+"(https://github.com/psf/black/pull/3209))"
+msgstr ""
+
+#: ../../../../CHANGES.md:636
+msgid ""
+"Add extra blank lines in stubs in a few cases ([#3564](https://github.com/"
+"psf/black/pull/3564), [#3862](https://github.com/psf/black/pull/3862))"
+msgstr ""
+
+#: ../../../../CHANGES.md:637
+msgid ""
+"Accept raw strings as docstrings ([#3947](https://github.com/psf/black/"
+"pull/3947))"
+msgstr ""
+
+#: ../../../../CHANGES.md:638
+msgid ""
+"Split long lines in case blocks ([#4024](https://github.com/psf/black/"
+"pull/4024))"
+msgstr ""
+
+#: ../../../../CHANGES.md:639
+msgid ""
+"Stop removing spaces from walrus operators within subscripts ([#3823]"
+"(https://github.com/psf/black/pull/3823))"
+msgstr ""
+
+#: ../../../../CHANGES.md:640
+msgid ""
+"Fix incorrect formatting of certain async statements ([#3609](https://github."
+"com/psf/black/pull/3609))"
+msgstr ""
+
+#: ../../../../CHANGES.md:641
+msgid ""
+"Allow combining `# fmt: skip` with other comments ([#3959](https://github."
+"com/psf/black/pull/3959))"
+msgstr ""
+
+#: ../../../../CHANGES.md:643
+msgid ""
+"There are already a few improvements in the `--preview` style, which are "
+"slated for the 2025 stable style. Try them out and [share your feedback]"
+"(https://github.com/psf/black/issues). In the past, the preview style has "
+"included some features that we were not able to stabilize. This year, we're "
+"adding a separate `--unstable` style for features with known problems. Now, "
+"the `--preview` style only includes features that we actually expect to make "
+"it into next year's stable style."
+msgstr ""
+
+#: ../../../../CHANGES.md:653
+msgid ""
+"Several bug fixes were made in features that are moved to the stable style "
+"in this release:"
+msgstr ""
+
+#: ../../../../CHANGES.md:656
+msgid ""
+"Fix comment handling when parenthesising conditional expressions ([#4134]"
+"(https://github.com/psf/black/pull/4134))"
+msgstr ""
+
+#: ../../../../CHANGES.md:657
+msgid ""
+"Fix bug where spaces were not added around parenthesized walruses in "
+"subscripts, unlike other binary operators ([#4109](https://github.com/psf/"
+"black/pull/4109))"
+msgstr ""
+
+#: ../../../../CHANGES.md:659
+msgid ""
+"Remove empty lines before docstrings in async functions ([#4132](https://"
+"github.com/psf/black/pull/4132))"
+msgstr ""
+
+#: ../../../../CHANGES.md:660
+msgid ""
+"Address a missing case in the change to allow empty lines at the beginning "
+"of all blocks, except immediately before a docstring ([#4130](https://github."
+"com/psf/black/pull/4130))"
+msgstr ""
+
+#: ../../../../CHANGES.md:662
+msgid ""
+"For stubs, fix logic to enforce empty line after nested classes with bodies "
+"([#4141](https://github.com/psf/black/pull/4141))"
+msgstr ""
+
+#: ../../../../CHANGES.md:666
+msgid ""
+"Add `--unstable` style, covering preview features that have known problems "
+"that would block them from going into the stable style. Also add the `--"
+"enable-unstable-feature` flag; for example, use `--enable-unstable-feature "
+"hug_parens_with_braces_and_square_brackets` to apply this preview feature "
+"throughout 2024, even if a later Black release downgrades the feature to "
+"unstable ([#4096](https://github.com/psf/black/pull/4096))"
+msgstr ""
+
+#: ../../../../CHANGES.md:672
+msgid ""
+"Format module docstrings the same as class and function docstrings ([#4095]"
+"(https://github.com/psf/black/pull/4095))"
+msgstr ""
+
+#: ../../../../CHANGES.md:673
+msgid ""
+"Fix crash when using a walrus in a dictionary ([#4155](https://github.com/"
+"psf/black/pull/4155))"
+msgstr ""
+
+#: ../../../../CHANGES.md:674
+msgid ""
+"Fix unnecessary parentheses when wrapping long dicts ([#4135](https://github."
+"com/psf/black/pull/4135))"
+msgstr ""
+
+#: ../../../../CHANGES.md:675
+msgid ""
+"Stop normalizing spaces before `# fmt: skip` comments ([#4146](https://"
+"github.com/psf/black/pull/4146))"
+msgstr ""
+
+#: ../../../../CHANGES.md:679
+msgid ""
+"Print warning when configuration in `pyproject.toml` contains an invalid key "
+"([#4165](https://github.com/psf/black/pull/4165))"
+msgstr ""
+
+#: ../../../../CHANGES.md:680
+msgid ""
+"Fix symlink handling, properly ignoring symlinks that point outside of root "
+"([#4161](https://github.com/psf/black/pull/4161))"
+msgstr ""
+
+#: ../../../../CHANGES.md:681
+msgid ""
+"Fix cache mtime logic that resulted in false positive cache hits ([#4128]"
+"(https://github.com/psf/black/pull/4128))"
+msgstr ""
+
+#: ../../../../CHANGES.md:682
+msgid ""
+"Remove the long-deprecated `--experimental-string-processing` flag. This "
+"feature can currently be enabled with `--preview --enable-unstable-feature "
+"string_processing`. ([#4096](https://github.com/psf/black/pull/4096))"
+msgstr ""
+
+#: ../../../../CHANGES.md:688
+msgid ""
+"Revert the change to run Black's pre-commit integration only on specific git "
+"hooks ([#3940](https://github.com/psf/black/pull/3940)) for better "
+"compatibility with older versions of pre-commit ([#4137](https://github.com/"
+"psf/black/pull/4137))"
+msgstr ""
+
+#: ../../../../CHANGES.md:691
+msgid "Version 23.12.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:695
+msgid ""
+"Fixed a bug that included dependencies from the `d` extra by default ([#4108]"
+"(https://github.com/psf/black/pull/4108))"
+msgstr ""
+
+#: ../../../../CHANGES.md:697
+msgid "Version 23.12.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:701
+msgid ""
+"It's almost 2024, which means it's time for a new edition of _Black_'s "
+"stable style! Together with this release, we'll put out an alpha release "
+"24.1a1 showcasing the draft 2024 stable style, which we'll finalize in the "
+"January release. Please try it out and [share your feedback](https://github."
+"com/psf/black/issues/4042)."
+msgstr ""
+
+#: ../../../../CHANGES.md:706
+msgid ""
+"This release (23.12.0) will still produce the 2023 style. Most but not all "
+"of the changes in `--preview` mode will be in the 2024 stable style."
+msgstr ""
+
+#: ../../../../CHANGES.md:711
+msgid ""
+"Fix bug where `# fmt: off` automatically dedents when used with the `--line-"
+"ranges` option, even when it is not within the specified line range. ([#4084]"
+"(https://github.com/psf/black/pull/4084))"
+msgstr ""
+
+#: ../../../../CHANGES.md:713
+msgid ""
+"Fix feature detection for parenthesized context managers ([#4104](https://"
+"github.com/psf/black/pull/4104))"
+msgstr ""
+
+#: ../../../../CHANGES.md:717
+msgid ""
+"Prefer more equal signs before a break when splitting chained assignments "
+"([#4010](https://github.com/psf/black/pull/4010))"
+msgstr ""
+
+#: ../../../../CHANGES.md:718
+msgid ""
+"Standalone form feed characters at the module level are no longer removed "
+"([#4021](https://github.com/psf/black/pull/4021))"
+msgstr ""
+
+#: ../../../../CHANGES.md:719
+msgid ""
+"Additional cases of immediately nested tuples, lists, and dictionaries are "
+"now indented less ([#4012](https://github.com/psf/black/pull/4012))"
+msgstr ""
+
+#: ../../../../CHANGES.md:721
+msgid ""
+"Allow empty lines at the beginning of all blocks, except immediately before "
+"a docstring ([#4060](https://github.com/psf/black/pull/4060))"
+msgstr ""
+
+#: ../../../../CHANGES.md:723
+msgid ""
+"Fix crash in preview mode when using a short `--line-length` ([#4086]"
+"(https://github.com/psf/black/pull/4086))"
+msgstr ""
+
+#: ../../../../CHANGES.md:724
+msgid ""
+"Keep suites consisting of only an ellipsis on their own lines if they are "
+"not functions or class definitions ([#4066](https://github.com/psf/black/"
+"pull/4066)) ([#4103](https://github.com/psf/black/pull/4103))"
+msgstr ""
+
+#: ../../../../CHANGES.md:729
+msgid ""
+"`--line-ranges` now skips _Black_'s internal stability check in `--safe` "
+"mode. This avoids a crash on rare inputs that have many unformatted same-"
+"content lines. ([#4034](https://github.com/psf/black/pull/4034))"
+msgstr ""
+
+#: ../../../../CHANGES.md:734
+msgid ""
+"Upgrade to mypy 1.7.1 ([#4049](https://github.com/psf/black/pull/4049)) "
+"([#4069](https://github.com/psf/black/pull/4069))"
+msgstr ""
+
+#: ../../../../CHANGES.md:735
+msgid ""
+"Faster compiled wheels are now available for CPython 3.12 ([#4070](https://"
+"github.com/psf/black/pull/4070))"
+msgstr ""
+
+#: ../../../../CHANGES.md:739
+msgid "Enable 3.12 CI ([#4035](https://github.com/psf/black/pull/4035))"
+msgstr ""
+
+#: ../../../../CHANGES.md:740
+msgid ""
+"Build docker images in parallel ([#4054](https://github.com/psf/black/"
+"pull/4054))"
+msgstr ""
+
+#: ../../../../CHANGES.md:741
+msgid ""
+"Build docker images with 3.12 ([#4055](https://github.com/psf/black/"
+"pull/4055))"
+msgstr ""
+
+#: ../../../../CHANGES.md:743
+msgid "Version 23.11.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:747
+msgid ""
+"Support formatting ranges of lines with the new `--line-ranges` command-line "
+"option ([#4020](https://github.com/psf/black/pull/4020))"
+msgstr ""
+
+#: ../../../../CHANGES.md:752
+msgid ""
+"Fix crash on formatting bytes strings that look like docstrings ([#4003]"
+"(https://github.com/psf/black/pull/4003))"
+msgstr ""
+
+#: ../../../../CHANGES.md:753
+msgid ""
+"Fix crash when whitespace followed a backslash before newline in a docstring "
+"([#4008](https://github.com/psf/black/pull/4008))"
+msgstr ""
+
+#: ../../../../CHANGES.md:754
+msgid ""
+"Fix standalone comments inside complex blocks crashing Black ([#4016]"
+"(https://github.com/psf/black/pull/4016))"
+msgstr ""
+
+#: ../../../../CHANGES.md:755
+msgid ""
+"Fix crash on formatting code like `await (a ** b)` ([#3994](https://github."
+"com/psf/black/pull/3994))"
+msgstr ""
+
+#: ../../../../CHANGES.md:756
+msgid ""
+"No longer treat leading f-strings as docstrings. This matches Python's "
+"behaviour and fixes a crash ([#4019](https://github.com/psf/black/pull/4019))"
+msgstr ""
+
+#: ../../../../CHANGES.md:761
+msgid ""
+"Multiline dicts and lists that are the sole argument to a function are now "
+"indented less ([#3964](https://github.com/psf/black/pull/3964))"
+msgstr ""
+
+#: ../../../../CHANGES.md:763
+msgid ""
+"Multiline unpacked dicts and lists as the sole argument to a function are "
+"now also indented less ([#3992](https://github.com/psf/black/pull/3992))"
+msgstr ""
+
+#: ../../../../CHANGES.md:765
+msgid ""
+"In f-string debug expressions, quote types that are visible in the final "
+"string are now preserved ([#4005](https://github.com/psf/black/pull/4005))"
+msgstr ""
+
+#: ../../../../CHANGES.md:767
+msgid ""
+"Fix a bug where long `case` blocks were not split into multiple lines. Also "
+"enable general trailing comma rules on `case` blocks ([#4024](https://github."
+"com/psf/black/pull/4024))"
+msgstr ""
+
+#: ../../../../CHANGES.md:769
+msgid ""
+"Keep requiring two empty lines between module-level docstring and first "
+"function or class definition ([#4028](https://github.com/psf/black/"
+"pull/4028))"
+msgstr ""
+
+#: ../../../../CHANGES.md:771
+msgid ""
+"Add support for single-line format skip with other comments on the same line "
+"([#3959](https://github.com/psf/black/pull/3959))"
+msgstr ""
+
+#: ../../../../CHANGES.md:775
+msgid ""
+"Consistently apply force exclusion logic before resolving symlinks ([#4015]"
+"(https://github.com/psf/black/pull/4015))"
+msgstr ""
+
+#: ../../../../CHANGES.md:776
+msgid ""
+"Fix a bug in the matching of absolute path names in `--include` ([#3976]"
+"(https://github.com/psf/black/pull/3976))"
+msgstr ""
+
+#: ../../../../CHANGES.md:780
+msgid ""
+"Fix mypyc builds on arm64 on macOS ([#4017](https://github.com/psf/black/"
+"pull/4017))"
+msgstr ""
+
+#: ../../../../CHANGES.md:784
+msgid ""
+"Black's pre-commit integration will now run only on git hooks appropriate "
+"for a code formatter ([#3940](https://github.com/psf/black/pull/3940))"
+msgstr ""
+
+#: ../../../../CHANGES.md:787
+msgid "Version 23.10.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:791
+msgid ""
+"Maintenance release to get a fix out for GitHub Action edge case ([#3957]"
+"(https://github.com/psf/black/pull/3957))"
+msgstr ""
+
+#: ../../../../CHANGES.md:795
+msgid ""
+"Fix merging implicit multiline strings that have inline comments ([#3956]"
+"(https://github.com/psf/black/pull/3956))"
+msgstr ""
+
+#: ../../../../CHANGES.md:796
+msgid ""
+"Allow empty first line after block open before a comment or compound "
+"statement ([#3967](https://github.com/psf/black/pull/3967))"
+msgstr ""
+
+#: ../../../../CHANGES.md:800
+msgid ""
+"Change Dockerfile to hatch + compile black ([#3965](https://github.com/psf/"
+"black/pull/3965))"
+msgstr ""
+
+#: ../../../../CHANGES.md:804
+msgid ""
+"The summary output for GitHub workflows is now suppressible using the "
+"`summary` parameter. ([#3958](https://github.com/psf/black/pull/3958))"
+msgstr ""
+
+#: ../../../../CHANGES.md:806
+msgid ""
+"Fix the action failing when Black check doesn't pass ([#3957](https://github."
+"com/psf/black/pull/3957))"
+msgstr ""
+
+#: ../../../../CHANGES.md:810
+msgid ""
+"It is known Windows documentation CI is broken https://github.com/psf/black/"
+"issues/3968"
+msgstr ""
+
+#: ../../../../CHANGES.md:813
+msgid "Version 23.10.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:817
+msgid ""
+"Fix comments getting removed from inside parenthesized strings ([#3909]"
+"(https://github.com/psf/black/pull/3909))"
+msgstr ""
+
+#: ../../../../CHANGES.md:821
+msgid ""
+"Fix long lines with power operators getting split before the line length "
+"([#3942](https://github.com/psf/black/pull/3942))"
+msgstr ""
+
+#: ../../../../CHANGES.md:822
+msgid ""
+"Long type hints are now wrapped in parentheses and properly indented when "
+"split across multiple lines ([#3899](https://github.com/psf/black/pull/3899))"
+msgstr ""
+
+#: ../../../../CHANGES.md:824
+msgid ""
+"Magic trailing commas are now respected in return types. ([#3916](https://"
+"github.com/psf/black/pull/3916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:825
+msgid ""
+"Require one empty line after module-level docstrings. ([#3932](https://"
+"github.com/psf/black/pull/3932))"
+msgstr ""
+
+#: ../../../../CHANGES.md:826
+msgid ""
+"Treat raw triple-quoted strings as docstrings ([#3947](https://github.com/"
+"psf/black/pull/3947))"
+msgstr ""
+
+#: ../../../../CHANGES.md:830
+msgid ""
+"Fix cache versioning logic when `BLACK_CACHE_DIR` is set ([#3937](https://"
+"github.com/psf/black/pull/3937))"
+msgstr ""
+
+#: ../../../../CHANGES.md:834
+msgid ""
+"Fix bug where attributes named `type` were not accepted inside `match` "
+"statements ([#3950](https://github.com/psf/black/pull/3950))"
+msgstr ""
+
+#: ../../../../CHANGES.md:836
+msgid ""
+"Add support for PEP 695 type aliases containing lambdas and other unusual "
+"expressions ([#3949](https://github.com/psf/black/pull/3949))"
+msgstr ""
+
+#: ../../../../CHANGES.md:841
+msgid ""
+"Black no longer attempts to provide special errors for attempting to format "
+"Python 2 code ([#3933](https://github.com/psf/black/pull/3933))"
+msgstr ""
+
+#: ../../../../CHANGES.md:843
+msgid ""
+"Black will more consistently print stacktraces on internal errors in verbose "
+"mode ([#3938](https://github.com/psf/black/pull/3938))"
+msgstr ""
+
+#: ../../../../CHANGES.md:848
+msgid ""
+"The action output displayed in the job summary is now wrapped in Markdown "
+"([#3914](https://github.com/psf/black/pull/3914))"
+msgstr ""
+
+#: ../../../../CHANGES.md:850
+msgid "Version 23.9.1"
+msgstr ""
+
+#: ../../../../CHANGES.md:852
+msgid ""
+"Due to various issues, the previous release (23.9.0) did not include "
+"compiled mypyc wheels, which make Black significantly faster. These issues "
+"have now been fixed, and this release should come with compiled wheels once "
+"again."
+msgstr ""
+
+#: ../../../../CHANGES.md:856
+msgid ""
+"There will be no wheels for Python 3.12 due to a bug in mypyc. We will "
+"provide 3.12 wheels in a future release as soon as the mypyc bug is fixed."
+msgstr ""
+
+#: ../../../../CHANGES.md:861
+msgid "Upgrade to mypy 1.5.1 ([#3864](https://github.com/psf/black/pull/3864))"
+msgstr ""
+
+#: ../../../../CHANGES.md:865
+msgid ""
+"Store raw tuples instead of NamedTuples in Black's cache, improving "
+"performance and decreasing the size of the cache ([#3877](https://github.com/"
+"psf/black/pull/3877))"
+msgstr ""
+
+#: ../../../../CHANGES.md:868
+msgid "Version 23.9.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:872
+msgid ""
+"More concise formatting for dummy implementations ([#3796](https://github."
+"com/psf/black/pull/3796))"
+msgstr ""
+
+#: ../../../../CHANGES.md:873
+msgid ""
+"In stub files, add a blank line between a statement with a body (e.g an `if "
+"sys.version_info > (3, x):`) and a function definition on the same level "
+"([#3862](https://github.com/psf/black/pull/3862))"
+msgstr ""
+
+#: ../../../../CHANGES.md:875
+msgid ""
+"Fix a bug whereby spaces were removed from walrus operators within "
+"subscript([#3823](https://github.com/psf/black/pull/3823))"
+msgstr ""
+
+#: ../../../../CHANGES.md:879
+msgid ""
+"Black now applies exclusion and ignore logic before resolving symlinks "
+"([#3846](https://github.com/psf/black/pull/3846))"
+msgstr ""
+
+#: ../../../../CHANGES.md:883
+msgid ""
+"Avoid importing `IPython` if notebook cells do not contain magics ([#3782]"
+"(https://github.com/psf/black/pull/3782))"
+msgstr ""
+
+#: ../../../../CHANGES.md:884
+msgid ""
+"Improve caching by comparing file hashes as fallback for mtime and size "
+"([#3821](https://github.com/psf/black/pull/3821))"
+msgstr ""
+
+#: ../../../../CHANGES.md:888
+msgid ""
+"Fix an issue in `blackd` with single character input ([#3558](https://github."
+"com/psf/black/pull/3558))"
+msgstr ""
+
+#: ../../../../CHANGES.md:892
+msgid ""
+"Black now has an [official pre-commit mirror](https://github.com/psf/black-"
+"pre-commit-mirror). Swapping `https://github.com/psf/black` to `https://"
+"github.com/psf/black-pre-commit-mirror` in your `.pre-commit-config.yaml` "
+"will make Black about 2x faster ([#3828](https://github.com/psf/black/"
+"pull/3828))"
+msgstr ""
+
+#: ../../../../CHANGES.md:896
+msgid ""
+"The `.black.env` folder specified by `ENV_PATH` will now be removed on the "
+"completion of the GitHub Action ([#3759](https://github.com/psf/black/"
+"pull/3759))"
+msgstr ""
+
+#: ../../../../CHANGES.md:899
+msgid "Version 23.7.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:903
+msgid ""
+"Runtime support for Python 3.7 has been removed. Formatting 3.7 code will "
+"still be supported until further notice ([#3765](https://github.com/psf/"
+"black/pull/3765))"
+msgstr ""
+
+#: ../../../../CHANGES.md:908
+msgid ""
+"Fix a bug where an illegal trailing comma was added to return type "
+"annotations using PEP 604 unions ([#3735](https://github.com/psf/black/"
+"pull/3735))"
+msgstr ""
+
+#: ../../../../CHANGES.md:910
+msgid ""
+"Fix several bugs and crashes where comments in stub files were removed or "
+"mishandled under some circumstances ([#3745](https://github.com/psf/black/"
+"pull/3745))"
+msgstr ""
+
+#: ../../../../CHANGES.md:912
+msgid ""
+"Fix a crash with multi-line magic comments like `type: ignore` within "
+"parentheses ([#3740](https://github.com/psf/black/pull/3740))"
+msgstr ""
+
+#: ../../../../CHANGES.md:914
+msgid ""
+"Fix error in AST validation when _Black_ removes trailing whitespace in a "
+"type comment ([#3773](https://github.com/psf/black/pull/3773))"
+msgstr ""
+
+#: ../../../../CHANGES.md:919
+msgid ""
+"Implicitly concatenated strings used as function args are no longer wrapped "
+"inside parentheses ([#3640](https://github.com/psf/black/pull/3640))"
+msgstr ""
+
+#: ../../../../CHANGES.md:921
+msgid ""
+"Remove blank lines between a class definition and its docstring ([#3692]"
+"(https://github.com/psf/black/pull/3692))"
+msgstr ""
+
+#: ../../../../CHANGES.md:925
+msgid ""
+"The `--workers` argument to _Black_ can now be specified via the "
+"`BLACK_NUM_WORKERS` environment variable ([#3743](https://github.com/psf/"
+"black/pull/3743))"
+msgstr ""
+
+#: ../../../../CHANGES.md:927
+msgid ""
+"`.pytest_cache`, `.ruff_cache` and `.vscode` are now excluded by default "
+"([#3691](https://github.com/psf/black/pull/3691))"
+msgstr ""
+
+#: ../../../../CHANGES.md:928
+msgid ""
+"Fix _Black_ not honouring `pyproject.toml` settings when running `--stdin-"
+"filename` and the `pyproject.toml` found isn't in the current working "
+"directory ([#3719](https://github.com/psf/black/pull/3719))"
+msgstr ""
+
+#: ../../../../CHANGES.md:930
+msgid ""
+"_Black_ will now error if `exclude` and `extend-exclude` have invalid data "
+"types in `pyproject.toml`, instead of silently doing the wrong thing ([#3764]"
+"(https://github.com/psf/black/pull/3764))"
+msgstr ""
+
+#: ../../../../CHANGES.md:935
+msgid ""
+"Upgrade mypyc from 0.991 to 1.3 ([#3697](https://github.com/psf/black/"
+"pull/3697))"
+msgstr ""
+
+#: ../../../../CHANGES.md:936
+msgid ""
+"Remove patching of Click that mitigated errors on Python 3.6 with `LANG=C` "
+"([#3768](https://github.com/psf/black/pull/3768))"
+msgstr ""
+
+#: ../../../../CHANGES.md:940
+msgid ""
+"Add support for the new PEP 695 syntax in Python 3.12 ([#3703](https://"
+"github.com/psf/black/pull/3703))"
+msgstr ""
+
+#: ../../../../CHANGES.md:944
+msgid ""
+"Speed up _Black_ significantly when the cache is full ([#3751](https://"
+"github.com/psf/black/pull/3751))"
+msgstr ""
+
+#: ../../../../CHANGES.md:945
+msgid ""
+"Avoid importing `IPython` in a case where we wouldn't need it ([#3748]"
+"(https://github.com/psf/black/pull/3748))"
+msgstr ""
+
+#: ../../../../CHANGES.md:949
+msgid ""
+"Use aware UTC datetimes internally, avoids deprecation warning on Python "
+"3.12 ([#3728](https://github.com/psf/black/pull/3728))"
+msgstr ""
+
+#: ../../../../CHANGES.md:950
+msgid ""
+"Change verbose logging to exactly mirror _Black_'s logic for source "
+"discovery ([#3749](https://github.com/psf/black/pull/3749))"
+msgstr ""
+
+#: ../../../../CHANGES.md:954
+msgid ""
+"The `blackd` argument parser now shows the default values for options in "
+"their help text ([#3712](https://github.com/psf/black/pull/3712))"
+msgstr ""
+
+#: ../../../../CHANGES.md:959
+msgid ""
+"Black is now tested with [`PYTHONWARNDEFAULTENCODING = 1`](https://docs."
+"python.org/3/library/io.html#io-encoding-warning) ([#3763](https://github."
+"com/psf/black/pull/3763))"
+msgstr ""
+
+#: ../../../../CHANGES.md:962
+msgid ""
+"Update GitHub Action to display black output in the job summary ([#3688]"
+"(https://github.com/psf/black/pull/3688))"
+msgstr ""
+
+#: ../../../../CHANGES.md:966
+msgid ""
+"Add a CITATION.cff file to the root of the repository, containing metadata "
+"on how to cite this software ([#3723](https://github.com/psf/black/"
+"pull/3723))"
+msgstr ""
+
+#: ../../../../CHANGES.md:968
+msgid ""
+"Update the _classes_ and _exceptions_ documentation in Developer reference "
+"to match the latest code base ([#3755](https://github.com/psf/black/"
+"pull/3755))"
+msgstr ""
+
+#: ../../../../CHANGES.md:971
+msgid "Version 23.3.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:975
+msgid ""
+"This release fixes a longstanding confusing behavior in Black's GitHub "
+"action, where the version of the action did not determine the version of "
+"Black being run (issue [#3382](https://github.com/psf/black/pull/3382)). In "
+"addition, there is a small bug fix around imports and a number of "
+"improvements to the preview style."
+msgstr ""
+
+#: ../../../../CHANGES.md:980
+msgid ""
+"Please try out the [preview style](https://black.readthedocs.io/en/stable/"
+"the_black_code_style/future_style.html#preview-style) with `black --preview` "
+"and tell us your feedback. All changes in the preview style are expected to "
+"become part of Black's stable style in January 2024."
+msgstr ""
+
+#: ../../../../CHANGES.md:987
+msgid ""
+"Import lines with `# fmt: skip` and `# fmt: off` no longer have an extra "
+"blank line added when they are right after another import line ([#3610]"
+"(https://github.com/psf/black/pull/3610))"
+msgstr ""
+
+#: ../../../../CHANGES.md:994
+msgid ""
+"`async def`, `async for`, and `async with` statements are now formatted "
+"consistently compared to their non-async version. ([#3609](https://github."
+"com/psf/black/pull/3609))"
+msgstr ""
+
+#: ../../../../CHANGES.md:996
+msgid ""
+"`with` statements that contain two context managers will be consistently "
+"wrapped in parentheses ([#3589](https://github.com/psf/black/pull/3589))"
+msgstr ""
+
+#: ../../../../CHANGES.md:998
+msgid ""
+"Let string splitters respect [East Asian Width](https://www.unicode.org/"
+"reports/tr11/) ([#3445](https://github.com/psf/black/pull/3445))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1000
+msgid ""
+"Now long string literals can be split after East Asian commas and periods "
+"(`、` U+3001 IDEOGRAPHIC COMMA, `。` U+3002 IDEOGRAPHIC FULL STOP, & `，` "
+"U+FF0C FULLWIDTH COMMA) besides before spaces ([#3445](https://github.com/"
+"psf/black/pull/3445))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1003
+msgid ""
+"For stubs, enforce one blank line after a nested class with a body other "
+"than just `...` ([#3564](https://github.com/psf/black/pull/3564))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1005
+msgid ""
+"Improve handling of multiline strings by changing line split behavior "
+"([#1879](https://github.com/psf/black/pull/1879))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1009
+msgid ""
+"Added support for formatting files with invalid type comments ([#3594]"
+"(https://github.com/psf/black/pull/3594))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1013
+msgid ""
+"Update GitHub Action to use the version of Black equivalent to action's "
+"version if version input is not specified ([#3543](https://github.com/psf/"
+"black/pull/3543))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1015
+msgid ""
+"Fix missing Python binary path in autoload script for vim ([#3508](https://"
+"github.com/psf/black/pull/3508))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1019
+msgid ""
+"Document that only the most recent release is supported for security issues; "
+"vulnerabilities should be reported through Tidelift ([#3612](https://github."
+"com/psf/black/pull/3612))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1022
+msgid "Version 23.1.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1026
+msgid ""
+"This is the first release of 2023, and following our [stability policy]"
+"(https://black.readthedocs.io/en/stable/the_black_code_style/index."
+"html#stability-policy), it comes with a number of improvements to our stable "
+"style, including improvements to empty line handling, removal of redundant "
+"parentheses in several contexts, and output that highlights implicitly "
+"concatenated strings better."
+msgstr ""
+
+#: ../../../../CHANGES.md:1032
+msgid ""
+"There are also many changes to the preview style; try out `black --preview` "
+"and give us feedback to help us set the stable style for next year."
+msgstr ""
+
+#: ../../../../CHANGES.md:1035
+msgid ""
+"In addition to style changes, Black now automatically infers the supported "
+"Python versions from your `pyproject.toml` file, removing the need to set "
+"Black's target versions separately."
+msgstr ""
+
+#: ../../../../CHANGES.md:1041
+msgid ""
+"Introduce the 2023 stable style, which incorporates most aspects of last "
+"year's preview style ([#3418](https://github.com/psf/black/pull/3418)). "
+"Specific changes:"
+msgstr ""
+
+#: ../../../../CHANGES.md:1043
+msgid ""
+"Enforce empty lines before classes and functions with sticky leading "
+"comments ([#3302](https://github.com/psf/black/pull/3302)) (22.12.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1045
+msgid ""
+"Reformat empty and whitespace-only files as either an empty file (if no "
+"newline is present) or as a single newline character (if a newline is "
+"present) ([#3348](https://github.com/psf/black/pull/3348)) (22.12.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1048
+msgid ""
+"Implicitly concatenated strings used as function args are now wrapped inside "
+"parentheses ([#3307](https://github.com/psf/black/pull/3307)) (22.12.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1050
+msgid ""
+"Correctly handle trailing commas that are inside a line's leading non-nested "
+"parens ([#3370](https://github.com/psf/black/pull/3370)) (22.12.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1052
+msgid ""
+"`--skip-string-normalization` / `-S` now prevents docstring prefixes from "
+"being normalized as expected ([#3168](https://github.com/psf/black/"
+"pull/3168)) (since 22.8.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1054
+msgid ""
+"When using `--skip-magic-trailing-comma` or `-C`, trailing commas are "
+"stripped from subscript expressions with more than 1 element ([#3209]"
+"(https://github.com/psf/black/pull/3209)) (22.8.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1056
+msgid ""
+"Implicitly concatenated strings inside a list, set, or tuple are now wrapped "
+"inside parentheses ([#3162](https://github.com/psf/black/pull/3162)) (22.8.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1058
+msgid ""
+"Fix a string merging/split issue when a comment is present in the middle of "
+"implicitly concatenated strings on its own line ([#3227](https://github.com/"
+"psf/black/pull/3227)) (22.8.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1060
+msgid ""
+"Docstring quotes are no longer moved if it would violate the line length "
+"limit ([#3044](https://github.com/psf/black/pull/3044), [#3430](https://"
+"github.com/psf/black/pull/3430)) (22.6.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1062
+msgid ""
+"Parentheses around return annotations are now managed ([#2990](https://"
+"github.com/psf/black/pull/2990)) (22.6.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1063
+msgid ""
+"Remove unnecessary parentheses around awaited objects ([#2991](https://"
+"github.com/psf/black/pull/2991)) (22.6.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1064
+msgid ""
+"Remove unnecessary parentheses in `with` statements ([#2926](https://github."
+"com/psf/black/pull/2926)) (22.6.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1065
+msgid ""
+"Remove trailing newlines after code block open ([#3035](https://github.com/"
+"psf/black/pull/3035)) (22.6.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1066
+msgid ""
+"Code cell separators `#%%` are now standardised to `# %%` ([#2919](https://"
+"github.com/psf/black/pull/2919)) (22.3.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1067
+msgid ""
+"Remove unnecessary parentheses from `except` statements ([#2939](https://"
+"github.com/psf/black/pull/2939)) (22.3.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1068
+msgid ""
+"Remove unnecessary parentheses from tuple unpacking in `for` loops ([#2945]"
+"(https://github.com/psf/black/pull/2945)) (22.3.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1069
+msgid ""
+"Avoid magic-trailing-comma in single-element subscripts ([#2942](https://"
+"github.com/psf/black/pull/2942)) (22.3.0)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1070
+msgid ""
+"Fix a crash when a colon line is marked between `# fmt: off` and `# fmt: on` "
+"([#3439](https://github.com/psf/black/pull/3439))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1074
+msgid ""
+"Format hex codes in unicode escape sequences in string literals ([#2916]"
+"(https://github.com/psf/black/pull/2916))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1076
+msgid ""
+"Improve performance on large expressions that contain many strings ([#3467]"
+"(https://github.com/psf/black/pull/3467))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1077
+msgid ""
+"Fix a crash in preview style with assert + parenthesized string ([#3415]"
+"(https://github.com/psf/black/pull/3415))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1078
+msgid ""
+"Fix crashes in preview style with walrus operators used in function return "
+"annotations and except clauses ([#3423](https://github.com/psf/black/"
+"pull/3423))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1080
+msgid ""
+"Fix a crash in preview advanced string processing where mixed implicitly "
+"concatenated regular and f-strings start with an empty span ([#3463](https://"
+"github.com/psf/black/pull/3463))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1082
+msgid ""
+"Fix a crash in preview advanced string processing where a standalone comment "
+"is placed before a dict's value ([#3469](https://github.com/psf/black/"
+"pull/3469))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1084
+msgid ""
+"Fix an issue where extra empty lines are added when a decorator has `# fmt: "
+"skip` applied or there is a standalone comment between decorators ([#3470]"
+"(https://github.com/psf/black/pull/3470))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1086
+msgid ""
+"Do not put the closing quotes in a docstring on a separate line, even if the "
+"line is too long ([#3430](https://github.com/psf/black/pull/3430))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1088
+msgid ""
+"Long values in dict literals are now wrapped in parentheses; correspondingly "
+"unnecessary parentheses around short values in dict literals are now "
+"removed; long string lambda values are now wrapped in parentheses ([#3440]"
+"(https://github.com/psf/black/pull/3440))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1091
+msgid ""
+"Fix two crashes in preview style involving edge cases with docstrings "
+"([#3451](https://github.com/psf/black/pull/3451))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1092
+msgid ""
+"Exclude string type annotations from improved string processing; fix crash "
+"when the return type annotation is stringified and spans across multiple "
+"lines ([#3462](https://github.com/psf/black/pull/3462))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1094
+msgid ""
+"Wrap multiple context managers in parentheses when targeting Python 3.9+ "
+"([#3489](https://github.com/psf/black/pull/3489))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1095
+msgid ""
+"Fix several crashes in preview style with walrus operators used in `with` "
+"statements or tuples ([#3473](https://github.com/psf/black/pull/3473))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1097
+msgid ""
+"Fix an invalid quote escaping bug in f-string expressions where it produced "
+"invalid code. Implicitly concatenated f-strings with different quotes can "
+"now be merged or quote-normalized by changing the quotes used in "
+"expressions. ([#3509](https://github.com/psf/black/pull/3509))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1100
+msgid ""
+"Fix crash on `await (yield)` when Black is compiled with mypyc ([#3533]"
+"(https://github.com/psf/black/pull/3533))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1104
+msgid ""
+"Black now tries to infer its `--target-version` from the project metadata "
+"specified in `pyproject.toml` ([#3219](https://github.com/psf/black/"
+"pull/3219))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1109
+msgid ""
+"Upgrade mypyc from `0.971` to `0.991` so mypycified _Black_ can be built on "
+"armv7 ([#3380](https://github.com/psf/black/pull/3380))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1111
+msgid ""
+"This also fixes some crashes while using compiled Black with a debug build "
+"of CPython"
+msgstr ""
+
+#: ../../../../CHANGES.md:1113
+msgid ""
+"Drop specific support for the `tomli` requirement on 3.11 alpha releases, "
+"working around a bug that would cause the requirement not to be installed on "
+"any non-final Python releases ([#3448](https://github.com/psf/black/"
+"pull/3448))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1116
+msgid ""
+"Black now depends on `packaging` version `22.0` or later. This is required "
+"for new functionality that needs to parse part of the project metadata "
+"([#3219](https://github.com/psf/black/pull/3219))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1121
+msgid ""
+"Calling `black --help` multiple times will return the same help contents "
+"each time ([#3516](https://github.com/psf/black/pull/3516))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1123
+msgid ""
+"Verbose logging now shows the values of `pyproject.toml` configuration "
+"variables ([#3392](https://github.com/psf/black/pull/3392))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1125
+msgid ""
+"Fix false symlink detection messages in verbose output due to using an "
+"incorrect relative path to the project root ([#3385](https://github.com/psf/"
+"black/pull/3385))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1130
+msgid ""
+"Move 3.11 CI to normal flow now that all dependencies support 3.11 ([#3446]"
+"(https://github.com/psf/black/pull/3446))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1131
+msgid ""
+"Docker: Add new `latest_prerelease` tag automation to follow latest black "
+"alpha release on docker images ([#3465](https://github.com/psf/black/"
+"pull/3465))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1136
+msgid ""
+"Expand `vim-plug` installation instructions to offer more explicit options "
+"([#3468](https://github.com/psf/black/pull/3468))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1138
+msgid "Version 22.12.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1142
+msgid ""
+"Enforce empty lines before classes and functions with sticky leading "
+"comments ([#3302](https://github.com/psf/black/pull/3302))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1143
+msgid ""
+"Reformat empty and whitespace-only files as either an empty file (if no "
+"newline is present) or as a single newline character (if a newline is "
+"present) ([#3348](https://github.com/psf/black/pull/3348))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1145
+msgid ""
+"Implicitly concatenated strings used as function args are now wrapped inside "
+"parentheses ([#3307](https://github.com/psf/black/pull/3307))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1147
+msgid ""
+"For assignment statements, prefer splitting the right hand side if the left "
+"hand side fits on a single line ([#3368](https://github.com/psf/black/"
+"pull/3368))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1149
+msgid ""
+"Correctly handle trailing commas that are inside a line's leading non-nested "
+"parens ([#3370](https://github.com/psf/black/pull/3370))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1154
+msgid ""
+"Fix incorrectly applied `.gitignore` rules by considering the `.gitignore` "
+"location and the relative path to the target file ([#3338](https://github."
+"com/psf/black/pull/3338))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1156
+msgid ""
+"Fix incorrectly ignoring `.gitignore` presence when more than one source "
+"directory is specified ([#3336](https://github.com/psf/black/pull/3336))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1161
+msgid ""
+"Parsing support has been added for walruses inside generator expression that "
+"are passed as function args (for example, `any(match := my_re.match(text) "
+"for text in texts)`) ([#3327](https://github.com/psf/black/pull/3327))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1167
+msgid ""
+"Vim plugin: Optionally allow using the system installation of Black via `let "
+"g:black_use_virtualenv = 0`([#3309](https://github.com/psf/black/pull/3309))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1170
+msgid "Version 22.10.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1174
+msgid ""
+"Runtime support for Python 3.6 has been removed. Formatting 3.6 code will "
+"still be supported until further notice."
+msgstr ""
+
+#: ../../../../CHANGES.md:1179
+msgid ""
+"Fix a crash when `# fmt: on` is used on a different block level than `# fmt: "
+"off` ([#3281](https://github.com/psf/black/pull/3281))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1184
+msgid ""
+"Fix a crash when formatting some dicts with parenthesis-wrapped long string "
+"keys ([#3262](https://github.com/psf/black/pull/3262))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1189
+msgid ""
+"`.ipynb_checkpoints` directories are now excluded by default ([#3293]"
+"(https://github.com/psf/black/pull/3293))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1190
+msgid ""
+"Add `--skip-source-first-line` / `-x` option to ignore the first line of "
+"source code while formatting ([#3299](https://github.com/psf/black/"
+"pull/3299))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1195
+msgid ""
+"Executables made with PyInstaller will no longer crash when formatting "
+"several files at once on macOS. Native x86-64 executables for macOS are "
+"available once again. ([#3275](https://github.com/psf/black/pull/3275))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1198
+msgid ""
+"Hatchling is now used as the build backend. This will not have any effect "
+"for users who install Black with its wheels from PyPI. ([#3233](https://"
+"github.com/psf/black/pull/3233))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1200
+msgid ""
+"Faster compiled wheels are now available for CPython 3.11 ([#3276](https://"
+"github.com/psf/black/pull/3276))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1204
+msgid ""
+"Windows style (CRLF) newlines will be preserved ([#3257](https://github.com/"
+"psf/black/pull/3257))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1208
+msgid ""
+"Vim plugin: add flag (`g:black_preview`) to enable/disable the preview style "
+"([#3246](https://github.com/psf/black/pull/3246))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1209
+msgid ""
+"Update GitHub Action to support formatting of Jupyter Notebook files via a "
+"`jupyter` option ([#3282](https://github.com/psf/black/pull/3282))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1211
+msgid ""
+"Update GitHub Action to support use of version specifiers (e.g. `<23`) for "
+"Black version ([#3265](https://github.com/psf/black/pull/3265))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1214
+msgid "Version 22.8.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1218
+msgid ""
+"Python 3.11 is now supported, except for _blackd_ as aiohttp does not "
+"support 3.11 as of publishing ([#3234](https://github.com/psf/black/"
+"pull/3234))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1220
+msgid ""
+"This is the last release that supports running _Black_ on Python 3.6 "
+"(formatting 3.6 code will continue to be supported until further notice)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1222
+msgid ""
+"Reword the stability policy to say that we may, in rare cases, make changes "
+"that affect code that was not previously formatted by _Black_ ([#3155]"
+"(https://github.com/psf/black/pull/3155))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1227
+msgid ""
+"Fix an infinite loop when using `# fmt: on/off` in the middle of an "
+"expression or code block ([#3158](https://github.com/psf/black/pull/3158))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1229
+msgid ""
+"Fix incorrect handling of `# fmt: skip` on colon (`:`) lines ([#3148]"
+"(https://github.com/psf/black/pull/3148))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1230
+msgid ""
+"Comments are no longer deleted when a line had spaces removed around power "
+"operators ([#2874](https://github.com/psf/black/pull/2874))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1235
+msgid ""
+"Single-character closing docstring quotes are no longer moved to their own "
+"line as this is invalid. This was a bug introduced in version 22.6.0. "
+"([#3166](https://github.com/psf/black/pull/3166))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1237
+msgid ""
+"`--skip-string-normalization` / `-S` now prevents docstring prefixes from "
+"being normalized as expected ([#3168](https://github.com/psf/black/"
+"pull/3168))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1241
+msgid ""
+"Implicitly concatenated strings inside a list, set, or tuple are now wrapped "
+"inside parentheses ([#3162](https://github.com/psf/black/pull/3162))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1243
+msgid ""
+"Fix a string merging/split issue when a comment is present in the middle of "
+"implicitly concatenated strings on its own line ([#3227](https://github.com/"
+"psf/black/pull/3227))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1248
+msgid ""
+"`blackd` now supports enabling the preview style via the `X-Preview` header "
+"([#3217](https://github.com/psf/black/pull/3217))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1252
+msgid ""
+"Black now uses the presence of debug f-strings to detect target version "
+"([#3215](https://github.com/psf/black/pull/3215))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1253
+msgid ""
+"Fix misdetection of project root and verbose logging of sources in cases "
+"involving `--stdin-filename` ([#3216](https://github.com/psf/black/"
+"pull/3216))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1255
+msgid ""
+"Immediate `.gitignore` files in source directories given on the command line "
+"are now also respected, previously only `.gitignore` files in the project "
+"root and automatically discovered directories were respected ([#3237]"
+"(https://github.com/psf/black/pull/3237))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1261
+msgid ""
+"Recommend using BlackConnect in IntelliJ IDEs ([#3150](https://github.com/"
+"psf/black/pull/3150))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1265
+msgid ""
+"Vim plugin: prefix messages with `Black: ` so it's clear they come from "
+"Black ([#3194](https://github.com/psf/black/pull/3194))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1266
+msgid ""
+"Docker: changed to a /opt/venv installation + added to PATH to be available "
+"to non-root users ([#3202](https://github.com/psf/black/pull/3202))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1271
+msgid ""
+"Change from deprecated `asyncio.get_event_loop()` to create our event loop "
+"which removes DeprecationWarning ([#3164](https://github.com/psf/black/"
+"pull/3164))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1273
+msgid ""
+"Remove logging from internal `blib2to3` library since it regularly emits "
+"error logs about failed caching that can and should be ignored ([#3193]"
+"(https://github.com/psf/black/pull/3193))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1278
+msgid ""
+"Type comments are now included in the AST equivalence check consistently so "
+"accidental deletion raises an error. Though type comments can't be tracked "
+"when running on PyPy 3.7 due to standard library limitations. ([#2874]"
+"(https://github.com/psf/black/pull/2874))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1284
+msgid ""
+"Reduce Black's startup time when formatting a single file by 15-30% ([#3211]"
+"(https://github.com/psf/black/pull/3211))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1286
+msgid "Version 22.6.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1288 ../../../../CHANGES.md:1379
+msgid "Style"
+msgstr ""
+
+#: ../../../../CHANGES.md:1290
+msgid ""
+"Fix unstable formatting involving `#fmt: skip` and `# fmt:skip` comments "
+"(notice the lack of spaces) ([#2970](https://github.com/psf/black/pull/2970))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1295
+msgid ""
+"Docstring quotes are no longer moved if it would violate the line length "
+"limit ([#3044](https://github.com/psf/black/pull/3044))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1296
+msgid ""
+"Parentheses around return annotations are now managed ([#2990](https://"
+"github.com/psf/black/pull/2990))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1297
+msgid ""
+"Remove unnecessary parentheses around awaited objects ([#2991](https://"
+"github.com/psf/black/pull/2991))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1298
+msgid ""
+"Remove unnecessary parentheses in `with` statements ([#2926](https://github."
+"com/psf/black/pull/2926))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1299
+msgid ""
+"Remove trailing newlines after code block open ([#3035](https://github.com/"
+"psf/black/pull/3035))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1303
+msgid ""
+"Add `scripts/migrate-black.py` script to ease introduction of Black to a Git "
+"project ([#3038](https://github.com/psf/black/pull/3038))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1308
+msgid ""
+"Output Python version and implementation as part of `--version` flag ([#2997]"
+"(https://github.com/psf/black/pull/2997))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1312
+msgid ""
+"Use `tomli` instead of `tomllib` on Python 3.11 builds where `tomllib` is "
+"not available ([#2987](https://github.com/psf/black/pull/2987))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1317
+msgid ""
+"[PEP 654](https://peps.python.org/pep-0654/#except) syntax (for example, "
+"`except *ExceptionGroup:`) is now supported ([#3016](https://github.com/psf/"
+"black/pull/3016))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1319
+msgid ""
+"[PEP 646](https://peps.python.org/pep-0646) syntax (for example, "
+"`Array[Batch, *Shape]` or `def fn(*args: *T) -> None`) is now supported "
+"([#3071](https://github.com/psf/black/pull/3071))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1322
+msgid "Vim Plugin"
+msgstr ""
+
+#: ../../../../CHANGES.md:1324
+msgid ""
+"Fix `strtobool` function. It didn't parse true/on/false/off. ([#3025]"
+"(https://github.com/psf/black/pull/3025))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1326
+msgid "Version 22.3.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1330
+msgid ""
+"Code cell separators `#%%` are now standardised to `# %%` ([#2919](https://"
+"github.com/psf/black/pull/2919))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1331
+msgid ""
+"Remove unnecessary parentheses from `except` statements ([#2939](https://"
+"github.com/psf/black/pull/2939))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1332
+msgid ""
+"Remove unnecessary parentheses from tuple unpacking in `for` loops ([#2945]"
+"(https://github.com/psf/black/pull/2945))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1333
+msgid ""
+"Avoid magic-trailing-comma in single-element subscripts ([#2942](https://"
+"github.com/psf/black/pull/2942))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1337
+msgid ""
+"Do not format `__pypackages__` directories by default ([#2836](https://"
+"github.com/psf/black/pull/2836))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1338
+msgid ""
+"Add support for specifying stable version with `--required-version` ([#2832]"
+"(https://github.com/psf/black/pull/2832))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1339
+msgid ""
+"Avoid crashing when the user has no homedir ([#2814](https://github.com/psf/"
+"black/pull/2814))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1340
+msgid ""
+"Avoid crashing when md5 is not available ([#2905](https://github.com/psf/"
+"black/pull/2905))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1341
+msgid ""
+"Fix handling of directory junctions on Windows ([#2904](https://github.com/"
+"psf/black/pull/2904))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1345
+msgid ""
+"Update pylint config documentation ([#2931](https://github.com/psf/black/"
+"pull/2931))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1349
+msgid ""
+"Move test to disable plugin in Vim/Neovim, which speeds up loading ([#2896]"
+"(https://github.com/psf/black/pull/2896))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1353
+msgid ""
+"In verbose mode, log when _Black_ is using user-level config ([#2861]"
+"(https://github.com/psf/black/pull/2861))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1357
+msgid ""
+"Fix Black to work with Click 8.1.0 ([#2966](https://github.com/psf/black/"
+"pull/2966))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1358
+msgid ""
+"On Python 3.11 and newer, use the standard library's `tomllib` instead of "
+"`tomli` ([#2903](https://github.com/psf/black/pull/2903))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1360
+msgid ""
+"`black-primer`, the deprecated internal devtool, has been removed and copied "
+"to a [separate repository](https://github.com/cooperlees/black-primer) "
+"([#2924](https://github.com/psf/black/pull/2924))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1365
+msgid ""
+"Black can now parse starred expressions in the target of `for` and `async "
+"for` statements, e.g `for item in *items_1, *items_2: pass` ([#2879](https://"
+"github.com/psf/black/pull/2879))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1368
+msgid "Version 22.1.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1370
+msgid ""
+"At long last, _Black_ is no longer a beta product! This is the first non-"
+"beta release and the first release covered by our new [stability policy]"
+"(https://black.readthedocs.io/en/stable/the_black_code_style/index."
+"html#stability-policy)."
+msgstr ""
+
+#: ../../../../CHANGES.md:1376
+msgid ""
+"**Remove Python 2 support** ([#2740](https://github.com/psf/black/pull/2740))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1377
+msgid ""
+"Introduce the `--preview` flag ([#2752](https://github.com/psf/black/"
+"pull/2752))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1381
+msgid ""
+"Deprecate `--experimental-string-processing` and move the functionality "
+"under `--preview` ([#2789](https://github.com/psf/black/pull/2789))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1383
+msgid ""
+"For stubs, one blank line between class attributes and methods is now kept "
+"if there's at least one pre-existing blank line ([#2736](https://github.com/"
+"psf/black/pull/2736))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1385
+msgid ""
+"Black now normalizes string prefix order ([#2297](https://github.com/psf/"
+"black/pull/2297))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1386
+msgid ""
+"Remove spaces around power operators if both operands are simple ([#2726]"
+"(https://github.com/psf/black/pull/2726))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1387
+msgid ""
+"Work around bug that causes unstable formatting in some cases in the "
+"presence of the magic trailing comma ([#2807](https://github.com/psf/black/"
+"pull/2807))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1389
+msgid ""
+"Use parentheses for attribute access on decimal float and int literals "
+"([#2799](https://github.com/psf/black/pull/2799))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1390
+msgid ""
+"Don't add whitespace for attribute access on hexadecimal, binary, octal, and "
+"complex literals ([#2799](https://github.com/psf/black/pull/2799))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1392
+msgid ""
+"Treat blank lines in stubs the same inside top-level `if` statements ([#2820]"
+"(https://github.com/psf/black/pull/2820))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1393
+msgid ""
+"Fix unstable formatting with semicolons and arithmetic expressions ([#2817]"
+"(https://github.com/psf/black/pull/2817))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1394
+msgid ""
+"Fix unstable formatting around magic trailing comma ([#2572](https://github."
+"com/psf/black/pull/2572))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1398
+msgid ""
+"Fix mapping cases that contain as-expressions, like `case {\"key\": 1 | 2 as "
+"password}` ([#2686](https://github.com/psf/black/pull/2686))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1400
+msgid ""
+"Fix cases that contain multiple top-level as-expressions, like `case 1 as a, "
+"2 as b` ([#2716](https://github.com/psf/black/pull/2716))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1402
+msgid ""
+"Fix call patterns that contain as-expressions with keyword arguments, like "
+"`case Foo(bar=baz as quux)` ([#2749](https://github.com/psf/black/pull/2749))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1404
+msgid ""
+"Tuple unpacking on `return` and `yield` constructs now implies 3.8+ ([#2700]"
+"(https://github.com/psf/black/pull/2700))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1405
+msgid ""
+"Unparenthesized tuples on annotated assignments (e.g `values: "
+"Tuple[int, ...] = 1, 2, 3`) now implies 3.8+ ([#2708](https://github.com/psf/"
+"black/pull/2708))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1407
+msgid ""
+"Fix handling of standalone `match()` or `case()` when there is a trailing "
+"newline or a comment inside of the parentheses. ([#2760](https://github.com/"
+"psf/black/pull/2760))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1409
+msgid ""
+"`from __future__ import annotations` statement now implies Python 3.7+ "
+"([#2690](https://github.com/psf/black/pull/2690))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1413
+msgid ""
+"Speed-up the new backtracking parser about 4X in general (enabled when `--"
+"target-version` is set to 3.10 and higher). ([#2728](https://github.com/psf/"
+"black/pull/2728))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1415
+msgid ""
+"_Black_ is now compiled with [mypyc](https://github.com/mypyc/mypyc) for an "
+"overall 2x speed-up. 64-bit Windows, MacOS, and Linux (not including musl) "
+"are supported. ([#1009](https://github.com/psf/black/pull/1009), [#2431]"
+"(https://github.com/psf/black/pull/2431))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1421
+msgid ""
+"Do not accept bare carriage return line endings in pyproject.toml ([#2408]"
+"(https://github.com/psf/black/pull/2408))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1422
+msgid ""
+"Add configuration option (`python-cell-magics`) to format cells with custom "
+"magics in Jupyter Notebooks ([#2744](https://github.com/psf/black/pull/2744))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1424
+msgid ""
+"Allow setting custom cache directory on all platforms with environment "
+"variable `BLACK_CACHE_DIR` ([#2739](https://github.com/psf/black/pull/2739))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1426
+msgid ""
+"Enable Python 3.10+ by default, without any extra need to specify `--target-"
+"version=py310`. ([#2758](https://github.com/psf/black/pull/2758))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1428
+msgid ""
+"Make passing `SRC` or `--code` mandatory and mutually exclusive ([#2804]"
+"(https://github.com/psf/black/pull/2804))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1432
+msgid ""
+"Improve error message for invalid regular expression ([#2678](https://github."
+"com/psf/black/pull/2678))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1433
+msgid ""
+"Improve error message when parsing fails during AST safety check by "
+"embedding the underlying SyntaxError ([#2693](https://github.com/psf/black/"
+"pull/2693))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1435
+msgid ""
+"No longer color diff headers white as it's unreadable in light themed "
+"terminals ([#2691](https://github.com/psf/black/pull/2691))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1437
+msgid ""
+"Text coloring added in the final statistics ([#2712](https://github.com/psf/"
+"black/pull/2712))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1438
+msgid ""
+"Verbose mode also now describes how a project root was discovered and which "
+"paths will be formatted. ([#2526](https://github.com/psf/black/pull/2526))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1443
+msgid ""
+"All upper version bounds on dependencies have been removed ([#2718](https://"
+"github.com/psf/black/pull/2718))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1444
+msgid ""
+"`typing-extensions` is no longer a required dependency in Python 3.10+ "
+"([#2772](https://github.com/psf/black/pull/2772))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1445
+msgid ""
+"Set `click` lower bound to `8.0.0` ([#2791](https://github.com/psf/black/"
+"pull/2791))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1449
+msgid ""
+"Update GitHub action to support containerized runs ([#2748](https://github."
+"com/psf/black/pull/2748))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1453
+msgid ""
+"Change protocol in pip installation instructions to `https://` ([#2761]"
+"(https://github.com/psf/black/pull/2761))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1454
+msgid ""
+"Change HTML theme to Furo primarily for its responsive design and mobile "
+"support ([#2793](https://github.com/psf/black/pull/2793))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1456
+msgid ""
+"Deprecate the `black-primer` tool ([#2809](https://github.com/psf/black/"
+"pull/2809))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1457
+msgid ""
+"Document Python support policy ([#2819](https://github.com/psf/black/"
+"pull/2819))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1459
+msgid "Version 21.12b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1461 ../../../../CHANGES.md:1494
+#: ../../../../CHANGES.md:1500 ../../../../CHANGES.md:1517
+#: ../../../../CHANGES.md:1552 ../../../../CHANGES.md:1579
+#: ../../../../CHANGES.md:1604 ../../../../CHANGES.md:1625
+#: ../../../../CHANGES.md:1659 ../../../../CHANGES.md:1675
+#: ../../../../CHANGES.md:1687 ../../../../CHANGES.md:1704
+#: ../../../../CHANGES.md:1723 ../../../../CHANGES.md:1793
+msgid "_Black_"
+msgstr ""
+
+#: ../../../../CHANGES.md:1463
+msgid ""
+"Fix determination of f-string expression spans ([#2654](https://github.com/"
+"psf/black/pull/2654))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1464
+msgid ""
+"Fix bad formatting of error messages about EOF in multi-line statements "
+"([#2343](https://github.com/psf/black/pull/2343))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1465
+msgid ""
+"Functions and classes in blocks now have more consistent surrounding spacing "
+"([#2472](https://github.com/psf/black/pull/2472))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1467
+msgid "Jupyter Notebook support"
+msgstr ""
+
+#: ../../../../CHANGES.md:1469
+msgid ""
+"Cell magics are now only processed if they are known Python cell magics. "
+"Earlier, all cell magics were tokenized, leading to possible indentation "
+"errors e.g. with `%%writefile`. ([#2630](https://github.com/psf/black/"
+"pull/2630))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1472
+msgid ""
+"Fix assignment to environment variables in Jupyter Notebooks ([#2642]"
+"(https://github.com/psf/black/pull/2642))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1474
+msgid "Python 3.10 support"
+msgstr ""
+
+#: ../../../../CHANGES.md:1476
+msgid ""
+"Point users to using `--target-version py310` if we detect 3.10-only syntax "
+"([#2668](https://github.com/psf/black/pull/2668))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1477
+msgid ""
+"Fix `match` statements with open sequence subjects, like `match a, b:` or "
+"`match a, *b:` ([#2639](https://github.com/psf/black/pull/2639)) ([#2659]"
+"(https://github.com/psf/black/pull/2659))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1479
+msgid ""
+"Fix `match`/`case` statements that contain `match`/`case` soft keywords "
+"multiple times, like `match re.match()` ([#2661](https://github.com/psf/"
+"black/pull/2661))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1481
+msgid ""
+"Fix `case` statements with an inline body ([#2665](https://github.com/psf/"
+"black/pull/2665))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1482
+msgid ""
+"Fix styling of starred expressions inside `match` subject ([#2667](https://"
+"github.com/psf/black/pull/2667))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1483
+msgid ""
+"Fix parser error location on invalid syntax in a `match` statement ([#2649]"
+"(https://github.com/psf/black/pull/2649))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1484
+msgid ""
+"Fix Python 3.10 support on platforms without ProcessPoolExecutor ([#2631]"
+"(https://github.com/psf/black/pull/2631))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1485
+msgid ""
+"Improve parsing performance on code that uses `match` under `--target-"
+"version py310` up to ~50% ([#2670](https://github.com/psf/black/pull/2670))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1490
+msgid ""
+"Remove dependency on `regex` ([#2644](https://github.com/psf/black/"
+"pull/2644)) ([#2663](https://github.com/psf/black/pull/2663))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1492
+msgid "Version 21.11b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:1496
+msgid ""
+"Bumped regex version minimum to 2021.4.4 to fix Pattern class usage ([#2621]"
+"(https://github.com/psf/black/pull/2621))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1498
+msgid "Version 21.11b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1502
+msgid ""
+"Warn about Python 2 deprecation in more cases by improving Python 2 only "
+"syntax detection ([#2592](https://github.com/psf/black/pull/2592))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1504
+msgid ""
+"Add experimental PyPy support ([#2559](https://github.com/psf/black/"
+"pull/2559))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1505
+msgid ""
+"Add partial support for the match statement. As it's experimental, it's only "
+"enabled when `--target-version py310` is explicitly specified ([#2586]"
+"(https://github.com/psf/black/pull/2586))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1507
+msgid ""
+"Add support for parenthesized with ([#2586](https://github.com/psf/black/"
+"pull/2586))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1508
+msgid ""
+"Declare support for Python 3.10 for running Black ([#2562](https://github."
+"com/psf/black/pull/2562))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1512
+msgid ""
+"Fixed vim plugin with Python 3.10 by removing deprecated distutils import "
+"([#2610](https://github.com/psf/black/pull/2610))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1513
+msgid ""
+"The vim plugin now parses `skip_magic_trailing_comma` from pyproject.toml "
+"([#2613](https://github.com/psf/black/pull/2613))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1515
+msgid "Version 21.10b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1519
+msgid ""
+"Document stability policy, that will apply for non-beta releases ([#2529]"
+"(https://github.com/psf/black/pull/2529))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1520
+msgid ""
+"Add new `--workers` parameter ([#2514](https://github.com/psf/black/"
+"pull/2514))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1521
+msgid ""
+"Fixed feature detection for positional-only arguments in lambdas ([#2532]"
+"(https://github.com/psf/black/pull/2532))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1522
+msgid ""
+"Bumped typed-ast version minimum to 1.4.3 for 3.10 compatibility ([#2519]"
+"(https://github.com/psf/black/pull/2519))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1523
+msgid ""
+"Fixed a Python 3.10 compatibility issue where the loop argument was still "
+"being passed even though it has been removed ([#2580](https://github.com/psf/"
+"black/pull/2580))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1525
+msgid ""
+"Deprecate Python 2 formatting support ([#2523](https://github.com/psf/black/"
+"pull/2523))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1529
+msgid ""
+"Remove dependency on aiohttp-cors ([#2500](https://github.com/psf/black/"
+"pull/2500))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1530
+msgid ""
+"Bump required aiohttp version to 3.7.4 ([#2509](https://github.com/psf/black/"
+"pull/2509))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1532 ../../../../CHANGES.md:1681
+msgid "_Black-Primer_"
+msgstr ""
+
+#: ../../../../CHANGES.md:1534
+msgid ""
+"Add primer support for --projects ([#2555](https://github.com/psf/black/"
+"pull/2555))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1535
+msgid ""
+"Print primer summary after individual failures ([#2570](https://github.com/"
+"psf/black/pull/2570))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1539
+msgid ""
+"Allow to pass `target_version` in the vim plugin ([#1319](https://github.com/"
+"psf/black/pull/1319))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1540
+msgid ""
+"Install build tools in docker file and use multi-stage build to keep the "
+"image size down ([#2582](https://github.com/psf/black/pull/2582))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1543
+msgid "Version 21.9b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1547
+msgid ""
+"Fix missing modules in self-contained binaries ([#2466](https://github.com/"
+"psf/black/pull/2466))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1548
+msgid ""
+"Fix missing toml extra used during installation ([#2475](https://github.com/"
+"psf/black/pull/2475))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1550
+msgid "Version 21.8b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1554
+msgid ""
+"Add support for formatting Jupyter Notebook files ([#2357](https://github."
+"com/psf/black/pull/2357))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1555
+msgid ""
+"Move from `appdirs` dependency to `platformdirs` ([#2375](https://github.com/"
+"psf/black/pull/2375))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1556
+msgid ""
+"Present a more user-friendly error if .gitignore is invalid ([#2414](https://"
+"github.com/psf/black/pull/2414))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1557
+msgid ""
+"The failsafe for accidentally added backslashes in f-string expressions has "
+"been hardened to handle more edge cases during quote normalization ([#2437]"
+"(https://github.com/psf/black/pull/2437))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1559
+msgid ""
+"Avoid changing a function return type annotation's type to a tuple by adding "
+"a trailing comma ([#2384](https://github.com/psf/black/pull/2384))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1561
+msgid ""
+"Parsing support has been added for unparenthesized walruses in set literals, "
+"set comprehensions, and indices ([#2447](https://github.com/psf/black/"
+"pull/2447))."
+msgstr ""
+
+#: ../../../../CHANGES.md:1563
+msgid ""
+"Pin `setuptools-scm` build-time dependency version ([#2457](https://github."
+"com/psf/black/pull/2457))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1564
+msgid ""
+"Exclude typing-extensions version 3.10.0.1 due to it being broken on Python "
+"3.10 ([#2460](https://github.com/psf/black/pull/2460))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1569
+msgid ""
+"Replace sys.exit(-1) with raise ImportError as it plays more nicely with "
+"tools that scan installed packages ([#2440](https://github.com/psf/black/"
+"pull/2440))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1574
+msgid ""
+"The provided pre-commit hooks no longer specify `language_version` to avoid "
+"overriding `default_language_version` ([#2430](https://github.com/psf/black/"
+"pull/2430))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1577
+msgid "Version 21.7b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1581
+msgid ""
+"Configuration files using TOML features higher than spec v0.5.0 are now "
+"supported ([#2301](https://github.com/psf/black/pull/2301))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1583
+msgid ""
+"Add primer support and test for code piped into black via STDIN ([#2315]"
+"(https://github.com/psf/black/pull/2315))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1584
+msgid ""
+"Fix internal error when `FORCE_OPTIONAL_PARENTHESES` feature is enabled "
+"([#2332](https://github.com/psf/black/pull/2332))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1585
+msgid "Accept empty stdin ([#2346](https://github.com/psf/black/pull/2346))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1586
+msgid ""
+"Provide a more useful error when parsing fails during AST safety checks "
+"([#2304](https://github.com/psf/black/pull/2304))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1588
+msgid "Docker"
+msgstr ""
+
+#: ../../../../CHANGES.md:1590
+msgid ""
+"Add new `latest_release` tag automation to follow latest black release on "
+"docker images ([#2374](https://github.com/psf/black/pull/2374))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1595
+msgid ""
+"The vim plugin now searches upwards from the directory containing the "
+"current buffer instead of the current working directory for pyproject.toml. "
+"([#1871](https://github.com/psf/black/pull/1871))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1597
+msgid ""
+"The vim plugin now reads the correct string normalization option in "
+"pyproject.toml ([#1869](https://github.com/psf/black/pull/1869))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1599
+msgid ""
+"The vim plugin no longer crashes Black when there's boolean values in "
+"pyproject.toml ([#1869](https://github.com/psf/black/pull/1869))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1602
+msgid "Version 21.6b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1606
+msgid ""
+"Fix failure caused by `fmt: skip` and indentation ([#2281](https://github."
+"com/psf/black/pull/2281))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1607
+msgid ""
+"Account for += assignment when deciding whether to split string ([#2312]"
+"(https://github.com/psf/black/pull/2312))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1608
+msgid ""
+"Correct max string length calculation when there are string operators "
+"([#2292](https://github.com/psf/black/pull/2292))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1609
+msgid ""
+"Fixed option usage when using the `--code` flag ([#2259](https://github.com/"
+"psf/black/pull/2259))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1610
+msgid ""
+"Do not call `uvloop.install()` when _Black_ is used as a library ([#2303]"
+"(https://github.com/psf/black/pull/2303))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1611
+msgid ""
+"Added `--required-version` option to require a specific version to be "
+"running ([#2300](https://github.com/psf/black/pull/2300))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1612
+msgid ""
+"Fix incorrect custom breakpoint indices when string group contains fake f-"
+"strings ([#2311](https://github.com/psf/black/pull/2311))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1614
+msgid ""
+"Fix regression where `R` prefixes would be lowercased for docstrings ([#2285]"
+"(https://github.com/psf/black/pull/2285))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1615
+msgid ""
+"Fix handling of named escapes (`\\N{...}`) when `--experimental-string-"
+"processing` is used ([#2319](https://github.com/psf/black/pull/2319))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1620
+msgid ""
+"The official Black action now supports choosing what version to use, and "
+"supports the major 3 OSes. ([#1940](https://github.com/psf/black/pull/1940))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1623
+msgid "Version 21.5b2"
+msgstr ""
+
+#: ../../../../CHANGES.md:1627
+msgid ""
+"A space is no longer inserted into empty docstrings ([#2249](https://github."
+"com/psf/black/pull/2249))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1628
+msgid ""
+"Fix handling of .gitignore files containing non-ASCII characters on Windows "
+"([#2229](https://github.com/psf/black/pull/2229))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1629
+msgid ""
+"Respect `.gitignore` files in all levels, not only `root/.gitignore` file "
+"(apply `.gitignore` rules like `git` does) ([#2225](https://github.com/psf/"
+"black/pull/2225))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1631
+msgid ""
+"Restored compatibility with Click 8.0 on Python 3.6 when LANG=C used ([#2227]"
+"(https://github.com/psf/black/pull/2227))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1632
+msgid ""
+"Add extra uvloop install + import support if in python env ([#2258](https://"
+"github.com/psf/black/pull/2258))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1633
+msgid ""
+"Fix --experimental-string-processing crash when matching parens are not "
+"found ([#2283](https://github.com/psf/black/pull/2283))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1634
+msgid ""
+"Make sure to split lines that start with a string operator ([#2286](https://"
+"github.com/psf/black/pull/2286))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1635
+msgid ""
+"Fix regular expression that black uses to identify f-expressions ([#2287]"
+"(https://github.com/psf/black/pull/2287))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1639
+msgid ""
+"Add a lower bound for the `aiohttp-cors` dependency. Only 0.4.0 or higher is "
+"supported. ([#2231](https://github.com/psf/black/pull/2231))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1644
+msgid ""
+"Release self-contained x86_64 MacOS binaries as part of the GitHub release "
+"pipeline ([#2198](https://github.com/psf/black/pull/2198))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1646
+msgid ""
+"Always build binaries with the latest available Python ([#2260](https://"
+"github.com/psf/black/pull/2260))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1650
+msgid ""
+"Add discussion of magic comments to FAQ page ([#2272](https://github.com/psf/"
+"black/pull/2272))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1651
+msgid ""
+"`--experimental-string-processing` will be enabled by default in the future "
+"([#2273](https://github.com/psf/black/pull/2273))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1652
+msgid ""
+"Fix typos discovered by codespell ([#2228](https://github.com/psf/black/"
+"pull/2228))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1653
+msgid ""
+"Fix Vim plugin installation instructions. ([#2235](https://github.com/psf/"
+"black/pull/2235))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1654
+msgid ""
+"Add new Frequently Asked Questions page ([#2247](https://github.com/psf/"
+"black/pull/2247))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1655
+msgid ""
+"Fix encoding + symlink issues preventing proper build on Windows ([#2262]"
+"(https://github.com/psf/black/pull/2262))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1657
+msgid "Version 21.5b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:1661
+msgid ""
+"Refactor `src/black/__init__.py` into many files ([#2206](https://github.com/"
+"psf/black/pull/2206))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1665
+msgid ""
+"Replaced all remaining references to the [`master`](https://github.com/psf/"
+"black/tree/main) branch with the [`main`](https://github.com/psf/black/tree/"
+"main) branch. Some additional changes in the source code were also made. "
+"([#2210](https://github.com/psf/black/pull/2210))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1669
+msgid ""
+"Significantly reorganized the documentation to make much more sense. Check "
+"them out by heading over to [the stable docs on RTD](https://black."
+"readthedocs.io/en/stable/). ([#2174](https://github.com/psf/black/pull/2174))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1673
+msgid "Version 21.5b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1677
+msgid ""
+"Set `--pyi` mode if `--stdin-filename` ends in `.pyi` ([#2169](https://"
+"github.com/psf/black/pull/2169))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1678
+msgid ""
+"Stop detecting target version as Python 3.9+ with pre-PEP-614 decorators "
+"that are being called but with no arguments ([#2182](https://github.com/psf/"
+"black/pull/2182))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1683
+msgid ""
+"Add `--no-diff` to black-primer to suppress formatting changes ([#2187]"
+"(https://github.com/psf/black/pull/2187))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1685
+msgid "Version 21.4b2"
+msgstr ""
+
+#: ../../../../CHANGES.md:1689
+msgid ""
+"Fix crash if the user configuration directory is inaccessible. ([#2158]"
+"(https://github.com/psf/black/pull/2158))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1691
+msgid ""
+"Clarify [circumstances](https://github.com/psf/black/blob/master/docs/"
+"the_black_code_style.md#pragmatism) in which _Black_ may change the AST "
+"([#2159](https://github.com/psf/black/pull/2159))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1695
+msgid ""
+"Allow `.gitignore` rules to be overridden by specifying `exclude` in "
+"`pyproject.toml` or on the command line. ([#2170](https://github.com/psf/"
+"black/pull/2170))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1698 ../../../../CHANGES.md:1717
+#: ../../../../CHANGES.md:1779 ../../../../CHANGES.md:1786
+msgid "_Packaging_"
+msgstr ""
+
+#: ../../../../CHANGES.md:1700
+msgid ""
+"Install `primer.json` (used by `black-primer` by default) with black. "
+"([#2154](https://github.com/psf/black/pull/2154))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1702
+msgid "Version 21.4b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:1706
+msgid ""
+"Fix crash on docstrings ending with \"\\\\ \". ([#2142](https://github.com/"
+"psf/black/pull/2142))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1708
+msgid ""
+"Fix crash when atypical whitespace is cleaned out of dostrings ([#2120]"
+"(https://github.com/psf/black/pull/2120))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1710
+msgid ""
+"Reflect the `--skip-magic-trailing-comma` and `--experimental-string-"
+"processing` flags in the name of the cache file. Without this fix, changes "
+"in these flags would not take effect if the cache had already been "
+"populated. ([#2131](https://github.com/psf/black/pull/2131))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1714
+msgid ""
+"Don't remove necessary parentheses from assignment expression containing "
+"assert / return statements. ([#2143](https://github.com/psf/black/pull/2143))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1719
+msgid ""
+"Bump pathspec to >= 0.8.1 to solve invalid .gitignore exclusion handling"
+msgstr ""
+
+#: ../../../../CHANGES.md:1721
+msgid "Version 21.4b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1725
+msgid ""
+"Fixed a rare but annoying formatting instability created by the combination "
+"of optional trailing commas inserted by `Black` and optional parentheses "
+"looking at pre-existing \"magic\" trailing commas. This fixes issue [#1629]"
+"(https://github.com/psf/black/pull/1629) and all of its many many "
+"duplicates. ([#2126](https://github.com/psf/black/pull/2126))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1730
+msgid ""
+"`Black` now processes one-line docstrings by stripping leading and trailing "
+"spaces, and adding a padding space when needed to break up \"\"\"\". ([#1740]"
+"(https://github.com/psf/black/pull/1740))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1733
+msgid ""
+"`Black` now cleans up leading non-breaking spaces in comments ([#2092]"
+"(https://github.com/psf/black/pull/2092))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1735
+msgid ""
+"`Black` now respects `--skip-string-normalization` when normalizing "
+"multiline docstring quotes ([#1637](https://github.com/psf/black/pull/1637))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1738
+msgid ""
+"`Black` no longer removes all empty lines between non-function code and "
+"decorators when formatting typing stubs. Now `Black` enforces a single empty "
+"line. ([#1646](https://github.com/psf/black/pull/1646))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1741
+msgid ""
+"`Black` no longer adds an incorrect space after a parenthesized assignment "
+"expression in if/while statements ([#1655](https://github.com/psf/black/"
+"pull/1655))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1744
+msgid ""
+"Added `--skip-magic-trailing-comma` / `-C` to avoid using trailing commas as "
+"a reason to split lines ([#1824](https://github.com/psf/black/pull/1824))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1747
+msgid ""
+"fixed a crash when PWD=/ on POSIX ([#1631](https://github.com/psf/black/"
+"pull/1631))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1749
+msgid ""
+"fixed \"I/O operation on closed file\" when using --diff ([#1664](https://"
+"github.com/psf/black/pull/1664))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1751
+msgid ""
+"Prevent coloured diff output being interleaved with multiple files ([#1673]"
+"(https://github.com/psf/black/pull/1673))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1753
+msgid ""
+"Added support for PEP 614 relaxed decorator syntax on python 3.9 ([#1711]"
+"(https://github.com/psf/black/pull/1711))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1755
+msgid ""
+"Added parsing support for unparenthesized tuples and yield expressions in "
+"annotated assignments ([#1835](https://github.com/psf/black/pull/1835))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1758
+msgid ""
+"added `--extend-exclude` argument (PR [#2005](https://github.com/psf/black/"
+"pull/2005))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1760
+msgid ""
+"speed up caching by avoiding pathlib ([#1950](https://github.com/psf/black/"
+"pull/1950))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1762
+msgid ""
+"`--diff` correctly indicates when a file doesn't end in a newline ([#1662]"
+"(https://github.com/psf/black/pull/1662))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1764
+msgid ""
+"Added `--stdin-filename` argument to allow stdin to respect `--force-"
+"exclude` rules ([#1780](https://github.com/psf/black/pull/1780))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1767
+msgid ""
+"Lines ending with `fmt: skip` will now be not formatted ([#1800](https://"
+"github.com/psf/black/pull/1800))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1769
+msgid ""
+"PR [#2053](https://github.com/psf/black/pull/2053): Black no longer relies "
+"on typed-ast for Python 3.8 and higher"
+msgstr ""
+
+#: ../../../../CHANGES.md:1771
+msgid ""
+"PR [#2053](https://github.com/psf/black/pull/2053): Python 2 support is now "
+"optional, install with `python3 -m pip install black[python2]` to maintain "
+"support."
+msgstr ""
+
+#: ../../../../CHANGES.md:1774
+msgid ""
+"Exclude `venv` directory by default ([#1683](https://github.com/psf/black/"
+"pull/1683))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1776
+msgid ""
+"Fixed \"Black produced code that is not equivalent to the source\" when "
+"formatting Python 2 docstrings ([#2037](https://github.com/psf/black/"
+"pull/2037))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1781
+msgid ""
+"Self-contained native _Black_ binaries are now provided for releases via "
+"GitHub Releases ([#1743](https://github.com/psf/black/pull/1743))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1784
+msgid "Version 20.8b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:1788
+msgid ""
+"explicitly depend on Click 7.1.2 or newer as `Black` no longer works with "
+"versions older than 7.0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1791
+msgid "Version 20.8b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1795
+msgid ""
+"re-implemented support for explicit trailing commas: now it works "
+"consistently within any bracket pair, including nested structures ([#1288]"
+"(https://github.com/psf/black/pull/1288) and duplicates)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1798
+msgid ""
+"`Black` now reindents docstrings when reindenting code around it ([#1053]"
+"(https://github.com/psf/black/pull/1053))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1800
+msgid ""
+"`Black` now shows colored diffs ([#1266](https://github.com/psf/black/"
+"pull/1266))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1802
+msgid ""
+"`Black` is now packaged using 'py3' tagged wheels ([#1388](https://github."
+"com/psf/black/pull/1388))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1804
+msgid ""
+"`Black` now supports Python 3.8 code, e.g. star expressions in return "
+"statements ([#1121](https://github.com/psf/black/pull/1121))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1807
+msgid ""
+"`Black` no longer normalizes capital R-string prefixes as those have a "
+"community-accepted meaning ([#1244](https://github.com/psf/black/pull/1244))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1810
+msgid ""
+"`Black` now uses exit code 2 when specified configuration file doesn't exit "
+"([#1361](https://github.com/psf/black/pull/1361))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1812
+msgid ""
+"`Black` now works on AWS Lambda ([#1141](https://github.com/psf/black/"
+"pull/1141))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1814
+msgid ""
+"added `--force-exclude` argument ([#1032](https://github.com/psf/black/"
+"pull/1032))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1816
+msgid ""
+"removed deprecated `--py36` option ([#1236](https://github.com/psf/black/"
+"pull/1236))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1818
+msgid ""
+"fixed `--diff` output when EOF is encountered ([#526](https://github.com/psf/"
+"black/pull/526))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1820
+msgid ""
+"fixed `# fmt: off` handling around decorators ([#560](https://github.com/psf/"
+"black/pull/560))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1822
+msgid ""
+"fixed unstable formatting with some `# type: ignore` comments ([#1113]"
+"(https://github.com/psf/black/pull/1113))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1824
+msgid ""
+"fixed invalid removal on organizing brackets followed by indexing ([#1575]"
+"(https://github.com/psf/black/pull/1575))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1826
+msgid ""
+"introduced `black-primer`, a CI tool that allows us to run regression tests "
+"against existing open source users of Black ([#1402](https://github.com/psf/"
+"black/pull/1402))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1829
+msgid ""
+"introduced property-based fuzzing to our test suite based on Hypothesis and "
+"Hypothersmith ([#1566](https://github.com/psf/black/pull/1566))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1832
+msgid ""
+"implemented experimental and disabled by default long string rewrapping "
+"([#1132](https://github.com/psf/black/pull/1132)), hidden under a `--"
+"experimental-string-processing` flag while it's being worked on; this is an "
+"undocumented and unsupported feature, you lose Internet points for depending "
+"on it ([#1609](https://github.com/psf/black/pull/1609))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1837
+msgid "Vim plugin"
+msgstr ""
+
+#: ../../../../CHANGES.md:1839
+msgid ""
+"prefer virtualenv packages over global packages ([#1383](https://github.com/"
+"psf/black/pull/1383))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1841
+msgid "Version 19.10b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1843
+msgid ""
+"added support for PEP 572 assignment expressions ([#711](https://github.com/"
+"psf/black/pull/711))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1845
+msgid ""
+"added support for PEP 570 positional-only arguments ([#943](https://github."
+"com/psf/black/pull/943))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1847
+msgid ""
+"added support for async generators ([#593](https://github.com/psf/black/"
+"pull/593))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1849
+msgid ""
+"added support for pre-splitting collections by putting an explicit trailing "
+"comma inside ([#826](https://github.com/psf/black/pull/826))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1852
+msgid ""
+"added `black -c` as a way to format code passed from the command line ([#761]"
+"(https://github.com/psf/black/pull/761))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1854
+msgid ""
+"--safe now works with Python 2 code ([#840](https://github.com/psf/black/"
+"pull/840))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1856
+msgid ""
+"fixed grammar selection for Python 2-specific code ([#765](https://github."
+"com/psf/black/pull/765))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1858
+msgid ""
+"fixed feature detection for trailing commas in function definitions and call "
+"sites ([#763](https://github.com/psf/black/pull/763))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1861
+msgid ""
+"`# fmt: off`/`# fmt: on` comment pairs placed multiple times within the same "
+"block of code now behave correctly ([#1005](https://github.com/psf/black/"
+"pull/1005))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1864
+msgid ""
+"_Black_ no longer crashes on Windows machines with more than 61 cores ([#838]"
+"(https://github.com/psf/black/pull/838))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1866
+msgid ""
+"_Black_ no longer crashes on standalone comments prepended with a backslash "
+"([#767](https://github.com/psf/black/pull/767))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1868
+msgid ""
+"_Black_ no longer crashes on `from` ... `import` blocks with comments ([#829]"
+"(https://github.com/psf/black/pull/829))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1870
+msgid ""
+"_Black_ no longer crashes on Python 3.7 on some platform configurations "
+"([#494](https://github.com/psf/black/pull/494))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1872
+msgid ""
+"_Black_ no longer fails on comments in from-imports ([#671](https://github."
+"com/psf/black/pull/671))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1874
+msgid ""
+"_Black_ no longer fails when the file starts with a backslash ([#922]"
+"(https://github.com/psf/black/pull/922))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1876
+msgid ""
+"_Black_ no longer merges regular comments with type comments ([#1027]"
+"(https://github.com/psf/black/pull/1027))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1878
+msgid ""
+"_Black_ no longer splits long lines that contain type comments ([#997]"
+"(https://github.com/psf/black/pull/997))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1880
+msgid ""
+"removed unnecessary parentheses around `yield` expressions ([#834](https://"
+"github.com/psf/black/pull/834))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1882
+msgid ""
+"added parentheses around long tuples in unpacking assignments ([#832]"
+"(https://github.com/psf/black/pull/832))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1884
+msgid ""
+"added parentheses around complex powers when they are prefixed by a unary "
+"operator ([#646](https://github.com/psf/black/pull/646))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1887
+msgid ""
+"fixed bug that led _Black_ format some code with a line length target of 1 "
+"([#762](https://github.com/psf/black/pull/762))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1889
+msgid ""
+"_Black_ no longer introduces quotes in f-string subexpressions on string "
+"boundaries ([#863](https://github.com/psf/black/pull/863))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1892
+msgid ""
+"if _Black_ puts parenthesis around a single expression, it moves comments to "
+"the wrapped expression instead of after the brackets ([#872](https://github."
+"com/psf/black/pull/872))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1895
+msgid ""
+"`blackd` now returns the version of _Black_ in the response headers ([#1013]"
+"(https://github.com/psf/black/pull/1013))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1897
+msgid ""
+"`blackd` can now output the diff of formats on source code when the `X-Diff` "
+"header is provided ([#969](https://github.com/psf/black/pull/969))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1900
+msgid "Version 19.3b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1902
+msgid ""
+"new option `--target-version` to control which Python versions _Black_-"
+"formatted code should target ([#618](https://github.com/psf/black/pull/618))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1905
+msgid ""
+"deprecated `--py36` (use `--target-version=py36` instead) ([#724](https://"
+"github.com/psf/black/pull/724))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1907
+msgid ""
+"_Black_ no longer normalizes numeric literals to include `_` separators "
+"([#696](https://github.com/psf/black/pull/696))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1909
+msgid ""
+"long `del` statements are now split into multiple lines ([#698](https://"
+"github.com/psf/black/pull/698))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1911
+msgid "type comments are no longer mangled in function signatures"
+msgstr ""
+
+#: ../../../../CHANGES.md:1913
+msgid ""
+"improved performance of formatting deeply nested data structures ([#509]"
+"(https://github.com/psf/black/pull/509))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1915
+msgid ""
+"_Black_ now properly formats multiple files in parallel on Windows ([#632]"
+"(https://github.com/psf/black/pull/632))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1917
+msgid ""
+"_Black_ now creates cache files atomically which allows it to be used in "
+"parallel pipelines (like `xargs -P8`) ([#673](https://github.com/psf/black/"
+"pull/673))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1920
+msgid ""
+"_Black_ now correctly indents comments in files that were previously "
+"formatted with tabs ([#262](https://github.com/psf/black/pull/262))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1923
+msgid ""
+"`blackd` now supports CORS ([#622](https://github.com/psf/black/pull/622))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1925
+msgid "Version 18.9b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:1927
+msgid ""
+"numeric literals are now formatted by _Black_ ([#452](https://github.com/psf/"
+"black/pull/452), [#461](https://github.com/psf/black/pull/461), [#464]"
+"(https://github.com/psf/black/pull/464), [#469](https://github.com/psf/black/"
+"pull/469)):"
+msgstr ""
+
+#: ../../../../CHANGES.md:1928
+msgid ""
+"numeric literals are normalized to include `_` separators on Python 3.6+ code"
+msgstr ""
+
+#: ../../../../CHANGES.md:1930
+msgid ""
+"added `--skip-numeric-underscore-normalization` to disable the above "
+"behavior and leave numeric underscores as they were in the input"
+msgstr ""
+
+#: ../../../../CHANGES.md:1933
+msgid "code with `_` in numeric literals is recognized as Python 3.6+"
+msgstr ""
+
+#: ../../../../CHANGES.md:1935
+msgid ""
+"most letters in numeric literals are lowercased (e.g., in `1e10`, `0x01`)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1937
+msgid "hexadecimal digits are always uppercased (e.g. `0xBADC0DE`)"
+msgstr ""
+
+#: ../../../../CHANGES.md:1939
+msgid ""
+"added `blackd`, see [its documentation](https://github.com/psf/black/"
+"blob/18.9b0/README.md#blackd) for more info ([#349](https://github.com/psf/"
+"black/pull/349))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1943
+msgid ""
+"adjacent string literals are now correctly split into multiple lines ([#463]"
+"(https://github.com/psf/black/pull/463))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1945
+msgid ""
+"trailing comma is now added to single imports that don't fit on a line "
+"([#250](https://github.com/psf/black/pull/250))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1947
+msgid ""
+"cache is now populated when `--check` is successful for a file which speeds "
+"up consecutive checks of properly formatted unmodified files ([#448](https://"
+"github.com/psf/black/pull/448))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1950
+msgid ""
+"whitespace at the beginning of the file is now removed ([#399](https://"
+"github.com/psf/black/pull/399))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1952
+msgid ""
+"fixed mangling [pweave](http://mpastell.com/pweave/) and [Spyder IDE]"
+"(https://www.spyder-ide.org/) special comments ([#532](https://github.com/"
+"psf/black/pull/532))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1955
+msgid ""
+"fixed unstable formatting when unpacking big tuples ([#267](https://github."
+"com/psf/black/pull/267))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1957
+msgid ""
+"fixed parsing of `__future__` imports with renames ([#389](https://github."
+"com/psf/black/pull/389))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1959
+msgid ""
+"fixed scope of `# fmt: off` when directly preceding `yield` and other nodes "
+"([#385](https://github.com/psf/black/pull/385))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1961
+msgid ""
+"fixed formatting of lambda expressions with default arguments ([#468]"
+"(https://github.com/psf/black/pull/468))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1963
+msgid ""
+"fixed `async for` statements: _Black_ no longer breaks them into separate "
+"lines ([#372](https://github.com/psf/black/pull/372))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1965
+msgid ""
+"note: the Vim plugin stopped registering `,=` as a default chord as it "
+"turned out to be a bad idea ([#415](https://github.com/psf/black/pull/415))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1968
+msgid "Version 18.6b4"
+msgstr ""
+
+#: ../../../../CHANGES.md:1970
+msgid ""
+"hotfix: don't freeze when multiple comments directly precede `# fmt: off` "
+"([#371](https://github.com/psf/black/pull/371))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1972
+msgid "Version 18.6b3"
+msgstr ""
+
+#: ../../../../CHANGES.md:1974
+msgid ""
+"typing stub files (`.pyi`) now have blank lines added after constants ([#340]"
+"(https://github.com/psf/black/pull/340))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1976
+msgid "`# fmt: off` and `# fmt: on` are now much more dependable:"
+msgstr ""
+
+#: ../../../../CHANGES.md:1977
+msgid ""
+"they now work also within bracket pairs ([#329](https://github.com/psf/black/"
+"pull/329))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1979
+msgid ""
+"they now correctly work across function/class boundaries ([#335](https://"
+"github.com/psf/black/pull/335))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1981
+msgid ""
+"they now work when an indentation block starts with empty lines or "
+"misaligned comments ([#334](https://github.com/psf/black/pull/334))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1984
+msgid ""
+"made Click not fail on invalid environments; note that Click is right but "
+"the likelihood we'll need to access non-ASCII file paths when dealing with "
+"Python source code is low ([#277](https://github.com/psf/black/pull/277))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1988
+msgid ""
+"fixed improper formatting of f-strings with quotes inside interpolated "
+"expressions ([#322](https://github.com/psf/black/pull/322))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1991
+msgid ""
+"fixed unnecessary slowdown when long list literals where found in a file"
+msgstr ""
+
+#: ../../../../CHANGES.md:1993
+msgid "fixed unnecessary slowdown on AST nodes with very many siblings"
+msgstr ""
+
+#: ../../../../CHANGES.md:1995
+msgid "fixed cannibalizing backslashes during string normalization"
+msgstr ""
+
+#: ../../../../CHANGES.md:1997
+msgid ""
+"fixed a crash due to symbolic links pointing outside of the project "
+"directory ([#338](https://github.com/psf/black/pull/338))"
+msgstr ""
+
+#: ../../../../CHANGES.md:1999
+msgid "Version 18.6b2"
+msgstr ""
+
+#: ../../../../CHANGES.md:2001
+msgid "added `--config` ([#65](https://github.com/psf/black/pull/65))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2003
+msgid ""
+"added `-h` equivalent to `--help` ([#316](https://github.com/psf/black/"
+"pull/316))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2005
+msgid "fixed improper unmodified file caching when `-S` was used"
+msgstr ""
+
+#: ../../../../CHANGES.md:2007
+msgid ""
+"fixed extra space in string unpacking ([#305](https://github.com/psf/black/"
+"pull/305))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2009
+msgid ""
+"fixed formatting of empty triple quoted strings ([#313](https://github.com/"
+"psf/black/pull/313))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2011
+msgid ""
+"fixed unnecessary slowdown in comment placement calculation on lines without "
+"comments"
+msgstr ""
+
+#: ../../../../CHANGES.md:2013
+msgid "Version 18.6b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:2015
+msgid ""
+"hotfix: don't output human-facing information on stdout ([#299](https://"
+"github.com/psf/black/pull/299))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2017
+msgid ""
+"hotfix: don't output cake emoji on non-zero return code ([#300](https://"
+"github.com/psf/black/pull/300))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2019
+msgid "Version 18.6b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:2021
+msgid ""
+"added `--include` and `--exclude` ([#270](https://github.com/psf/black/"
+"pull/270))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2023
+msgid ""
+"added `--skip-string-normalization` ([#118](https://github.com/psf/black/"
+"pull/118))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2025
+msgid "added `--verbose` ([#283](https://github.com/psf/black/pull/283))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2027
+msgid ""
+"the header output in `--diff` now actually conforms to the unified diff spec"
+msgstr ""
+
+#: ../../../../CHANGES.md:2029
+msgid ""
+"fixed long trivial assignments being wrapped in unnecessary parentheses "
+"([#273](https://github.com/psf/black/pull/273))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2031
+msgid ""
+"fixed unnecessary parentheses when a line contained multiline strings ([#232]"
+"(https://github.com/psf/black/pull/232))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2033
+msgid ""
+"fixed stdin handling not working correctly if an old version of Click was "
+"used ([#276](https://github.com/psf/black/pull/276))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2035
+msgid ""
+"_Black_ now preserves line endings when formatting a file in place ([#258]"
+"(https://github.com/psf/black/pull/258))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2037
+msgid "Version 18.5b1"
+msgstr ""
+
+#: ../../../../CHANGES.md:2039
+msgid "added `--pyi` ([#249](https://github.com/psf/black/pull/249))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2041
+msgid "added `--py36` ([#249](https://github.com/psf/black/pull/249))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2043
+msgid ""
+"Python grammar pickle caches are stored with the formatting caches, making "
+"_Black_ work in environments where site-packages is not user-writable ([#192]"
+"(https://github.com/psf/black/pull/192))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2046
+msgid ""
+"_Black_ now enforces a PEP 257 empty line after a class-level docstring (and/"
+"or fields) and the first method"
+msgstr ""
+
+#: ../../../../CHANGES.md:2049
+msgid ""
+"fixed invalid code produced when standalone comments were present in a "
+"trailer that was omitted from line splitting on a large expression ([#237]"
+"(https://github.com/psf/black/pull/237))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2052
+msgid ""
+"fixed optional parentheses being removed within `# fmt: off` sections ([#224]"
+"(https://github.com/psf/black/pull/224))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2054
+msgid ""
+"fixed invalid code produced when stars in very long imports were incorrectly "
+"wrapped in optional parentheses ([#234](https://github.com/psf/black/"
+"pull/234))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2057
+msgid ""
+"fixed unstable formatting when inline comments were moved around in a "
+"trailer that was omitted from line splitting on a large expression ([#238]"
+"(https://github.com/psf/black/pull/238))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2060
+msgid ""
+"fixed extra empty line between a class declaration and the first method if "
+"no class docstring or fields are present ([#219](https://github.com/psf/"
+"black/pull/219))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2063
+msgid ""
+"fixed extra empty line between a function signature and an inner function or "
+"inner class ([#196](https://github.com/psf/black/pull/196))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2066
+msgid "Version 18.5b0"
+msgstr ""
+
+#: ../../../../CHANGES.md:2068
+msgid ""
+"call chains are now formatted according to the [fluent interfaces](https://"
+"en.wikipedia.org/wiki/Fluent_interface) style ([#67](https://github.com/psf/"
+"black/pull/67))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2071
+msgid ""
+"data structure literals (tuples, lists, dictionaries, and sets) are now also "
+"always exploded like imports when they don't fit in a single line ([#152]"
+"(https://github.com/psf/black/pull/152))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2074
+msgid ""
+"slices are now formatted according to PEP 8 ([#178](https://github.com/psf/"
+"black/pull/178))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2076
+msgid ""
+"parentheses are now also managed automatically on the right-hand side of "
+"assignments and return statements ([#140](https://github.com/psf/black/"
+"pull/140))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2079
+msgid ""
+"math operators now use their respective priorities for delimiting multiline "
+"expressions ([#148](https://github.com/psf/black/pull/148))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2082
+msgid ""
+"optional parentheses are now omitted on expressions that start or end with a "
+"bracket and only contain a single operator ([#177](https://github.com/psf/"
+"black/pull/177))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2085
+msgid ""
+"empty parentheses in a class definition are now removed ([#145](https://"
+"github.com/psf/black/pull/145), [#180](https://github.com/psf/black/"
+"pull/180))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2087
+msgid ""
+"string prefixes are now standardized to lowercase and `u` is removed on "
+"Python 3.6+ only code and Python 2.7+ code with the `unicode_literals` "
+"future import ([#188](https://github.com/psf/black/pull/188), [#198](https://"
+"github.com/psf/black/pull/198), [#199](https://github.com/psf/black/"
+"pull/199))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2091
+msgid ""
+"typing stub files (`.pyi`) are now formatted in a style that is consistent "
+"with PEP 484 ([#207](https://github.com/psf/black/pull/207), [#210](https://"
+"github.com/psf/black/pull/210))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2094
+msgid "progress when reformatting many files is now reported incrementally"
+msgstr ""
+
+#: ../../../../CHANGES.md:2096
+msgid ""
+"fixed trailers (content with brackets) being unnecessarily exploded into "
+"their own lines after a dedented closing bracket ([#119](https://github.com/"
+"psf/black/pull/119))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2099
+msgid ""
+"fixed an invalid trailing comma sometimes left in imports ([#185](https://"
+"github.com/psf/black/pull/185))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2101
+msgid ""
+"fixed non-deterministic formatting when multiple pairs of removable "
+"parentheses were used ([#183](https://github.com/psf/black/pull/183))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2104
+msgid ""
+"fixed multiline strings being unnecessarily wrapped in optional parentheses "
+"in long assignments ([#215](https://github.com/psf/black/pull/215))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2107
+msgid "fixed not splitting long from-imports with only a single name"
+msgstr ""
+
+#: ../../../../CHANGES.md:2109
+msgid ""
+"fixed Python 3.6+ file discovery by also looking at function calls with "
+"unpacking. This fixed non-deterministic formatting if trailing commas where "
+"used both in function signatures with stars and function calls with stars "
+"but the former would be reformatted to a single line."
+msgstr ""
+
+#: ../../../../CHANGES.md:2114
+msgid ""
+"fixed crash on dealing with optional parentheses ([#193](https://github.com/"
+"psf/black/pull/193))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2116
+msgid ""
+"fixed \"is\", \"is not\", \"in\", and \"not in\" not considered operators "
+"for splitting purposes"
+msgstr ""
+
+#: ../../../../CHANGES.md:2119
+msgid "fixed crash when dead symlinks where encountered"
+msgstr ""
+
+#: ../../../../CHANGES.md:2121
+msgid "Version 18.4a4"
+msgstr ""
+
+#: ../../../../CHANGES.md:2123
+msgid ""
+"don't populate the cache on `--check` ([#175](https://github.com/psf/black/"
+"pull/175))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2125
+msgid "Version 18.4a3"
+msgstr ""
+
+#: ../../../../CHANGES.md:2127
+msgid ""
+"added a \"cache\"; files already reformatted that haven't changed on disk "
+"won't be reformatted again ([#109](https://github.com/psf/black/pull/109))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2130
+msgid ""
+"`--check` and `--diff` are no longer mutually exclusive ([#149](https://"
+"github.com/psf/black/pull/149))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2132
+msgid ""
+"generalized star expression handling, including double stars; this fixes "
+"multiplication making expressions \"unsafe\" for trailing commas ([#132]"
+"(https://github.com/psf/black/pull/132))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2135
+msgid ""
+"_Black_ no longer enforces putting empty lines behind control flow "
+"statements ([#90](https://github.com/psf/black/pull/90))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2137
+msgid ""
+"_Black_ now splits imports like \"Mode 3 + trailing comma\" of isort ([#127]"
+"(https://github.com/psf/black/pull/127))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2139
+msgid ""
+"fixed comment indentation when a standalone comment closes a block ([#16]"
+"(https://github.com/psf/black/pull/16), [#32](https://github.com/psf/black/"
+"pull/32))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2141
+msgid ""
+"fixed standalone comments receiving extra empty lines if immediately "
+"preceding a class, def, or decorator ([#56](https://github.com/psf/black/"
+"pull/56), [#154](https://github.com/psf/black/pull/154))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2144
+msgid ""
+"fixed `--diff` not showing entire path ([#130](https://github.com/psf/black/"
+"pull/130))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2146
+msgid ""
+"fixed parsing of complex expressions after star and double stars in function "
+"calls ([#2](https://github.com/psf/black/pull/2))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2149
+msgid ""
+"fixed invalid splitting on comma in lambda arguments ([#133](https://github."
+"com/psf/black/pull/133))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2151
+msgid ""
+"fixed missing splits of ternary expressions ([#141](https://github.com/psf/"
+"black/pull/141))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2153
+msgid "Version 18.4a2"
+msgstr ""
+
+#: ../../../../CHANGES.md:2155
+msgid ""
+"fixed parsing of unaligned standalone comments ([#99](https://github.com/psf/"
+"black/pull/99), [#112](https://github.com/psf/black/pull/112))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2157
+msgid ""
+"fixed placement of dictionary unpacking inside dictionary literals ([#111]"
+"(https://github.com/psf/black/pull/111))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2159
+msgid "Vim plugin now works on Windows, too"
+msgstr ""
+
+#: ../../../../CHANGES.md:2161
+msgid ""
+"fixed unstable formatting when encountering unnecessarily escaped quotes in "
+"a string ([#120](https://github.com/psf/black/pull/120))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2164
+msgid "Version 18.4a1"
+msgstr ""
+
+#: ../../../../CHANGES.md:2166
+msgid "added `--quiet` ([#78](https://github.com/psf/black/pull/78))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2168
+msgid ""
+"added automatic parentheses management ([#4](https://github.com/psf/black/"
+"pull/4))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2170
+msgid ""
+"added [pre-commit](https://pre-commit.com) integration ([#103](https://"
+"github.com/psf/black/pull/103), [#104](https://github.com/psf/black/"
+"pull/104))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2172
+msgid ""
+"fixed reporting on `--check` with multiple files ([#101](https://github.com/"
+"psf/black/pull/101), [#102](https://github.com/psf/black/pull/102))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2174
+msgid ""
+"fixed removing backslash escapes from raw strings ([#100](https://github.com/"
+"psf/black/pull/100), [#105](https://github.com/psf/black/pull/105))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2176
+msgid "Version 18.4a0"
+msgstr ""
+
+#: ../../../../CHANGES.md:2178
+msgid "added `--diff` ([#87](https://github.com/psf/black/pull/87))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2180
+msgid ""
+"add line breaks before all delimiters, except in cases like commas, to "
+"better comply with PEP 8 ([#73](https://github.com/psf/black/pull/73))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2183
+msgid ""
+"standardize string literals to use double quotes (almost) everywhere ([#75]"
+"(https://github.com/psf/black/pull/75))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2185
+msgid ""
+"fixed handling of standalone comments within nested bracketed expressions; "
+"_Black_ will no longer produce super long lines or put all standalone "
+"comments at the end of the expression ([#22](https://github.com/psf/black/"
+"pull/22))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2189
+msgid ""
+"fixed 18.3a4 regression: don't crash and burn on empty lines with trailing "
+"whitespace ([#80](https://github.com/psf/black/pull/80))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2192
+msgid ""
+"fixed 18.3a4 regression: `# yapf: disable` usage as trailing comment would "
+"cause _Black_ to not emit the rest of the file ([#95](https://github.com/psf/"
+"black/pull/95))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2195
+msgid ""
+"when CTRL+C is pressed while formatting many files, _Black_ no longer freaks "
+"out with a flurry of asyncio-related exceptions"
+msgstr ""
+
+#: ../../../../CHANGES.md:2198
+msgid ""
+"only allow up to two empty lines on module level and only single empty lines "
+"within functions ([#74](https://github.com/psf/black/pull/74))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2201
+msgid "Version 18.3a4"
+msgstr ""
+
+#: ../../../../CHANGES.md:2203
+msgid ""
+"`# fmt: off` and `# fmt: on` are implemented ([#5](https://github.com/psf/"
+"black/pull/5))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2205
+msgid ""
+"automatic detection of deprecated Python 2 forms of print statements and "
+"exec statements in the formatted file ([#49](https://github.com/psf/black/"
+"pull/49))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2208
+msgid ""
+"use proper spaces for complex expressions in default values of typed "
+"function arguments ([#60](https://github.com/psf/black/pull/60))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2211
+msgid ""
+"only return exit code 1 when --check is used ([#50](https://github.com/psf/"
+"black/pull/50))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2213
+msgid ""
+"don't remove single trailing commas from square bracket indexing ([#59]"
+"(https://github.com/psf/black/pull/59))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2215
+msgid ""
+"don't omit whitespace if the previous factor leaf wasn't a math operator "
+"([#55](https://github.com/psf/black/pull/55))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2217
+msgid ""
+"omit extra space in kwarg unpacking if it's the first argument ([#46]"
+"(https://github.com/psf/black/pull/46))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2219
+msgid ""
+"omit extra space in [Sphinx auto-attribute comments](http://www.sphinx-doc."
+"org/en/stable/ext/autodoc.html#directive-autoattribute) ([#68](https://"
+"github.com/psf/black/pull/68))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2223
+msgid "Version 18.3a3"
+msgstr ""
+
+#: ../../../../CHANGES.md:2225
+msgid ""
+"don't remove single empty lines outside of bracketed expressions ([#19]"
+"(https://github.com/psf/black/pull/19))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2227
+msgid ""
+"added ability to pipe formatting from stdin to stdin ([#25](https://github."
+"com/psf/black/pull/25))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2229
+msgid ""
+"restored ability to format code with legacy usage of `async` as a name ([#20]"
+"(https://github.com/psf/black/pull/20), [#42](https://github.com/psf/black/"
+"pull/42))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2231
+msgid ""
+"even better handling of numpy-style array indexing ([#33](https://github.com/"
+"psf/black/pull/33), again)"
+msgstr ""
+
+#: ../../../../CHANGES.md:2233
+msgid "Version 18.3a2"
+msgstr ""
+
+#: ../../../../CHANGES.md:2235
+msgid ""
+"changed positioning of binary operators to occur at beginning of lines "
+"instead of at the end, following [a recent change to PEP 8](https://github."
+"com/python/peps/commit/c59c4376ad233a62ca4b3a6060c81368bd21e85b) ([#21]"
+"(https://github.com/psf/black/pull/21))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2240
+msgid ""
+"ignore empty bracket pairs while splitting. This avoids very weirdly looking "
+"formattings ([#34](https://github.com/psf/black/pull/34), [#35](https://"
+"github.com/psf/black/pull/35))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2243
+msgid "remove a trailing comma if there is a single argument to a call"
+msgstr ""
+
+#: ../../../../CHANGES.md:2245
+msgid ""
+"if top level functions were separated by a comment, don't put four empty "
+"lines after the upper function"
+msgstr ""
+
+#: ../../../../CHANGES.md:2248
+msgid "fixed unstable formatting of newlines with imports"
+msgstr ""
+
+#: ../../../../CHANGES.md:2250
+msgid ""
+"fixed unintentional folding of post scriptum standalone comments into last "
+"statement if it was a simple statement ([#18](https://github.com/psf/black/"
+"pull/18), [#28](https://github.com/psf/black/pull/28))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2253
+msgid ""
+"fixed missing space in numpy-style array indexing ([#33](https://github.com/"
+"psf/black/pull/33))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2255
+msgid ""
+"fixed spurious space after star-based unary expressions ([#31](https://"
+"github.com/psf/black/pull/31))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2257
+msgid "Version 18.3a1"
+msgstr ""
+
+#: ../../../../CHANGES.md:2259
+msgid "added `--check`"
+msgstr ""
+
+#: ../../../../CHANGES.md:2261
+msgid ""
+"only put trailing commas in function signatures and calls if it's safe to do "
+"so. If the file is Python 3.6+ it's always safe, otherwise only safe if "
+"there are no `*args` or `**kwargs` used in the signature or call. ([#8]"
+"(https://github.com/psf/black/pull/8))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2265
+msgid ""
+"fixed invalid spacing of dots in relative imports ([#6](https://github.com/"
+"psf/black/pull/6), [#13](https://github.com/psf/black/pull/13))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2267
+msgid ""
+"fixed invalid splitting after comma on unpacked variables in for-loops ([#23]"
+"(https://github.com/psf/black/pull/23))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2269
+msgid ""
+"fixed spurious space in parenthesized set expressions ([#7](https://github."
+"com/psf/black/pull/7))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2271
+msgid ""
+"fixed spurious space after opening parentheses and in default arguments "
+"([#14](https://github.com/psf/black/pull/14), [#17](https://github.com/psf/"
+"black/pull/17))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2273
+msgid ""
+"fixed spurious space after unary operators when the operand was a complex "
+"expression ([#15](https://github.com/psf/black/pull/15))"
+msgstr ""
+
+#: ../../../../CHANGES.md:2276
+msgid "Version 18.3a0"
+msgstr ""
+
+#: ../../../../CHANGES.md:2278
+msgid "first published version, Happy 🍰 Day 2018!"
+msgstr ""
+
+#: ../../../../CHANGES.md:2280
+msgid "alpha quality"
+msgstr ""
+
+#: ../../../../CHANGES.md:2282
+msgid "date-versioned (see: <https://calver.org/>)"
+msgstr ""

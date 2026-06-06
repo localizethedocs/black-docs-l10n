@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../integrations/index.md:1
+msgid "Integrations"
+msgstr ""
+
+#: ../../../integrations/index.md:14
+msgid ""
+"_Black_ can be integrated into many environments, providing a better and "
+"smoother experience. Documentation for integrating _Black_ with a tool can "
+"be found for the following areas:"
+msgstr ""
+
+#: ../../../integrations/index.md:18
+msgid "{doc}`Editor / IDE <./editors>`"
+msgstr ""
+
+#: ../../../integrations/index.md:19
+msgid "{doc}`GitHub Actions <./github_actions>`"
+msgstr ""
+
+#: ../../../integrations/index.md:20
+msgid "{doc}`Source version control <./source_version_control>`"
+msgstr ""
+
+#: ../../../integrations/index.md:21
+msgid "{doc}`Doctest formatting <./doctest_formatting>`"
+msgstr ""
+
+#: ../../../integrations/index.md:23
+msgid "Editors and tools not listed will require external contributions."
+msgstr ""
+
+#: ../../../integrations/index.md:25
+msgid "Patches welcome! ✨ 🍰 ✨"
+msgstr ""
+
+#: ../../../integrations/index.md:27
+msgid ""
+"Any tool can pipe code through _Black_ using its stdio mode (just [use `-` "
+"as the file name](https://www.tldp.org/LDP/abs/html/special-chars."
+"html#DASHREF2)). The formatted code will be returned on stdout (unless `--"
+"check` was passed). _Black_ will still emit messages on stderr but that "
+"shouldn't affect your use case."
+msgstr ""
+
+#: ../../../integrations/index.md:32
+msgid ""
+"This can be used for example with PyCharm's or IntelliJ's [File Watchers]"
+"(https://www.jetbrains.com/help/pycharm/file-watchers.html)."
+msgstr ""
