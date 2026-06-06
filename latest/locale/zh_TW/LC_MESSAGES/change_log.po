@@ -106,7 +106,7 @@ msgstr ""
 #: ../../../../CHANGES.md:1307 ../../../../CHANGES.md:1367
 #: ../../../../CHANGES.md:1402
 msgid "Preview style"
-msgstr ""
+msgstr "預覽風格"
 
 #: ../../../../CHANGES.md:28
 msgid "<!-- Changes that affect Black's preview style -->\n"

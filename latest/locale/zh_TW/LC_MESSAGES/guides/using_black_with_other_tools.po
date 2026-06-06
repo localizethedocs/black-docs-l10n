@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../guides/using_black_with_other_tools.md:1
 msgid "Using _Black_ with other tools"
-msgstr ""
+msgstr "在其他工具中使用 _Black_"
 
 #: ../../../guides/using_black_with_other_tools.md:3
 msgid "Black compatible configurations"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../guides/using_black_with_other_tools.md:18
 msgid "isort"
-msgstr ""
+msgstr "isort"
 
 #: ../../../guides/using_black_with_other_tools.md:20
 msgid ""
@@ -76,6 +76,8 @@ msgid ""
 "[tool.isort]\n"
 "profile = \"black\"\n"
 msgstr ""
+"[tool.isort]\n"
+"profile = \"black\"\n"
 
 #: ../../../guides/using_black_with_other_tools.md:37
 msgid "Custom Configuration"

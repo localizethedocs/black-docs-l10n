@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../integrations/index.md:19
 msgid "{doc}`GitHub Actions <./github_actions>`"
-msgstr ""
+msgstr "{doc}`GitHub Actions <./github_actions>`"
 
 #: ../../../integrations/index.md:20
 msgid "{doc}`Source version control <./source_version_control>`"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../integrations/index.md:21
 msgid "{doc}`Doctest formatting <./doctest_formatting>`"
-msgstr ""
+msgstr "{doc}`Doctest 格式化 <./doctest_formatting>`"
 
 #: ../../../integrations/index.md:23
 msgid "Editors and tools not listed will require external contributions."

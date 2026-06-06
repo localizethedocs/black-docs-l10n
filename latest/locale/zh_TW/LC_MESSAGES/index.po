@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../index.md:96
 msgid "User Guide"
-msgstr ""
+msgstr "使用者指南"
 
 #: ../../../index.md:110
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../../index.md:122
 msgid "GitHub"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../index.md:122
 msgid "Project Links"
-msgstr ""
+msgstr "專案連結"
 
 #: ../../../index.md:1
 msgid ""
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../index.md:18
 msgid "Note - Black is now stable!"
-msgstr ""
+msgstr "備註 - Black 現已穩定！"
 
 #: ../../../index.md:19
 msgid ""
@@ -115,6 +115,9 @@ msgid ""
 "refactorings in about 1% of the keystrokes that it would have taken me "
 "previously when we had no way for code to format itself._"
 msgstr ""
+"_想不出在我的整個程式開發生涯中，有哪一個工具一推出就帶給我如此大的生產力提"
+"升。我現在可以用大約過去僅需 1% 的按鍵次數完成重構，當時我們還沒有讓程式碼自"
+"動格式化的方法。_"
 
 #: ../../../index.md:45
 msgid ""

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../the_black_code_style/future_style.md:3
 msgid "Preview style"
-msgstr ""
+msgstr "預覽風格"
 
 #: ../../../the_black_code_style/future_style.md:7
 msgid ""
@@ -216,6 +216,12 @@ msgid ""
 "    \"another key\": (short_value),\n"
 "}\n"
 msgstr ""
+"my_dict = {\n"
+"    \"a key in my dict\": a_very_long_variable\n"
+"    * and_a_very_long_function_call()\n"
+"    / 100000.0,\n"
+"    \"another key\": (short_value),\n"
+"}\n"
 
 #: ../../../the_black_code_style/future_style.md:138
 #: ../../../the_black_code_style/future_style.md:366
@@ -231,6 +237,12 @@ msgid ""
 "    \"another key\": short_value,\n"
 "}\n"
 msgstr ""
+"my_dict = {\n"
+"    \"a key in my dict\": (\n"
+"        a_very_long_variable * and_a_very_long_function_call() / 100000.0\n"
+"    ),\n"
+"    \"another key\": short_value,\n"
+"}\n"
 
 #: ../../../the_black_code_style/future_style.md:151
 msgid "Improved overload groups in stub files"
