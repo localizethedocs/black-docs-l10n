@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-06-03 15:18:14 -0500",
+        "hash" : "ce1897a8f20d0f64844dd666d07f4003500d0e09",
+        "title" : "fix quadratic backtracking in debug f-string quote detection (#5165)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-06-03 15:18:14 -0500",
+        "hash" : "ce1897a8f20d0f64844dd666d07f4003500d0e09",
+        "title" : "fix quadratic backtracking in debug f-string quote detection (#5165)"
       }
     }
   },

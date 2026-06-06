@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../faq.md:1
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../../faq.md:3
+msgid ""
+"The most common questions and issues users face are aggregated to this FAQ."
+msgstr ""
+
+#: ../../../faq.md:11
+msgid "Why spaces? I prefer tabs"
+msgstr ""
+
+#: ../../../faq.md:13
+msgid ""
+"PEP 8 recommends spaces over tabs, and they are used by most of the Python "
+"community. _Black_ provides no options to configure the indentation style, "
+"and requests for such options will not be considered."
+msgstr ""
+
+#: ../../../faq.md:17
+msgid ""
+"However, we recognise that using tabs is an accessibility issue as well. "
+"While the option will never be added to _Black_, visually impaired "
+"developers may find conversion tools such as `expand/unexpand` (for Linux) "
+"useful when contributing to Python projects. A workflow might consist of e."
+"g. setting up appropriate pre-commit and post-merge git hooks, and scripting "
+"`unexpand` to run after applying _Black_."
+msgstr ""
+
+#: ../../../faq.md:23
+msgid "Does Black have an API?"
+msgstr ""
+
+#: ../../../faq.md:25
+msgid ""
+"Not yet. _Black_ is fundamentally a command line tool. Many [integrations](/"
+"integrations/index.md) are provided, but a Python interface is not one of "
+"them. A simple API is being [planned](https://github.com/psf/black/"
+"issues/779) though."
+msgstr ""
+
+#: ../../../faq.md:30
+msgid "Is Black safe to use?"
+msgstr ""
+
+#: ../../../faq.md:32
+msgid ""
+"Yes. _Black_ is strictly about formatting, nothing else. Black strives to "
+"ensure that after formatting the AST is [checked](the_black_code_style/"
+"current_style.md#ast-before-and-after-formatting) with limited special cases "
+"where the code is allowed to differ. If issues are found, an error is raised "
+"and the file is left untouched. Magical comments that influence linters and "
+"other tools, such as `# noqa`, may be moved by _Black_. See below for more "
+"details."
+msgstr ""
+
+#: ../../../faq.md:39
+msgid "How stable is Black's style?"
+msgstr ""
+
+#: ../../../faq.md:41
+msgid ""
+"Stable. _Black_ aims to enforce one style and one style only, with some room "
+"for pragmatism. See [The Black Code Style](the_black_code_style/index.md) "
+"for more details."
+msgstr ""
+
+#: ../../../faq.md:44
+msgid ""
+"Starting in 2022, the formatting output is stable for the releases made in "
+"the same year (other than unintentional bugs). At the beginning of every "
+"year, the first release will make changes to the stable style. It is "
+"possible to opt in to the latest formatting styles using the `--preview` "
+"flag."
+msgstr ""
+
+#: ../../../faq.md:49
+msgid "Why is my file not formatted?"
+msgstr ""
+
+#: ../../../faq.md:51
+msgid ""
+"Most likely because it is ignored in `.gitignore` or excluded with "
+"configuration. See [file collection and discovery](usage_and_configuration/"
+"file_collection_and_discovery.md) for details."
+msgstr ""
+
+#: ../../../faq.md:55
+msgid "Why is my Jupyter Notebook cell not formatted?"
+msgstr ""
+
+#: ../../../faq.md:57
+msgid ""
+"_Black_ is timid about formatting Jupyter Notebooks. Cells containing any of "
+"the following will not be formatted:"
+msgstr ""
+
+#: ../../../faq.md:60
+msgid "automagics (e.g. `pip install black`)"
+msgstr ""
+
+#: ../../../faq.md:61
+msgid "non-Python cell magics (e.g. `%%writefile`)"
+msgstr ""
+
+#: ../../../faq.md:62
+msgid "multiline magics"
+msgstr ""
+
+#: ../../../faq.md:63
+msgid "code which `IPython`'s `TransformerManager` would transform magics into"
+msgstr ""
+
+#: ../../../faq.md:64
+msgid "invalid syntax"
+msgstr ""
+
+#: ../../../faq.md:66
+msgid ""
+"See [Using _Black_ with Jupyter Notebooks](guides/"
+"using_black_with_jupyter_notebooks.md#cells-that-black-will-skip) for "
+"details."
+msgstr ""
+
+#: ../../../faq.md:70
+msgid "Why does Flake8 report warnings?"
+msgstr ""
+
+#: ../../../faq.md:72
+msgid ""
+"Some of Flake8's rules conflict with Black's style. We recommend disabling "
+"these rules. See [Using _Black_ with other tools](labels/why-pycodestyle-"
+"warnings)."
+msgstr ""
+
+#: ../../../faq.md:75
+msgid "Which Python versions does Black support?"
+msgstr ""
+
+#: ../../../faq.md:77
+msgid ""
+"_Black_ generally supports all Python versions supported by CPython (see "
+"[the Python devguide](https://devguide.python.org/versions/) for current "
+"information). We promise to support at least all Python versions that have "
+"not reached their end of life. This is the case for both running _Black_ and "
+"formatting code."
+msgstr ""
+
+#: ../../../faq.md:82
+msgid ""
+"Support for formatting Python 2 code was removed in version 22.0. While "
+"we've made no plans to stop supporting older Python 3 minor versions "
+"immediately, their support might also be removed some time in the future "
+"without a deprecation period."
+msgstr ""
+
+#: ../../../faq.md:86
+msgid ""
+"`await`/`async` as soft keywords/identifiers are no longer supported as of "
+"25.9.0."
+msgstr ""
+
+#: ../../../faq.md:88
+msgid ""
+"Runtime support for 3.6 was removed in version 22.10.0, for 3.7 in version "
+"23.7.0, for 3.8 in version 24.10.0, and for 3.9 in version 25.12.0."
+msgstr ""
+
+#: ../../../faq.md:91
+msgid "Why does my linter or typechecker complain after I format my code?"
+msgstr ""
+
+#: ../../../faq.md:93
+msgid ""
+"Some linters and other tools use magical comments (e.g., `# noqa`, `# type: "
+"ignore`) to influence their behavior. While Black does its best to recognize "
+"such comments and leave them in the right place, this detection is not and "
+"cannot be perfect. Therefore, you'll sometimes have to manually move these "
+"comments to the right place after you format your codebase with _Black_."
+msgstr ""
+
+#: ../../../faq.md:99
+msgid "Can I run Black with PyPy?"
+msgstr ""
+
+#: ../../../faq.md:101
+msgid "Yes, there is support for PyPy 3.8 and higher."
+msgstr ""
+
+#: ../../../faq.md:103
+msgid "Why does Black not detect syntax errors in my code?"
+msgstr ""
+
+#: ../../../faq.md:105
+msgid ""
+"_Black_ is an autoformatter, not a Python linter or interpreter. Detecting "
+"all syntax errors is not a goal. It can format all code accepted by CPython "
+"(if you find an example where that doesn't hold, please report a bug!), but "
+"it may also format some code that CPython doesn't accept."
+msgstr ""
+
+#: ../../../faq.md:112
+msgid "What is `compiled: yes/no` all about in the version output?"
+msgstr ""
+
+#: ../../../faq.md:114
+msgid ""
+"While _Black_ is indeed a pure Python project, we use [mypyc] to compile "
+"_Black_ into a C Python extension, usually doubling performance. These "
+"compiled wheels are available for 64-bit versions of Windows (both AMD and "
+"ARM), Linux (via the manylinux standard), and macOS across all supported "
+"CPython versions."
+msgstr ""
+
+#: ../../../faq.md:119
+msgid ""
+"Platforms including musl-based and/or ARM Linux distributions are currently "
+"**not** supported. These platforms will fall back to the slower pure Python "
+"wheel available on PyPI."
+msgstr ""
+
+#: ../../../faq.md:123
+msgid ""
+"If you are experiencing exceptionally weird issues or even segfaults, you "
+"can try passing `--no-binary black` to your pip install invocation. This "
+"flag excludes all wheels (including the pure Python wheel), so this command "
+"will use the [sdist]."
+msgstr ""
+
+#: ../../../faq.md:131
+msgid "Why are emoji not displaying correctly on Windows?"
+msgstr ""
+
+#: ../../../faq.md:133
+msgid ""
+"When using Windows, the emoji in _Black_'s output may not display correctly. "
+"This is not fixable from _Black_'s end."
+msgstr ""
+
+#: ../../../faq.md:136
+msgid ""
+"Instead, run your chosen command line/shell through [Windows Terminal], "
+"which will properly handle rendering the emoji."
+msgstr ""

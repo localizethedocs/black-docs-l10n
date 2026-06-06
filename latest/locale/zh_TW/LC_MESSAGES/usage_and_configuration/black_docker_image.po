@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../usage_and_configuration/black_docker_image.md:1
+msgid "Black Docker image"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:3
+msgid ""
+"Official _Black_ Docker images are available on [Docker Hub](https://hub."
+"docker.com/r/pyfound/black)."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:6
+msgid "_Black_ images with the following tags are available:"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:8
+msgid ""
+"release numbers, e.g. `21.5b2`, `21.6b0`, `21.7b0` etc. ℹ Recommended for "
+"users who want to use a particular version of _Black_."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:0
+msgid "<br />\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:0
+msgid "\\\\\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:10
+msgid ""
+"`latest_release` - tag created when a new version of _Black_ is released. ℹ "
+"Recommended for users who want to use released versions of _Black_. It maps "
+"to [the latest release](https://github.com/psf/black/releases/latest) of "
+"_Black_."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:13
+msgid ""
+"`latest_prerelease` - tag created when a new alpha (prerelease) version of "
+"_Black_ is released. ℹ Recommended for users who want to preview or test "
+"alpha versions of _Black_. Note that the most recent release may be newer "
+"than any prerelease, because no prereleases are created before most releases."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:18
+msgid ""
+"`latest` - tag used for the newest image of _Black_. ℹ Recommended for users "
+"who always want to use the latest version of _Black_, even before it is "
+"released."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:22
+msgid ""
+"There is one more tag used for _Black_ Docker images - `latest_non_release`. "
+"It is created for all unreleased [commits on the `main` branch](https://"
+"github.com/psf/black/commits/main). This tag is not meant to be used by "
+"external users."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:27
+msgid ""
+"From version 23.11.0 the Docker image installs a compiled black into the "
+"image."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:29
+msgid "Usage"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:31
+msgid ""
+"A permanent container doesn't have to be created to use _Black_ as a Docker "
+"image. It's enough to run _Black_ commands for the chosen image denoted as `:"
+"tag`. In the below examples, the `latest_release` tag is used. If `:tag` is "
+"omitted, the `latest` tag will be used."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:36
+msgid ""
+"More about _Black_ usage can be found in [Usage and Configuration: The "
+"basics](./the_basics.md)."
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:39
+msgid "Check Black version"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:41
+msgid "$ docker run --rm pyfound/black:latest_release black --version\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:45
+msgid "Check code"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:47
+msgid ""
+"$ docker run --rm --volume $(pwd):/src --workdir /src pyfound/black:"
+"latest_release black --check .\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/black_docker_image.md:51
+msgid ""
+"_Remark_: besides [regular _Black_ exit codes](./the_basics.md) returned by "
+"`--check` option, [Docker exit codes](https://docs.docker.com/engine/"
+"reference/run/#exit-status) should also be considered."
+msgstr ""

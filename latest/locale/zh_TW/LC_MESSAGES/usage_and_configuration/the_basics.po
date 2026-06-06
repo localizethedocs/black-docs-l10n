@@ -1,0 +1,1028 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../usage_and_configuration/the_basics.md:1
+msgid "The basics"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:3
+msgid "Foundational knowledge on using and configuring Black."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:5
+msgid "_Black_ is a well-behaved Unix-style command-line tool:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:7
+msgid "it does nothing if it finds no sources to format;"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:8
+msgid ""
+"it will read from standard input and write to standard output if `-` is used "
+"as the filename;"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:10
+msgid "it only outputs messages to users on standard error;"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:11
+msgid ""
+"exits with code 0 unless an internal error occurred or a CLI option prompted "
+"it."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:13
+msgid "Usage"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:15
+msgid ""
+"_Black_ will reformat entire files in place. To get started right away with "
+"sensible defaults:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:18
+msgid "black {source_file_or_directory}\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:22
+msgid ""
+"You can run _Black_ as a package if running it as a script doesn't work:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:24
+msgid "python -m black {source_file_or_directory}\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:28
+msgid "Ignoring sections"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:30
+msgid ""
+"Black will not reformat lines that contain `# fmt: skip` or blocks that "
+"start with `# fmt: off` and end with `# fmt: on`. `# fmt: skip` can be mixed "
+"with other pragmas/comments either with multiple comments (e.g. `# fmt: skip "
+"# pylint # noqa`) or as a semicolon separated list (e.g. `# fmt: skip; "
+"pylint; noqa`). `# fmt: on/off` must be on the same level of indentation and "
+"in the same block, meaning no unindents beyond the initial indentation level "
+"between them. Black also recognizes [YAPF](https://github.com/google/yapf)'s "
+"block comments to the same effect, as a courtesy for straddling code."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:39
+msgid "Command line options"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:41
+msgid ""
+"The CLI options of _Black_ can be displayed by running `black --help`. All "
+"options are also covered in more detail below."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:44
+msgid ""
+"While _Black_ has quite a few knobs these days, it is still opinionated so "
+"style options are deliberately limited and rarely added."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:47
+msgid ""
+"Note that all command-line options listed above can also be configured using "
+"a `pyproject.toml` file (more on that below)."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:50
+msgid "`-h`, `--help`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:52
+msgid "Show available command-line options and exit."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:54
+msgid "`-c`, `--code`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:56
+msgid "Format the code passed in as a string."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:58
+msgid ""
+"$ black --code \"print ( 'hello, world' )\"\n"
+"print(\"hello, world\")\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:63
+msgid "`-l`, `--line-length`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:65
+msgid "How many characters per line to allow. The default is 88."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:67
+msgid "See also [the style documentation](labels/line-length)."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:69
+msgid "`-t`, `--target-version`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:71
+msgid ""
+"Python versions that should be supported by Black's output. You can run "
+"`black --help` and look for the `--target-version` option to see the full "
+"list of supported versions. You should include all versions that your code "
+"supports. If you support Python 3.11 through 3.13, you should write:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:76
+msgid "$ black -t py311 -t py312 -t py313\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:80
+msgid "In a [configuration file](#configuration-via-a-file), you can write:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:82
+msgid "target-version = [\"py311\", \"py312\", \"py313\"]\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:86
+msgid ""
+"By default, Black will infer target versions from the project metadata in "
+"`pyproject.toml`, specifically the `[project.requires-python]` field. If "
+"this does not yield conclusive results, Black will use per-file auto-"
+"detection."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:90
+msgid ""
+"_Black_ uses this option to decide what grammar to use to parse your code. "
+"In addition, it may use it to decide what style to use. For example, support "
+"for a trailing comma after `*args` in a function call was added in Python "
+"3.5, so _Black_ will add this comma only if the target versions are all "
+"Python 3.5 or higher:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:95
+msgid ""
+"$ black --line-length=10 --target-version=py35 -c 'f(a, *args)'\n"
+"f(\n"
+"    a,\n"
+"    *args,\n"
+")\n"
+"$ black --line-length=10 --target-version=py34 -c 'f(a, *args)'\n"
+"f(\n"
+"    a,\n"
+"    *args\n"
+")\n"
+"$ black --line-length=10 --target-version=py34 --target-version=py35 -c "
+"'f(a, *args)'\n"
+"f(\n"
+"    a,\n"
+"    *args\n"
+")\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:113
+msgid "`--pyi`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:115
+msgid ""
+"Format all input files like typing stubs regardless of file extension. This "
+"is useful when piping source on standard input."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:118
+msgid "`--ipynb`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:120
+msgid ""
+"Format all input files like Jupyter Notebooks regardless of file extension. "
+"This is useful when piping source on standard input."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:123
+msgid "`--python-cell-magics`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:125
+msgid ""
+"When processing Jupyter Notebooks, add the given magic to the list of known "
+"python- magics. Useful for formatting cells with custom python magics. See "
+"the [Jupyter Notebooks guide](../guides/using_black_with_jupyter_notebooks."
+"md) for more details."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:130
+msgid "`-x, --skip-source-first-line`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:132
+msgid "Skip the first line of the source code."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:134
+msgid "`-S, --skip-string-normalization`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:136
+msgid ""
+"By default, _Black_ uses double quotes for all strings and normalizes string "
+"prefixes, as described in [the style documentation](labels/strings). If this "
+"option is given, strings are left unchanged instead."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:140
+msgid "`-C, --skip-magic-trailing-comma`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:142
+msgid ""
+"By default, _Black_ uses existing trailing commas as an indication that "
+"short lines should be left separate, as described in [the style "
+"documentation](labels/magic-trailing-comma). If this option is given, the "
+"magic trailing comma is ignored."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:147
+msgid "`--preview`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:149
+msgid ""
+"Enable potentially disruptive style changes that we expect to add to Black's "
+"main functionality in the next major release. Use this if you want a taste "
+"of what next year's style will look like."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:153
+msgid "Read more about [our preview style](labels/preview-style)."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:155
+#: ../../../usage_and_configuration/the_basics.md:164
+msgid ""
+"There is no guarantee on the code style produced by this flag across "
+"releases."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:157
+msgid "`--unstable`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:159
+msgid ""
+"Enable all style changes in `--preview`, plus additional changes that we "
+"would like to make eventually, but that have known issues that need to be "
+"fixed before they can move back to the `--preview` style. Use this if you "
+"want to experiment with these changes and help fix issues with them."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:166
+msgid "`--enable-unstable-feature`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:168
+msgid ""
+"Enable specific features from the `--unstable` style. See [the preview style "
+"documentation](labels/unstable-features) for the list of supported features. "
+"This flag can only be used when `--preview` is enabled. Users are encouraged "
+"to use this flag if they use `--preview` style and a feature that affects "
+"their code is moved from the `--preview` to the `--unstable` style, but they "
+"want to avoid the thrash from undoing this change."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:175
+msgid ""
+"There are no guarantees on the behavior of these features, or even their "
+"existence, across releases."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:180
+msgid "`--check`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:182
+msgid ""
+"Don't write the files back, just return the status. _Black_ will exit with:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:184
+msgid "code 0 if nothing would change;"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:185
+msgid "code 1 if some files would be reformatted; or"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:186
+msgid "code 123 if there was an internal error"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:188
+msgid ""
+"If used in combination with `--quiet` then only the exit code will be "
+"returned, unless there was an internal error."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:191
+msgid ""
+"$ black test.py --check\n"
+"All done! ✨ 🍰 ✨\n"
+"1 file would be left unchanged.\n"
+"$ echo $?\n"
+"0\n"
+"\n"
+"$ black test.py --check\n"
+"would reformat test.py\n"
+"Oh no! 💥 💔 💥\n"
+"1 file would be reformatted.\n"
+"$ echo $?\n"
+"1\n"
+"\n"
+"$ black test.py --check\n"
+"error: cannot format test.py: INTERNAL ERROR: Black produced code that is "
+"not equivalent to the source.  Please report a bug on https://github.com/psf/"
+"black/issues.  This diff might be helpful: /tmp/blk_kjdr1oog.log\n"
+"Oh no! 💥 💔 💥\n"
+"1 file would fail to reformat.\n"
+"$ echo $?\n"
+"123\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:213
+msgid "`--diff`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:215
+msgid ""
+"Don't write the files back, just output a diff to indicate what changes "
+"_Black_ would've made. They are printed to stdout so capturing them is "
+"simple."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:218
+msgid "If you'd like colored diffs, you can enable them with `--color`."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:220
+msgid ""
+"$ black test.py --diff\n"
+"--- test.py     2021-03-08 22:23:40.848954+00:00\n"
+"+++ test.py     2021-03-08 22:23:47.126319+00:00\n"
+"@@ -1 +1 @@\n"
+"-print ( 'hello, world' )\n"
+"+print(\"hello, world\")\n"
+"would reformat test.py\n"
+"All done! ✨ 🍰 ✨\n"
+"1 file would be reformatted.\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:232
+msgid "`--no-cache`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:234
+msgid ""
+"Do not consult or update Black's per-user cache during this run. When `--no-"
+"cache` is specified, Black will perform fresh analysis for all files and "
+"will neither read from nor write to the cache. This is helpful for "
+"reproducing formatting results from a clean run, debugging cache-related "
+"issues, or ensuring CI executes a fresh formatting analysis every time."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:240
+msgid "`--color` / `--no-color`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:242
+msgid ""
+"Show (or do not show) colored diff. Only applies when `--diff` is given."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:244
+msgid "`--line-ranges`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:246
+msgid "When specified, _Black_ will try its best to only format these lines."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:248
+msgid ""
+"This option can be specified multiple times, and a union of the lines will "
+"be formatted. Each range must be specified as two integers connected by a `-"
+"`: `<START>-<END>`. The `<START>` and `<END>` integer indices are 1-based "
+"and inclusive on both ends."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:252
+msgid ""
+"_Black_ may still format lines outside of the ranges for multi-line "
+"statements. Formatting more than one file or any Jupyter Notebooks with this "
+"option is not supported. This option cannot be specified in the `pyproject."
+"toml` config."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:256
+msgid ""
+"Example: `black --line-ranges=1-10 --line-ranges=21-30 test.py` will format "
+"lines from `1` to `10` and `21` to `30`."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:259
+msgid ""
+"This option is mainly for editor integrations, such as \"Format Selection\"."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:262
+msgid ""
+"Due to [#4052](https://github.com/psf/black/issues/4052), `--line-ranges` "
+"might format extra lines outside of the ranges when there are unformatted "
+"lines with the exact formatted content next to the requested lines. It also "
+"disables _Black_'s formatting stability check in `--safe` mode."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:268
+msgid "`--fast` / `--safe`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:270
+msgid ""
+"By default, _Black_ performs [an AST safety check](labels/ast-changes) after "
+"formatting your code. The `--fast` flag turns off this check and the `--"
+"safe` flag explicitly enables it."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:274
+msgid "`--required-version`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:276
+msgid ""
+"Require a specific version of _Black_ to be running. This is useful for "
+"ensuring that all contributors to your project are using the same version, "
+"because different versions of _Black_ may format code a little differently. "
+"This option can be set in a configuration file for consistent results across "
+"environments."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:281
+msgid ""
+"$ black --version\n"
+"black, 26.5.1 (compiled: yes)\n"
+"$ black --required-version 26.5.1 -c \"format = 'this'\"\n"
+"format = \"this\"\n"
+"$ black --required-version 31.5b2 -c \"still = 'beta?!'\"\n"
+"Oh no! 💥 💔 💥 The required version does not match the running version!\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:290
+msgid "You can also pass just the major version:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:292
+msgid ""
+"$ black --required-version 22 -c \"format = 'this'\"\n"
+"format = \"this\"\n"
+"$ black --required-version 31 -c \"still = 'beta?!'\"\n"
+"Oh no! 💥 💔 💥 The required version does not match the running version!\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:299
+msgid ""
+"Because of our [stability policy](../the_black_code_style/index.md), this "
+"will guarantee stable formatting, but still allow you to take advantage of "
+"improvements that do not affect formatting."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:303
+msgid "`--exclude`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:305
+msgid ""
+"A regular expression that matches files and directories that should be "
+"excluded on recursive searches. An empty value means no paths are excluded. "
+"Use forward slashes for directories on all platforms (Windows, too). By "
+"default, Black also ignores all paths listed in `.gitignore`. Changing this "
+"value will override all default exclusions."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:310
+msgid ""
+"Default Exclusions: `['.direnv', '.eggs', '.git', '.hg', '."
+"ipynb_checkpoints',  '.mypy_cache', '.nox', '.pytest_cache', '.ruff_cache', "
+"'.tox', '.svn', '.venv', '.vscode',  '__pypackages__', '_build', 'buck-out', "
+"'build', 'dist', 'venv'] `"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:313
+msgid ""
+"If the regular expression contains newlines, it is treated as a [verbose "
+"regular expression](https://docs.python.org/3/library/re.html#re.VERBOSE). "
+"This is typically useful when setting these options in a `pyproject.toml` "
+"configuration file; see [Configuration format](#configuration-format) for "
+"more information."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:318
+msgid "`--extend-exclude`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:320
+msgid ""
+"Like `--exclude`, but adds additional files and directories on top of the "
+"default values instead of overriding them."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:323
+msgid "`--force-exclude`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:325
+msgid ""
+"Like `--exclude`, but files and directories matching this regex will be "
+"excluded even when they are passed explicitly as arguments. This is useful "
+"when invoking Black programmatically on changed files, such as in a pre-"
+"commit hook or editor plugin."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:329
+msgid "`--stdin-filename`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:331
+msgid ""
+"The name of the file when passing it through stdin. Useful to make sure "
+"Black will respect the `--force-exclude` option on some editors that rely on "
+"using stdin."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:334
+msgid "`--include`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:336
+msgid ""
+"A regular expression that matches files and directories that should be "
+"included on recursive searches. An empty value means all files are included "
+"regardless of the name. Use forward slashes for directories on all platforms "
+"(Windows, too). Overrides all exclusions, including from `.gitignore` and "
+"command line options."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:341
+msgid "Default Inclusions: `['.pyi', '.ipynb']`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:343
+msgid "`-W`, `--workers`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:345
+msgid ""
+"When _Black_ formats multiple files, it may use a process pool to speed up "
+"formatting. This option controls the number of parallel workers. This can "
+"also be specified via the `BLACK_NUM_WORKERS` environment variable. Defaults "
+"to the number of CPUs in the system."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:349
+msgid "`-q`, `--quiet`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:351
+msgid ""
+"Stop emitting all non-critical output. Error messages will still be emitted "
+"(which can silenced by `2>/dev/null`)."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:354
+msgid ""
+"$ black src/ -q\n"
+"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"    mport asyncio\n"
+"         ^\n"
+"ParseError: bad input\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:362
+msgid "`-v`, `--verbose`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:364
+msgid ""
+"Emit messages about files that were not changed or were ignored due to "
+"exclusion patterns. If _Black_ is using a configuration file, a message "
+"detailing which one it is using will be emitted."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:368
+msgid ""
+"$ black src/ -v\n"
+"Using configuration from /tmp/pyproject.toml.\n"
+"src/blib2to3 ignored: matches the --extend-exclude regular expression\n"
+"src/_black_version.py wasn't modified on disk since last run.\n"
+"src/black/__main__.py wasn't modified on disk since last run.\n"
+"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"    mport asyncio\n"
+"         ^\n"
+"ParseError: bad input\n"
+"reformatted src/black_primer/lib.py\n"
+"reformatted src/blackd/__init__.py\n"
+"reformatted src/black/__init__.py\n"
+"Oh no! 💥 💔 💥\n"
+"3 files reformatted, 2 files left unchanged, 1 file failed to reformat\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:385
+msgid "`--version`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:387
+msgid ""
+"You can check the version of _Black_ you have installed using the `--"
+"version` flag."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:389
+msgid ""
+"$ black --version\n"
+"black, 26.5.1\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:394
+msgid "`--config`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:396
+msgid ""
+"Read configuration options from a configuration file. See [below]"
+"(#configuration-via-a-file) for more details on the configuration file."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:399
+msgid "Environment variable options"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:401
+msgid "_Black_ supports the following configuration via environment variables."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:403
+msgid "`BLACK_CACHE_DIR`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:405
+msgid "The directory where _Black_ should store its cache."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:407
+msgid "`BLACK_NUM_WORKERS`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:409
+msgid ""
+"The number of parallel workers _Black_ should use. The command line option `-"
+"W` / `--workers` takes precedence over this environment variable."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:412
+msgid "Code input alternatives"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:414
+msgid ""
+"_Black_ supports formatting code via stdin, with the result being printed to "
+"stdout. Just let _Black_ know with `-` as the path."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:417
+msgid ""
+"$ echo \"print ( 'hello, world' )\" | black -\n"
+"print(\"hello, world\")\n"
+"reformatted -\n"
+"All done! ✨ 🍰 ✨\n"
+"1 file reformatted.\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:425
+msgid ""
+"**Tip:** if you need _Black_ to treat stdin input as a file passed directly "
+"via the CLI, use `--stdin-filename`. Useful to make sure _Black_ will "
+"respect the `--force-exclude` option on some editors that rely on using "
+"stdin."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:429
+msgid "You can also pass code as a string using the `--code` option."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:431
+msgid "Writeback and reporting"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:433
+msgid ""
+"By default _Black_ reformats the files given and/or found in place. "
+"Sometimes you need _Black_ to just tell you what it _would_ do without "
+"actually rewriting the Python files."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:436
+msgid ""
+"There's two variations to this mode that are independently enabled by their "
+"respective flags:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:439
+msgid "`--check` (exit with code 1 if any file would be reformatted)"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:440
+msgid "`--diff` (print a diff instead of reformatting files)"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:442
+msgid "Both variations can be enabled at once."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:444
+msgid "Output verbosity"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:446
+msgid ""
+"_Black_ in general tries to produce the right amount of output, balancing "
+"between usefulness and conciseness. By default, _Black_ emits files modified "
+"and error messages, plus a short summary."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:450
+msgid ""
+"$ black src/\n"
+"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"    mport asyncio\n"
+"         ^\n"
+"ParseError: bad input\n"
+"reformatted src/black_primer/lib.py\n"
+"reformatted src/blackd/__init__.py\n"
+"reformatted src/black/__init__.py\n"
+"Oh no! 💥 💔 💥\n"
+"3 files reformatted, 2 files left unchanged, 1 file failed to reformat.\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:463
+msgid "The `--quiet` and `--verbose` flags control output verbosity."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:465
+msgid "Configuration via a file"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:467
+msgid ""
+"_Black_ is able to read project-specific default values for its command line "
+"options from a `pyproject.toml` file. This is especially useful for "
+"specifying custom `--include` and `--exclude`/`--force-exclude`/`--extend-"
+"exclude` patterns for your project."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:472
+msgid ""
+"**Pro-tip**: If you're asking yourself \"Do I need to configure anything?\" "
+"the answer is \"No\". _Black_ is all about sensible defaults. Applying those "
+"defaults will have your code in compliance with many other _Black_ formatted "
+"projects."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:476
+msgid "What on Earth is a `pyproject.toml` file?"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:478
+msgid ""
+"[PEP 518](https://peps.python.org/pep-0518/) defines `pyproject.toml` as a "
+"configuration file to store build system requirements for Python projects. "
+"With the help of tools like [Poetry](https://python-poetry.org/), [Flit]"
+"(https://flit.readthedocs.io/en/latest/), or [Hatch](https://hatch.pypa.io/"
+"latest/) it can fully replace the need for `setup.py` and `setup.cfg` files."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:484
+msgid "Where _Black_ looks for the file"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:486
+msgid ""
+"By default _Black_ looks for `pyproject.toml` containing a `[tool.black]` "
+"section starting from the common base directory of all files and directories "
+"passed on the command line. If it's not there, it looks in parent "
+"directories. It stops looking when it finds the file, or a `.git` directory, "
+"or a `.hg` directory, or the root of the file system, whichever comes first."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:492
+msgid ""
+"If you're formatting standard input, _Black_ will look for configuration "
+"starting from the current working directory."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:495
+msgid ""
+"You can use a \"global\" configuration, stored in a specific location in "
+"your home directory. This will be used as a fallback configuration, that is, "
+"it will be used if and only if _Black_ doesn't find any configuration as "
+"mentioned above. Depending on your operating system, this configuration file "
+"should be stored as:"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:500
+msgid "Windows: `~\\.black`"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:501
+msgid ""
+"Unix-like (Linux, MacOS, etc.): `$XDG_CONFIG_HOME/black` (`~/.config/black` "
+"if the `XDG_CONFIG_HOME` environment variable is not set)"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:504
+msgid ""
+"Note that these are paths to the TOML file itself (meaning that they "
+"shouldn't be named as `pyproject.toml`), not directories where you store the "
+"configuration (i.e., `black`/`.black` is the file to create and add your "
+"configuration options to, in the `~/.config/` directory). Here, `~` refers "
+"to the path to your home directory. On Windows, this will be something like "
+"`C:\\Users\\UserName` and stored in the environment variable `%USERPROFILE%`."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:511
+msgid ""
+"You can also explicitly specify the path to a particular file that you want "
+"with `--config`. In this situation _Black_ will not look for any other file."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:514
+msgid ""
+"If you're running with `--verbose`, you will see a message if a file was "
+"found and used."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:516
+msgid "Please note `blackd` will not use `pyproject.toml` configuration."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:518
+msgid "Configuration format"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:520
+msgid ""
+"As the file extension suggests, `pyproject.toml` is a [TOML](https://github."
+"com/toml-lang/toml) file. It contains separate sections for different tools. "
+"_Black_ is using the `[tool.black]` section. The option keys are the same as "
+"long names of options on the command line."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:525
+msgid ""
+"Most command-line options can be configured in `[tool.black]` by using their "
+"long name without the leading `--` (for example, `--line-length` becomes "
+"`line-length`). Options that cannot be configured in `pyproject.toml` are "
+"called out explicitly in the option reference above."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:530
+msgid ""
+"Note that you have to use single-quoted strings in TOML for regular "
+"expressions. It's the equivalent of r-strings in Python. Multiline strings "
+"are treated as verbose regular expressions by Black. Use `[ ]` to denote a "
+"significant space character."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:534
+msgid ""
+"<details>\n"
+"<summary>Example <code>pyproject.toml</code></summary>\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:537
+msgid ""
+"[tool.black]\n"
+"line-length = 88\n"
+"target-version = ['py37']\n"
+"include = '\\.pyi?$'\n"
+"# 'extend-exclude' excludes files or directories in addition to the "
+"defaults\n"
+"extend-exclude = '''\n"
+"# A regex preceded with ^/ will apply only to files and directories\n"
+"# in the root of the project.\n"
+"(\n"
+"  ^/foo.py    # exclude a file named foo.py in the root of the project\n"
+"  | .*_pb2.py  # exclude autogenerated Protocol Buffer files anywhere in the "
+"project\n"
+")\n"
+"'''\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:553
+#: ../../../usage_and_configuration/the_basics.md:585
+msgid "</details>\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:555
+msgid ""
+"<details>\n"
+"<summary>More complete <code>pyproject.toml</code> template</summary>\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:558
+msgid ""
+"[tool.black]\n"
+"line-length = 88\n"
+"target-version = [\"py311\"]\n"
+"required-version = \"26\"\n"
+"include = '\\.pyi?$'\n"
+"\n"
+"# Formatting behavior\n"
+"skip-string-normalization = false\n"
+"skip-magic-trailing-comma = false\n"
+"preview = false\n"
+"unstable = false\n"
+"\n"
+"# File collection\n"
+"extend-exclude = '''\n"
+"(\n"
+"  ^/foo.py\n"
+"  | .*_pb2.py\n"
+")\n"
+"'''\n"
+"force-exclude = '''\n"
+"(\n"
+"  ^/generated/\n"
+")\n"
+"'''\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:587
+msgid "Lookup hierarchy"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:589
+msgid ""
+"Command-line options have defaults that you can see in `--help`. A "
+"`pyproject.toml` can override those defaults. Finally, options provided by "
+"the user on the command line override both."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:593
+msgid ""
+"_Black_ will only ever use one `pyproject.toml` file during an entire run. "
+"It doesn't look for multiple files, and doesn't compose configuration from "
+"different levels of the file hierarchy."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:597
+msgid "Next steps"
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:599
+msgid ""
+"A good next step would be configuring auto-discovery so `black .` is all you "
+"need instead of laborously listing every file or directory. You can get "
+"started by heading over to [File collection and discovery](./"
+"file_collection_and_discovery.md)."
+msgstr ""
+
+#: ../../../usage_and_configuration/the_basics.md:603
+msgid ""
+"Another good choice would be setting up an [integration with your editor](../"
+"integrations/editors.md) of choice or with [pre-commit for source version "
+"control](../integrations/source_version_control.md)."
+msgstr ""

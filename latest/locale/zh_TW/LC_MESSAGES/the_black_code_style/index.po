@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../the_black_code_style/index.md:3
+msgid "Current style"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:3
+msgid "Future style"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:1
+msgid "The Black Code Style"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:12
+msgid "_Black_ is a PEP 8 compliant opinionated formatter with its own style."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:14
+msgid ""
+"While keeping the style unchanged throughout releases has always been a "
+"goal, the _Black_ code style isn't set in stone. It evolves to accommodate "
+"for new features in the Python language and, occasionally, in response to "
+"user feedback. Large-scale style preferences presented in {doc}"
+"`current_style` are very unlikely to change, but minor style aspects and "
+"details might change according to the stability policy presented below. "
+"Ongoing style considerations are tracked on GitHub with the [style](https://"
+"github.com/psf/black/labels/T%3A%20style) issue label."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:24
+msgid "Stability Policy"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:26
+msgid ""
+"The following policy applies for the _Black_ code style, in non pre-release "
+"versions of _Black_:"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:29
+msgid ""
+"If code has been formatted with _Black_, it will remain unchanged when "
+"formatted with the same options using any other release in the same calendar "
+"year."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:32
+msgid ""
+"This means projects can safely use `black ~= 26.0` without worrying about "
+"formatting changes disrupting their project in 2026. We may still fix bugs "
+"where _Black_ crashes on some code, and make other improvements that do not "
+"affect formatting."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:36
+msgid ""
+"In rare cases, we may make changes affecting code that has not been "
+"previously formatted with _Black_. For example, we have had bugs where we "
+"accidentally removed some comments. Such bugs can be fixed without breaking "
+"the stability policy."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:40
+msgid ""
+"The first release in a new calendar year _may_ contain formatting changes, "
+"although these will be minimised as much as possible. This is to allow for "
+"improved formatting enabled by newer Python language syntax as well as due "
+"to improvements in the formatting logic."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:45
+msgid ""
+"The `--preview` and `--unstable` flags are exempt from this policy. There "
+"are no guarantees around the stability of the output with these flags passed "
+"into _Black_. They are intended for allowing experimentation with proposed "
+"changes to the _Black_ code style. The `--preview` style at the end of a "
+"year should closely match the stable style for the next year, but we may "
+"always make changes."
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:51
+msgid "Documentation for both the current and future styles can be found:"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:53
+msgid "{doc}`current_style`"
+msgstr ""
+
+#: ../../../the_black_code_style/index.md:54
+msgid "{doc}`future_style`"
+msgstr ""

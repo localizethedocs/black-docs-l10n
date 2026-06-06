@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/using_black_with_other_tools.md:1
+msgid "Using _Black_ with other tools"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:3
+msgid "Black compatible configurations"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:5
+msgid ""
+"All of Black's changes are harmless (or at least, they should be), but a few "
+"do conflict against other tools. It is not uncommon to be using other tools "
+"alongside _Black_ like linters and type checkers. Some of them need a bit of "
+"tweaking to resolve the conflicts. Listed below are _Black_ compatible "
+"configurations in various formats for the common tools out there."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:11
+msgid ""
+"**Please note** that _Black_ only supports the TOML file format for its "
+"configuration (e.g. `pyproject.toml`). The provided examples are to only "
+"configure their corresponding tools, using **their** supported file formats."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:15
+msgid ""
+"Compatible configuration files can be [found here](https://github.com/psf/"
+"black/blob/main/docs/compatible_configs/)."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:18
+msgid "isort"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:20
+msgid ""
+"[isort](https://pypi.org/p/isort/) helps to sort and format imports in your "
+"Python code. _Black_ also formats imports, but in a different way from "
+"isort's defaults which leads to conflicting changes."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:24
+msgid "Profile"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:26
+msgid ""
+"Since version 5.0.0, isort supports [profiles](https://pycqa.github.io/isort/"
+"docs/configuration/profiles.html) to allow easy interoperability with common "
+"code styles. You can set the black profile in any of the [config files]"
+"(https://pycqa.github.io/isort/docs/configuration/config_files.html) "
+"supported by isort. Below, an example for `pyproject.toml`:"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:32
+msgid ""
+"[tool.isort]\n"
+"profile = \"black\"\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:37
+msgid "Custom Configuration"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:39
+msgid ""
+"If you're using an isort version that is older than 5.0.0 or you have some "
+"custom configuration for _Black_, you can tweak your isort configuration to "
+"make it compatible with _Black_. Below, an example for `.isort.cfg`:"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:43
+msgid ""
+"multi_line_output = 3\n"
+"include_trailing_comma = True\n"
+"force_grid_wrap = 0\n"
+"use_parentheses = True\n"
+"ensure_newline_before_comments = True\n"
+"line_length = 88\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:52
+#: ../../../guides/using_black_with_other_tools.md:153
+#: ../../../guides/using_black_with_other_tools.md:235
+#: ../../../guides/using_black_with_other_tools.md:264
+msgid "Why those options above?"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:54
+msgid ""
+"_Black_ wraps imports that surpass `line-length` by moving identifiers onto "
+"separate lines and by adding a trailing comma after each. A more detailed "
+"explanation of this behaviour can be [found here](../the_black_code_style/"
+"current_style.md#how-black-wraps-lines)."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:59
+msgid ""
+"isort's default mode of wrapping imports that extend past the `line_length` "
+"limit is \"Grid\"."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:62
+msgid ""
+"from third_party import (lib1, lib2, lib3,\n"
+"                         lib4, lib5, ...)\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:67
+msgid ""
+"This style is incompatible with _Black_, but isort can be configured to use "
+"a different wrapping mode called \"Vertical Hanging Indent\" which looks "
+"like this:"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:70
+msgid ""
+"from third_party import (\n"
+"    lib1,\n"
+"    lib2,\n"
+"    lib3,\n"
+"    lib4,\n"
+")\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:79
+msgid ""
+"This style is _Black_ compatible and can be achieved by `multi-line-output = "
+"3`. Also, as mentioned above, when wrapping long imports _Black_ puts a "
+"trailing comma and uses parentheses. isort should follow the same behaviour "
+"and passing the options `include_trailing_comma = True` and `use_parentheses "
+"= True` configures that."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:84
+msgid ""
+"The option `force_grid_wrap = 0` is just to tell isort to only wrap imports "
+"that surpass the `line_length` limit."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:87
+msgid ""
+"Finally, isort should be told to wrap imports when they surpass _Black_'s "
+"default limit of 88 characters via `line_length = 88` as well as "
+"`ensure_newline_before_comments = True` to ensure spacing import sections "
+"with comments works the same as with _Black_."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:92
+msgid ""
+"**Please note** `ensure_newline_before_comments = True` only works since "
+"isort >= 5 but does not break older versions so you can keep it if you are "
+"running previous versions."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:95
+#: ../../../guides/using_black_with_other_tools.md:189
+#: ../../../guides/using_black_with_other_tools.md:239
+#: ../../../guides/using_black_with_other_tools.md:272
+msgid "Formats"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:97
+msgid ""
+"<details>\n"
+"<summary>.isort.cfg</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:100
+msgid ""
+"[settings]\n"
+"profile = black\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:105
+#: ../../../guides/using_black_with_other_tools.md:115
+#: ../../../guides/using_black_with_other_tools.md:125
+#: ../../../guides/using_black_with_other_tools.md:135
+#: ../../../guides/using_black_with_other_tools.md:200
+#: ../../../guides/using_black_with_other_tools.md:250
+#: ../../../guides/using_black_with_other_tools.md:282
+#: ../../../guides/using_black_with_other_tools.md:292
+#: ../../../guides/using_black_with_other_tools.md:302
+msgid "</details>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:107
+#: ../../../guides/using_black_with_other_tools.md:284
+msgid ""
+"<details>\n"
+"<summary>setup.cfg</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:110
+msgid ""
+"[isort]\n"
+"profile = black\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:117
+#: ../../../guides/using_black_with_other_tools.md:294
+msgid ""
+"<details>\n"
+"<summary>pyproject.toml</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:120
+msgid ""
+"[tool.isort]\n"
+"profile = 'black'\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:127
+msgid ""
+"<details>\n"
+"<summary>.editorconfig</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:130
+msgid ""
+"[*.py]\n"
+"profile = black\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:137
+msgid "pycodestyle"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:139
+msgid ""
+"[pycodestyle](https://pycodestyle.pycqa.org/) is a code linter. It warns you "
+"of syntax errors, possible bugs, stylistic errors, etc. For the most part, "
+"pycodestyle follows [PEP 8](https://peps.python.org/pep-0008/) when warning "
+"about stylistic errors. There are a few deviations that cause "
+"incompatibilities with _Black_."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:144
+#: ../../../guides/using_black_with_other_tools.md:258
+msgid "Configuration"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:146
+msgid ""
+"max-line-length = 88\n"
+"ignore = E203,E701\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:155
+msgid "`max-line-length`"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:157
+msgid ""
+"As with isort, pycodestyle should be configured to allow lines up to the "
+"length limit of `88`, _Black_'s default."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:160
+msgid "`E203`"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:162
+msgid ""
+"In some cases, as determined by PEP 8, _Black_ will enforce an equal amount "
+"of whitespace around slice operators. Due to this, pycodestyle will raise "
+"`E203 whitespace before ':'` warnings. Since this warning is not PEP 8 "
+"compliant, it should be disabled."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:167
+msgid "`E701` / `E704`"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:169
+msgid ""
+"_Black_ will collapse implementations of classes and functions consisting "
+"solely of `..` to a single line. This matches how such examples are "
+"formatted in PEP 8. It remains true that in all other cases Black will "
+"prevent multiple statements on the same line, in accordance with PEP 8 "
+"generally discouraging this."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:174
+msgid ""
+"However, `pycodestyle` does not mirror this logic and may raise `E701 "
+"multiple statements on one line (colon)` in this situation. Its disabled-by-"
+"default `E704 multiple statements on one line (def)` rule may also raise "
+"warnings and should not be enabled."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:179
+msgid "`W503`"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:181
+msgid ""
+"When breaking a line, _Black_ will break it before a binary operator. This "
+"is compliant with PEP 8 as of [April 2016](https://github.com/python/peps/"
+"commit/"
+"c59c4376ad233a62ca4b3a6060c81368bd21e85b#diff-64ec08cc46db7540f18f2af46037f599). "
+"There's a disabled-by-default warning in Flake8 which goes against this PEP "
+"8 recommendation called `W503 line break before binary operator`. It should "
+"not be enabled in your configuration. You can use its counterpart `W504 line "
+"break after binary operator` instead."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:191
+msgid ""
+"<details>\n"
+"<summary>setup.cfg, .pycodestyle, tox.ini</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:194
+msgid ""
+"[pycodestyle]\n"
+"max-line-length = 88\n"
+"ignore = E203,E701\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:202
+msgid "Flake8"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:204
+msgid ""
+"[Flake8](https://pypi.org/p/flake8/) is a wrapper around multiple linters, "
+"including pycodestyle. As such, it has many of the same issues."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:207
+msgid "Bugbear"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:209
+msgid ""
+"It's recommended to use [the Bugbear plugin](https://github.com/PyCQA/flake8-"
+"bugbear) and enable [its B950 check](https://github.com/PyCQA/flake8-"
+"bugbear#opinionated-warnings#:~:text=you%20expect%20it.-,B950,-"
+"%3A%20Line%20too%20long) instead of using Flake8's E501, because it aligns "
+"with [Black's 10% rule](labels/line-length)."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:215
+msgid "Install Bugbear and use the following config:"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:217
+msgid ""
+"[flake8]\n"
+"max-line-length = 80\n"
+"extend-select = B950\n"
+"extend-ignore = E203,E501,E701\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:224
+msgid "Minimal Configuration"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:226
+msgid ""
+"In cases where you can't or don't want to install Bugbear, you can use this "
+"minimally compatible config:"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:229
+#: ../../../guides/using_black_with_other_tools.md:244
+msgid ""
+"[flake8]\n"
+"max-line-length = 88\n"
+"extend-ignore = E203,E701\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:237
+msgid "See [the pycodestyle section](labels/why-pycodestyle-warnings) above."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:241
+msgid ""
+"<details>\n"
+"<summary>.flake8, setup.cfg, tox.ini</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:252
+msgid "Pylint"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:254
+msgid ""
+"[Pylint](https://pypi.org/p/pylint/) is also a code linter like Flake8. It "
+"has many of the same checks as Flake8 and more. It particularly has more "
+"formatting checks regarding style conventions like variable naming."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:260
+msgid "max-line-length = 88\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:266
+msgid ""
+"Pylint should be configured to only complain about lines that surpass `88` "
+"characters via `max-line-length = 88`."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:269
+msgid ""
+"If using `pylint<2.6.0`, also disable `C0326` and `C0330` as these are "
+"incompatible with _Black_ formatting and have since been removed."
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:274
+msgid ""
+"<details>\n"
+"<summary>pylintrc</summary>\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:277
+msgid ""
+"[format]\n"
+"max-line-length = 88\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:287
+msgid ""
+"[pylint]\n"
+"max-line-length = 88\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_other_tools.md:297
+msgid ""
+"[tool.pylint.format]\n"
+"max-line-length = \"88\"\n"
+msgstr ""

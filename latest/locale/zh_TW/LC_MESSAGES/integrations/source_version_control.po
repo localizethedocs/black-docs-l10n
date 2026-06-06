@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../integrations/source_version_control.md:1
+msgid "Version control integration"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:3
+msgid ""
+"Use [pre-commit](https://pre-commit.com/). Once you [have it installed]"
+"(https://pre-commit.com/#install), add this to the `.pre-commit-config.yaml` "
+"in your repository:"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:7
+msgid ""
+"repos:\n"
+"  # Using this mirror lets us use mypyc-compiled black, which is about 2x "
+"faster\n"
+"  - repo: https://github.com/psf/black-pre-commit-mirror\n"
+"    rev: 26.5.1\n"
+"    hooks:\n"
+"      - id: black\n"
+"        # It is recommended to specify the latest version of Python\n"
+"        # supported by your project here, or alternatively use\n"
+"        # pre-commit's default_language_version, see\n"
+"        # https://pre-commit.com/#top_level-default_language_version\n"
+"        language_version: python3.11\n"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:21
+msgid ""
+"Feel free to switch out the `rev` value to a different version of Black."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:23
+msgid ""
+"Note if you'd like to use a specific commit in `rev`, you'll need to swap "
+"the repo specified from the mirror to https://github.com/psf/black. We "
+"discourage the use of branches or other mutable refs since the hook [won't "
+"auto update as you may expect][pre-commit-mutable-rev]."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:28
+msgid "Jupyter Notebooks"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:30
+msgid ""
+"There is an alternate hook `black-jupyter` that expands the targets of "
+"`black` to include Jupyter Notebooks. To use this hook, simply replace the "
+"hook's `id: black` with `id: black-jupyter` in the `.pre-commit-config.yaml`:"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:34
+msgid ""
+"repos:\n"
+"  - repo: https://github.com/psf/black-pre-commit-mirror\n"
+"    rev: 26.5.1\n"
+"    hooks:\n"
+"      - id: black-jupyter\n"
+"        language_version: python3.11\n"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:44
+msgid "The `black-jupyter` hook became available in version 21.8b0."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:47
+msgid ""
+"See the [Jupyter Notebooks guide](../guides/"
+"using_black_with_jupyter_notebooks.md) for more details."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:50
+msgid "Excluding files with pre-commit"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:52
+msgid ""
+"When using pre-commit, there's an important distinction in how file "
+"exclusions work. Pre-commit passes files directly to Black via the command "
+"line, rather than letting Black discover files recursively. This means "
+"Black's `--exclude` option won't work as expected because it only applies to "
+"files discovered during recursive directory traversal."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:58
+msgid "To exclude files when using pre-commit, you have two options:"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:60
+msgid "Option 1: Use pre-commit's exclude (Recommended)"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:62
+msgid "Configure exclusions directly in `.pre-commit-config.yaml`:"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:64
+msgid ""
+"repos:\n"
+"  - repo: https://github.com/psf/black-pre-commit-mirror\n"
+"    rev: 26.5.1\n"
+"    hooks:\n"
+"      - id: black\n"
+"        exclude: ^migrations/|^generated/\n"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:73
+msgid ""
+"This is the recommended approach because pre-commit filters files before "
+"passing them to Black, avoiding unnecessary processing."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:76
+msgid "Option 2: Use Black's force-exclude in pyproject.toml"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:78
+msgid ""
+"Black's `force-exclude` configuration option excludes files even when they "
+"are passed explicitly as command-line arguments (which is how pre-commit "
+"invokes Black). Simply add the pattern to your `pyproject.toml`:"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:82
+msgid ""
+"[tool.black]\n"
+"force-exclude = '''\n"
+"(\n"
+"  ^migrations/\n"
+"  | ^generated/\n"
+")\n"
+"'''\n"
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:92
+msgid ""
+"Black automatically reads this configuration—no additional CLI arguments are "
+"needed in your `.pre-commit-config.yaml`."
+msgstr ""
+
+#: ../../../integrations/source_version_control.md:96
+msgid ""
+"The `force-exclude` option was added in version 20.8b0 specifically to "
+"support workflows where files are passed directly via CLI, such as pre-"
+"commit hooks and editor plugins."
+msgstr ""

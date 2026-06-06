@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:1
+msgid "Using _Black_ with Jupyter Notebooks"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:3
+msgid ""
+"_Black_ supports formatting Jupyter Notebooks (`.ipynb` files) natively."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:5
+msgid "Installation"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:7
+msgid "To format Jupyter Notebooks, install _Black_ with the `jupyter` extra:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:9
+msgid "pip install \"black[jupyter]\"\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:14
+msgid ""
+"Without the `jupyter` extra, _Black_ will not be able to format `.ipynb` "
+"files."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:17
+msgid "Basic usage"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:19
+msgid ""
+"Once installed, you can format notebooks the same way you format Python "
+"files:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:21
+msgid "black notebook.ipynb\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:25
+msgid ""
+"You can also format entire directories containing a mix of `.py` and `."
+"ipynb` files:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:27
+msgid "black .\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:31
+msgid ""
+"_Black_ will automatically detect Jupyter Notebooks by their `.ipynb` "
+"extension and format them accordingly."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:34
+msgid "Formatting via standard input"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:36
+msgid ""
+"If you're piping notebook content on standard input, use the `--ipynb` flag "
+"to tell _Black_ to treat the input as a Jupyter Notebook:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:39
+msgid "cat notebook.ipynb | black --ipynb -\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:43
+msgid "What is (and isn't) formatted"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:45
+msgid ""
+"_Black_ formats the Python code cells in your notebook while preserving:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:47
+msgid "Markdown cells"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:48
+msgid "Cell outputs"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:49
+msgid "Cell metadata"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:50
+msgid "Notebook metadata"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:52
+msgid "Only the source code within Python code cells is reformatted."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:54
+msgid "Cells that _Black_ will skip"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:56
+msgid ""
+"_Black_ is cautious about formatting notebook cells. The following cells "
+"will **not** be formatted:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:59
+msgid "**Automagics** — e.g. `pip install black` (without the `%` prefix)"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:60
+msgid "**Non-Python cell magics** — e.g.:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:61
+msgid ""
+"%%writefile script.py\n"
+"print(\"hello\")\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:65
+msgid "**Multiline magics** — e.g.:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:66
+msgid ""
+"%timeit f(1, \\\n"
+"        2, \\\n"
+"        3)\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:71
+msgid ""
+"**IPython internal calls** — code that `IPython`'s `TransformerManager` "
+"would transform, e.g.:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:73
+msgid "get_ipython().system('ls')\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:76
+msgid ""
+"**Invalid syntax** — as it cannot be safely distinguished from automagics "
+"without a running IPython kernel."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:79
+msgid ""
+"If you notice a cell is not being formatted, it is likely because it "
+"contains one of the above constructs."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:82
+msgid ""
+"Additionally, _Black_ cannot format Jupyter Notebooks with the `--line-"
+"ranges` option."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:84
+msgid "Cell magics"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:86
+msgid ""
+"_Black_ understands IPython magics, but is conservative about which cells it "
+"will format. By default, _Black_ recognizes standard IPython magics."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:89
+msgid "Custom python cell magics"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:91
+msgid ""
+"If you use custom cell magics that contain Python code, you can tell _Black_ "
+"about them using the `--python-cell-magics` flag:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:94
+msgid "black --python-cell-magics writefile notebook.ipynb\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:98
+msgid "This also works in `pyproject.toml`:"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:100
+msgid ""
+"[tool.black]\n"
+"python-cell-magics = [\"writefile\", \"my_custom_magic\"]\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:105
+msgid "Integrations"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:107
+msgid "pre-commit"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:109
+msgid "Simply replace the `black` hook with `black-jupyter`."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:111
+msgid ""
+"repos:\n"
+"  - repo: https://github.com/psf/black-pre-commit-mirror\n"
+"    rev: 26.5.1\n"
+"    hooks:\n"
+"      - id: black-jupyter\n"
+"        language_version: python3.11\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:120
+msgid ""
+"See the [source version control integration](../integrations/"
+"source_version_control.md) docs for more examples of using Black with pre-"
+"commit."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:123
+msgid "GitHub Actions"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:125
+msgid "Set the `jupyter` option to `true`."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:127
+msgid ""
+"- uses: psf/black@stable\n"
+"  with:\n"
+"    jupyter: true\n"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:133
+msgid ""
+"See the [GitHub Actions integration](../integrations/source_version_control."
+"md) docs for more examples of using Black with GitHub Actions."
+msgstr ""
