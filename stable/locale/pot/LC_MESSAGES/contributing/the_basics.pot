@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing/the_basics.md:1
+msgid "The basics"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:3
+msgid "An overview on contributing to the _Black_ project."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:5
+msgid "Technicalities"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:7
+msgid ""
+"Development on the latest version of Python is preferred. You can use any "
+"operating system."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:10
+msgid "First clone the _Black_ repository:"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:12
+msgid ""
+"$ git clone https://github.com/psf/black.git\n"
+"$ cd black\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:17
+msgid ""
+"Then install development dependencies inside a virtual environment of your "
+"choice, for example:"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:20
+msgid ""
+"$ python3 -m venv .venv\n"
+"$ source .venv/bin/activate # activation for linux and mac\n"
+"$ .venv\\Scripts\\activate # activation for windows\n"
+"\n"
+"(.venv)$ pip install --group dev\n"
+"(.venv)$ pip install -e \".[d]\"\n"
+"(.venv)$ pre-commit install\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:30
+msgid ""
+"Before submitting pull requests, run lints and tests with the following "
+"commands from the root of the black repo:"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:33
+msgid ""
+"(.venv)$ pre-commit run -a # Linting\n"
+"(.venv)$ tox -e py # Unit tests\n"
+"(.venv)$ tox -e fuzz # Optional Fuzz testing\n"
+"(.venv)$ tox -e run_self # Format Black itself\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:40
+msgid "Development"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:42
+msgid "Further examples of invoking the tests"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:44
+msgid ""
+"(.venv)$ tox --parallel=auto # Run all the above in parallel\n"
+"(.venv)$ tox -e py314 # Run tests on a specific python version\n"
+"(.venv)$ pytest -k <test name> # Run an individual test\n"
+"(.venv)$ tox -e py -- --no-cov # Pass arguments to pytest\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:51
+msgid "Testing"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:53
+msgid ""
+"All aspects of the _Black_ style should be tested. Normally, tests should be "
+"created as files in the `tests/data/cases` directory. These files consist of "
+"up to three parts:"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:56
+msgid ""
+"A line that starts with `# flags: ` followed by a set of command-line "
+"options. For example, if the line is `# flags: --preview --skip-magic-"
+"trailing-comma`, the test case will be run with preview mode on and the "
+"magic trailing comma off. The options accepted are mostly a subset of those "
+"of _Black_ itself, except for the `--minimum-version=` flag, which should be "
+"used when testing a grammar feature that works only in newer versions of "
+"Python. This flag ensures that we don't try to validate the AST on older "
+"versions and tests that we autodetect the Python version correctly when the "
+"feature is used. For the exact flags accepted, see the function "
+"`get_flags_parser` in `tests/util.py`. If this line is omitted, the default "
+"options are used."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:66
+msgid "A block of Python code used as input for the formatter."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:67
+msgid ""
+"The line `# output`, followed by the output of _Black_ when run on the "
+"previous block. If this is omitted, the test asserts that _Black_ will leave "
+"the input code unchanged."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:70
+msgid ""
+"_Black_ has two pytest command-line options affecting test files in `tests/"
+"data/` that are split into an input part, and an output part, separated by a "
+"line with `# output`. These can be passed to `pytest` through `tox`, or "
+"directly into pytest if not using `tox`."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:75
+msgid "`--print-full-tree`"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:77
+msgid ""
+"Upon a failing test, print the full concrete syntax tree (CST) as it is "
+"after processing the input (\"actual\"), and the tree that's yielded after "
+"parsing the output (\"expected\"). Note that a test can fail with different "
+"output with the same CST. This used to be the default, but now defaults to "
+"`False`."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:82
+msgid "(.venv)$ tox -e py -- --print-full-tree\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:86
+msgid "`--print-tree-diff`"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:88
+msgid ""
+"Upon a failing test, print the diff of the trees as described above. This is "
+"the default. To turn it off pass `--print-tree-diff=False`."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:91
+msgid "(.venv)$ tox -e py -- --print-tree-diff=False\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:95
+msgid "News / Changelog Requirement"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:97
+msgid ""
+"`Black` has CI that will check for an entry corresponding to your PR in "
+"`CHANGES.md`. If you feel this PR does not require a changelog entry please "
+"state that in a comment and a maintainer can add a `ci: skip news` label to "
+"make the CI pass. Otherwise, please ensure you have a line in the following "
+"format added below the appropriate header:"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:102
+msgid "- `Black` is now more awesome (#X)\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:106
+msgid ""
+"<!---\n"
+"The Next PR Number link uses HTML because of a bug in MyST-Parser that "
+"double-escapes the ampersand, causing the query parameters to not be "
+"processed.\n"
+"MyST-Parser issue: https://github.com/executablebooks/MyST-Parser/"
+"issues/760\n"
+"MyST-Parser stalled fix PR: https://github.com/executablebooks/MyST-Parser/"
+"pull/929\n"
+"-->\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:112
+msgid ""
+"Note that X should be your PR number, not issue number! To workout X, please "
+"use <a href=\"https://ichard26.github.io/next-pr-number/?"
+"owner=psf&name=black\">Next PR Number</a>. This is not perfect but saves a "
+"lot of release overhead as now the releaser does not need to go back and "
+"workout what to add to the `CHANGES.md` for each release."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:112
+msgid ""
+"<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:112
+msgid "</a>"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:117
+msgid "Style Changes"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:119
+msgid ""
+"Please familiarize yourself with our [stability policy](labels/stability-"
+"policy). Therefore, most style changes must be added to the `--preview` "
+"style. Exceptions are fixing crashes or changes that would not affect an "
+"already-formatted file."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:123
+msgid ""
+"If a change would affect the advertised code style, please modify the "
+"documentation (The _Black_ code style) to reflect that change. Patches that "
+"fix unintended bugs in formatting don't need to be mentioned separately."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:127
+msgid ""
+"If the change is implemented with the `--preview` flag, please include the "
+"change in the Future Style document instead and write the changelog entry "
+"under the dedicated \"Preview style\" heading."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:131
+msgid "Docs Testing"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:133
+msgid "If you make changes to docs, you can test they still build locally too."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:135
+msgid ""
+"(.venv)$ pip install --group docs\n"
+"(.venv)$ pip install -e \".[d]\"\n"
+"(.venv)$ sphinx-build -a -b html -W docs/ docs/_build/\n"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:141
+msgid "Hygiene"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:143
+msgid ""
+"If you're fixing a bug, add a test. Run it first to confirm it fails, then "
+"fix the bug, and run the test again to confirm it's really fixed."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:146
+msgid ""
+"If adding a new feature, add a test. In fact, always add a test. If adding a "
+"large feature, please first open an issue to discuss it beforehand."
+msgstr ""
+
+#: ../../../contributing/the_basics.md:149
+msgid "Finally"
+msgstr ""
+
+#: ../../../contributing/the_basics.md:151
+msgid ""
+"Thanks again for your interest in improving the project! You're taking "
+"action when most people decide to sit and watch."
+msgstr ""
