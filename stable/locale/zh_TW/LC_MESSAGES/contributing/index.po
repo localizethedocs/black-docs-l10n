@@ -64,15 +64,15 @@ msgstr ""
 
 #: ../../../contributing/index.md:41
 msgid "{doc}`the_basics`"
-msgstr ""
+msgstr "{doc}`the_basics`"
 
 #: ../../../contributing/index.md:42
 msgid "{doc}`gauging_changes`"
-msgstr ""
+msgstr "{doc}`gauging_changes`"
 
 #: ../../../contributing/index.md:43
 msgid "{doc}`release_process`"
-msgstr ""
+msgstr "{doc}`release_process`"
 
 #: ../../../contributing/index.md:45
 msgid ""

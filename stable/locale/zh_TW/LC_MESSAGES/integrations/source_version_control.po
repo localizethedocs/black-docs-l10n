@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../integrations/source_version_control.md:1
 msgid "Version control integration"
-msgstr ""
+msgstr "版本控制整合"
 
 #: ../../../integrations/source_version_control.md:3
 msgid ""

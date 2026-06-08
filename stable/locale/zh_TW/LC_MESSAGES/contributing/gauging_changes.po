@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../contributing/gauging_changes.md:0
 msgid "latest PyPI version"
-msgstr ""
+msgstr "最新的 PyPI 版本"
 
 #: ../../../contributing/gauging_changes.md:0
 msgid "the pushed commit"

@@ -27,11 +27,11 @@ msgstr "開發"
 
 #: ../../../index.md:122
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: ../../../index.md:122
 msgid "PyPI"
-msgstr ""
+msgstr "PyPI"
 
 #: ../../../index.md:122
 msgid "Chat"
