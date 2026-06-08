@@ -102,11 +102,11 @@ msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:39
 msgid "Check Black version"
-msgstr ""
+msgstr "檢查 Black 版本"
 
 #: ../../../usage_and_configuration/black_docker_image.md:41
 msgid "$ docker run --rm pyfound/black:latest_release black --version\n"
-msgstr ""
+msgstr "$ docker run --rm pyfound/black:latest_release black --version\n"
 
 #: ../../../usage_and_configuration/black_docker_image.md:45
 msgid "Check code"
@@ -117,6 +117,8 @@ msgid ""
 "$ docker run --rm --volume $(pwd):/src --workdir /src pyfound/black:"
 "latest_release black --check .\n"
 msgstr ""
+"$ docker run --rm --volume $(pwd):/src --workdir /src pyfound/black:"
+"latest_release black --check .\n"
 
 #: ../../../usage_and_configuration/black_docker_image.md:51
 msgid ""

@@ -44,6 +44,8 @@ msgid ""
 "$ git clone https://github.com/psf/black.git\n"
 "$ cd black\n"
 msgstr ""
+"$ git clone https://github.com/psf/black.git\n"
+"$ cd black\n"
 
 #: ../../../contributing/the_basics.md:17
 msgid ""
@@ -61,6 +63,13 @@ msgid ""
 "(.venv)$ pip install -e \".[d]\"\n"
 "(.venv)$ pre-commit install\n"
 msgstr ""
+"$ python3 -m venv .venv\n"
+"$ source .venv/bin/activate # activation for linux and mac\n"
+"$ .venv\\Scripts\\activate # activation for windows\n"
+"\n"
+"(.venv)$ pip install --group dev\n"
+"(.venv)$ pip install -e \".[d]\"\n"
+"(.venv)$ pre-commit install\n"
 
 #: ../../../contributing/the_basics.md:30
 msgid ""
@@ -152,11 +161,11 @@ msgstr ""
 
 #: ../../../contributing/the_basics.md:82
 msgid "(.venv)$ tox -e py -- --print-full-tree\n"
-msgstr ""
+msgstr "(.venv)$ tox -e py -- --print-full-tree\n"
 
 #: ../../../contributing/the_basics.md:86
 msgid "`--print-tree-diff`"
-msgstr ""
+msgstr "`--print-tree-diff`"
 
 #: ../../../contributing/the_basics.md:88
 msgid ""
@@ -166,7 +175,7 @@ msgstr ""
 
 #: ../../../contributing/the_basics.md:91
 msgid "(.venv)$ tox -e py -- --print-tree-diff=False\n"
-msgstr ""
+msgstr "(.venv)$ tox -e py -- --print-tree-diff=False\n"
 
 #: ../../../contributing/the_basics.md:95
 msgid "News / Changelog Requirement"
@@ -211,14 +220,15 @@ msgstr ""
 msgid ""
 "<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
 msgstr ""
+"<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
 
 #: ../../../contributing/the_basics.md:112
 msgid "</a>"
-msgstr ""
+msgstr "</a>"
 
 #: ../../../contributing/the_basics.md:117
 msgid "Style Changes"
-msgstr ""
+msgstr "風格變更"
 
 #: ../../../contributing/the_basics.md:119
 msgid ""

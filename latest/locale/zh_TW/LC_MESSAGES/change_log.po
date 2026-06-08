@@ -278,7 +278,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:78
 msgid "Version 26.5.1"
-msgstr ""
+msgstr "版本 26.5.1"
 
 #: ../../../../CHANGES.md:82
 msgid ""
@@ -308,7 +308,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:96
 msgid "Version 26.5.0"
-msgstr ""
+msgstr "版本 26.5.0"
 
 #: ../../../../CHANGES.md:100
 msgid ""
@@ -415,7 +415,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:154
 msgid "Version 26.3.1"
-msgstr ""
+msgstr "版本 26.3.1"
 
 #: ../../../../CHANGES.md:158
 msgid ""
@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:173
 msgid "Version 26.3.0"
-msgstr ""
+msgstr "版本 26.3.0"
 
 #: ../../../../CHANGES.md:177
 msgid ""
@@ -557,7 +557,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:233
 msgid "Version 26.1.0"
-msgstr ""
+msgstr "版本 26.1.0"
 
 #: ../../../../CHANGES.md:237
 msgid ""
@@ -687,7 +687,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:294
 msgid "Version 25.12.0"
-msgstr ""
+msgstr "版本 25.12.0"
 
 #: ../../../../CHANGES.md:298
 msgid ""
@@ -761,7 +761,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:326
 msgid "Version 25.11.0"
-msgstr ""
+msgstr "版本 25.11.0"
 
 #: ../../../../CHANGES.md:330
 msgid ""
@@ -879,7 +879,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:377
 msgid "Version 25.9.0"
-msgstr ""
+msgstr "版本 25.9.0"
 
 #: ../../../../CHANGES.md:381
 msgid ""
@@ -1028,7 +1028,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:433
 msgid "Version 25.1.0"
-msgstr ""
+msgstr "版本 25.1.0"
 
 #: ../../../../CHANGES.md:437
 msgid ""
@@ -1165,7 +1165,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:487
 msgid "Version 24.10.0"
-msgstr ""
+msgstr "版本 24.10.0"
 
 #: ../../../../CHANGES.md:491
 msgid ""
@@ -1243,7 +1243,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:523
 msgid "Version 24.8.0"
-msgstr ""
+msgstr "版本 24.8.0"
 
 #: ../../../../CHANGES.md:527
 msgid ""
@@ -1302,7 +1302,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:553
 msgid "Version 24.4.2"
-msgstr ""
+msgstr "版本 24.4.2"
 
 #: ../../../../CHANGES.md:555
 msgid ""
@@ -1324,7 +1324,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:566
 msgid "Version 24.4.1"
-msgstr ""
+msgstr "版本 24.4.1"
 
 #: ../../../../CHANGES.md:570
 msgid ""
@@ -1352,7 +1352,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:585
 msgid "Version 24.4.0"
-msgstr ""
+msgstr "版本 24.4.0"
 
 #: ../../../../CHANGES.md:589
 msgid ""
@@ -1381,7 +1381,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:602
 msgid "Version 24.3.0"
-msgstr ""
+msgstr "版本 24.3.0"
 
 #: ../../../../CHANGES.md:606
 msgid ""
@@ -1436,7 +1436,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:635
 msgid "Version 24.2.0"
-msgstr ""
+msgstr "版本 24.2.0"
 
 #: ../../../../CHANGES.md:639
 msgid ""
@@ -1501,7 +1501,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:671
 msgid "Version 24.1.1"
-msgstr ""
+msgstr "版本 24.1.1"
 
 #: ../../../../CHANGES.md:673
 msgid ""
@@ -1524,7 +1524,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:685
 msgid "Version 24.1.0"
-msgstr ""
+msgstr "版本 24.1.0"
 
 #: ../../../../CHANGES.md:689
 msgid ""
@@ -1766,7 +1766,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:765
 msgid "Version 23.12.1"
-msgstr ""
+msgstr "版本 23.12.1"
 
 #: ../../../../CHANGES.md:769
 msgid ""
@@ -1776,7 +1776,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:771
 msgid "Version 23.12.0"
-msgstr ""
+msgstr "版本 23.12.0"
 
 #: ../../../../CHANGES.md:775
 msgid ""
@@ -1880,7 +1880,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:817
 msgid "Version 23.11.0"
-msgstr ""
+msgstr "版本 23.11.0"
 
 #: ../../../../CHANGES.md:821
 msgid ""
@@ -1982,7 +1982,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:861
 msgid "Version 23.10.1"
-msgstr ""
+msgstr "版本 23.10.1"
 
 #: ../../../../CHANGES.md:865
 msgid ""
@@ -2028,7 +2028,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:887
 msgid "Version 23.10.0"
-msgstr ""
+msgstr "版本 23.10.0"
 
 #: ../../../../CHANGES.md:891
 msgid ""
@@ -2104,7 +2104,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:924
 msgid "Version 23.9.1"
-msgstr ""
+msgstr "版本 23.9.1"
 
 #: ../../../../CHANGES.md:926
 msgid ""
@@ -2133,7 +2133,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:942
 msgid "Version 23.9.0"
-msgstr ""
+msgstr "版本 23.9.0"
 
 #: ../../../../CHANGES.md:946
 msgid ""
@@ -2196,7 +2196,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:973
 msgid "Version 23.7.0"
-msgstr ""
+msgstr "版本 23.7.0"
 
 #: ../../../../CHANGES.md:977
 msgid ""
@@ -2347,7 +2347,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1045
 msgid "Version 23.3.0"
-msgstr ""
+msgstr "版本 23.3.0"
 
 #: ../../../../CHANGES.md:1049
 msgid ""
@@ -2440,7 +2440,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1096
 msgid "Version 23.1.0"
-msgstr ""
+msgstr "版本 23.1.0"
 
 #: ../../../../CHANGES.md:1100
 msgid ""
@@ -2758,7 +2758,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1212
 msgid "Version 22.12.0"
-msgstr ""
+msgstr "版本 22.12.0"
 
 #: ../../../../CHANGES.md:1216
 msgid ""
@@ -2820,7 +2820,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1244
 msgid "Version 22.10.0"
-msgstr ""
+msgstr "版本 22.10.0"
 
 #: ../../../../CHANGES.md:1248
 msgid ""
@@ -2899,7 +2899,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1288
 msgid "Version 22.8.0"
-msgstr ""
+msgstr "版本 22.8.0"
 
 #: ../../../../CHANGES.md:1292
 msgid ""
@@ -3041,7 +3041,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1360
 msgid "Version 22.6.0"
-msgstr ""
+msgstr "版本 22.6.0"
 
 #: ../../../../CHANGES.md:1362 ../../../../CHANGES.md:1453
 msgid "Style"
@@ -3127,7 +3127,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1400
 msgid "Version 22.3.0"
-msgstr ""
+msgstr "版本 22.3.0"
 
 #: ../../../../CHANGES.md:1404
 msgid ""
@@ -3229,7 +3229,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1442
 msgid "Version 22.1.0"
-msgstr ""
+msgstr "版本 22.1.0"
 
 #: ../../../../CHANGES.md:1444
 msgid ""
@@ -3482,7 +3482,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1533
 msgid "Version 21.12b0"
-msgstr ""
+msgstr "版本 21.12b0"
 
 #: ../../../../CHANGES.md:1535 ../../../../CHANGES.md:1568
 #: ../../../../CHANGES.md:1574 ../../../../CHANGES.md:1591
@@ -3592,7 +3592,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1566
 msgid "Version 21.11b1"
-msgstr ""
+msgstr "版本 21.11b1"
 
 #: ../../../../CHANGES.md:1570
 msgid ""
@@ -3602,7 +3602,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1572
 msgid "Version 21.11b0"
-msgstr ""
+msgstr "版本 21.11b0"
 
 #: ../../../../CHANGES.md:1576
 msgid ""
@@ -3649,7 +3649,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1589
 msgid "Version 21.10b0"
-msgstr ""
+msgstr "版本 21.10b0"
 
 #: ../../../../CHANGES.md:1593
 msgid ""
@@ -3730,7 +3730,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1617
 msgid "Version 21.9b0"
-msgstr ""
+msgstr "版本 21.9b0"
 
 #: ../../../../CHANGES.md:1621
 msgid ""
@@ -3746,7 +3746,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1624
 msgid "Version 21.8b0"
-msgstr ""
+msgstr "版本 21.8b0"
 
 #: ../../../../CHANGES.md:1628
 msgid ""
@@ -3814,7 +3814,7 @@ msgstr ""
 
 #: ../../../../CHANGES.md:1651
 msgid "Version 21.7b0"
-msgstr ""
+msgstr "版本 21.7b0"
 
 #: ../../../../CHANGES.md:1655
 msgid ""

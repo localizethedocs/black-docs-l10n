@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:213
 msgid "Comments"
-msgstr ""
+msgstr "註釋"
 
 #: ../../../the_black_code_style/current_style.md:215
 msgid ""
@@ -544,19 +544,19 @@ msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:349
 msgid "`target = (...)`"
-msgstr ""
+msgstr "`target = (...)`"
 
 #: ../../../the_black_code_style/current_style.md:350
 msgid "`target: type = (...)`"
-msgstr ""
+msgstr "`target: type = (...)`"
 
 #: ../../../the_black_code_style/current_style.md:351
 msgid "`some, *un, packing = (...)`"
-msgstr ""
+msgstr "`some, *un, packing = (...)`"
 
 #: ../../../the_black_code_style/current_style.md:352
 msgid "`augmented += (...)`"
-msgstr ""
+msgstr "`augmented += (...)`"
 
 #: ../../../the_black_code_style/current_style.md:354
 msgid ""
@@ -580,6 +580,8 @@ msgid ""
 "return not (this or that)\n"
 "decision = (maybe.this() and values > 0) or (maybe.that() and values < 0)\n"
 msgstr ""
+"return not (this or that)\n"
+"decision = (maybe.this() and values > 0) or (maybe.that() and values < 0)\n"
 
 #: ../../../the_black_code_style/current_style.md:369
 msgid "Call chains"
@@ -607,6 +609,16 @@ msgid ""
 "        .all()\n"
 "    )\n"
 msgstr ""
+"def example(session):\n"
+"    result = (\n"
+"        session.query(models.Customer.id)\n"
+"        .filter(\n"
+"            models.Customer.account_id == account_id,\n"
+"            models.Customer.email == email_address,\n"
+"        )\n"
+"        .order_by(models.Customer.id.asc())\n"
+"        .all()\n"
+"    )\n"
 
 #: ../../../the_black_code_style/current_style.md:390
 msgid "Typing stub files"
@@ -731,6 +743,10 @@ msgid ""
 "    \"pl_pl\": \"polski\",\n"
 "}\n"
 msgstr ""
+"TRANSLATIONS = {\n"
+"    \"en_us\": \"English (US)\",\n"
+"    \"pl_pl\": \"polski\",\n"
+"}\n"
 
 #: ../../../the_black_code_style/current_style.md:456
 msgid ""
