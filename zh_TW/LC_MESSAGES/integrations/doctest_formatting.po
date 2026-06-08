@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../integrations/doctest_formatting.md:1
+msgid "Doctest Formatting"
+msgstr "Doctest 格式化"
+
+#: ../../../integrations/doctest_formatting.md:3
+msgid ""
+"While _Black_ makes some decisions about styling for docstrings, it does not "
+"make any assumptions about the contents of documentation. Thus, executable "
+"Python code inside docstrings or documentation files (e.g. doctests), will "
+"not be formatted by _Black_."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:7
+msgid ""
+"Listed below are tools that apply _Black_ formatting to code inside "
+"docstrings and documentation files."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:10
+msgid ""
+"Note: There are some observed inconsistencies between the below packages. "
+"Because of this, we hesitate to make any recommendations. Any installed "
+"packages are installed at your own risk. We also encourage anyone to "
+"contribute documentation for additional packages that apply _Black_ "
+"formatting to doctests."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:15
+msgid "blacken-docs"
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:17
+msgid ""
+"[`blacken-docs`](https://pypi.org/project/blacken-docs/) is primarily used "
+"to apply _Black_ formatting to code in documentation files (e.g. `.rst`, `."
+"md`, `.tex`)."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:20
+msgid "`blacken-docs` supports the following:"
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:22
+msgid ""
+"Python code blocks in Markdown, reStructuredText, and LaTeX files. Similar "
+"to `blackdoc`, normal _Black_ formatting is applied, so doctests inside "
+"Python code blocks will not be formatted."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:26
+#: ../../../integrations/doctest_formatting.md:93
+msgid ""
+"```python\n"
+"print(\"Hello world!\")\n"
+"```\n"
+msgstr ""
+"```python\n"
+"print(\"Hello world!\")\n"
+"```\n"
+
+#: ../../../integrations/doctest_formatting.md:32
+#: ../../../integrations/doctest_formatting.md:99
+msgid ""
+".. code-block:: python\n"
+"    print(\"Hello world!\")\n"
+msgstr ""
+".. code-block:: python\n"
+"    print(\"Hello world!\")\n"
+
+#: ../../../integrations/doctest_formatting.md:37
+msgid ""
+"\\begin{minted}{python}\n"
+"print(\"Hello world!\")\n"
+"\\end{minted}\n"
+msgstr ""
+"\\begin{minted}{python}\n"
+"print(\"Hello world!\")\n"
+"\\end{minted}\n"
+
+#: ../../../integrations/doctest_formatting.md:43
+msgid ""
+"Doctests inside Pycon code blocks in Markdown and reStructuredText. The code "
+"blocks may be included in a `.md` or `.rst` file, or inside a docstring in a "
+"Python file."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:46
+msgid ""
+"```python\n"
+">>> print(\"Hello world!\")\n"
+"```\n"
+msgstr ""
+"```python\n"
+">>> print(\"Hello world!\")\n"
+"```\n"
+
+#: ../../../integrations/doctest_formatting.md:52
+msgid ""
+".. code-block:: pycon\n"
+"    >>> print(\"Hello world!\")\n"
+msgstr ""
+".. code-block:: pycon\n"
+"    >>> print(\"Hello world!\")\n"
+
+#: ../../../integrations/doctest_formatting.md:57
+msgid ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    ```pycon\n"
+"    >>> add_one(1) == 2\n"
+"    ```\n"
+"    \"\"\"\n"
+"    return n + 1\n"
+msgstr ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    ```pycon\n"
+"    >>> add_one(1) == 2\n"
+"    ```\n"
+"    \"\"\"\n"
+"    return n + 1\n"
+
+#: ../../../integrations/doctest_formatting.md:69
+msgid "blackdoc"
+msgstr "blackdoc"
+
+#: ../../../integrations/doctest_formatting.md:71
+msgid ""
+"[`blackdoc`](https://pypi.org/project/blackdoc/) is primarily used to apply "
+"_Black_ formatting to doctests in Python files. It will not format any file "
+"contents that are otherwise covered by _Black_."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:75
+msgid "`blackdoc` supports the following:"
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:77
+msgid "Doctests in Python files."
+msgstr ""
+
+#: ../../../integrations/doctest_formatting.md:79
+msgid ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    >>> add_one(1) == 2\n"
+"    \"\"\"\n"
+"    return n + 1\n"
+msgstr ""
+"def add_one(n: int) -> int:\n"
+"    \"\"\"\n"
+"    Examples\n"
+"    --------\n"
+"    >>> add_one(1) == 2\n"
+"    \"\"\"\n"
+"    return n + 1\n"
+
+#: ../../../integrations/doctest_formatting.md:89
+msgid ""
+"Python code blocks in Markdown or reStructuredText files. In these cases, "
+"normal _Black_ formatting is applied, i.e., doctests inside Python code "
+"blocks will not be formatted."
+msgstr ""
