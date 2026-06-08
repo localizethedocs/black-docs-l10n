@@ -1,0 +1,665 @@
+<!doctype html>
+<html class="no-js" lang="en-US" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Using Black with Jupyter Notebooks" href="using_black_with_jupyter_notebooks.html"><link rel="prev" title="Introducing Black to your project" href="introducing_black_to_your_project.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/black-docs-l10n/guides/using_black_with_other_tools.html">
+        <link rel="prefetch" href="../_static/logo2-readme.png" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Using Black with other tools - Black 26.5.2.dev15 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Black 26.5.2.dev15 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo2-readme.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Black 26.5.2.dev15 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../the_black_code_style/index.html">The Black Code Style</a><input aria-label="Toggle navigation of The Black Code Style" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/current_style.html">Current style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/future_style.html">Future style</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../usage_and_configuration/index.html">Usage and Configuration</a><input aria-label="Toggle navigation of Usage and Configuration" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/file_collection_and_discovery.html">File collection and discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_as_a_server.html">Black as a server (blackd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_docker_image.html">Black Docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integrations/index.html">Integrations</a><input aria-label="Toggle navigation of Integrations" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/editors.html">Editor integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/github_actions.html">GitHub Actions integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/source_version_control.html">Version control integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/doctest_formatting.html">Doctest Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Guides</a><input aria-label="Toggle navigation of Guides" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introducing_black_to_your_project.html">Introducing <em>Black</em> to your project</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Using <em>Black</em> with other tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_black_with_jupyter_notebooks.html">Using <em>Black</em> with Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing/index.html">Contributing</a><input aria-label="Toggle navigation of Contributing" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/gauging_changes.html">Gauging changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/issue_triage.html">Issue triage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/release_process.html">Release process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/psf/black">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/black">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/RtVdv86PrH">Chat</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/guides/using_black_with_other_tools.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="using-black-with-other-tools">
+<h1>Using <em>Black</em> with other tools<a class="headerlink" href="#using-black-with-other-tools" title="Link to this heading">¶</a></h1>
+<section id="black-compatible-configurations">
+<h2>Black compatible configurations<a class="headerlink" href="#black-compatible-configurations" title="Link to this heading">¶</a></h2>
+<p>All of Black’s changes are harmless (or at least, they should be), but a few do conflict
+against other tools. It is not uncommon to be using other tools alongside <em>Black</em> like
+linters and type checkers. Some of them need a bit of tweaking to resolve the conflicts.
+Listed below are <em>Black</em> compatible configurations in various formats for the common
+tools out there.</p>
+<p><strong>Please note</strong> that <em>Black</em> only supports the TOML file format for its configuration
+(e.g. <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>). The provided examples are to only configure their corresponding
+tools, using <strong>their</strong> supported file formats.</p>
+<p>Compatible configuration files can be
+<a class="reference external" href="https://github.com/psf/black/blob/main/docs/compatible_configs/">found here</a>.</p>
+<section id="isort">
+<h3>isort<a class="headerlink" href="#isort" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://pypi.org/p/isort/">isort</a> helps to sort and format imports in your Python code.
+<em>Black</em> also formats imports, but in a different way from isort’s defaults which leads
+to conflicting changes.</p>
+<section id="profile">
+<h4>Profile<a class="headerlink" href="#profile" title="Link to this heading">¶</a></h4>
+<p>Since version 5.0.0, isort supports
+<a class="reference external" href="https://pycqa.github.io/isort/docs/configuration/profiles.html">profiles</a> to allow easy
+interoperability with common code styles. You can set the black profile in any of the
+<a class="reference external" href="https://pycqa.github.io/isort/docs/configuration/config_files.html">config files</a>
+supported by isort. Below, an example for <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[tool.isort]</span>
+<span class="n">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;black&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-configuration">
+<h4>Custom Configuration<a class="headerlink" href="#custom-configuration" title="Link to this heading">¶</a></h4>
+<p>If you’re using an isort version that is older than 5.0.0 or you have some custom
+configuration for <em>Black</em>, you can tweak your isort configuration to make it compatible
+with <em>Black</em>. Below, an example for <code class="docutils literal notranslate"><span class="pre">.isort.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">multi_line_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">3</span>
+<span class="na">include_trailing_comma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<span class="na">force_grid_wrap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0</span>
+<span class="na">use_parentheses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<span class="na">ensure_newline_before_comments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<span class="na">line_length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+</pre></div>
+</div>
+</section>
+<section id="why-those-options-above">
+<h4>Why those options above?<a class="headerlink" href="#why-those-options-above" title="Link to this heading">¶</a></h4>
+<p><em>Black</em> wraps imports that surpass <code class="docutils literal notranslate"><span class="pre">line-length</span></code> by moving identifiers onto separate
+lines and by adding a trailing comma after each. A more detailed explanation of this
+behaviour can be
+<a class="reference internal" href="../the_black_code_style/current_style.html#how-black-wraps-lines"><span class="std std-ref">found here</span></a>.</p>
+<p>isort’s default mode of wrapping imports that extend past the <code class="docutils literal notranslate"><span class="pre">line_length</span></code> limit is
+“Grid”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">third_party</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span><span class="n">lib1</span><span class="p">,</span> <span class="n">lib2</span><span class="p">,</span> <span class="n">lib3</span><span class="p">,</span>
+                         <span class="n">lib4</span><span class="p">,</span> <span class="n">lib5</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This style is incompatible with <em>Black</em>, but isort can be configured to use a different
+wrapping mode called “Vertical Hanging Indent” which looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">third_party</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">lib1</span><span class="p">,</span>
+    <span class="n">lib2</span><span class="p">,</span>
+    <span class="n">lib3</span><span class="p">,</span>
+    <span class="n">lib4</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>This style is <em>Black</em> compatible and can be achieved by <code class="docutils literal notranslate"><span class="pre">multi-line-output</span> <span class="pre">=</span> <span class="pre">3</span></code>. Also,
+as mentioned above, when wrapping long imports <em>Black</em> puts a trailing comma and uses
+parentheses. isort should follow the same behaviour and passing the options
+<code class="docutils literal notranslate"><span class="pre">include_trailing_comma</span> <span class="pre">=</span> <span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">use_parentheses</span> <span class="pre">=</span> <span class="pre">True</span></code> configures that.</p>
+<p>The option <code class="docutils literal notranslate"><span class="pre">force_grid_wrap</span> <span class="pre">=</span> <span class="pre">0</span></code> is just to tell isort to only wrap imports that surpass
+the <code class="docutils literal notranslate"><span class="pre">line_length</span></code> limit.</p>
+<p>Finally, isort should be told to wrap imports when they surpass <em>Black</em>’s default limit
+of 88 characters via <code class="docutils literal notranslate"><span class="pre">line_length</span> <span class="pre">=</span> <span class="pre">88</span></code> as well as
+<code class="docutils literal notranslate"><span class="pre">ensure_newline_before_comments</span> <span class="pre">=</span> <span class="pre">True</span></code> to ensure spacing import sections with comments
+works the same as with <em>Black</em>.</p>
+<p><strong>Please note</strong> <code class="docutils literal notranslate"><span class="pre">ensure_newline_before_comments</span> <span class="pre">=</span> <span class="pre">True</span></code> only works since isort &gt;= 5 but
+does not break older versions so you can keep it if you are running previous versions.</p>
+</section>
+<section id="formats">
+<h4>Formats<a class="headerlink" href="#formats" title="Link to this heading">¶</a></h4>
+<details>
+<summary>.isort.cfg</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[settings]</span>
+<span class="na">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">black</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>setup.cfg</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[isort]</span>
+<span class="na">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">black</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>pyproject.toml</summary>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[tool.isort]</span>
+<span class="n">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;black&#39;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>.editorconfig</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[*.py]</span>
+<span class="na">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">black</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+<section id="pycodestyle">
+<h3>pycodestyle<a class="headerlink" href="#pycodestyle" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://pycodestyle.pycqa.org/">pycodestyle</a> is a code linter. It warns you of syntax
+errors, possible bugs, stylistic errors, etc. For the most part, pycodestyle follows
+<a class="reference external" href="https://peps.python.org/pep-0008/">PEP 8</a> when warning about stylistic errors. There
+are a few deviations that cause incompatibilities with <em>Black</em>.</p>
+<section id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h4>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+<span class="na">ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E203,E701</span>
+</pre></div>
+</div>
+</section>
+<section id="labels-why-pycodestyle-warnings">
+<span id="id1"></span><h4>Why those options above?<a class="headerlink" href="#labels-why-pycodestyle-warnings" title="Link to this heading">¶</a></h4>
+<section id="max-line-length">
+<h5><code class="docutils literal notranslate"><span class="pre">max-line-length</span></code><a class="headerlink" href="#max-line-length" title="Link to this heading">¶</a></h5>
+<p>As with isort, pycodestyle should be configured to allow lines up to the length limit of
+<code class="docutils literal notranslate"><span class="pre">88</span></code>, <em>Black</em>’s default.</p>
+</section>
+<section id="e203">
+<h5><code class="docutils literal notranslate"><span class="pre">E203</span></code><a class="headerlink" href="#e203" title="Link to this heading">¶</a></h5>
+<p>In some cases, as determined by PEP 8, <em>Black</em> will enforce an equal amount of
+whitespace around slice operators. Due to this, pycodestyle will raise
+<code class="docutils literal notranslate"><span class="pre">E203</span> <span class="pre">whitespace</span> <span class="pre">before</span> <span class="pre">':'</span></code> warnings. Since this warning is not PEP 8 compliant, it
+should be disabled.</p>
+</section>
+<section id="e701-e704">
+<h5><code class="docutils literal notranslate"><span class="pre">E701</span></code> / <code class="docutils literal notranslate"><span class="pre">E704</span></code><a class="headerlink" href="#e701-e704" title="Link to this heading">¶</a></h5>
+<p><em>Black</em> will collapse implementations of classes and functions consisting solely of <code class="docutils literal notranslate"><span class="pre">..</span></code>
+to a single line. This matches how such examples are formatted in PEP 8. It remains true
+that in all other cases Black will prevent multiple statements on the same line, in
+accordance with PEP 8 generally discouraging this.</p>
+<p>However, <code class="docutils literal notranslate"><span class="pre">pycodestyle</span></code> does not mirror this logic and may raise
+<code class="docutils literal notranslate"><span class="pre">E701</span> <span class="pre">multiple</span> <span class="pre">statements</span> <span class="pre">on</span> <span class="pre">one</span> <span class="pre">line</span> <span class="pre">(colon)</span></code> in this situation. Its
+disabled-by-default <code class="docutils literal notranslate"><span class="pre">E704</span> <span class="pre">multiple</span> <span class="pre">statements</span> <span class="pre">on</span> <span class="pre">one</span> <span class="pre">line</span> <span class="pre">(def)</span></code> rule may also raise
+warnings and should not be enabled.</p>
+</section>
+<section id="w503">
+<h5><code class="docutils literal notranslate"><span class="pre">W503</span></code><a class="headerlink" href="#w503" title="Link to this heading">¶</a></h5>
+<p>When breaking a line, <em>Black</em> will break it before a binary operator. This is compliant
+with PEP 8 as of
+<a class="reference external" href="https://github.com/python/peps/commit/c59c4376ad233a62ca4b3a6060c81368bd21e85b#diff-64ec08cc46db7540f18f2af46037f599">April 2016</a>.
+There’s a disabled-by-default warning in Flake8 which goes against this PEP 8
+recommendation called <code class="docutils literal notranslate"><span class="pre">W503</span> <span class="pre">line</span> <span class="pre">break</span> <span class="pre">before</span> <span class="pre">binary</span> <span class="pre">operator</span></code>. It should not be enabled
+in your configuration. You can use its counterpart
+<code class="docutils literal notranslate"><span class="pre">W504</span> <span class="pre">line</span> <span class="pre">break</span> <span class="pre">after</span> <span class="pre">binary</span> <span class="pre">operator</span></code> instead.</p>
+</section>
+</section>
+<section id="id2">
+<h4>Formats<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+<details>
+<summary>setup.cfg, .pycodestyle, tox.ini</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[pycodestyle]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+<span class="na">ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E203,E701</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+<section id="flake8">
+<h3>Flake8<a class="headerlink" href="#flake8" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://pypi.org/p/flake8/">Flake8</a> is a wrapper around multiple linters, including
+pycodestyle. As such, it has many of the same issues.</p>
+<section id="bugbear">
+<h4>Bugbear<a class="headerlink" href="#bugbear" title="Link to this heading">¶</a></h4>
+<p>It’s recommended to use <a class="reference external" href="https://github.com/PyCQA/flake8-bugbear">the Bugbear plugin</a>
+and enable
+<a class="reference external" href="https://github.com/PyCQA/flake8-bugbear#opinionated-warnings#:~:text=you%20expect%20it.-,B950,-%3A%20Line%20too%20long">its B950 check</a>
+instead of using Flake8’s E501, because it aligns with
+<a class="reference internal" href="../the_black_code_style/current_style.html#labels-line-length"><span class="std std-ref">Black’s 10% rule</span></a>.</p>
+<p>Install Bugbear and use the following config:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[flake8]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">80</span>
+<span class="na">extend-select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">B950</span>
+<span class="na">extend-ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E203,E501,E701</span>
+</pre></div>
+</div>
+</section>
+<section id="minimal-configuration">
+<h4>Minimal Configuration<a class="headerlink" href="#minimal-configuration" title="Link to this heading">¶</a></h4>
+<p>In cases where you can’t or don’t want to install Bugbear, you can use this minimally
+compatible config:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[flake8]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+<span class="na">extend-ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E203,E701</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h4>Why those options above?<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+<p>See <a class="reference internal" href="#labels-why-pycodestyle-warnings"><span class="std std-ref">the pycodestyle section</span></a> above.</p>
+</section>
+<section id="id4">
+<h4>Formats<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+<details>
+<summary>.flake8, setup.cfg, tox.ini</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[flake8]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+<span class="na">extend-ignore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">E203,E701</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+<section id="pylint">
+<h3>Pylint<a class="headerlink" href="#pylint" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://pypi.org/p/pylint/">Pylint</a> is also a code linter like Flake8. It has many of
+the same checks as Flake8 and more. It particularly has more formatting checks regarding
+style conventions like variable naming.</p>
+<section id="id5">
+<h4>Configuration<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h4>Why those options above?<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<p>Pylint should be configured to only complain about lines that surpass <code class="docutils literal notranslate"><span class="pre">88</span></code> characters
+via <code class="docutils literal notranslate"><span class="pre">max-line-length</span> <span class="pre">=</span> <span class="pre">88</span></code>.</p>
+<p>If using <code class="docutils literal notranslate"><span class="pre">pylint&lt;2.6.0</span></code>, also disable <code class="docutils literal notranslate"><span class="pre">C0326</span></code> and <code class="docutils literal notranslate"><span class="pre">C0330</span></code> as these are incompatible with
+<em>Black</em> formatting and have since been removed.</p>
+</section>
+<section id="id7">
+<h4>Formats<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<details>
+<summary>pylintrc</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[format]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>setup.cfg</summary>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[pylint]</span>
+<span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>pyproject.toml</summary>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[tool.pylint.format]</span>
+<span class="n">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;88&quot;</span>
+</pre></div>
+</div>
+</details>
+</section>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="using_black_with_jupyter_notebooks.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Using <em>Black</em> with Jupyter Notebooks</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="introducing_black_to_your_project.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Introducing <em>Black</em> to your project</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2018-Present, Łukasz Langa and contributors to Black
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Using <em>Black</em> with other tools</a><ul>
+<li><a class="reference internal" href="#black-compatible-configurations">Black compatible configurations</a><ul>
+<li><a class="reference internal" href="#isort">isort</a><ul>
+<li><a class="reference internal" href="#profile">Profile</a></li>
+<li><a class="reference internal" href="#custom-configuration">Custom Configuration</a></li>
+<li><a class="reference internal" href="#why-those-options-above">Why those options above?</a></li>
+<li><a class="reference internal" href="#formats">Formats</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pycodestyle">pycodestyle</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#labels-why-pycodestyle-warnings">Why those options above?</a><ul>
+<li><a class="reference internal" href="#max-line-length"><code class="docutils literal notranslate"><span class="pre">max-line-length</span></code></a></li>
+<li><a class="reference internal" href="#e203"><code class="docutils literal notranslate"><span class="pre">E203</span></code></a></li>
+<li><a class="reference internal" href="#e701-e704"><code class="docutils literal notranslate"><span class="pre">E701</span></code> / <code class="docutils literal notranslate"><span class="pre">E704</span></code></a></li>
+<li><a class="reference internal" href="#w503"><code class="docutils literal notranslate"><span class="pre">W503</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">Formats</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flake8">Flake8</a><ul>
+<li><a class="reference internal" href="#bugbear">Bugbear</a></li>
+<li><a class="reference internal" href="#minimal-configuration">Minimal Configuration</a></li>
+<li><a class="reference internal" href="#id3">Why those options above?</a></li>
+<li><a class="reference internal" href="#id4">Formats</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pylint">Pylint</a><ul>
+<li><a class="reference internal" href="#id5">Configuration</a></li>
+<li><a class="reference internal" href="#id6">Why those options above?</a></li>
+<li><a class="reference internal" href="#id7">Formats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=fe369db5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=b612fa2f"></script>
+    </body>
+</html>

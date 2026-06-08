@@ -1,0 +1,969 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜索" href="../search.html"><link rel="next" title="File collection and discovery" href="file_collection_and_discovery.html"><link rel="prev" title="Usage and Configuration" href="index.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/black-docs-l10n/usage_and_configuration/the_basics.html">
+        <link rel="prefetch" href="../_static/logo2-readme.png" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>The basics - Black 26.5.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Black 26.5.1 文档</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo2-readme.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Black 26.5.1 文档</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../the_black_code_style/index.html">The Black Code Style</a><input aria-label="Toggle navigation of The Black Code Style" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/current_style.html">Current style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/future_style.html">Future style</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Usage and Configuration</a><input aria-label="Toggle navigation of Usage and Configuration" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_collection_and_discovery.html">File collection and discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="black_as_a_server.html">Black as a server (blackd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="black_docker_image.html">Black Docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integrations/index.html">Integrations</a><input aria-label="Toggle navigation of Integrations" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/editors.html">Editor integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/github_actions.html">GitHub Actions integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/source_version_control.html">Version control integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/doctest_formatting.html">Doctest Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">Guides</a><input aria-label="Toggle navigation of Guides" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/introducing_black_to_your_project.html">Introducing <em>Black</em> to your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_other_tools.html">Using <em>Black</em> with other tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_jupyter_notebooks.html">Using <em>Black</em> with Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing/index.html">Contributing</a><input aria-label="Toggle navigation of Contributing" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/gauging_changes.html">Gauging changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/issue_triage.html">Issue triage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/release_process.html">Release process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/psf/black">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/black">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/RtVdv86PrH">Chat</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/usage_and_configuration/the_basics.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="the-basics">
+<h1>The basics<a class="headerlink" href="#the-basics" title="链接到此标题。">¶</a></h1>
+<p>Foundational knowledge on using and configuring Black.</p>
+<p><em>Black</em> is a well-behaved Unix-style command-line tool:</p>
+<ul class="simple">
+<li><p>it does nothing if it finds no sources to format;</p></li>
+<li><p>it will read from standard input and write to standard output if <code class="docutils literal notranslate"><span class="pre">-</span></code> is used as the
+filename;</p></li>
+<li><p>it only outputs messages to users on standard error;</p></li>
+<li><p>exits with code 0 unless an internal error occurred or a CLI option prompted it.</p></li>
+</ul>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="链接到此标题。">¶</a></h2>
+<p><em>Black</em> will reformat entire files in place. To get started right away with sensible
+defaults:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>black<span class="w"> </span><span class="o">{</span>source_file_or_directory<span class="o">}</span>
+</pre></div>
+</div>
+<p>You can run <em>Black</em> as a package if running it as a script doesn't work:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>black<span class="w"> </span><span class="o">{</span>source_file_or_directory<span class="o">}</span>
+</pre></div>
+</div>
+<section id="ignoring-sections">
+<h3>Ignoring sections<a class="headerlink" href="#ignoring-sections" title="链接到此标题。">¶</a></h3>
+<p>Black will not reformat lines that contain <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">skip</span></code> or blocks that start with
+<code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">off</span></code> and end with <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">on</span></code>. <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">skip</span></code> can be mixed with other
+pragmas/comments either with multiple comments (e.g. <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">skip</span> <span class="pre">#</span> <span class="pre">pylint</span> <span class="pre">#</span> <span class="pre">noqa</span></code>) or
+as a semicolon separated list (e.g. <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">skip;</span> <span class="pre">pylint;</span> <span class="pre">noqa</span></code>). <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">fmt:</span> <span class="pre">on/off</span></code> must
+be on the same level of indentation and in the same block, meaning no unindents beyond
+the initial indentation level between them. Black also recognizes
+<a class="reference external" href="https://github.com/google/yapf">YAPF</a>'s block comments to the same effect, as a
+courtesy for straddling code.</p>
+</section>
+<section id="command-line-options">
+<h3>Command line options<a class="headerlink" href="#command-line-options" title="链接到此标题。">¶</a></h3>
+<p>The CLI options of <em>Black</em> can be displayed by running <code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">--help</span></code>. All options are
+also covered in more detail below.</p>
+<p>While <em>Black</em> has quite a few knobs these days, it is still opinionated so style options
+are deliberately limited and rarely added.</p>
+<p>Note that all command-line options listed above can also be configured using a
+<code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file (more on that below).</p>
+<section id="h-help">
+<h4><code class="docutils literal notranslate"><span class="pre">-h</span></code>, <code class="docutils literal notranslate"><span class="pre">--help</span></code><a class="headerlink" href="#h-help" title="链接到此标题。">¶</a></h4>
+<p>Show available command-line options and exit.</p>
+</section>
+<section id="c-code">
+<h4><code class="docutils literal notranslate"><span class="pre">-c</span></code>, <code class="docutils literal notranslate"><span class="pre">--code</span></code><a class="headerlink" href="#c-code" title="链接到此标题。">¶</a></h4>
+<p>Format the code passed in as a string.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--code<span class="w"> </span><span class="s2">&quot;print ( &#39;hello, world&#39; )&quot;</span>
+<span class="go">print(&quot;hello, world&quot;)</span>
+</pre></div>
+</div>
+</section>
+<section id="l-line-length">
+<h4><code class="docutils literal notranslate"><span class="pre">-l</span></code>, <code class="docutils literal notranslate"><span class="pre">--line-length</span></code><a class="headerlink" href="#l-line-length" title="链接到此标题。">¶</a></h4>
+<p>How many characters per line to allow. The default is 88.</p>
+<p>See also <a class="reference internal" href="../the_black_code_style/current_style.html#labels-line-length"><span class="std std-ref">the style documentation</span></a>.</p>
+</section>
+<section id="t-target-version">
+<h4><code class="docutils literal notranslate"><span class="pre">-t</span></code>, <code class="docutils literal notranslate"><span class="pre">--target-version</span></code><a class="headerlink" href="#t-target-version" title="链接到此标题。">¶</a></h4>
+<p>Python versions that should be supported by Black's output. You can run <code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">--help</span></code>
+and look for the <code class="docutils literal notranslate"><span class="pre">--target-version</span></code> option to see the full list of supported versions.
+You should include all versions that your code supports. If you support Python 3.11
+through 3.13, you should write:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>-t<span class="w"> </span>py311<span class="w"> </span>-t<span class="w"> </span>py312<span class="w"> </span>-t<span class="w"> </span>py313
+</pre></div>
+</div>
+<p>In a <a class="reference internal" href="#configuration-via-a-file">configuration file</a>, you can write:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;py311&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;py312&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;py313&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>By default, Black will infer target versions from the project metadata in
+<code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, specifically the <code class="docutils literal notranslate"><span class="pre">[project.requires-python]</span></code> field. If this does not
+yield conclusive results, Black will use per-file auto-detection.</p>
+<p><em>Black</em> uses this option to decide what grammar to use to parse your code. In addition,
+it may use it to decide what style to use. For example, support for a trailing comma
+after <code class="docutils literal notranslate"><span class="pre">*args</span></code> in a function call was added in Python 3.5, so <em>Black</em> will add this comma
+only if the target versions are all Python 3.5 or higher:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--line-length<span class="o">=</span><span class="m">10</span><span class="w"> </span>--target-version<span class="o">=</span>py35<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;f(a, *args)&#39;</span>
+<span class="go">f(</span>
+<span class="go">    a,</span>
+<span class="go">    *args,</span>
+<span class="go">)</span>
+<span class="gp">$ </span>black<span class="w"> </span>--line-length<span class="o">=</span><span class="m">10</span><span class="w"> </span>--target-version<span class="o">=</span>py34<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;f(a, *args)&#39;</span>
+<span class="go">f(</span>
+<span class="go">    a,</span>
+<span class="go">    *args</span>
+<span class="go">)</span>
+<span class="gp">$ </span>black<span class="w"> </span>--line-length<span class="o">=</span><span class="m">10</span><span class="w"> </span>--target-version<span class="o">=</span>py34<span class="w"> </span>--target-version<span class="o">=</span>py35<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;f(a, *args)&#39;</span>
+<span class="go">f(</span>
+<span class="go">    a,</span>
+<span class="go">    *args</span>
+<span class="go">)</span>
+</pre></div>
+</div>
+</section>
+<section id="pyi">
+<h4><code class="docutils literal notranslate"><span class="pre">--pyi</span></code><a class="headerlink" href="#pyi" title="链接到此标题。">¶</a></h4>
+<p>Format all input files like typing stubs regardless of file extension. This is useful
+when piping source on standard input.</p>
+</section>
+<section id="ipynb">
+<h4><code class="docutils literal notranslate"><span class="pre">--ipynb</span></code><a class="headerlink" href="#ipynb" title="链接到此标题。">¶</a></h4>
+<p>Format all input files like Jupyter Notebooks regardless of file extension. This is
+useful when piping source on standard input.</p>
+</section>
+<section id="python-cell-magics">
+<h4><code class="docutils literal notranslate"><span class="pre">--python-cell-magics</span></code><a class="headerlink" href="#python-cell-magics" title="链接到此标题。">¶</a></h4>
+<p>When processing Jupyter Notebooks, add the given magic to the list of known python-
+magics. Useful for formatting cells with custom python magics. See the
+<a class="reference internal" href="../guides/using_black_with_jupyter_notebooks.html"><span class="std std-doc">Jupyter Notebooks guide</span></a> for more
+details.</p>
+</section>
+<section id="x-skip-source-first-line">
+<h4><code class="docutils literal notranslate"><span class="pre">-x,</span> <span class="pre">--skip-source-first-line</span></code><a class="headerlink" href="#x-skip-source-first-line" title="链接到此标题。">¶</a></h4>
+<p>Skip the first line of the source code.</p>
+</section>
+<section id="s-skip-string-normalization">
+<h4><code class="docutils literal notranslate"><span class="pre">-S,</span> <span class="pre">--skip-string-normalization</span></code><a class="headerlink" href="#s-skip-string-normalization" title="链接到此标题。">¶</a></h4>
+<p>By default, <em>Black</em> uses double quotes for all strings and normalizes string prefixes,
+as described in <a class="reference internal" href="../the_black_code_style/current_style.html#labels-strings"><span class="std std-ref">the style documentation</span></a>. If this option is given,
+strings are left unchanged instead.</p>
+</section>
+<section id="c-skip-magic-trailing-comma">
+<h4><code class="docutils literal notranslate"><span class="pre">-C,</span> <span class="pre">--skip-magic-trailing-comma</span></code><a class="headerlink" href="#c-skip-magic-trailing-comma" title="链接到此标题。">¶</a></h4>
+<p>By default, <em>Black</em> uses existing trailing commas as an indication that short lines
+should be left separate, as described in
+<a class="reference internal" href="../the_black_code_style/current_style.html#labels-magic-trailing-comma"><span class="std std-ref">the style documentation</span></a>. If this option is given, the
+magic trailing comma is ignored.</p>
+</section>
+<section id="preview">
+<h4><code class="docutils literal notranslate"><span class="pre">--preview</span></code><a class="headerlink" href="#preview" title="链接到此标题。">¶</a></h4>
+<p>Enable potentially disruptive style changes that we expect to add to Black's main
+functionality in the next major release. Use this if you want a taste of what next
+year's style will look like.</p>
+<p>Read more about <a class="reference internal" href="../the_black_code_style/future_style.html#labels-preview-style"><span class="std std-ref">our preview style</span></a>.</p>
+<p>There is no guarantee on the code style produced by this flag across releases.</p>
+</section>
+<section id="unstable">
+<h4><code class="docutils literal notranslate"><span class="pre">--unstable</span></code><a class="headerlink" href="#unstable" title="链接到此标题。">¶</a></h4>
+<p>Enable all style changes in <code class="docutils literal notranslate"><span class="pre">--preview</span></code>, plus additional changes that we would like to
+make eventually, but that have known issues that need to be fixed before they can move
+back to the <code class="docutils literal notranslate"><span class="pre">--preview</span></code> style. Use this if you want to experiment with these changes and
+help fix issues with them.</p>
+<p>There is no guarantee on the code style produced by this flag across releases.</p>
+</section>
+<section id="enable-unstable-feature">
+<h4><code class="docutils literal notranslate"><span class="pre">--enable-unstable-feature</span></code><a class="headerlink" href="#enable-unstable-feature" title="链接到此标题。">¶</a></h4>
+<p>Enable specific features from the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style. See
+<a class="reference internal" href="../the_black_code_style/future_style.html#labels-unstable-features"><span class="std std-ref">the preview style documentation</span></a> for the list of supported
+features. This flag can only be used when <code class="docutils literal notranslate"><span class="pre">--preview</span></code> is enabled. Users are encouraged
+to use this flag if they use <code class="docutils literal notranslate"><span class="pre">--preview</span></code> style and a feature that affects their code is
+moved from the <code class="docutils literal notranslate"><span class="pre">--preview</span></code> to the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style, but they want to avoid the thrash
+from undoing this change.</p>
+<p>There are no guarantees on the behavior of these features, or even their existence,
+across releases.</p>
+</section>
+<section id="check">
+<span id="labels-exit-code"></span><h4><code class="docutils literal notranslate"><span class="pre">--check</span></code><a class="headerlink" href="#check" title="链接到此标题。">¶</a></h4>
+<p>Don't write the files back, just return the status. <em>Black</em> will exit with:</p>
+<ul class="simple">
+<li><p>code 0 if nothing would change;</p></li>
+<li><p>code 1 if some files would be reformatted; or</p></li>
+<li><p>code 123 if there was an internal error</p></li>
+</ul>
+<p>If used in combination with <code class="docutils literal notranslate"><span class="pre">--quiet</span></code> then only the exit code will be returned, unless
+there was an internal error.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>test.py<span class="w"> </span>--check
+<span class="go">All done! ✨ 🍰 ✨</span>
+<span class="go">1 file would be left unchanged.</span>
+<span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+<span class="go">0</span>
+
+<span class="gp">$ </span>black<span class="w"> </span>test.py<span class="w"> </span>--check
+<span class="go">would reformat test.py</span>
+<span class="go">Oh no! 💥 💔 💥</span>
+<span class="go">1 file would be reformatted.</span>
+<span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+<span class="go">1</span>
+
+<span class="gp">$ </span>black<span class="w"> </span>test.py<span class="w"> </span>--check
+<span class="go">error: cannot format test.py: INTERNAL ERROR: Black produced code that is not equivalent to the source.  Please report a bug on https://github.com/psf/black/issues.  This diff might be helpful: /tmp/blk_kjdr1oog.log</span>
+<span class="go">Oh no! 💥 💔 💥</span>
+<span class="go">1 file would fail to reformat.</span>
+<span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+<span class="go">123</span>
+</pre></div>
+</div>
+</section>
+<section id="diff">
+<h4><code class="docutils literal notranslate"><span class="pre">--diff</span></code><a class="headerlink" href="#diff" title="链接到此标题。">¶</a></h4>
+<p>Don't write the files back, just output a diff to indicate what changes <em>Black</em> would've
+made. They are printed to stdout so capturing them is simple.</p>
+<p>If you'd like colored diffs, you can enable them with <code class="docutils literal notranslate"><span class="pre">--color</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>test.py<span class="w"> </span>--diff
+<span class="go">--- test.py     2021-03-08 22:23:40.848954+00:00</span>
+<span class="go">+++ test.py     2021-03-08 22:23:47.126319+00:00</span>
+<span class="go">@@ -1 +1 @@</span>
+<span class="go">-print ( &#39;hello, world&#39; )</span>
+<span class="go">+print(&quot;hello, world&quot;)</span>
+<span class="go">would reformat test.py</span>
+<span class="go">All done! ✨ 🍰 ✨</span>
+<span class="go">1 file would be reformatted.</span>
+</pre></div>
+</div>
+</section>
+<section id="no-cache">
+<h4><code class="docutils literal notranslate"><span class="pre">--no-cache</span></code><a class="headerlink" href="#no-cache" title="链接到此标题。">¶</a></h4>
+<p>Do not consult or update Black's per-user cache during this run. When <code class="docutils literal notranslate"><span class="pre">--no-cache</span></code> is
+specified, Black will perform fresh analysis for all files and will neither read from
+nor write to the cache. This is helpful for reproducing formatting results from a clean
+run, debugging cache-related issues, or ensuring CI executes a fresh formatting analysis
+every time.</p>
+</section>
+<section id="color-no-color">
+<h4><code class="docutils literal notranslate"><span class="pre">--color</span></code> / <code class="docutils literal notranslate"><span class="pre">--no-color</span></code><a class="headerlink" href="#color-no-color" title="链接到此标题。">¶</a></h4>
+<p>Show (or do not show) colored diff. Only applies when <code class="docutils literal notranslate"><span class="pre">--diff</span></code> is given.</p>
+</section>
+<section id="line-ranges">
+<h4><code class="docutils literal notranslate"><span class="pre">--line-ranges</span></code><a class="headerlink" href="#line-ranges" title="链接到此标题。">¶</a></h4>
+<p>When specified, <em>Black</em> will try its best to only format these lines.</p>
+<p>This option can be specified multiple times, and a union of the lines will be formatted.
+Each range must be specified as two integers connected by a <code class="docutils literal notranslate"><span class="pre">-</span></code>: <code class="docutils literal notranslate"><span class="pre">&lt;START&gt;-&lt;END&gt;</span></code>. The
+<code class="docutils literal notranslate"><span class="pre">&lt;START&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;END&gt;</span></code> integer indices are 1-based and inclusive on both ends.</p>
+<p><em>Black</em> may still format lines outside of the ranges for multi-line statements.
+Formatting more than one file or any Jupyter Notebooks with this option is not
+supported. This option cannot be specified in the <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> config.</p>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">--line-ranges=1-10</span> <span class="pre">--line-ranges=21-30</span> <span class="pre">test.py</span></code> will format lines from
+<code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">10</span></code> and <code class="docutils literal notranslate"><span class="pre">21</span></code> to <code class="docutils literal notranslate"><span class="pre">30</span></code>.</p>
+<p>This option is mainly for editor integrations, such as &quot;Format Selection&quot;.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Due to <a class="reference external" href="https://github.com/psf/black/issues/4052">#4052</a>, <code class="docutils literal notranslate"><span class="pre">--line-ranges</span></code> might format
+extra lines outside of the ranges when there are unformatted lines with the exact
+formatted content next to the requested lines. It also disables <em>Black</em>'s formatting
+stability check in <code class="docutils literal notranslate"><span class="pre">--safe</span></code> mode.</p>
+</div>
+</section>
+<section id="fast-safe">
+<h4><code class="docutils literal notranslate"><span class="pre">--fast</span></code> / <code class="docutils literal notranslate"><span class="pre">--safe</span></code><a class="headerlink" href="#fast-safe" title="链接到此标题。">¶</a></h4>
+<p>By default, <em>Black</em> performs <a class="reference internal" href="../the_black_code_style/current_style.html#labels-ast-changes"><span class="std std-ref">an AST safety check</span></a> after formatting
+your code. The <code class="docutils literal notranslate"><span class="pre">--fast</span></code> flag turns off this check and the <code class="docutils literal notranslate"><span class="pre">--safe</span></code> flag explicitly
+enables it.</p>
+</section>
+<section id="required-version">
+<h4><code class="docutils literal notranslate"><span class="pre">--required-version</span></code><a class="headerlink" href="#required-version" title="链接到此标题。">¶</a></h4>
+<p>Require a specific version of <em>Black</em> to be running. This is useful for ensuring that
+all contributors to your project are using the same version, because different versions
+of <em>Black</em> may format code a little differently. This option can be set in a
+configuration file for consistent results across environments.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--version
+<span class="go">black, 26.5.1 (compiled: yes)</span>
+<span class="gp">$ </span>black<span class="w"> </span>--required-version<span class="w"> </span><span class="m">26</span>.5.1<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;format = &#39;this&#39;&quot;</span>
+<span class="go">format = &quot;this&quot;</span>
+<span class="gp">$ </span>black<span class="w"> </span>--required-version<span class="w"> </span><span class="m">31</span>.5b2<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;still = &#39;beta?!&#39;&quot;</span>
+<span class="go">Oh no! 💥 💔 💥 The required version does not match the running version!</span>
+</pre></div>
+</div>
+<p>You can also pass just the major version:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--required-version<span class="w"> </span><span class="m">22</span><span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;format = &#39;this&#39;&quot;</span>
+<span class="go">format = &quot;this&quot;</span>
+<span class="gp">$ </span>black<span class="w"> </span>--required-version<span class="w"> </span><span class="m">31</span><span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;still = &#39;beta?!&#39;&quot;</span>
+<span class="go">Oh no! 💥 💔 💥 The required version does not match the running version!</span>
+</pre></div>
+</div>
+<p>Because of our <a class="reference internal" href="../the_black_code_style/index.html"><span class="std std-doc">stability policy</span></a>, this will guarantee
+stable formatting, but still allow you to take advantage of improvements that do not
+affect formatting.</p>
+</section>
+<section id="exclude">
+<h4><code class="docutils literal notranslate"><span class="pre">--exclude</span></code><a class="headerlink" href="#exclude" title="链接到此标题。">¶</a></h4>
+<p>A regular expression that matches files and directories that should be excluded on
+recursive searches. An empty value means no paths are excluded. Use forward slashes for
+directories on all platforms (Windows, too). By default, Black also ignores all paths
+listed in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>. Changing this value will override all default exclusions.</p>
+<p>Default Exclusions:
+<code class="docutils literal notranslate"><span class="pre">['.direnv',</span> <span class="pre">'.eggs',</span> <span class="pre">'.git',</span> <span class="pre">'.hg',</span> <span class="pre">'.ipynb_checkpoints',</span>&#160; <span class="pre">'.mypy_cache',</span> <span class="pre">'.nox',</span> <span class="pre">'.pytest_cache',</span> <span class="pre">'.ruff_cache',</span> <span class="pre">'.tox',</span> <span class="pre">'.svn',</span> <span class="pre">'.venv',</span> <span class="pre">'.vscode',</span>&#160; <span class="pre">'__pypackages__',</span> <span class="pre">'_build',</span> <span class="pre">'buck-out',</span> <span class="pre">'build',</span> <span class="pre">'dist',</span> <span class="pre">'venv']</span> </code></p>
+<p>If the regular expression contains newlines, it is treated as a
+<a class="reference external" href="https://docs.python.org/3/library/re.html#re.VERBOSE">verbose regular expression</a>. This
+is typically useful when setting these options in a <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> configuration file;
+see <a class="reference internal" href="#configuration-format">Configuration format</a> for more information.</p>
+</section>
+<section id="extend-exclude">
+<h4><code class="docutils literal notranslate"><span class="pre">--extend-exclude</span></code><a class="headerlink" href="#extend-exclude" title="链接到此标题。">¶</a></h4>
+<p>Like <code class="docutils literal notranslate"><span class="pre">--exclude</span></code>, but adds additional files and directories on top of the default values
+instead of overriding them.</p>
+</section>
+<section id="force-exclude">
+<h4><code class="docutils literal notranslate"><span class="pre">--force-exclude</span></code><a class="headerlink" href="#force-exclude" title="链接到此标题。">¶</a></h4>
+<p>Like <code class="docutils literal notranslate"><span class="pre">--exclude</span></code>, but files and directories matching this regex will be excluded even
+when they are passed explicitly as arguments. This is useful when invoking Black
+programmatically on changed files, such as in a pre-commit hook or editor plugin.</p>
+</section>
+<section id="stdin-filename">
+<h4><code class="docutils literal notranslate"><span class="pre">--stdin-filename</span></code><a class="headerlink" href="#stdin-filename" title="链接到此标题。">¶</a></h4>
+<p>The name of the file when passing it through stdin. Useful to make sure Black will
+respect the <code class="docutils literal notranslate"><span class="pre">--force-exclude</span></code> option on some editors that rely on using stdin.</p>
+</section>
+<section id="include">
+<h4><code class="docutils literal notranslate"><span class="pre">--include</span></code><a class="headerlink" href="#include" title="链接到此标题。">¶</a></h4>
+<p>A regular expression that matches files and directories that should be included on
+recursive searches. An empty value means all files are included regardless of the name.
+Use forward slashes for directories on all platforms (Windows, too). Overrides all
+exclusions, including from <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> and command line options.</p>
+<p>Default Inclusions: <code class="docutils literal notranslate"><span class="pre">['.pyi',</span> <span class="pre">'.ipynb']</span></code></p>
+</section>
+<section id="w-workers">
+<h4><code class="docutils literal notranslate"><span class="pre">-W</span></code>, <code class="docutils literal notranslate"><span class="pre">--workers</span></code><a class="headerlink" href="#w-workers" title="链接到此标题。">¶</a></h4>
+<p>When <em>Black</em> formats multiple files, it may use a process pool to speed up formatting.
+This option controls the number of parallel workers. This can also be specified via the
+<code class="docutils literal notranslate"><span class="pre">BLACK_NUM_WORKERS</span></code> environment variable. Defaults to the number of CPUs in the system.</p>
+</section>
+<section id="q-quiet">
+<h4><code class="docutils literal notranslate"><span class="pre">-q</span></code>, <code class="docutils literal notranslate"><span class="pre">--quiet</span></code><a class="headerlink" href="#q-quiet" title="链接到此标题。">¶</a></h4>
+<p>Stop emitting all non-critical output. Error messages will still be emitted (which can
+silenced by <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code>).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>src/<span class="w"> </span>-q
+<span class="go">error: cannot format src/black_primer/cli.py: Cannot parse: 5:6</span>
+<span class="go">    mport asyncio</span>
+<span class="go">         ^</span>
+<span class="go">ParseError: bad input</span>
+</pre></div>
+</div>
+</section>
+<section id="v-verbose">
+<h4><code class="docutils literal notranslate"><span class="pre">-v</span></code>, <code class="docutils literal notranslate"><span class="pre">--verbose</span></code><a class="headerlink" href="#v-verbose" title="链接到此标题。">¶</a></h4>
+<p>Emit messages about files that were not changed or were ignored due to exclusion
+patterns. If <em>Black</em> is using a configuration file, a message detailing which one it is
+using will be emitted.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>src/<span class="w"> </span>-v
+<span class="go">Using configuration from /tmp/pyproject.toml.</span>
+<span class="go">src/blib2to3 ignored: matches the --extend-exclude regular expression</span>
+<span class="go">src/_black_version.py wasn&#39;t modified on disk since last run.</span>
+<span class="go">src/black/__main__.py wasn&#39;t modified on disk since last run.</span>
+<span class="go">error: cannot format src/black_primer/cli.py: Cannot parse: 5:6</span>
+<span class="go">    mport asyncio</span>
+<span class="go">         ^</span>
+<span class="go">ParseError: bad input</span>
+<span class="go">reformatted src/black_primer/lib.py</span>
+<span class="go">reformatted src/blackd/__init__.py</span>
+<span class="go">reformatted src/black/__init__.py</span>
+<span class="go">Oh no! 💥 💔 💥</span>
+<span class="go">3 files reformatted, 2 files left unchanged, 1 file failed to reformat</span>
+</pre></div>
+</div>
+</section>
+<section id="version">
+<h4><code class="docutils literal notranslate"><span class="pre">--version</span></code><a class="headerlink" href="#version" title="链接到此标题。">¶</a></h4>
+<p>You can check the version of <em>Black</em> you have installed using the <code class="docutils literal notranslate"><span class="pre">--version</span></code> flag.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--version
+<span class="go">black, 26.5.1</span>
+</pre></div>
+</div>
+</section>
+<section id="config">
+<h4><code class="docutils literal notranslate"><span class="pre">--config</span></code><a class="headerlink" href="#config" title="链接到此标题。">¶</a></h4>
+<p>Read configuration options from a configuration file. See
+<a class="reference internal" href="#configuration-via-a-file">below</a> for more details on the configuration file.</p>
+</section>
+</section>
+<section id="environment-variable-options">
+<h3>Environment variable options<a class="headerlink" href="#environment-variable-options" title="链接到此标题。">¶</a></h3>
+<p><em>Black</em> supports the following configuration via environment variables.</p>
+<section id="black-cache-dir">
+<h4><code class="docutils literal notranslate"><span class="pre">BLACK_CACHE_DIR</span></code><a class="headerlink" href="#black-cache-dir" title="链接到此标题。">¶</a></h4>
+<p>The directory where <em>Black</em> should store its cache.</p>
+</section>
+<section id="black-num-workers">
+<h4><code class="docutils literal notranslate"><span class="pre">BLACK_NUM_WORKERS</span></code><a class="headerlink" href="#black-num-workers" title="链接到此标题。">¶</a></h4>
+<p>The number of parallel workers <em>Black</em> should use. The command line option <code class="docutils literal notranslate"><span class="pre">-W</span></code> /
+<code class="docutils literal notranslate"><span class="pre">--workers</span></code> takes precedence over this environment variable.</p>
+</section>
+</section>
+<section id="code-input-alternatives">
+<h3>Code input alternatives<a class="headerlink" href="#code-input-alternatives" title="链接到此标题。">¶</a></h3>
+<p><em>Black</em> supports formatting code via stdin, with the result being printed to stdout.
+Just let <em>Black</em> know with <code class="docutils literal notranslate"><span class="pre">-</span></code> as the path.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;print ( &#39;hello, world&#39; )&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>black<span class="w"> </span>-
+<span class="go">print(&quot;hello, world&quot;)</span>
+<span class="go">reformatted -</span>
+<span class="go">All done! ✨ 🍰 ✨</span>
+<span class="go">1 file reformatted.</span>
+</pre></div>
+</div>
+<p><strong>Tip:</strong> if you need <em>Black</em> to treat stdin input as a file passed directly via the CLI,
+use <code class="docutils literal notranslate"><span class="pre">--stdin-filename</span></code>. Useful to make sure <em>Black</em> will respect the <code class="docutils literal notranslate"><span class="pre">--force-exclude</span></code>
+option on some editors that rely on using stdin.</p>
+<p>You can also pass code as a string using the <code class="docutils literal notranslate"><span class="pre">--code</span></code> option.</p>
+</section>
+<section id="writeback-and-reporting">
+<h3>Writeback and reporting<a class="headerlink" href="#writeback-and-reporting" title="链接到此标题。">¶</a></h3>
+<p>By default <em>Black</em> reformats the files given and/or found in place. Sometimes you need
+<em>Black</em> to just tell you what it <em>would</em> do without actually rewriting the Python files.</p>
+<p>There's two variations to this mode that are independently enabled by their respective
+flags:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--check</span></code> (exit with code 1 if any file would be reformatted)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--diff</span></code> (print a diff instead of reformatting files)</p></li>
+</ul>
+<p>Both variations can be enabled at once.</p>
+</section>
+<section id="output-verbosity">
+<h3>Output verbosity<a class="headerlink" href="#output-verbosity" title="链接到此标题。">¶</a></h3>
+<p><em>Black</em> in general tries to produce the right amount of output, balancing between
+usefulness and conciseness. By default, <em>Black</em> emits files modified and error messages,
+plus a short summary.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>src/
+<span class="go">error: cannot format src/black_primer/cli.py: Cannot parse: 5:6</span>
+<span class="go">    mport asyncio</span>
+<span class="go">         ^</span>
+<span class="go">ParseError: bad input</span>
+<span class="go">reformatted src/black_primer/lib.py</span>
+<span class="go">reformatted src/blackd/__init__.py</span>
+<span class="go">reformatted src/black/__init__.py</span>
+<span class="go">Oh no! 💥 💔 💥</span>
+<span class="go">3 files reformatted, 2 files left unchanged, 1 file failed to reformat.</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">--quiet</span></code> and <code class="docutils literal notranslate"><span class="pre">--verbose</span></code> flags control output verbosity.</p>
+</section>
+</section>
+<section id="configuration-via-a-file">
+<h2>Configuration via a file<a class="headerlink" href="#configuration-via-a-file" title="链接到此标题。">¶</a></h2>
+<p><em>Black</em> is able to read project-specific default values for its command line options
+from a <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file. This is especially useful for specifying custom
+<code class="docutils literal notranslate"><span class="pre">--include</span></code> and <code class="docutils literal notranslate"><span class="pre">--exclude</span></code>/<code class="docutils literal notranslate"><span class="pre">--force-exclude</span></code>/<code class="docutils literal notranslate"><span class="pre">--extend-exclude</span></code> patterns for your
+project.</p>
+<p><strong>Pro-tip</strong>: If you're asking yourself &quot;Do I need to configure anything?&quot; the answer is
+&quot;No&quot;. <em>Black</em> is all about sensible defaults. Applying those defaults will have your
+code in compliance with many other <em>Black</em> formatted projects.</p>
+<section id="what-on-earth-is-a-pyproject-toml-file">
+<h3>What on Earth is a <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file?<a class="headerlink" href="#what-on-earth-is-a-pyproject-toml-file" title="链接到此标题。">¶</a></h3>
+<p><a class="reference external" href="https://peps.python.org/pep-0518/">PEP 518</a> defines <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> as a configuration
+file to store build system requirements for Python projects. With the help of tools like
+<a class="reference external" href="https://python-poetry.org/">Poetry</a>, <a class="reference external" href="https://flit.readthedocs.io/en/latest/">Flit</a>, or
+<a class="reference external" href="https://hatch.pypa.io/latest/">Hatch</a> it can fully replace the need for <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> and
+<code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code> files.</p>
+</section>
+<section id="where-black-looks-for-the-file">
+<h3>Where <em>Black</em> looks for the file<a class="headerlink" href="#where-black-looks-for-the-file" title="链接到此标题。">¶</a></h3>
+<p>By default <em>Black</em> looks for <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> containing a <code class="docutils literal notranslate"><span class="pre">[tool.black]</span></code> section
+starting from the common base directory of all files and directories passed on the
+command line. If it's not there, it looks in parent directories. It stops looking when
+it finds the file, or a <code class="docutils literal notranslate"><span class="pre">.git</span></code> directory, or a <code class="docutils literal notranslate"><span class="pre">.hg</span></code> directory, or the root of the file
+system, whichever comes first.</p>
+<p>If you're formatting standard input, <em>Black</em> will look for configuration starting from
+the current working directory.</p>
+<p>You can use a &quot;global&quot; configuration, stored in a specific location in your home
+directory. This will be used as a fallback configuration, that is, it will be used if
+and only if <em>Black</em> doesn't find any configuration as mentioned above. Depending on your
+operating system, this configuration file should be stored as:</p>
+<ul class="simple">
+<li><p>Windows: <code class="docutils literal notranslate"><span class="pre">~\.black</span></code></p></li>
+<li><p>Unix-like (Linux, MacOS, etc.): <code class="docutils literal notranslate"><span class="pre">$XDG_CONFIG_HOME/black</span></code> (<code class="docutils literal notranslate"><span class="pre">~/.config/black</span></code> if the
+<code class="docutils literal notranslate"><span class="pre">XDG_CONFIG_HOME</span></code> environment variable is not set)</p></li>
+</ul>
+<p>Note that these are paths to the TOML file itself (meaning that they shouldn't be named
+as <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>), not directories where you store the configuration (i.e.,
+<code class="docutils literal notranslate"><span class="pre">black</span></code>/<code class="docutils literal notranslate"><span class="pre">.black</span></code> is the file to create and add your configuration options to, in the
+<code class="docutils literal notranslate"><span class="pre">~/.config/</span></code> directory). Here, <code class="docutils literal notranslate"><span class="pre">~</span></code> refers to the path to your home directory. On
+Windows, this will be something like <code class="docutils literal notranslate"><span class="pre">C:\Users\UserName</span></code> and stored in the environment
+variable <code class="docutils literal notranslate"><span class="pre">%USERPROFILE%</span></code>.</p>
+<p>You can also explicitly specify the path to a particular file that you want with
+<code class="docutils literal notranslate"><span class="pre">--config</span></code>. In this situation <em>Black</em> will not look for any other file.</p>
+<p>If you're running with <code class="docutils literal notranslate"><span class="pre">--verbose</span></code>, you will see a message if a file was found and used.</p>
+<p>Please note <code class="docutils literal notranslate"><span class="pre">blackd</span></code> will not use <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> configuration.</p>
+</section>
+<section id="configuration-format">
+<h3>Configuration format<a class="headerlink" href="#configuration-format" title="链接到此标题。">¶</a></h3>
+<p>As the file extension suggests, <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> is a
+<a class="reference external" href="https://github.com/toml-lang/toml">TOML</a> file. It contains separate sections for
+different tools. <em>Black</em> is using the <code class="docutils literal notranslate"><span class="pre">[tool.black]</span></code> section. The option keys are the
+same as long names of options on the command line.</p>
+<p>Most command-line options can be configured in <code class="docutils literal notranslate"><span class="pre">[tool.black]</span></code> by using their long name
+without the leading <code class="docutils literal notranslate"><span class="pre">--</span></code> (for example, <code class="docutils literal notranslate"><span class="pre">--line-length</span></code> becomes <code class="docutils literal notranslate"><span class="pre">line-length</span></code>). Options
+that cannot be configured in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> are called out explicitly in the option
+reference above.</p>
+<p>Note that you have to use single-quoted strings in TOML for regular expressions. It's
+the equivalent of r-strings in Python. Multiline strings are treated as verbose regular
+expressions by Black. Use <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code> to denote a significant space character.</p>
+<details>
+<summary>Example <code>pyproject.toml</code></summary>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[tool.black]</span>
+<span class="n">line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">88</span>
+<span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;py37&#39;</span><span class="p">]</span>
+<span class="n">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;\.pyi?$&#39;</span>
+<span class="c1"># &#39;extend-exclude&#39; excludes files or directories in addition to the defaults</span>
+<span class="n">extend-exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1"># A regex preceded with ^/ will apply only to files and directories</span>
+<span class="s1"># in the root of the project.</span>
+<span class="s1">(</span>
+<span class="s1">  ^/foo.py    # exclude a file named foo.py in the root of the project</span>
+<span class="s1">  | .*_pb2.py  # exclude autogenerated Protocol Buffer files anywhere in the project</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary>More complete <code>pyproject.toml</code> template</summary>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[tool.black]</span>
+<span class="n">line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">88</span>
+<span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;py311&quot;</span><span class="p">]</span>
+<span class="n">required-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;26&quot;</span>
+<span class="n">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;\.pyi?$&#39;</span>
+
+<span class="c1"># Formatting behavior</span>
+<span class="n">skip-string-normalization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">skip-magic-trailing-comma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">preview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">unstable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+
+<span class="c1"># File collection</span>
+<span class="n">extend-exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">(</span>
+<span class="s1">  ^/foo.py</span>
+<span class="s1">  | .*_pb2.py</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">force-exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">(</span>
+<span class="s1">  ^/generated/</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="lookup-hierarchy">
+<h3>Lookup hierarchy<a class="headerlink" href="#lookup-hierarchy" title="链接到此标题。">¶</a></h3>
+<p>Command-line options have defaults that you can see in <code class="docutils literal notranslate"><span class="pre">--help</span></code>. A <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> can
+override those defaults. Finally, options provided by the user on the command line
+override both.</p>
+<p><em>Black</em> will only ever use one <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file during an entire run. It doesn't
+look for multiple files, and doesn't compose configuration from different levels of the
+file hierarchy.</p>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="链接到此标题。">¶</a></h2>
+<p>A good next step would be configuring auto-discovery so <code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">.</span></code> is all you need
+instead of laborously listing every file or directory. You can get started by heading
+over to <a class="reference internal" href="file_collection_and_discovery.html"><span class="std std-doc">File collection and discovery</span></a>.</p>
+<p>Another good choice would be setting up an
+<a class="reference internal" href="../integrations/editors.html"><span class="std std-doc">integration with your editor</span></a> of choice or with
+<a class="reference internal" href="../integrations/source_version_control.html"><span class="std std-doc">pre-commit for source version control</span></a>.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="file_collection_and_discovery.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">File collection and discovery</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Usage and Configuration</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2018-Present, Łukasz Langa and contributors to Black
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The basics</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#ignoring-sections">Ignoring sections</a></li>
+<li><a class="reference internal" href="#command-line-options">Command line options</a><ul>
+<li><a class="reference internal" href="#h-help"><code class="docutils literal notranslate"><span class="pre">-h</span></code>, <code class="docutils literal notranslate"><span class="pre">--help</span></code></a></li>
+<li><a class="reference internal" href="#c-code"><code class="docutils literal notranslate"><span class="pre">-c</span></code>, <code class="docutils literal notranslate"><span class="pre">--code</span></code></a></li>
+<li><a class="reference internal" href="#l-line-length"><code class="docutils literal notranslate"><span class="pre">-l</span></code>, <code class="docutils literal notranslate"><span class="pre">--line-length</span></code></a></li>
+<li><a class="reference internal" href="#t-target-version"><code class="docutils literal notranslate"><span class="pre">-t</span></code>, <code class="docutils literal notranslate"><span class="pre">--target-version</span></code></a></li>
+<li><a class="reference internal" href="#pyi"><code class="docutils literal notranslate"><span class="pre">--pyi</span></code></a></li>
+<li><a class="reference internal" href="#ipynb"><code class="docutils literal notranslate"><span class="pre">--ipynb</span></code></a></li>
+<li><a class="reference internal" href="#python-cell-magics"><code class="docutils literal notranslate"><span class="pre">--python-cell-magics</span></code></a></li>
+<li><a class="reference internal" href="#x-skip-source-first-line"><code class="docutils literal notranslate"><span class="pre">-x,</span> <span class="pre">--skip-source-first-line</span></code></a></li>
+<li><a class="reference internal" href="#s-skip-string-normalization"><code class="docutils literal notranslate"><span class="pre">-S,</span> <span class="pre">--skip-string-normalization</span></code></a></li>
+<li><a class="reference internal" href="#c-skip-magic-trailing-comma"><code class="docutils literal notranslate"><span class="pre">-C,</span> <span class="pre">--skip-magic-trailing-comma</span></code></a></li>
+<li><a class="reference internal" href="#preview"><code class="docutils literal notranslate"><span class="pre">--preview</span></code></a></li>
+<li><a class="reference internal" href="#unstable"><code class="docutils literal notranslate"><span class="pre">--unstable</span></code></a></li>
+<li><a class="reference internal" href="#enable-unstable-feature"><code class="docutils literal notranslate"><span class="pre">--enable-unstable-feature</span></code></a></li>
+<li><a class="reference internal" href="#check"><code class="docutils literal notranslate"><span class="pre">--check</span></code></a></li>
+<li><a class="reference internal" href="#diff"><code class="docutils literal notranslate"><span class="pre">--diff</span></code></a></li>
+<li><a class="reference internal" href="#no-cache"><code class="docutils literal notranslate"><span class="pre">--no-cache</span></code></a></li>
+<li><a class="reference internal" href="#color-no-color"><code class="docutils literal notranslate"><span class="pre">--color</span></code> / <code class="docutils literal notranslate"><span class="pre">--no-color</span></code></a></li>
+<li><a class="reference internal" href="#line-ranges"><code class="docutils literal notranslate"><span class="pre">--line-ranges</span></code></a></li>
+<li><a class="reference internal" href="#fast-safe"><code class="docutils literal notranslate"><span class="pre">--fast</span></code> / <code class="docutils literal notranslate"><span class="pre">--safe</span></code></a></li>
+<li><a class="reference internal" href="#required-version"><code class="docutils literal notranslate"><span class="pre">--required-version</span></code></a></li>
+<li><a class="reference internal" href="#exclude"><code class="docutils literal notranslate"><span class="pre">--exclude</span></code></a></li>
+<li><a class="reference internal" href="#extend-exclude"><code class="docutils literal notranslate"><span class="pre">--extend-exclude</span></code></a></li>
+<li><a class="reference internal" href="#force-exclude"><code class="docutils literal notranslate"><span class="pre">--force-exclude</span></code></a></li>
+<li><a class="reference internal" href="#stdin-filename"><code class="docutils literal notranslate"><span class="pre">--stdin-filename</span></code></a></li>
+<li><a class="reference internal" href="#include"><code class="docutils literal notranslate"><span class="pre">--include</span></code></a></li>
+<li><a class="reference internal" href="#w-workers"><code class="docutils literal notranslate"><span class="pre">-W</span></code>, <code class="docutils literal notranslate"><span class="pre">--workers</span></code></a></li>
+<li><a class="reference internal" href="#q-quiet"><code class="docutils literal notranslate"><span class="pre">-q</span></code>, <code class="docutils literal notranslate"><span class="pre">--quiet</span></code></a></li>
+<li><a class="reference internal" href="#v-verbose"><code class="docutils literal notranslate"><span class="pre">-v</span></code>, <code class="docutils literal notranslate"><span class="pre">--verbose</span></code></a></li>
+<li><a class="reference internal" href="#version"><code class="docutils literal notranslate"><span class="pre">--version</span></code></a></li>
+<li><a class="reference internal" href="#config"><code class="docutils literal notranslate"><span class="pre">--config</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#environment-variable-options">Environment variable options</a><ul>
+<li><a class="reference internal" href="#black-cache-dir"><code class="docutils literal notranslate"><span class="pre">BLACK_CACHE_DIR</span></code></a></li>
+<li><a class="reference internal" href="#black-num-workers"><code class="docutils literal notranslate"><span class="pre">BLACK_NUM_WORKERS</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#code-input-alternatives">Code input alternatives</a></li>
+<li><a class="reference internal" href="#writeback-and-reporting">Writeback and reporting</a></li>
+<li><a class="reference internal" href="#output-verbosity">Output verbosity</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuration-via-a-file">Configuration via a file</a><ul>
+<li><a class="reference internal" href="#what-on-earth-is-a-pyproject-toml-file">What on Earth is a <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file?</a></li>
+<li><a class="reference internal" href="#where-black-looks-for-the-file">Where <em>Black</em> looks for the file</a></li>
+<li><a class="reference internal" href="#configuration-format">Configuration format</a></li>
+<li><a class="reference internal" href="#lookup-hierarchy">Lookup hierarchy</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=88331920"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=b612fa2f"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    </body>
+</html>

@@ -1,0 +1,548 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜索" href="../search.html"><link rel="next" title="Release process" href="release_process.html"><link rel="prev" title="Gauging changes" href="gauging_changes.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/black-docs-l10n/contributing/issue_triage.html">
+        <link rel="prefetch" href="../_static/logo2-readme.png" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Issue triage - Black 26.5.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Black 26.5.1 文档</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo2-readme.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Black 26.5.1 文档</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../the_black_code_style/index.html">The Black Code Style</a><input aria-label="Toggle navigation of The Black Code Style" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/current_style.html">Current style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/future_style.html">Future style</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../usage_and_configuration/index.html">Usage and Configuration</a><input aria-label="Toggle navigation of Usage and Configuration" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/file_collection_and_discovery.html">File collection and discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_as_a_server.html">Black as a server (blackd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_docker_image.html">Black Docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integrations/index.html">Integrations</a><input aria-label="Toggle navigation of Integrations" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/editors.html">Editor integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/github_actions.html">GitHub Actions integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/source_version_control.html">Version control integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/doctest_formatting.html">Doctest Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">Guides</a><input aria-label="Toggle navigation of Guides" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/introducing_black_to_your_project.html">Introducing <em>Black</em> to your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_other_tools.html">Using <em>Black</em> with other tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_jupyter_notebooks.html">Using <em>Black</em> with Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Contributing</a><input aria-label="Toggle navigation of Contributing" checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gauging_changes.html">Gauging changes</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Issue triage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_process.html">Release process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/psf/black">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/black">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/RtVdv86PrH">Chat</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/contributing/issue_triage.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="issue-triage">
+<h1>Issue triage<a class="headerlink" href="#issue-triage" title="链接到此标题。">¶</a></h1>
+<p>Currently, <em>Black</em> uses the issue tracker for bugs, feature requests, proposed style
+modifications, and general user support. Each of these issues have to be triaged so they
+can be eventually be resolved somehow. This document outlines the triaging process and
+also the current guidelines and recommendations.</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>If you're looking for a way to contribute without submitting patches, this might be the
+area for you. Since <em>Black</em> is a popular project, its issue tracker is quite busy and
+always needs more attention than is available. While triage isn't the most glamorous or
+technically challenging form of contribution, it's still important. For example, we
+would love to know whether that old bug report is still reproducible!</p>
+<p>You can get easily started by reading over this document and then responding to issues.</p>
+<p>If you contribute enough and have stayed for long enough, you may even be given
+Triage permissions!</p>
+</div>
+<section id="the-basics">
+<h2>The basics<a class="headerlink" href="#the-basics" title="链接到此标题。">¶</a></h2>
+<p><em>Black</em> gets a whole bunch of different issues, they range from bug reports to user
+support issues. To triage is to identify, organize, and kickstart the issue's journey
+through its lifecycle to resolution.</p>
+<p>More specifically, to triage an issue means to:</p>
+<ul class="simple">
+<li><p>identify what type and categories the issue falls under</p></li>
+<li><p>confirm bugs</p></li>
+<li><p>ask questions / for further information if necessary</p></li>
+<li><p>link related issues</p></li>
+<li><p>provide the first initial feedback / support</p></li>
+</ul>
+<p>Note that triage is typically the first response to an issue, so don't fret if the issue
+doesn't make much progress after initial triage. The main goal of triaging to prepare
+the issue for future more specific development or discussion, so <em>eventually</em> it will be
+resolved.</p>
+<p>The lifecycle of a bug report or user support issue typically goes something like this:</p>
+<ol class="arabic simple">
+<li><p><em>the issue is waiting for triage</em></p></li>
+<li><p><strong>identified</strong> - has been marked with a type label and other relevant labels, more
+details or a functional reproduction may be still needed (and therefore should be
+marked with <code class="docutils literal notranslate"><span class="pre">S:</span> <span class="pre">needs</span> <span class="pre">repro</span></code> or <code class="docutils literal notranslate"><span class="pre">S:</span> <span class="pre">awaiting</span> <span class="pre">response</span></code>)</p></li>
+<li><p><strong>confirmed</strong> - the issue can reproduced and necessary details have been provided</p></li>
+<li><p><strong>discussion</strong> - initial triage has been done and now the general details on how the
+issue should be best resolved are being hashed out</p></li>
+<li><p><strong>awaiting fix</strong> - no further discussion on the issue is necessary and a resolving PR
+is the next step</p></li>
+<li><p><strong>closed</strong> - the issue has been resolved, reasons include:</p>
+<ul class="simple">
+<li><p>the issue couldn't be reproduced</p></li>
+<li><p>the issue has been fixed</p></li>
+<li><p>duplicate of another pre-existing issue or is invalid</p></li>
+</ul>
+</li>
+</ol>
+<p>For enhancement, documentation, and style issues, the lifecycle looks very similar but
+the details are different:</p>
+<ol class="arabic simple">
+<li><p><em>the issue is waiting for triage</em></p></li>
+<li><p><strong>identified</strong> - has been marked with a type label and other relevant labels</p></li>
+<li><p><strong>discussion</strong> - the merits of the suggested changes are currently being discussed, a
+PR would be acceptable but would be at significant risk of being rejected</p></li>
+<li><p><strong>accepted &amp; awaiting PR</strong> - it's been determined the suggested changes are OK and a
+PR would be welcomed (<code class="docutils literal notranslate"><span class="pre">S:</span> <span class="pre">accepted</span></code>)</p></li>
+<li><p><strong>closed</strong>: - the issue has been resolved, reasons include:</p>
+<ul class="simple">
+<li><p>the suggested changes were implemented</p></li>
+<li><p>it was rejected (due to technical concerns, ethos conflicts, etc.)</p></li>
+<li><p>duplicate of a pre-existing issue or is invalid</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Note</strong>: documentation issues don't use the <code class="docutils literal notranslate"><span class="pre">S:</span> <span class="pre">accepted</span></code> label currently since they're
+less likely to be rejected.</p>
+</section>
+<section id="labelling">
+<h2>Labelling<a class="headerlink" href="#labelling" title="链接到此标题。">¶</a></h2>
+<p>We use labels to organize, track progress, and help effectively divvy up work.</p>
+<p>Our labels are divided up into several groups identified by their prefix:</p>
+<ul class="simple">
+<li><p><strong>T - Type</strong>: the general flavor of issue / PR</p></li>
+<li><p><strong>C - Category</strong>: areas of concerns, ranges from bug types to project maintenance</p></li>
+<li><p><strong>F - Formatting Area</strong>: like C but for formatting specifically</p></li>
+<li><p><strong>S - Status</strong>: what stage of resolution is this issue currently in?</p></li>
+<li><p><strong>R - Resolution</strong>: how / why was the issue / PR resolved?</p></li>
+</ul>
+<p>We also have a few standalone labels:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">good</span> <span class="pre">first</span> <span class="pre">issue</span></code></strong>: issues that are beginner-friendly (and will show up in GitHub
+banners for first-time visitors to the repository)</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">wanted</span></code></strong>: complex issues that need and are looking for a fair bit of work as
+to progress (will also show up in various GitHub pages)</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">ci:</span> <span class="pre">skip</span> <span class="pre">news</span></code></strong>: for PRs that are trivial and don't need a CHANGELOG entry (and
+skips the CHANGELOG entry check)</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">ci:</span> <span class="pre">build</span> <span class="pre">all</span> <span class="pre">wheels</span></code></strong>: when a full wheel build is needed, such as to debug
+platform-specific issues. Black does not build wheels for every platform on each pull
+request because the full build matrix is expensive. After the label is added, the
+workflow starts only when a new commit is pushed.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>We do use labels for PRs, in particular the <code class="docutils literal notranslate"><span class="pre">ci:</span> <span class="pre">skip</span> <span class="pre">news</span></code> label, but we aren't that
+rigorous about it. Just follow your judgement on what labels make sense for the specific
+PR (if any even make sense).</p>
+</div>
+</section>
+<section id="projects">
+<h2>Projects<a class="headerlink" href="#projects" title="链接到此标题。">¶</a></h2>
+<p>For more general and broad goals we use projects to track work. Some may be long-term
+projects with no true end (e.g. the &quot;Amazing documentation&quot; project) while others may be
+more focused and have a definite end (like the &quot;Getting to beta&quot; project).</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>To modify GitHub Projects you need the
+<a class="reference external" href="https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level">Write repository permission level or higher</a>.</p>
+</div>
+</section>
+<section id="closing-issues">
+<h2>Closing issues<a class="headerlink" href="#closing-issues" title="链接到此标题。">¶</a></h2>
+<p>Closing an issue signifies the issue has reached the end of its life, so closing issues
+should be taken with care. The following is the general recommendation for each type of
+issue. Note that these are only guidelines and if your judgement says something else
+it's totally cool to go with it instead.</p>
+<p>For most issues, closing the issue manually or automatically after a resolving PR is
+ideal. For bug reports specifically, if the bug has already been fixed, try to check in
+with the issue opener that their specific case has been resolved before closing. Note
+that we close issues as soon as they're fixed in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. This doesn't
+necessarily mean they've been released yet.</p>
+<p>Design and enhancement issues should be also closed when it's clear the proposed change
+won't be implemented, whether that has been determined after a lot of discussion or just
+simply goes against <em>Black</em>'s ethos. If such an issue turns heated, closing and locking
+is acceptable if it's severe enough (although checking in with the core team is probably
+a good idea).</p>
+<p>User support issues are best closed by the author or when it's clear the issue has been
+resolved in some sort of manner.</p>
+<p>Duplicates and invalid issues should always be closed since they serve no purpose and
+add noise to an already busy issue tracker. Although be careful to make sure it's truly
+a duplicate and not just very similar before labelling and closing an issue as
+duplicate.</p>
+</section>
+<section id="common-reports">
+<h2>Common reports<a class="headerlink" href="#common-reports" title="链接到此标题。">¶</a></h2>
+<p>Some issues are frequently opened, like issues about <em>Black</em> formatted code causing E203
+messages. Even though these issues are probably heavily duplicated, they still require
+triage sucking up valuable time from other things (although they usually skip most of
+their lifecycle since they're closed on triage).</p>
+<p>Here's some of the most common issues and also pre-made responses you can use:</p>
+<section id="the-trailing-comma-isn-t-being-removed-by-black">
+<h3>&quot;The trailing comma isn't being removed by Black!&quot;<a class="headerlink" href="#the-trailing-comma-isn-t-being-removed-by-black" title="链接到此标题。">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Black used to remove the trailing comma if the expression fits in a single line, but this was changed by #826 and #1288. Now a trailing comma tells Black to always explode the expression. This change was made mostly for the cases where you _know_ a collection or whatever will grow in the future. Having it always exploded as one element per line reduces diff noise when adding elements. Before the &quot;magic trailing comma&quot; feature, you couldn&#39;t anticipate a collection&#39;s growth reliably since collections that fitted in one line were ruthlessly collapsed regardless of your intentions. One of Black&#39;s goals is reducing diff noise, so this was a good pragmatic change.
+
+So no, this is not a bug, but an intended feature. Anyway, [here&#39;s the documentation](https://github.com/psf/black/blob/master/docs/the_black_code_style.md#the-magic-trailing-comma) on the &quot;magic trailing comma&quot;, including the ability to skip this functionality with the `--skip-magic-trailing-comma` option. Hopefully that helps solve the possible confusion.
+</pre></div>
+</div>
+</section>
+<section id="black-formatted-code-is-violating-flake8-s-e203">
+<h3>&quot;Black formatted code is violating Flake8's E203!&quot;<a class="headerlink" href="#black-formatted-code-is-violating-flake8-s-e203" title="链接到此标题。">¶</a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Hi,
+
+This is expected behaviour, please see the documentation regarding this case (emphasis mine):
+
+&gt; PEP 8 recommends to treat : in slices as a binary operator with the lowest priority, and to leave an equal amount of space on either side, **except if a parameter is omitted (e.g. ham[1 + 1 :])**. It recommends no spaces around : operators for “simple expressions” (ham[lower:upper]), and **extra space for “complex expressions” (ham[lower : upper + offset])**. **Black treats anything more than variable names as “complex” (ham[lower : upper + 1]).** It also states that for extended slices, both : operators have to have the same amount of spacing, except if a parameter is omitted (ham[1 + 1 ::]). Black enforces these rules consistently.
+
+&gt; This behaviour may raise E203 whitespace before &#39;:&#39; warnings in style guide enforcement tools like Flake8. **Since E203 is not PEP 8 compliant, you should tell Flake8 to ignore these warnings**.
+
+https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#slices
+
+Have a good day!
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="release_process.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Release process</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="gauging_changes.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Gauging changes</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2018-Present, Łukasz Langa and contributors to Black
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Issue triage</a><ul>
+<li><a class="reference internal" href="#the-basics">The basics</a></li>
+<li><a class="reference internal" href="#labelling">Labelling</a></li>
+<li><a class="reference internal" href="#projects">Projects</a></li>
+<li><a class="reference internal" href="#closing-issues">Closing issues</a></li>
+<li><a class="reference internal" href="#common-reports">Common reports</a><ul>
+<li><a class="reference internal" href="#the-trailing-comma-isn-t-being-removed-by-black">&quot;The trailing comma isn't being removed by Black!&quot;</a></li>
+<li><a class="reference internal" href="#black-formatted-code-is-violating-flake8-s-e203">&quot;Black formatted code is violating Flake8's E203!&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=88331920"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=b612fa2f"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    </body>
+</html>

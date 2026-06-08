@@ -1,0 +1,885 @@
+<!doctype html>
+<html class="no-js" lang="en-US" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="GitHub Actions integration" href="github_actions.html"><link rel="prev" title="Integrations" href="index.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/black-docs-l10n/integrations/editors.html">
+        <link rel="prefetch" href="../_static/logo2-readme.png" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Editor integration - Black 26.5.2.dev15 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Black 26.5.2.dev15 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo2-readme.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Black 26.5.2.dev15 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../the_black_code_style/index.html">The Black Code Style</a><input aria-label="Toggle navigation of The Black Code Style" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/current_style.html">Current style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../the_black_code_style/future_style.html">Future style</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../usage_and_configuration/index.html">Usage and Configuration</a><input aria-label="Toggle navigation of Usage and Configuration" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/file_collection_and_discovery.html">File collection and discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_as_a_server.html">Black as a server (blackd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_docker_image.html">Black Docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Integrations</a><input aria-label="Toggle navigation of Integrations" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Editor integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github_actions.html">GitHub Actions integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_version_control.html">Version control integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doctest_formatting.html">Doctest Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">Guides</a><input aria-label="Toggle navigation of Guides" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/introducing_black_to_your_project.html">Introducing <em>Black</em> to your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_other_tools.html">Using <em>Black</em> with other tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_jupyter_notebooks.html">Using <em>Black</em> with Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing/index.html">Contributing</a><input aria-label="Toggle navigation of Contributing" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/gauging_changes.html">Gauging changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/issue_triage.html">Issue triage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/release_process.html">Release process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/psf/black">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/black">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/RtVdv86PrH">Chat</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/integrations/editors.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="editor-integration">
+<h1>Editor integration<a class="headerlink" href="#editor-integration" title="Link to this heading">¶</a></h1>
+<section id="emacs">
+<h2>Emacs<a class="headerlink" href="#emacs" title="Link to this heading">¶</a></h2>
+<p>Options include the following:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/wbolster/emacs-python-black">wbolster/emacs-python-black</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pythonic-emacs/blacken">proofit404/blacken</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jorgenschaefer/elpy">Elpy</a>.</p></li>
+</ul>
+</section>
+<section id="pycharm-intellij-idea">
+<h2>PyCharm/IntelliJ IDEA<a class="headerlink" href="#pycharm-intellij-idea" title="Link to this heading">¶</a></h2>
+<p>There are several different ways you can use <em>Black</em> from PyCharm:</p>
+<ol class="arabic simple">
+<li><p>Using the built-in <em>Black</em> integration (PyCharm 2023.2 and later). This option is the
+simplest to set up.</p></li>
+<li><p>As local server using the BlackConnect plugin. This option formats the fastest. It
+spins up <a class="reference internal" href="../usage_and_configuration/black_as_a_server.html"><span class="doc">Black’s HTTP server</span></a>, to
+avoid the startup cost on subsequent formats.</p></li>
+<li><p>As external tool.</p></li>
+<li><p>As file watcher.</p></li>
+</ol>
+<section id="built-in-black-integration">
+<h3>Built-in <em>Black</em> integration<a class="headerlink" href="#built-in-black-integration" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>black
+</pre></div>
+</div>
+</li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Preferences</span> <span class="pre">or</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Black</span></code> and configure <em>Black</em> to your
+liking.</p></li>
+</ol>
+</section>
+<section id="as-local-server">
+<h3>As local server<a class="headerlink" href="#as-local-server" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Install <em>Black</em> with the <code class="docutils literal notranslate"><span class="pre">d</span></code> extra.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">&#39;black[d]&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install
+<a class="reference external" href="https://plugins.jetbrains.com/plugin/14321-blackconnect">BlackConnect IntelliJ IDEs plugin</a>.</p></li>
+<li><p>Open plugin configuration in PyCharm/IntelliJ IDEA</p>
+<p>On macOS:</p>
+<p><code class="docutils literal notranslate"><span class="pre">PyCharm</span> <span class="pre">-&gt;</span> <span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">BlackConnect</span></code></p>
+<p>On Windows / Linux / BSD:</p>
+<p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">BlackConnect</span></code></p>
+</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Local</span> <span class="pre">Instance</span> <span class="pre">(shared</span> <span class="pre">between</span> <span class="pre">projects)</span></code> section:</p>
+<ol class="arabic simple">
+<li><p>Check <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">local</span> <span class="pre">blackd</span> <span class="pre">instance</span> <span class="pre">when</span> <span class="pre">plugin</span> <span class="pre">loads</span></code>.</p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">Detect</span></code> button near <code class="docutils literal notranslate"><span class="pre">Path</span></code> input. The plugin should detect the <code class="docutils literal notranslate"><span class="pre">blackd</span></code>
+executable.</p></li>
+</ol>
+</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Trigger</span> <span class="pre">Settings</span></code> section check <code class="docutils literal notranslate"><span class="pre">Trigger</span> <span class="pre">on</span> <span class="pre">code</span> <span class="pre">reformat</span></code> to enable code
+reformatting with <em>Black</em>.</p></li>
+<li><p>Format the currently opened file by selecting <code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">-&gt;</span> <span class="pre">Reformat</span> <span class="pre">Code</span></code> or using a
+shortcut.</p></li>
+<li><p>Optionally, to run <em>Black</em> on every file save:</p>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Trigger</span> <span class="pre">Settings</span></code> section of plugin configuration check
+<code class="docutils literal notranslate"><span class="pre">Trigger</span> <span class="pre">when</span> <span class="pre">saving</span> <span class="pre">changed</span> <span class="pre">files</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="as-external-tool">
+<h3>As external tool<a class="headerlink" href="#as-external-tool" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>black
+</pre></div>
+</div>
+</li>
+<li><p>Locate your <code class="docutils literal notranslate"><span class="pre">black</span></code> installation folder.</p>
+<p>On macOS / Linux / BSD:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>which<span class="w"> </span>black
+<span class="go">/usr/local/bin/black  # possible location</span>
+</pre></div>
+</div>
+<p>On Windows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>where<span class="w"> </span>black
+<span class="go">C:\Program Files\Python313\Scripts\black.exe  # possible location</span>
+</pre></div>
+</div>
+<p>Note that if you are using a virtual environment detected by PyCharm, this is an
+unneeded step. In this case the path to <code class="docutils literal notranslate"><span class="pre">black</span></code> is <code class="docutils literal notranslate"><span class="pre">$PyInterpreterDirectory$/black</span></code>.</p>
+</li>
+<li><p>Open External tools in PyCharm/IntelliJ IDEA</p>
+<p>On macOS:</p>
+<p><code class="docutils literal notranslate"><span class="pre">PyCharm</span> <span class="pre">-&gt;</span> <span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span></code></p>
+<p>On Windows / Linux / BSD:</p>
+<p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span></code></p>
+</li>
+<li><p>Click the + icon to add a new external tool with the following values:</p>
+<ul class="simple">
+<li><p>Name: Black</p></li>
+<li><p>Description: Black is the uncompromising Python code formatter.</p></li>
+<li><p>Program: &lt;install_location_from_step_2&gt;</p></li>
+<li><p>Arguments: <code class="docutils literal notranslate"><span class="pre">&quot;$FilePath$&quot;</span></code></p></li>
+</ul>
+</li>
+<li><p>Format the currently opened file by selecting <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">black</span></code>.</p>
+<ul class="simple">
+<li><p>Alternatively, you can set a keyboard shortcut by navigating to
+<code class="docutils literal notranslate"><span class="pre">Preferences</span> <span class="pre">or</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Keymap</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span> <span class="pre">-</span> <span class="pre">Black</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="as-file-watcher">
+<h3>As file watcher<a class="headerlink" href="#as-file-watcher" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>black
+</pre></div>
+</div>
+</li>
+<li><p>Locate your <code class="docutils literal notranslate"><span class="pre">black</span></code> installation folder.</p>
+<p>On macOS / Linux / BSD:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>which<span class="w"> </span>black
+<span class="go">/usr/local/bin/black  # possible location</span>
+</pre></div>
+</div>
+<p>On Windows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>where<span class="w"> </span>black
+<span class="go">C:\Program Files\Python313\Scripts\black.exe  # possible location</span>
+</pre></div>
+</div>
+<p>Note that if you are using a virtual environment detected by PyCharm, this is an
+unneeded step. In this case the path to <code class="docutils literal notranslate"><span class="pre">black</span></code> is <code class="docutils literal notranslate"><span class="pre">$PyInterpreterDirectory$/black</span></code>.</p>
+</li>
+<li><p>Make sure you have the
+<a class="reference external" href="https://plugins.jetbrains.com/plugin/7177-file-watchers">File Watchers</a> plugin
+installed.</p></li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Preferences</span> <span class="pre">or</span> <span class="pre">Settings</span> <span class="pre">-&gt;</span> <span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">File</span> <span class="pre">Watchers</span></code> and click <code class="docutils literal notranslate"><span class="pre">+</span></code> to add a new
+watcher:</p>
+<ul class="simple">
+<li><p>Name: Black</p></li>
+<li><p>File type: Python</p></li>
+<li><p>Scope: Project Files</p></li>
+<li><p>Program: &lt;install_location_from_step_2&gt;</p></li>
+<li><p>Arguments: <code class="docutils literal notranslate"><span class="pre">$FilePath$</span></code></p></li>
+<li><p>Output paths to refresh: <code class="docutils literal notranslate"><span class="pre">$FilePath$</span></code></p></li>
+<li><p>Working directory: <code class="docutils literal notranslate"><span class="pre">$ProjectFileDir$</span></code></p></li>
+</ul>
+</li>
+</ol>
+<ul class="simple">
+<li><p>In Advanced Options</p>
+<ul>
+<li><p>Uncheck “Auto-save edited files to trigger the watcher”</p></li>
+<li><p>Uncheck “Trigger the watcher on external changes”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="wing-ide">
+<h2>Wing IDE<a class="headerlink" href="#wing-ide" title="Link to this heading">¶</a></h2>
+<p>Wing IDE supports <code class="docutils literal notranslate"><span class="pre">black</span></code> via <strong>Preference Settings</strong> for system wide settings and
+<strong>Project Properties</strong> for per-project or workspace specific settings, as explained in
+the Wing documentation on
+<a class="reference external" href="https://wingware.com/doc/edit/auto-reformatting">Auto-Reformatting</a>. The detailed
+procedure is:</p>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h3>
+<ul>
+<li><p>Wing IDE version 8.0+</p></li>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>black
+</pre></div>
+</div>
+</li>
+<li><p>Make sure it runs from the command line, e.g.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black<span class="w"> </span>--help
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="preference-settings">
+<h3>Preference Settings<a class="headerlink" href="#preference-settings" title="Link to this heading">¶</a></h3>
+<p>If you want Wing IDE to always reformat with <code class="docutils literal notranslate"><span class="pre">black</span></code> for every project, follow these
+steps:</p>
+<ol class="arabic simple">
+<li><p>In menubar navigate to <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">-&gt;</span> <span class="pre">Preferences</span> <span class="pre">-&gt;</span> <span class="pre">Editor</span> <span class="pre">-&gt;</span> <span class="pre">Reformatting</span></code>.</p></li>
+<li><p>Set <strong>Auto-Reformat</strong> from <code class="docutils literal notranslate"><span class="pre">disable</span></code> (default) to <code class="docutils literal notranslate"><span class="pre">Line</span> <span class="pre">after</span> <span class="pre">edit</span></code> or
+<code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">files</span> <span class="pre">before</span> <span class="pre">save</span></code>.</p></li>
+<li><p>Set <strong>Reformatter</strong> from <code class="docutils literal notranslate"><span class="pre">PEP8</span></code> (default) to <code class="docutils literal notranslate"><span class="pre">Black</span></code>.</p></li>
+</ol>
+</section>
+<section id="project-properties">
+<h3>Project Properties<a class="headerlink" href="#project-properties" title="Link to this heading">¶</a></h3>
+<p>If you want to just reformat for a specific project and not intervene with Wing IDE
+global setting, follow these steps:</p>
+<ol class="arabic simple">
+<li><p>In menubar navigate to <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">-&gt;</span> <span class="pre">Project</span> <span class="pre">Properties</span> <span class="pre">-&gt;</span> <span class="pre">Options</span></code>.</p></li>
+<li><p>Set <strong>Auto-Reformat</strong> from <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">Preferences</span> <span class="pre">setting</span></code> (default) to <code class="docutils literal notranslate"><span class="pre">Line</span> <span class="pre">after</span> <span class="pre">edit</span></code>
+or <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">files</span> <span class="pre">before</span> <span class="pre">save</span></code>.</p></li>
+<li><p>Set <strong>Reformatter</strong> from <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">Preferences</span> <span class="pre">setting</span></code> (default) to <code class="docutils literal notranslate"><span class="pre">Black</span></code>.</p></li>
+</ol>
+</section>
+</section>
+<section id="vim">
+<h2>Vim<a class="headerlink" href="#vim" title="Link to this heading">¶</a></h2>
+<section id="official-plugin">
+<h3>Official plugin<a class="headerlink" href="#official-plugin" title="Link to this heading">¶</a></h3>
+<p>Commands and shortcuts:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">:Black</span></code> to format the entire file (ranges not supported);</p>
+<ul>
+<li><p>you can optionally pass <code class="docutils literal notranslate"><span class="pre">target_version=&lt;version&gt;</span></code> with the same values as in the
+command line.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:BlackUpgrade</span></code> to upgrade <em>Black</em> inside the virtualenv;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:BlackVersion</span></code> to get the current version of <em>Black</em> in use.</p></li>
+</ul>
+<p>Configuration:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_fast</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_linelength</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">88</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_skip_string_normalization</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_skip_magic_trailing_comma</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_virtualenv</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">~/.vim/black</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.local/share/nvim/black</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_use_virtualenv</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_target_version</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_quiet</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g:black_preview</span></code> (defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
+</ul>
+<section id="installation">
+<h4>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h4>
+<p>This plugin <strong>requires Vim 7.0+ built with Python 3.10+ support</strong>. It needs Python 3.10
+to be able to run <em>Black</em> inside the Vim process which is much faster than calling an
+external command.</p>
+<section id="vim-plug">
+<h5><code class="docutils literal notranslate"><span class="pre">vim-plug</span></code><a class="headerlink" href="#vim-plug" title="Link to this heading">¶</a></h5>
+<p>To install with <a class="reference external" href="https://github.com/junegunn/vim-plug">vim-plug</a>:</p>
+<p><em>Black</em>’s <code class="docutils literal notranslate"><span class="pre">stable</span></code> branch tracks official version updates, and can be used to simply
+follow the most recent stable version.</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span>Plug <span class="s1">&#39;psf/black&#39;</span><span class="p">,</span> { <span class="s1">&#39;branch&#39;</span>: <span class="s1">&#39;stable&#39;</span> }
+</pre></div>
+</div>
+<p>Another option which is a bit more explicit and offers more control is to use
+<code class="docutils literal notranslate"><span class="pre">vim-plug</span></code>’s <code class="docutils literal notranslate"><span class="pre">tag</span></code> option with a shell wildcard. This will resolve to the latest tag
+which matches the given pattern.</p>
+<p>The following matches all stable versions (see the
+<a class="reference internal" href="../contributing/release_process.html"><span class="std std-doc">Release Process</span></a> section for documentation of
+version scheme used by Black):</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span>Plug <span class="s1">&#39;psf/black&#39;</span><span class="p">,</span> { <span class="s1">&#39;tag&#39;</span>: <span class="s1">&#39;*.*.*&#39;</span> }
+</pre></div>
+</div>
+<p>and the following demonstrates pinning to a specific year’s stable style (2026 in this
+case):</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span>Plug <span class="s1">&#39;psf/black&#39;</span><span class="p">,</span> { <span class="s1">&#39;tag&#39;</span>: <span class="s1">&#39;26.*.*&#39;</span> }
+</pre></div>
+</div>
+</section>
+<section id="vundle">
+<h5>Vundle<a class="headerlink" href="#vundle" title="Link to this heading">¶</a></h5>
+<p>or with <a class="reference external" href="https://github.com/VundleVim/Vundle.vim">Vundle</a>:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span>Plugin <span class="s1">&#39;psf/black&#39;</span>
+</pre></div>
+</div>
+<p>and execute the following in a terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>~/.vim/bundle/black
+<span class="gp">$ </span>git<span class="w"> </span>checkout<span class="w"> </span>origin/stable<span class="w"> </span>-b<span class="w"> </span>stable
+</pre></div>
+</div>
+</section>
+<section id="arch-linux">
+<h5>Arch Linux<a class="headerlink" href="#arch-linux" title="Link to this heading">¶</a></h5>
+<p>On Arch Linux, the plugin is shipped with the
+<a class="reference external" href="https://archlinux.org/packages/extra/any/python-black/"><code class="docutils literal notranslate"><span class="pre">python-black</span></code></a> package, so you
+can start using it in Vim after install with no additional setup.</p>
+</section>
+<section id="vim-8-native-plugin-management">
+<h5>Vim 8 Native Plugin Management<a class="headerlink" href="#vim-8-native-plugin-management" title="Link to this heading">¶</a></h5>
+<p>or you can copy the plugin files from
+<a class="reference external" href="https://github.com/psf/black/blob/stable/plugin/black.vim">plugin/black.vim</a> and
+<a class="reference external" href="https://github.com/psf/black/blob/stable/autoload/black.vim">autoload/black.vim</a>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.vim/pack/python/start/black/plugin
+mkdir<span class="w"> </span>-p<span class="w"> </span>~/.vim/pack/python/start/black/autoload
+curl<span class="w"> </span>https://raw.githubusercontent.com/psf/black/stable/plugin/black.vim<span class="w"> </span>-o<span class="w"> </span>~/.vim/pack/python/start/black/plugin/black.vim
+curl<span class="w"> </span>https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim<span class="w"> </span>-o<span class="w"> </span>~/.vim/pack/python/start/black/autoload/black.vim
+</pre></div>
+</div>
+<p>Let me know if this requires any changes to work with Vim 8’s builtin <code class="docutils literal notranslate"><span class="pre">packadd</span></code>, or
+Pathogen, and so on.</p>
+</section>
+</section>
+<section id="usage">
+<h4>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h4>
+<p>On first run, the plugin creates its own virtualenv using the right Python version and
+automatically installs <em>Black</em>. You can upgrade it later by calling <code class="docutils literal notranslate"><span class="pre">:BlackUpgrade</span></code> and
+restarting Vim.</p>
+<p>If you need to do anything special to make your virtualenv work and install <em>Black</em> (for
+example you want to run a version from main), create a virtualenv manually and point
+<code class="docutils literal notranslate"><span class="pre">g:black_virtualenv</span></code> to it. The plugin will use it.</p>
+<p>If you would prefer to use the system installation of <em>Black</em> rather than a virtualenv,
+then add this to your vimrc:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="k">g</span>:black_use_virtualenv <span class="p">=</span> <span class="m">0</span>
+</pre></div>
+</div>
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">:BlackUpgrade</span></code> command is only usable and useful with a virtualenv, so
+when the virtualenv is not in use, <code class="docutils literal notranslate"><span class="pre">:BlackUpgrade</span></code> is disabled. If you need to upgrade
+the system installation of <em>Black</em>, then use your system package manager or pip–
+whatever tool you used to install <em>Black</em> originally.</p>
+<p>To run <em>Black</em> on save, add the following lines to <code class="docutils literal notranslate"><span class="pre">.vimrc</span></code> or <code class="docutils literal notranslate"><span class="pre">init.vim</span></code>:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span>augroup black_on_save
+  autocmd<span class="p">!</span>
+  autocmd <span class="nb">BufWritePre</span> *.<span class="k">py</span> Black
+augroup <span class="k">end</span>
+</pre></div>
+</div>
+<p>To run <em>Black</em> on a key press (e.g. F9 below), add this:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span><span class="nb">nnoremap</span> <span class="p">&lt;</span>F9<span class="p">&gt;</span> :Black<span class="p">&lt;</span>CR<span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="with-ale">
+<h3>With ALE<a class="headerlink" href="#with-ale" title="Link to this heading">¶</a></h3>
+<ol class="arabic">
+<li><p>Install <a class="reference external" href="https://github.com/dense-analysis/ale"><code class="docutils literal notranslate"><span class="pre">ale</span></code></a></p></li>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code></p></li>
+<li><p>Add this to your vimrc:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span><span class="k">let</span> <span class="k">g</span>:ale_fixers <span class="p">=</span> {}
+<span class="k">let</span> <span class="k">g</span>:ale_fixers.python <span class="p">=</span> [<span class="s1">&#39;black&#39;</span>]
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+<section id="neovim">
+<h2>Neovim<a class="headerlink" href="#neovim" title="Link to this heading">¶</a></h2>
+<section id="via-conform-nvim">
+<h3>Via conform.nvim<a class="headerlink" href="#via-conform-nvim" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://github.com/stevearc/conform.nvim">conform.nvim</a> is a lightweight formatter
+plugin for Neovim. It supports <em>Black</em> out of the box as long as <code class="docutils literal notranslate"><span class="pre">black</span></code> is available in
+your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">black</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">black</span></code> or <code class="docutils literal notranslate"><span class="pre">pipx</span> <span class="pre">install</span> <span class="pre">black</span></code>)</p></li>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">conform.nvim</span></code> using your plugin manager and add the following to your Neovim
+configuration:</p>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;conform&quot;</span><span class="p">).</span><span class="nf">setup</span><span class="p">({</span>
+<span class="w">  </span><span class="nv">formatters_by_ft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;black&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</li>
+<li><p>To format on save, add:</p>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;conform&quot;</span><span class="p">).</span><span class="nf">setup</span><span class="p">({</span>
+<span class="w">  </span><span class="nv">formatters_by_ft</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;black&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nv">format_on_save</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">timeout_ms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">lsp_format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fallback&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="id1">
+<h3>With ALE<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://github.com/dense-analysis/ale">ALE</a> supports both Vim and Neovim. See the
+<a class="reference internal" href="#with-ale">Vim section</a> above for setup instructions — the same configuration works for
+Neovim.</p>
+</section>
+<section id="simple-command">
+<h3>Simple command<a class="headerlink" href="#simple-command" title="Link to this heading">¶</a></h3>
+<p>You can invoke <em>Black</em> on the current file directly from Neovim without any plugins:</p>
+<div class="highlight-vim notranslate"><div class="highlight"><pre><span></span><span class="p">:!</span>black %
+</pre></div>
+</div>
+<p>To create a convenient <code class="docutils literal notranslate"><span class="pre">:Black</span></code> command, add this to your <code class="docutils literal notranslate"><span class="pre">init.lua</span></code>:</p>
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="nv">vim</span><span class="p">.</span><span class="py">api</span><span class="p">.</span><span class="nf">nvim_create_user_command</span><span class="p">(</span>
+<span class="w">  </span><span class="s2">&quot;Black&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="kr">function</span><span class="p">()</span>
+<span class="w">    </span><span class="nv">vim</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s2">&quot;!black &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">vim</span><span class="p">.</span><span class="py">fn</span><span class="p">.</span><span class="nf">expand</span><span class="p">(</span><span class="s2">&quot;%&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="kr">end</span><span class="p">,</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nv">nargs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="gedit">
+<h2>Gedit<a class="headerlink" href="#gedit" title="Link to this heading">¶</a></h2>
+<p>gedit is the default text editor of the GNOME, Unix like Operating Systems. Open gedit
+as</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>gedit<span class="w"> </span>&lt;file_name&gt;
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Go</span> <span class="pre">to</span> <span class="pre">edit</span> <span class="pre">&gt;</span> <span class="pre">preferences</span> <span class="pre">&gt;</span> <span class="pre">plugins</span></code></p></li>
+<li><p>Search for <code class="docutils literal notranslate"><span class="pre">external</span> <span class="pre">tools</span></code> and activate it.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">menu</span> <span class="pre">-&gt;</span> <span class="pre">Manage</span> <span class="pre">external</span> <span class="pre">tools</span></code></p></li>
+<li><p>Add a new tool using <code class="docutils literal notranslate"><span class="pre">+</span></code> button.</p></li>
+<li><p>Copy the below content to the code window.</p></li>
+</ol>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nv">Name</span><span class="o">=</span><span class="nv">$GEDIT_CURRENT_DOCUMENT_NAME</span>
+black<span class="w"> </span><span class="nv">$Name</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Set a keyboard shortcut if you like, Ex. <code class="docutils literal notranslate"><span class="pre">ctrl-B</span></code></p></li>
+<li><p>Save: <code class="docutils literal notranslate"><span class="pre">Nothing</span></code></p></li>
+<li><p>Input: <code class="docutils literal notranslate"><span class="pre">Nothing</span></code></p></li>
+<li><p>Output: <code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">in</span> <span class="pre">bottom</span> <span class="pre">pane</span></code> if you like.</p></li>
+<li><p>Change the name of the tool if you like.</p></li>
+</ul>
+<p>Use your keyboard shortcut or <code class="docutils literal notranslate"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">External</span> <span class="pre">Tools</span></code> to use your new tool. When you
+close and reopen your File, <em>Black</em> will be done with its job.</p>
+</section>
+<section id="visual-studio-code">
+<h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Use the
+<a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension</a>
+(<a class="reference external" href="https://code.visualstudio.com/docs/python/formatting">instructions</a>).</p></li>
+<li><p>Alternatively the pre-release
+<a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter">Black Formatter</a>
+extension can be used which runs a <a class="reference external" href="https://langserver.org/">Language Server Protocol</a>
+server for Black. Formatting is much more responsive using this extension, <strong>but the
+minimum supported version of Black is 22.3.0</strong>.</p></li>
+</ul>
+</section>
+<section id="sublimetext">
+<h2>SublimeText<a class="headerlink" href="#sublimetext" title="Link to this heading">¶</a></h2>
+<p>Use <a class="reference internal" href="#python-lsp-server">LSP</a> with the
+<a class="reference external" href="https://github.com/python-lsp/python-lsp-black">python-lsp-black</a> plugin as documented
+below. This is the recommended approach for all versions of Sublime Text.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a class="reference external" href="https://github.com/jgirardet/sublack">sublack plugin</a> that was previously
+recommended here is no longer maintained (the repository has been archived).</p>
+</div>
+</section>
+<section id="python-lsp-server">
+<h2>Python LSP Server<a class="headerlink" href="#python-lsp-server" title="Link to this heading">¶</a></h2>
+<p>If your editor supports the <a class="reference external" href="https://langserver.org/">Language Server Protocol</a> (Atom,
+Sublime Text, Visual Studio Code and many more), you can use the
+<a class="reference external" href="https://github.com/python-lsp/python-lsp-server">Python LSP Server</a> with the
+<a class="reference external" href="https://github.com/python-lsp/python-lsp-black">python-lsp-black</a> plugin.</p>
+</section>
+<section id="gradle-the-build-tool">
+<h2>Gradle (the build tool)<a class="headerlink" href="#gradle-the-build-tool" title="Link to this heading">¶</a></h2>
+<p>Use the <a class="reference external" href="https://github.com/diffplug/spotless/tree/main/plugin-gradle">Spotless</a> plugin.</p>
+</section>
+<section id="kakoune">
+<h2>Kakoune<a class="headerlink" href="#kakoune" title="Link to this heading">¶</a></h2>
+<p>Add the following hook to your kakrc, then run <em>Black</em> with <code class="docutils literal notranslate"><span class="pre">:format</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hook</span> <span class="k">global</span> <span class="n">WinSetOption</span> <span class="n">filetype</span><span class="o">=</span><span class="n">python</span> <span class="o">%</span><span class="p">{</span>
+    <span class="nb">set</span><span class="o">-</span><span class="n">option</span> <span class="n">window</span> <span class="n">formatcmd</span> <span class="s1">&#39;black -q  -&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="thonny">
+<h2>Thonny<a class="headerlink" href="#thonny" title="Link to this heading">¶</a></h2>
+<p>Use <a class="reference external" href="https://pypi.org/project/thonny-black-formatter/">Thonny-black-formatter</a>.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="github_actions.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">GitHub Actions integration</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Integrations</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2018-Present, Łukasz Langa and contributors to Black
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Editor integration</a><ul>
+<li><a class="reference internal" href="#emacs">Emacs</a></li>
+<li><a class="reference internal" href="#pycharm-intellij-idea">PyCharm/IntelliJ IDEA</a><ul>
+<li><a class="reference internal" href="#built-in-black-integration">Built-in <em>Black</em> integration</a></li>
+<li><a class="reference internal" href="#as-local-server">As local server</a></li>
+<li><a class="reference internal" href="#as-external-tool">As external tool</a></li>
+<li><a class="reference internal" href="#as-file-watcher">As file watcher</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#wing-ide">Wing IDE</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#preference-settings">Preference Settings</a></li>
+<li><a class="reference internal" href="#project-properties">Project Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vim">Vim</a><ul>
+<li><a class="reference internal" href="#official-plugin">Official plugin</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#vim-plug"><code class="docutils literal notranslate"><span class="pre">vim-plug</span></code></a></li>
+<li><a class="reference internal" href="#vundle">Vundle</a></li>
+<li><a class="reference internal" href="#arch-linux">Arch Linux</a></li>
+<li><a class="reference internal" href="#vim-8-native-plugin-management">Vim 8 Native Plugin Management</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#with-ale">With ALE</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#neovim">Neovim</a><ul>
+<li><a class="reference internal" href="#via-conform-nvim">Via conform.nvim</a></li>
+<li><a class="reference internal" href="#id1">With ALE</a></li>
+<li><a class="reference internal" href="#simple-command">Simple command</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gedit">Gedit</a></li>
+<li><a class="reference internal" href="#visual-studio-code">Visual Studio Code</a></li>
+<li><a class="reference internal" href="#sublimetext">SublimeText</a></li>
+<li><a class="reference internal" href="#python-lsp-server">Python LSP Server</a></li>
+<li><a class="reference internal" href="#gradle-the-build-tool">Gradle (the build tool)</a></li>
+<li><a class="reference internal" href="#kakoune">Kakoune</a></li>
+<li><a class="reference internal" href="#thonny">Thonny</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=fe369db5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=b612fa2f"></script>
+    </body>
+</html>

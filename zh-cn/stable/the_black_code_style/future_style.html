@@ -1,0 +1,667 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜索" href="../search.html"><link rel="next" title="Getting Started" href="../getting_started.html"><link rel="prev" title="The Black code style" href="current_style.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/black-docs-l10n/the_black_code_style/future_style.html">
+        <link rel="prefetch" href="../_static/logo2-readme.png" as="image">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>The (future of the) Black code style - Black 26.5.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Black 26.5.1 文档</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo2-readme.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Black 26.5.1 文档</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">The Black Code Style</a><input aria-label="Toggle navigation of The Black Code Style" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="current_style.html">Current style</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Future style</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../usage_and_configuration/index.html">Usage and Configuration</a><input aria-label="Toggle navigation of Usage and Configuration" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/file_collection_and_discovery.html">File collection and discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_as_a_server.html">Black as a server (blackd)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage_and_configuration/black_docker_image.html">Black Docker image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integrations/index.html">Integrations</a><input aria-label="Toggle navigation of Integrations" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/editors.html">Editor integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/github_actions.html">GitHub Actions integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/source_version_control.html">Version control integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrations/doctest_formatting.html">Doctest Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../guides/index.html">Guides</a><input aria-label="Toggle navigation of Guides" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/introducing_black_to_your_project.html">Introducing <em>Black</em> to your project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_other_tools.html">Using <em>Black</em> with other tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/using_black_with_jupyter_notebooks.html">Using <em>Black</em> with Jupyter Notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing/index.html">Contributing</a><input aria-label="Toggle navigation of Contributing" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/the_basics.html">The basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/gauging_changes.html">Gauging changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/issue_triage.html">Issue triage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/release_process.html">Release process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../change_log.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/psf/black">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/black">PyPI</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/RtVdv86PrH">Chat</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/the_black_code_style/future_style.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="the-future-of-the-black-code-style">
+<h1>The (future of the) Black code style<a class="headerlink" href="#the-future-of-the-black-code-style" title="链接到此标题。">¶</a></h1>
+<section id="preview-style">
+<h2>Preview style<a class="headerlink" href="#preview-style" title="链接到此标题。">¶</a></h2>
+<p id="labels-preview-style">Experimental, potentially disruptive style changes are gathered under the <code class="docutils literal notranslate"><span class="pre">--preview</span></code>
+CLI flag. At the end of each year, these changes may be adopted into the default style,
+as described in <a class="reference internal" href="index.html"><span class="std std-doc">The Black Code Style</span></a>. Because the functionality is
+experimental, feedback and issue reports are highly encouraged!</p>
+<p id="labels-preview-features">Currently, the following features are included in the preview style:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">wrap_comprehension_in</span></code>: Wrap the <code class="docutils literal notranslate"><span class="pre">in</span></code> clause of list and dictionary comprehensions
+across lines if it would otherwise exceed the maximum line length.
+(<a class="reference internal" href="#labels-wrap-comprehension-in"><span class="std std-ref">see below</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">simplify_power_operator_hugging</span></code>: Use a simpler implementation of the power operator
+&quot;hugging&quot; logic (removing whitespace around <code class="docutils literal notranslate"><span class="pre">**</span></code> in simple expressions), which applies
+also in the rare case the exponentiation is split into separate lines.
+(<a class="reference internal" href="#labels-simplify-power-operator"><span class="std std-ref">see below</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wrap_long_dict_values_in_parens</span></code>: Add parentheses around long values in dictionaries.
+(<a class="reference internal" href="#labels-wrap-long-dict-values"><span class="std std-ref">see below</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fix_if_guard_explosion_in_case_statement</span></code>: fixed exploding of the if guard in case
+patterns which have trailing commas in them, even if the guard expression fits in one
+line</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyi_overload_group_blank_lines</span></code>: In <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> stub files, improve heuristics around when
+blank lines should appear before, after and within decorated function groups.
+(<a class="reference internal" href="#labels-pyi-overload-group"><span class="std std-ref">see below</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyi_blank_line_before_decorated_class</span></code>: In <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> stub files, enforce a blank line
+before a decorated class definition when it follows a function definition.
+(<a class="reference internal" href="#labels-pyi-blank-line-before-decorated-class"><span class="std std-ref">see below</span></a>)</p></li>
+</ul>
+<section id="wrapping-long-comprehension-in-clauses">
+<span id="labels-wrap-comprehension-in"></span><h3>Wrapping long comprehension <code class="docutils literal notranslate"><span class="pre">in</span></code> clauses<a class="headerlink" href="#wrapping-long-comprehension-in-clauses" title="链接到此标题。">¶</a></h3>
+<p>When a list or dictionary comprehension has a long <code class="docutils literal notranslate"><span class="pre">in</span></code> clause that would exceed the
+maximum line length, Black will wrap it across multiple lines for better readability.
+This helps keep comprehensions readable when the iterable expression is complex or
+lengthy.</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Before</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">very_very_very_very_very_long_item</span>
+    <span class="k">for</span> <span class="n">very_very_very_very_very_long_item</span> <span class="ow">in</span> <span class="n">some_very_very_very_very_very_very_long_function_name</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>will be formatted to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># After</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">very_very_very_very_very_long_item</span>
+    <span class="k">for</span> <span class="n">very_very_very_very_very_long_item</span> <span class="ow">in</span> <span class="p">(</span>
+        <span class="n">some_very_very_very_very_very_very_long_function_name</span>
+    <span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>This also applies to dictionary comprehensions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Before</span>
+<span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">very_long_key</span><span class="p">:</span> <span class="n">very_very_very_long_item</span>
+    <span class="k">for</span> <span class="n">very_long_key</span><span class="p">,</span> <span class="n">very_very_very_long_item</span> <span class="ow">in</span> <span class="n">very_very_very_very_long_function_name</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>will be formatted to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># After</span>
+<span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">very_long_key</span><span class="p">:</span> <span class="n">very_very_very_long_item</span>
+    <span class="k">for</span> <span class="n">very_long_key</span><span class="p">,</span> <span class="n">very_very_very_long_item</span> <span class="ow">in</span> <span class="p">(</span>
+        <span class="n">very_very_very_very_long_function_name</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="simplified-power-operator-whitespace-handling">
+<span id="labels-simplify-power-operator"></span><h3>Simplified power operator whitespace handling<a class="headerlink" href="#simplified-power-operator-whitespace-handling" title="链接到此标题。">¶</a></h3>
+<p>Black's power operator &quot;hugging&quot; logic removes whitespace around <code class="docutils literal notranslate"><span class="pre">**</span></code> in simple
+expressions (e.g., <code class="docutils literal notranslate"><span class="pre">x**2</span></code> instead of <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">**</span> <span class="pre">2</span></code>). This feature uses a simpler, more
+consistent implementation that also applies when exponentiation is split across lines.</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simple expressions - whitespace is removed</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">3</span>
+<span class="n">value</span> <span class="o">=</span> <span class="n">base</span><span class="o">**</span><span class="n">exponent</span>
+</pre></div>
+</div>
+<p>When the exponentiation is split across lines (rare), the simplified logic ensures
+consistent formatting:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Complex expression split across lines</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">some_very_long_base_expression</span>
+    <span class="o">**</span><span class="n">some_very_long_exponent_expression</span>
+    <span class="o">**</span><span class="n">some_very_long_third_expression</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>This feature primarily improves the internal consistency of Black's formatting logic
+rather than making dramatic visual changes to most code.</p>
+</section>
+<section id="improved-parentheses-management-in-dicts">
+<span id="labels-wrap-long-dict-values"></span><h3>Improved parentheses management in dicts<a class="headerlink" href="#improved-parentheses-management-in-dicts" title="链接到此标题。">¶</a></h3>
+<p>For dict literals with long values, they are now wrapped in parentheses. Unnecessary
+parentheses are now removed. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;a key in my dict&quot;</span><span class="p">:</span> <span class="n">a_very_long_variable</span>
+    <span class="o">*</span> <span class="n">and_a_very_long_function_call</span><span class="p">()</span>
+    <span class="o">/</span> <span class="mf">100000.0</span><span class="p">,</span>
+    <span class="s2">&quot;another key&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">short_value</span><span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>will be changed to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;a key in my dict&quot;</span><span class="p">:</span> <span class="p">(</span>
+        <span class="n">a_very_long_variable</span> <span class="o">*</span> <span class="n">and_a_very_long_function_call</span><span class="p">()</span> <span class="o">/</span> <span class="mf">100000.0</span>
+    <span class="p">),</span>
+    <span class="s2">&quot;another key&quot;</span><span class="p">:</span> <span class="n">short_value</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="improved-overload-groups-in-stub-files">
+<span id="labels-pyi-overload-group"></span><h3>Improved overload groups in stub files<a class="headerlink" href="#improved-overload-groups-in-stub-files" title="链接到此标题。">¶</a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> stub files, Black now has improved heuristics regarding when blank lines
+should appear before, after or within groups of decorated functions that share the same
+name (such as <code class="docutils literal notranslate"><span class="pre">&#64;overload</span></code> groups). Two rules are applied when a decorated function is
+determined to be part of a series of &gt;=2 decorated functions with the same name:</p>
+<ol class="arabic simple">
+<li><p><strong>Before the decorated function</strong>: a blank line is always inserted, unless the
+preceding statement is a same-name decorated function (i.e. part of an <code class="docutils literal notranslate"><span class="pre">&#64;overload</span></code>
+group) or the function is the first statement in its block.</p></li>
+<li><p><strong>After the decorated function</strong>: a blank line is always inserted, unless the
+following statement is a same-name decorated function.</p></li>
+</ol>
+<p>These rules apply regardless of what the adjacent statement is — whether it's another
+function definition, a variable annotation, or any other statement.</p>
+<p>Previously, Black could insert unwanted blank lines <em>within</em> an overload group when one
+of the overloads had a docstring, and did not consistently enforce blank lines at the
+boundaries of overload groups:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Before</span>
+
+<span class="nd">@overload</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Docs.&quot;&quot;&quot;</span>
+
+<span class="nd">@overload</span>                    <span class="c1"># unwanted blank line within group</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bar</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="o">...</span>              <span class="c1"># no blank line after group</span>
+</pre></div>
+</div>
+<p>With this feature enabled, the group is kept together and clearly separated from
+surrounding code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># After (with --preview)</span>
+
+<span class="nd">@overload</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Docs.&quot;&quot;&quot;</span>
+<span class="nd">@overload</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span> <span class="o">...</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">bar</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="blank-line-before-decorated-classes-in-stub-files">
+<span id="labels-pyi-blank-line-before-decorated-class"></span><h3>Blank line before decorated classes in stub files<a class="headerlink" href="#blank-line-before-decorated-classes-in-stub-files" title="链接到此标题。">¶</a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">.pyi</span></code> stub files, Black already enforces blank lines around class definitions in
+many situations. However, when a class has a decorator, Black previously failed to
+enforce this, instead <em>removing</em> the blank line between a function and the decorator:</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="w"> </span> # Before
+
+<span class="w"> </span> def foo(): ...
+<span class="gd">-</span>
+<span class="w"> </span> @decorator
+<span class="w"> </span> class Bar: ...
+
+<span class="w"> </span> def baz(): ...
+<span class="w"> </span> @decorator
+<span class="w"> </span> class Spam: ...
+</pre></div>
+</div>
+<p>With this feature enabled, a blank line is enforced, consistent with how undecorated
+classes are handled:</p>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="w"> </span> # After (with --preview)
+
+<span class="w"> </span> def foo(): ...
+
+<span class="w"> </span> @decorator
+<span class="w"> </span> class Bar: ...
+
+<span class="w"> </span> def baz(): ...
+<span class="gi">+</span>
+<span class="w"> </span> @decorator
+<span class="w"> </span> class Spam: ...
+</pre></div>
+</div>
+</section>
+</section>
+<section id="unstable-style">
+<h2>Unstable style<a class="headerlink" href="#unstable-style" title="链接到此标题。">¶</a></h2>
+<p id="labels-unstable-style">In the past, the preview style included some features with known bugs, so that we were
+unable to move these features to the stable style. Therefore, such features are now
+moved to the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style. All features in the <code class="docutils literal notranslate"><span class="pre">--preview</span></code> style are expected to
+make it to next year's stable style; features in the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style will be
+stabilized only if issues with them are fixed. If bugs are discovered in a <code class="docutils literal notranslate"><span class="pre">--preview</span></code>
+feature, it is demoted to the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style. To avoid thrash when a feature is
+demoted from the <code class="docutils literal notranslate"><span class="pre">--preview</span></code> to the <code class="docutils literal notranslate"><span class="pre">--unstable</span></code> style, users can use the
+<code class="docutils literal notranslate"><span class="pre">--enable-unstable-feature</span></code> flag to enable specific unstable features.</p>
+<p id="labels-unstable-features">The unstable style additionally includes the following features:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hug_parens_with_braces_and_square_brackets</span></code>: More compact formatting of nested
+brackets. (<a class="reference internal" href="#labels-hug-parens"><span class="std std-ref">see below</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string_processing</span></code>: Split long string literals and related changes.
+(<a class="reference internal" href="#labels-string-processing"><span class="std std-ref">see below</span></a>)</p></li>
+</ul>
+<section id="improved-multiline-dictionary-and-list-indentation-for-sole-function-parameter">
+<span id="labels-hug-parens"></span><h3>Improved multiline dictionary and list indentation for sole function parameter<a class="headerlink" href="#improved-multiline-dictionary-and-list-indentation-for-sole-function-parameter" title="链接到此标题。">¶</a></h3>
+<p>For better readability and less verticality, <em>Black</em> now pairs parentheses (&quot;(&quot;, &quot;)&quot;)
+with braces (&quot;{&quot;, &quot;}&quot;) and square brackets (&quot;[&quot;, &quot;]&quot;) on the same line. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="mi">1</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">nested_array</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="mi">1</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>will be changed to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="p">([</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">,</span>
+<span class="p">])</span>
+
+<span class="n">nested_array</span> <span class="o">=</span> <span class="p">[[</span>
+    <span class="mi">1</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">,</span>
+<span class="p">]]</span>
+</pre></div>
+</div>
+<p>This also applies to list and dictionary unpacking:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="p">(</span>
+    <span class="o">*</span><span class="p">[</span>
+        <span class="n">a_long_function_name</span><span class="p">(</span><span class="n">a_long_variable_name</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">a_long_variable_name</span> <span class="ow">in</span> <span class="n">some_generator</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>will become:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+    <span class="n">a_long_function_name</span><span class="p">(</span><span class="n">a_long_variable_name</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">a_long_variable_name</span> <span class="ow">in</span> <span class="n">some_generator</span>
+<span class="p">])</span>
+</pre></div>
+</div>
+<p>You can use a magic trailing comma to avoid this compacting behavior; by default,
+<em>Black</em> will not reformat the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="mi">1</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">,</span>
+    <span class="p">],</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="improved-string-processing">
+<span id="labels-string-processing"></span><h3>Improved string processing<a class="headerlink" href="#improved-string-processing" title="链接到此标题。">¶</a></h3>
+<p><em>Black</em> will split long string literals and merge short ones. Parentheses are used where
+appropriate. When split, parts of f-strings that don't need formatting are converted to
+plain strings. f-strings will not be merged if they contain internal quotes and it would
+change their quotation mark style. Line continuation backslashes are converted into
+parenthesized strings. Unnecessary parentheses are stripped. The stability and status of
+this feature is tracked in <a class="reference external" href="https://github.com/psf/black/issues/2188">this issue</a>.</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../getting_started.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Getting Started</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="current_style.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">The <em>Black</em> code style</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2018-Present, Łukasz Langa and contributors to Black
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The (future of the) Black code style</a><ul>
+<li><a class="reference internal" href="#preview-style">Preview style</a><ul>
+<li><a class="reference internal" href="#wrapping-long-comprehension-in-clauses">Wrapping long comprehension <code class="docutils literal notranslate"><span class="pre">in</span></code> clauses</a></li>
+<li><a class="reference internal" href="#simplified-power-operator-whitespace-handling">Simplified power operator whitespace handling</a></li>
+<li><a class="reference internal" href="#improved-parentheses-management-in-dicts">Improved parentheses management in dicts</a></li>
+<li><a class="reference internal" href="#improved-overload-groups-in-stub-files">Improved overload groups in stub files</a></li>
+<li><a class="reference internal" href="#blank-line-before-decorated-classes-in-stub-files">Blank line before decorated classes in stub files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unstable-style">Unstable style</a><ul>
+<li><a class="reference internal" href="#improved-multiline-dictionary-and-list-indentation-for-sole-function-parameter">Improved multiline dictionary and list indentation for sole function parameter</a></li>
+<li><a class="reference internal" href="#improved-string-processing">Improved string processing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=88331920"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=b612fa2f"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    </body>
+</html>
