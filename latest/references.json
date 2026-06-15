@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-03 15:18:14 -0500",
-      "hash" : "ce1897a8f20d0f64844dd666d07f4003500d0e09",
-      "title" : "fix quadratic backtracking in debug f-string quote detection (#5165)"
+      "date" : "2026-06-11 11:35:01 -0500",
+      "hash" : "6325332f05312ebde112a61cf4a19ef2ecf1ea74",
+      "title" : "Document standalone release executables (#5162)"
     }
   },
   "type" : "branch",
