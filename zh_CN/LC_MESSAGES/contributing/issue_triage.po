@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing/issue_triage.md:1
+msgid "Issue triage"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:3
+msgid ""
+"Currently, _Black_ uses the issue tracker for bugs, feature requests, "
+"proposed style modifications, and general user support. Each of these issues "
+"have to be triaged so they can be eventually be resolved somehow. This "
+"document outlines the triaging process and also the current guidelines and "
+"recommendations."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:9
+msgid ""
+"If you're looking for a way to contribute without submitting patches, this "
+"might be the area for you. Since _Black_ is a popular project, its issue "
+"tracker is quite busy and always needs more attention than is available. "
+"While triage isn't the most glamorous or technically challenging form of "
+"contribution, it's still important. For example, we would love to know "
+"whether that old bug report is still reproducible!"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:15
+msgid ""
+"You can get easily started by reading over this document and then responding "
+"to issues."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:17
+msgid ""
+"If you contribute enough and have stayed for long enough, you may even be "
+"given Triage permissions!"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:21
+msgid "The basics"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:23
+msgid ""
+"_Black_ gets a whole bunch of different issues, they range from bug reports "
+"to user support issues. To triage is to identify, organize, and kickstart "
+"the issue's journey through its lifecycle to resolution."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:27
+msgid "More specifically, to triage an issue means to:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:29
+msgid "identify what type and categories the issue falls under"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:30
+msgid "confirm bugs"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:31
+msgid "ask questions / for further information if necessary"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:32
+msgid "link related issues"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:33
+msgid "provide the first initial feedback / support"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:35
+msgid ""
+"Note that triage is typically the first response to an issue, so don't fret "
+"if the issue doesn't make much progress after initial triage. The main goal "
+"of triaging to prepare the issue for future more specific development or "
+"discussion, so _eventually_ it will be resolved."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:40
+msgid ""
+"The lifecycle of a bug report or user support issue typically goes something "
+"like this:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:42
+#: ../../../contributing/issue_triage.md:59
+msgid "_the issue is waiting for triage_"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:43
+msgid ""
+"**identified** - has been marked with a type label and other relevant "
+"labels, more details or a functional reproduction may be still needed (and "
+"therefore should be marked with `S: needs repro` or `S: awaiting response`)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:46
+msgid ""
+"**confirmed** - the issue can reproduced and necessary details have been "
+"provided"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:47
+msgid ""
+"**discussion** - initial triage has been done and now the general details on "
+"how the issue should be best resolved are being hashed out"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:49
+msgid ""
+"**awaiting fix** - no further discussion on the issue is necessary and a "
+"resolving PR is the next step"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:51
+msgid "**closed** - the issue has been resolved, reasons include:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:52
+msgid "the issue couldn't be reproduced"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:53
+msgid "the issue has been fixed"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:54
+msgid "duplicate of another pre-existing issue or is invalid"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:56
+msgid ""
+"For enhancement, documentation, and style issues, the lifecycle looks very "
+"similar but the details are different:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:60
+msgid ""
+"**identified** - has been marked with a type label and other relevant labels"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:61
+msgid ""
+"**discussion** - the merits of the suggested changes are currently being "
+"discussed, a PR would be acceptable but would be at significant risk of "
+"being rejected"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:63
+msgid ""
+"**accepted & awaiting PR** - it's been determined the suggested changes are "
+"OK and a PR would be welcomed (`S: accepted`)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:65
+msgid "**closed**: - the issue has been resolved, reasons include:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:66
+msgid "the suggested changes were implemented"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:67
+msgid "it was rejected (due to technical concerns, ethos conflicts, etc.)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:68
+msgid "duplicate of a pre-existing issue or is invalid"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:70
+msgid ""
+"**Note**: documentation issues don't use the `S: accepted` label currently "
+"since they're less likely to be rejected."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:73
+msgid "Labelling"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:75
+msgid ""
+"We use labels to organize, track progress, and help effectively divvy up "
+"work."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:77
+msgid ""
+"Our labels are divided up into several groups identified by their prefix:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:79
+msgid "**T - Type**: the general flavor of issue / PR"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:80
+msgid ""
+"**C - Category**: areas of concerns, ranges from bug types to project "
+"maintenance"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:81
+msgid "**F - Formatting Area**: like C but for formatting specifically"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:82
+msgid "**S - Status**: what stage of resolution is this issue currently in?"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:83
+msgid "**R - Resolution**: how / why was the issue / PR resolved?"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:85
+msgid "We also have a few standalone labels:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:87
+msgid ""
+"**`good first issue`**: issues that are beginner-friendly (and will show up "
+"in GitHub banners for first-time visitors to the repository)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:89
+msgid ""
+"**`help wanted`**: complex issues that need and are looking for a fair bit "
+"of work as to progress (will also show up in various GitHub pages)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:91
+msgid ""
+"**`ci: skip news`**: for PRs that are trivial and don't need a CHANGELOG "
+"entry (and skips the CHANGELOG entry check)"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:93
+msgid ""
+"**`ci: build all wheels`**: when a full wheel build is needed, such as to "
+"debug platform-specific issues. Black does not build wheels for every "
+"platform on each pull request because the full build matrix is expensive. "
+"After the label is added, the workflow starts only when a new commit is "
+"pushed."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:99
+msgid ""
+"We do use labels for PRs, in particular the `ci: skip news` label, but we "
+"aren't that rigorous about it. Just follow your judgement on what labels "
+"make sense for the specific PR (if any even make sense)."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:104
+msgid "Projects"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:106
+msgid ""
+"For more general and broad goals we use projects to track work. Some may be "
+"long-term projects with no true end (e.g. the \"Amazing documentation\" "
+"project) while others may be more focused and have a definite end (like the "
+"\"Getting to beta\" project)."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:111
+msgid ""
+"To modify GitHub Projects you need the [Write repository permission level or "
+"higher](https://docs.github.com/en/organizations/managing-access-to-your-"
+"organizations-repositories/repository-permission-levels-for-an-"
+"organization#repository-access-for-each-permission-level)."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:115
+msgid "Closing issues"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:117
+msgid ""
+"Closing an issue signifies the issue has reached the end of its life, so "
+"closing issues should be taken with care. The following is the general "
+"recommendation for each type of issue. Note that these are only guidelines "
+"and if your judgement says something else it's totally cool to go with it "
+"instead."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:122
+msgid ""
+"For most issues, closing the issue manually or automatically after a "
+"resolving PR is ideal. For bug reports specifically, if the bug has already "
+"been fixed, try to check in with the issue opener that their specific case "
+"has been resolved before closing. Note that we close issues as soon as "
+"they're fixed in the `main` branch. This doesn't necessarily mean they've "
+"been released yet."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:128
+msgid ""
+"Design and enhancement issues should be also closed when it's clear the "
+"proposed change won't be implemented, whether that has been determined after "
+"a lot of discussion or just simply goes against _Black_'s ethos. If such an "
+"issue turns heated, closing and locking is acceptable if it's severe enough "
+"(although checking in with the core team is probably a good idea)."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:134
+msgid ""
+"User support issues are best closed by the author or when it's clear the "
+"issue has been resolved in some sort of manner."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:137
+msgid ""
+"Duplicates and invalid issues should always be closed since they serve no "
+"purpose and add noise to an already busy issue tracker. Although be careful "
+"to make sure it's truly a duplicate and not just very similar before "
+"labelling and closing an issue as duplicate."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:142
+msgid "Common reports"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:144
+msgid ""
+"Some issues are frequently opened, like issues about _Black_ formatted code "
+"causing E203 messages. Even though these issues are probably heavily "
+"duplicated, they still require triage sucking up valuable time from other "
+"things (although they usually skip most of their lifecycle since they're "
+"closed on triage)."
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:149
+msgid ""
+"Here's some of the most common issues and also pre-made responses you can "
+"use:"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:151
+msgid "\"The trailing comma isn't being removed by Black!\""
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:153
+msgid ""
+"Black used to remove the trailing comma if the expression fits in a single "
+"line, but this was changed by #826 and #1288. Now a trailing comma tells "
+"Black to always explode the expression. This change was made mostly for the "
+"cases where you _know_ a collection or whatever will grow in the future. "
+"Having it always exploded as one element per line reduces diff noise when "
+"adding elements. Before the \"magic trailing comma\" feature, you couldn't "
+"anticipate a collection's growth reliably since collections that fitted in "
+"one line were ruthlessly collapsed regardless of your intentions. One of "
+"Black's goals is reducing diff noise, so this was a good pragmatic change.\n"
+"\n"
+"So no, this is not a bug, but an intended feature. Anyway, [here's the "
+"documentation](https://github.com/psf/black/blob/master/docs/"
+"the_black_code_style.md#the-magic-trailing-comma) on the \"magic trailing "
+"comma\", including the ability to skip this functionality with the `--skip-"
+"magic-trailing-comma` option. Hopefully that helps solve the possible "
+"confusion.\n"
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:159
+msgid "\"Black formatted code is violating Flake8's E203!\""
+msgstr ""
+
+#: ../../../contributing/issue_triage.md:161
+msgid ""
+"Hi,\n"
+"\n"
+"This is expected behaviour, please see the documentation regarding this case "
+"(emphasis mine):\n"
+"\n"
+"> PEP 8 recommends to treat : in slices as a binary operator with the lowest "
+"priority, and to leave an equal amount of space on either side, **except if "
+"a parameter is omitted (e.g. ham[1 + 1 :])**. It recommends no spaces "
+"around : operators for “simple expressions” (ham[lower:upper]), and **extra "
+"space for “complex expressions” (ham[lower : upper + offset])**. **Black "
+"treats anything more than variable names as “complex” (ham[lower : upper + "
+"1]).** It also states that for extended slices, both : operators have to "
+"have the same amount of spacing, except if a parameter is omitted (ham[1 + "
+"1 ::]). Black enforces these rules consistently.\n"
+"\n"
+"> This behaviour may raise E203 whitespace before ':' warnings in style "
+"guide enforcement tools like Flake8. **Since E203 is not PEP 8 compliant, "
+"you should tell Flake8 to ignore these warnings**.\n"
+"\n"
+"https://black.readthedocs.io/en/stable/the_black_code_style/current_style."
+"html#slices\n"
+"\n"
+"Have a good day!\n"
+msgstr ""
