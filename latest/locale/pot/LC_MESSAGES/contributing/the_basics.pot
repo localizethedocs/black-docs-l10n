@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-08-31 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,40 +187,18 @@ msgstr ""
 
 #: ../../../contributing/the_basics.md:106
 msgid ""
-"<!---\n"
-"The Next PR Number link uses HTML because of a bug in MyST-Parser that "
-"double-escapes the ampersand, causing the query parameters to not be "
-"processed.\n"
-"MyST-Parser issue: https://github.com/executablebooks/MyST-Parser/"
-"issues/760\n"
-"MyST-Parser stalled fix PR: https://github.com/executablebooks/MyST-Parser/"
-"pull/929\n"
-"-->\n"
-msgstr ""
-
-#: ../../../contributing/the_basics.md:112
-msgid ""
 "Note that X should be your PR number, not issue number! To workout X, please "
-"use <a href=\"https://ichard26.github.io/next-pr-number/?"
-"owner=psf&name=black\">Next PR Number</a>. This is not perfect but saves a "
-"lot of release overhead as now the releaser does not need to go back and "
-"workout what to add to the `CHANGES.md` for each release."
+"use [Next PR Number](https://ichard26.github.io/next-pr-number/?"
+"owner=psf&name=black). This is not perfect but saves a lot of release "
+"overhead as now the releaser does not need to go back and workout what to "
+"add to the `CHANGES.md` for each release."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:112
-msgid ""
-"<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
-msgstr ""
-
-#: ../../../contributing/the_basics.md:112
-msgid "</a>"
-msgstr ""
-
-#: ../../../contributing/the_basics.md:117
+#: ../../../contributing/the_basics.md:111
 msgid "Style Changes"
 msgstr ""
 
-#: ../../../contributing/the_basics.md:119
+#: ../../../contributing/the_basics.md:113
 msgid ""
 "Please familiarize yourself with our [stability policy](labels/stability-"
 "policy). Therefore, most style changes must be added to the `--preview` "
@@ -228,56 +206,56 @@ msgid ""
 "already-formatted file."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:123
+#: ../../../contributing/the_basics.md:117
 msgid ""
 "If a change would affect the advertised code style, please modify the "
 "documentation (The _Black_ code style) to reflect that change. Patches that "
 "fix unintended bugs in formatting don't need to be mentioned separately."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:127
+#: ../../../contributing/the_basics.md:121
 msgid ""
 "If the change is implemented with the `--preview` flag, please include the "
 "change in the Future Style document instead and write the changelog entry "
 "under the dedicated \"Preview style\" heading."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:131
+#: ../../../contributing/the_basics.md:125
 msgid "Docs Testing"
 msgstr ""
 
-#: ../../../contributing/the_basics.md:133
+#: ../../../contributing/the_basics.md:127
 msgid "If you make changes to docs, you can test they still build locally too."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:135
+#: ../../../contributing/the_basics.md:129
 msgid ""
 "(.venv)$ pip install --group docs\n"
 "(.venv)$ pip install -e \".[d]\"\n"
 "(.venv)$ sphinx-build -a -b html -W docs/ docs/_build/\n"
 msgstr ""
 
-#: ../../../contributing/the_basics.md:141
+#: ../../../contributing/the_basics.md:135
 msgid "Hygiene"
 msgstr ""
 
-#: ../../../contributing/the_basics.md:143
+#: ../../../contributing/the_basics.md:137
 msgid ""
 "If you're fixing a bug, add a test. Run it first to confirm it fails, then "
 "fix the bug, and run the test again to confirm it's really fixed."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:146
+#: ../../../contributing/the_basics.md:140
 msgid ""
 "If adding a new feature, add a test. In fact, always add a test. If adding a "
 "large feature, please first open an issue to discuss it beforehand."
 msgstr ""
 
-#: ../../../contributing/the_basics.md:149
+#: ../../../contributing/the_basics.md:143
 msgid "Finally"
 msgstr ""
 
-#: ../../../contributing/the_basics.md:151
+#: ../../../contributing/the_basics.md:145
 msgid ""
 "Thanks again for your interest in improving the project! You're taking "
 "action when most people decide to sit and watch."

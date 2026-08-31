@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-08-31 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,18 +121,9 @@ msgstr ""
 
 #: ../../../integrations/github_actions.md:62
 msgid ""
-"**Security note:** `use_pyproject` only accepts standard version specifiers "
-"for `black` (for example `==`, `~=`, `>=` and ranges like `>=25,<26`). "
-"Direct references such as `black @ https://...` are not supported. If your "
-"workflow runs on untrusted pull requests (for example from forks), prefer "
-"setting `with.version` explicitly."
-msgstr ""
-
-#: ../../../integrations/github_actions.md:67
-msgid ""
 "- uses: actions/setup-python@v6\n"
 "  with:\n"
-"    python-version: \"3.13\"\n"
+"    python-version: \"3.11\"\n"
 "- uses: psf/black@stable\n"
 "  with:\n"
 "    options: \"--check --verbose\"\n"
@@ -140,40 +131,52 @@ msgid ""
 "    use_pyproject: true\n"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:78
+#: ../../../integrations/github_actions.md:74
 msgid ""
-"Only versions available from PyPI are supported, so no commit SHAs or branch "
-"names."
+"This action only reads version specifiers from standard `pyproject.toml` "
+"locations. Poetry-specific dependency tables such as `tool.poetry."
+"dependencies` are not parsed. If you manage `black` with Poetry, set `tool."
+"black.required-version` or use the `version` input."
 msgstr ""
 
 #: ../../../integrations/github_actions.md:80
+msgid ""
+"**Security note:** `use_pyproject` only accepts standard version specifiers "
+"for `black` (for example `==`, `~=`, `>=` and ranges like `>=25,<26`). Only "
+"versions available from PyPI are supported, so no commit SHAs or branch "
+"names. Direct references such as `black @ https://...` are also not "
+"supported. If your workflow runs on untrusted pull requests (for example "
+"from forks), prefer setting `with.version` explicitly."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:86
 msgid "Jupyter Notebooks"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:82
+#: ../../../integrations/github_actions.md:88
 msgid ""
 "If you want to include Jupyter Notebooks, it can be enabled by setting "
 "`jupyter` to `true` (default is `false`):"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:85
+#: ../../../integrations/github_actions.md:91
 msgid ""
 "- uses: psf/black@stable\n"
 "  with:\n"
 "    jupyter: true\n"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:91
+#: ../../../integrations/github_actions.md:97
 msgid ""
 "See the [Jupyter Notebooks guide](../guides/"
 "using_black_with_jupyter_notebooks.md) for more details."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:94
+#: ../../../integrations/github_actions.md:100
 msgid "CLI Options"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:96
+#: ../../../integrations/github_actions.md:102
 msgid ""
 "You can also configure the arguments passed to _Black_ via `options` "
 "(defaults to `'--check --diff'`) and `src` (default is `'.'`). Please note "
@@ -181,11 +184,11 @@ msgid ""
 "fails if _Black_ finds files that need to be formatted."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:101
+#: ../../../integrations/github_actions.md:107
 msgid "Here's an example configuration:"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:103
+#: ../../../integrations/github_actions.md:109
 msgid ""
 "- uses: psf/black@stable\n"
 "  with:\n"

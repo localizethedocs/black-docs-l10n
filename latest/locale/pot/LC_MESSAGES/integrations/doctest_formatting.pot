@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-08-31 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,9 +50,9 @@ msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:17
 msgid ""
-"[`blacken-docs`](https://pypi.org/project/blacken-docs/) is primarily used "
-"to apply _Black_ formatting to code in documentation files (e.g. `.rst`, `."
-"md`, `.tex`)."
+"[`blacken-docs`](https://github.com/adamchainz/blacken-docs) is primarily "
+"used to apply _Black_ formatting to code in documentation files (e.g. `."
+"rst`, `.md`, `.tex`)."
 msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:20
@@ -127,9 +127,9 @@ msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:71
 msgid ""
-"[`blackdoc`](https://pypi.org/project/blackdoc/) is primarily used to apply "
-"_Black_ formatting to doctests in Python files. It will not format any file "
-"contents that are otherwise covered by _Black_."
+"[`blackdoc`](https://blackdoc.readthedocs.io/en/stable) is primarily used to "
+"apply _Black_ formatting to doctests in Python files. It will not format any "
+"file contents that are otherwise covered by _Black_."
 msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:75
