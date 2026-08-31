@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-08-31 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -625,7 +625,7 @@ msgstr ""
 #: ../../../usage_and_configuration/the_basics.md:354
 msgid ""
 "$ black src/ -q\n"
-"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"error: cannot parse: src/black_primer/cli.py:5:6\n"
 "    mport asyncio\n"
 "         ^\n"
 "ParseError: bad input\n"
@@ -649,7 +649,7 @@ msgid ""
 "src/blib2to3 ignored: matches the --extend-exclude regular expression\n"
 "src/_black_version.py wasn't modified on disk since last run.\n"
 "src/black/__main__.py wasn't modified on disk since last run.\n"
-"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"error: cannot parse: src/black_primer/cli.py:5:6\n"
 "    mport asyncio\n"
 "         ^\n"
 "ParseError: bad input\n"
@@ -786,7 +786,7 @@ msgstr ""
 #: ../../../usage_and_configuration/the_basics.md:450
 msgid ""
 "$ black src/\n"
-"error: cannot format src/black_primer/cli.py: Cannot parse: 5:6\n"
+"error: cannot parse: src/black_primer/cli.py:5:6\n"
 "    mport asyncio\n"
 "         ^\n"
 "ParseError: bad input\n"
@@ -830,8 +830,8 @@ msgid ""
 "[PEP 518](https://peps.python.org/pep-0518/) defines `pyproject.toml` as a "
 "configuration file to store build system requirements for Python projects. "
 "With the help of tools like [Poetry](https://python-poetry.org/), [Flit]"
-"(https://flit.readthedocs.io/en/latest/), or [Hatch](https://hatch.pypa.io/"
-"latest/) it can fully replace the need for `setup.py` and `setup.cfg` files."
+"(https://flit.pypa.io/), or [Hatch](https://hatch.pypa.io/) it can fully "
+"replace the need for `setup.py` and `setup.cfg` files."
 msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:484
@@ -868,7 +868,7 @@ msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:501
 msgid ""
-"Unix-like (Linux, MacOS, etc.): `$XDG_CONFIG_HOME/black` (`~/.config/black` "
+"Unix-like (Linux, macOS, etc.): `$XDG_CONFIG_HOME/black` (`~/.config/black` "
 "if the `XDG_CONFIG_HOME` environment variable is not set)"
 msgstr ""
 
@@ -904,13 +904,13 @@ msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:520
 msgid ""
-"As the file extension suggests, `pyproject.toml` is a [TOML](https://github."
-"com/toml-lang/toml) file. It contains separate sections for different tools. "
-"_Black_ is using the `[tool.black]` section. The option keys are the same as "
-"long names of options on the command line."
+"As the file extension suggests, `pyproject.toml` is a [TOML](https://toml."
+"io) file. It contains separate sections for different tools. _Black_ is "
+"using the `[tool.black]` section. The option keys are the same as long names "
+"of options on the command line."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:525
+#: ../../../usage_and_configuration/the_basics.md:524
 msgid ""
 "Most command-line options can be configured in `[tool.black]` by using their "
 "long name without the leading `--` (for example, `--line-length` becomes "
@@ -918,7 +918,7 @@ msgid ""
 "called out explicitly in the option reference above."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:530
+#: ../../../usage_and_configuration/the_basics.md:529
 msgid ""
 "Note that you have to use single-quoted strings in TOML for regular "
 "expressions. It's the equivalent of r-strings in Python. Multiline strings "
@@ -926,13 +926,13 @@ msgid ""
 "significant space character."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:534
+#: ../../../usage_and_configuration/the_basics.md:533
 msgid ""
 "<details>\n"
 "<summary>Example <code>pyproject.toml</code></summary>\n"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:537
+#: ../../../usage_and_configuration/the_basics.md:536
 msgid ""
 "[tool.black]\n"
 "line-length = 88\n"
@@ -951,18 +951,18 @@ msgid ""
 "'''\n"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:553
-#: ../../../usage_and_configuration/the_basics.md:585
+#: ../../../usage_and_configuration/the_basics.md:552
+#: ../../../usage_and_configuration/the_basics.md:584
 msgid "</details>\n"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:555
+#: ../../../usage_and_configuration/the_basics.md:554
 msgid ""
 "<details>\n"
 "<summary>More complete <code>pyproject.toml</code> template</summary>\n"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:558
+#: ../../../usage_and_configuration/the_basics.md:557
 msgid ""
 "[tool.black]\n"
 "line-length = 88\n"
@@ -990,37 +990,37 @@ msgid ""
 "'''\n"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:587
+#: ../../../usage_and_configuration/the_basics.md:586
 msgid "Lookup hierarchy"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:589
+#: ../../../usage_and_configuration/the_basics.md:588
 msgid ""
 "Command-line options have defaults that you can see in `--help`. A "
 "`pyproject.toml` can override those defaults. Finally, options provided by "
 "the user on the command line override both."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:593
+#: ../../../usage_and_configuration/the_basics.md:592
 msgid ""
 "_Black_ will only ever use one `pyproject.toml` file during an entire run. "
 "It doesn't look for multiple files, and doesn't compose configuration from "
 "different levels of the file hierarchy."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:597
+#: ../../../usage_and_configuration/the_basics.md:596
 msgid "Next steps"
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:599
+#: ../../../usage_and_configuration/the_basics.md:598
 msgid ""
 "A good next step would be configuring auto-discovery so `black .` is all you "
-"need instead of laborously listing every file or directory. You can get "
+"need instead of laboriously listing every file or directory. You can get "
 "started by heading over to [File collection and discovery](./"
 "file_collection_and_discovery.md)."
 msgstr ""
 
-#: ../../../usage_and_configuration/the_basics.md:603
+#: ../../../usage_and_configuration/the_basics.md:602
 msgid ""
 "Another good choice would be setting up an [integration with your editor](../"
 "integrations/editors.md) of choice or with [pre-commit for source version "

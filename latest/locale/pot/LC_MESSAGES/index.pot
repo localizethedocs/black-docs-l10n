@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-08-31 16:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgid "Testimonials"
 msgstr ""
 
 #: ../../../index.md:38
-msgid "**Mike Bayer**, author of [SQLAlchemy](https://www.sqlalchemy.org/):"
+msgid "**Mike Bayer**, creator of [`SQLAlchemy`](https://www.sqlalchemy.org/):"
 msgstr ""
 
 #: ../../../index.md:40
@@ -118,8 +118,8 @@ msgstr ""
 
 #: ../../../index.md:45
 msgid ""
-"**Dusty Phillips**, [writer](https://smile.amazon.com/s/ref=nb_sb_noss?"
-"url=search-alias%3Daps&field-keywords=dusty+phillips):"
+"**Dusty Phillips**, [writer](https://www.amazon.com/stores/Dusty-Phillips/"
+"author/B00HSYG5BO):"
 msgstr ""
 
 #: ../../../index.md:48
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../../index.md:50
 msgid ""
-"**Hynek Schlawack**, creator of [attrs](https://www.attrs.org/), core "
+"**Hynek Schlawack**, creator of [`attrs`](https://www.attrs.org/), core "
 "developer of Twisted and CPython:"
 msgstr ""
 
@@ -147,8 +147,8 @@ msgstr ""
 
 #: ../../../index.md:59
 msgid ""
-"**Kenneth Reitz**, creator of [requests](https://python-requests.org/) and "
-"[pipenv](https://docs.pipenv.org/):"
+"**Kenneth Reitz**, creator of [`requests`](https://requests.readthedocs.io/"
+"en/stable/) and [pipenv](https://pipenv.pypa.io/en/stable/):"
 msgstr ""
 
 #: ../../../index.md:62
