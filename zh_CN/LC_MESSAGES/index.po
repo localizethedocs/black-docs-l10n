@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 11:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.md:96
+msgid "User Guide"
+msgstr ""
+
+#: ../../../index.md:110
+msgid "Development"
+msgstr ""
+
+#: ../../../index.md:122
+msgid "GitHub"
+msgstr ""
+
+#: ../../../index.md:122
+msgid "PyPI"
+msgstr ""
+
+#: ../../../index.md:122
+msgid "Chat"
+msgstr ""
+
+#: ../../../index.md:122
+msgid "Project Links"
+msgstr ""
+
+#: ../../../index.md:1
+msgid ""
+"<!--\n"
+"black documentation master file, created by\n"
+"sphinx-quickstart on Fri Mar 23 10:53:30 2018.\n"
+"-->\n"
+msgstr ""
+
+#: ../../../index.md:6
+msgid "The uncompromising code formatter"
+msgstr ""
+
+#: ../../../index.md:8
+msgid "“Any color you like.”"
+msgstr ""
+
+#: ../../../index.md:10
+msgid ""
+"By using _Black_, you agree to cede control over minutiae of hand-"
+"formatting. In return, _Black_ gives you speed, determinism, and freedom "
+"from `pycodestyle` nagging about formatting. You will save time and mental "
+"energy for more important matters."
+msgstr ""
+
+#: ../../../index.md:14
+msgid ""
+"_Black_ makes code review faster by producing the smallest diffs possible. "
+"Blackened code looks the same regardless of the project you're reading. "
+"Formatting becomes transparent after a while and you can focus on the "
+"content instead."
+msgstr ""
+
+#: ../../../index.md:18
+msgid "Note - Black is now stable!"
+msgstr ""
+
+#: ../../../index.md:19
+msgid ""
+"_Black_ is [successfully used](https://github.com/psf/black#used-by) by many "
+"projects, small and big. _Black_ has a comprehensive test suite, with "
+"efficient parallel tests, our own auto formatting and parallel Continuous "
+"Integration runner. Now that we have become stable, you should not expect "
+"large changes to formatting in the future. Stylistic changes will mostly be "
+"responses to bug reports and support for new Python syntax."
+msgstr ""
+
+#: ../../../index.md:26
+msgid ""
+"Also, as a safety measure which slows down processing, _Black_ will check "
+"that the reformatted code still produces a valid AST that is effectively "
+"equivalent to the original (see the [Pragmatism](./the_black_code_style/"
+"current_style.md#pragmatism) section for details). If you're feeling "
+"confident, use `--fast`."
+msgstr ""
+
+#: ../../../index.md:33
+msgid "{doc}`Black is licensed under the MIT license <license>`."
+msgstr ""
+
+#: ../../../index.md:36
+msgid "Testimonials"
+msgstr ""
+
+#: ../../../index.md:38
+msgid "**Mike Bayer**, author of [SQLAlchemy](https://www.sqlalchemy.org/):"
+msgstr ""
+
+#: ../../../index.md:40
+msgid ""
+"_I can't think of any single tool in my entire programming career that has "
+"given me a bigger productivity increase by its introduction. I can now do "
+"refactorings in about 1% of the keystrokes that it would have taken me "
+"previously when we had no way for code to format itself._"
+msgstr ""
+
+#: ../../../index.md:45
+msgid ""
+"**Dusty Phillips**, [writer](https://smile.amazon.com/s/ref=nb_sb_noss?"
+"url=search-alias%3Daps&field-keywords=dusty+phillips):"
+msgstr ""
+
+#: ../../../index.md:48
+msgid "_Black is opinionated so you don't have to be._"
+msgstr ""
+
+#: ../../../index.md:50
+msgid ""
+"**Hynek Schlawack**, creator of [attrs](https://www.attrs.org/), core "
+"developer of Twisted and CPython:"
+msgstr ""
+
+#: ../../../index.md:53
+msgid "_An auto-formatter that doesn't suck is all I want for Xmas!_"
+msgstr ""
+
+#: ../../../index.md:55
+msgid ""
+"**Carl Meyer**, [Django](https://www.djangoproject.com/) core developer:"
+msgstr ""
+
+#: ../../../index.md:57
+msgid "_At least the name is good._"
+msgstr ""
+
+#: ../../../index.md:59
+msgid ""
+"**Kenneth Reitz**, creator of [requests](https://python-requests.org/) and "
+"[pipenv](https://docs.pipenv.org/):"
+msgstr ""
+
+#: ../../../index.md:62
+msgid "_This vastly improves the formatting of our code. Thanks a ton!_"
+msgstr ""
+
+#: ../../../index.md:64
+msgid "Show your style"
+msgstr ""
+
+#: ../../../index.md:66
+msgid "Use the badge in your project's README.md:"
+msgstr ""
+
+#: ../../../index.md:68
+msgid ""
+"[![Code style: black](https://img.shields.io/badge/code%20style-black-000000."
+"svg)](https://github.com/psf/black)\n"
+msgstr ""
+
+#: ../../../index.md:72
+msgid "Using the badge in README.rst:"
+msgstr ""
+
+#: ../../../index.md:74
+msgid ""
+".. image:: https://img.shields.io/badge/code%20style-black-000000.svg\n"
+"   :target: https://github.com/psf/black\n"
+msgstr ""
+
+#: ../../../index.md:79
+msgid "Looks like this:"
+msgstr ""
+
+#: ../../../index.md:85
+msgid "Contents"
+msgstr ""
+
+#: ../../../index.md:133
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../../index.md:135
+msgid "{ref}`genindex`"
+msgstr ""
+
+#: ../../../index.md:136
+msgid "{ref}`search`"
+msgstr ""
