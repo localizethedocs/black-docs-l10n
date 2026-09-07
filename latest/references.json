@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-11 11:35:01 -0500",
-      "hash" : "6325332f05312ebde112a61cf4a19ef2ecf1ea74",
-      "title" : "Document standalone release executables (#5162)"
+      "date" : "2026-09-03 15:27:06 -0500",
+      "hash" : "20622e1259c29bda81831962ace1348ba1921c84",
+      "title" : "Clarify project-root exclusion patterns (#5339)"
     }
   },
   "type" : "branch",
