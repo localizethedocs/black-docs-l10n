@@ -269,13 +269,3 @@ msgid ""
 "Thanks again for your interest in improving the project! You're taking "
 "action when most people decide to sit and watch."
 msgstr ""
-
-#~ msgid ""
-#~ "<a href=\"https://ichard26.github.io/next-pr-number/?"
-#~ "owner=psf&name=black\">"
-#~ msgstr ""
-#~ "<a href=\"https://ichard26.github.io/next-pr-number/?"
-#~ "owner=psf&name=black\">"
-
-#~ msgid "</a>"
-#~ msgstr "</a>"
