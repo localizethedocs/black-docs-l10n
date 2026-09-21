@@ -220,11 +220,10 @@ msgstr ""
 msgid ""
 "<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
 msgstr ""
-"<a href=\"https://ichard26.github.io/next-pr-number/?owner=psf&name=black\">"
 
 #: ../../../contributing/the_basics.md:112
 msgid "</a>"
-msgstr "</a>"
+msgstr ""
 
 #: ../../../contributing/the_basics.md:117
 msgid "Style Changes"
