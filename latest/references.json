@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-03 15:27:06 -0500",
-      "hash" : "20622e1259c29bda81831962ace1348ba1921c84",
-      "title" : "Clarify project-root exclusion patterns (#5339)"
+      "date" : "2026-09-15 18:17:44 -0600",
+      "hash" : "acd6198877ced2d8126b9b3958bb17f4a65ef0d1",
+      "title" : "Skip symlink tests when the platform forbids creating one (#5390)"
     }
   },
   "type" : "branch",
