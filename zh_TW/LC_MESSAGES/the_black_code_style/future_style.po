@@ -1,0 +1,823 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 15:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../the_black_code_style/future_style.md:1
+msgid "The (future of the) Black code style"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:3
+msgid "Preview style"
+msgstr "預覽風格"
+
+#: ../../../the_black_code_style/future_style.md:7
+msgid ""
+"Experimental, potentially disruptive style changes are gathered under the `--"
+"preview` CLI flag. At the end of each year, these changes may be adopted "
+"into the default style, as described in [The Black Code Style](index.md). "
+"Because the functionality is experimental, feedback and issue reports are "
+"highly encouraged!"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:14
+msgid "Currently, the following features are included in the preview style:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:16
+msgid ""
+"`wrap_comprehension_in`: Wrap the `in` clause of list and dictionary "
+"comprehensions across lines if it would otherwise exceed the maximum line "
+"length. ([see below](labels/wrap-comprehension-in))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:19
+msgid ""
+"`simplify_power_operator_hugging`: Use a simpler implementation of the power "
+"operator \"hugging\" logic (removing whitespace around `**` in simple "
+"expressions), which applies also in the rare case the exponentiation is "
+"split into separate lines. ([see below](labels/simplify-power-operator))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:23
+msgid ""
+"`wrap_long_dict_values_in_parens`: Add parentheses around long values in "
+"dictionaries. ([see below](labels/wrap-long-dict-values))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:25
+msgid ""
+"`fix_if_guard_explosion_in_case_statement`: fixed exploding of the if guard "
+"in case patterns which have trailing commas in them, even if the guard "
+"expression fits in one line"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:28
+msgid ""
+"`pyi_overload_group_blank_lines`: In `.pyi` stub files, improve heuristics "
+"around when blank lines should appear before, after and within decorated "
+"function groups. ([see below](labels/pyi-overload-group))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:31
+msgid ""
+"`pyi_blank_line_before_decorated_class`: In `.pyi` stub files, enforce a "
+"blank line before a decorated class definition when it follows a function "
+"definition. ([see below](labels/pyi-blank-line-before-decorated-class))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:34
+msgid ""
+"`fix_unnecessary_parens_in_indexed_assignment`: Remove unnecessary "
+"parentheses around the right-hand side of indexed assignments (e.g. `x[key] "
+"= expr`) when the subscripted target is too long to fit on one line and the "
+"expression fits on the tail line. ([see below](labels/fix-unnecessary-parens-"
+"indexed-assignment))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:38
+msgid ""
+"`pyi_blank_line_after_function_docstring`: In `.pyi` stub files, enforce a "
+"blank line after a function or method body that consists of a docstring. "
+"([see below](labels/pyi-blank-line-after-function-docstring))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:41
+msgid ""
+"`hug_comparator`: Don't break a comparator (`not in`, `==`, `is`, ...) away "
+"from its left operand when the right operand is a bracketed expression that "
+"has to break anyway; let the bracket explode instead. ([see below](labels/"
+"hug-comparator))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:44
+msgid ""
+"`parenthesize_tuple_in_yield`: Add parentheses around tuple expressions in "
+"`yield` statements."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:46
+msgid ""
+"`fmt_off_class_blank_lines`: Preserve two blank lines before a top-level "
+"class whose definition starts inside a `# fmt: off` block after an import."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:48
+msgid ""
+"`remove_redundant_generator_parentheses`: Remove redundant parentheses "
+"around generator expressions. ([see below](labels/remove-redundant-generator-"
+"parentheses))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:53
+msgid "Redundant generator parentheses"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:55
+msgid ""
+"Black removes extra parentheses around generator expressions. When a "
+"generator expression is the sole argument to a call, the call's parentheses "
+"are sufficient:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:58
+msgid ""
+"# Before\n"
+"any((item.is_valid() for item in items))\n"
+"\n"
+"# After (with --preview)\n"
+"any(item.is_valid() for item in items)\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:66
+msgid ""
+"In other contexts, Black keeps the parentheses required by Python syntax "
+"while removing any additional pair:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:69
+msgid ""
+"# Before\n"
+"[((item for item in items)), fallback]\n"
+"\n"
+"# After (with --preview)\n"
+"[(item for item in items), fallback]\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:79
+msgid "Wrapping long comprehension `in` clauses"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:81
+msgid ""
+"When a list or dictionary comprehension has a long `in` clause that would "
+"exceed the maximum line length, Black will wrap it across multiple lines for "
+"better readability. This helps keep comprehensions readable when the "
+"iterable expression is complex or lengthy."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:86
+#: ../../../the_black_code_style/future_style.md:138
+#: ../../../the_black_code_style/future_style.md:285
+msgid "For example:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:88
+msgid ""
+"# Before\n"
+"result = [\n"
+"    very_very_very_very_very_long_item\n"
+"    for very_very_very_very_very_long_item in "
+"some_very_very_very_very_very_very_long_function_name\n"
+"]\n"
+msgstr ""
+"# 之前\n"
+"result = [\n"
+"    very_very_very_very_very_long_item\n"
+"    for very_very_very_very_very_long_item in "
+"some_very_very_very_very_very_very_long_function_name\n"
+"]\n"
+
+#: ../../../the_black_code_style/future_style.md:96
+#: ../../../the_black_code_style/future_style.md:118
+#: ../../../the_black_code_style/future_style.md:294
+msgid "will be formatted to:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:98
+msgid ""
+"# After\n"
+"result = [\n"
+"    very_very_very_very_very_long_item\n"
+"    for very_very_very_very_very_long_item in (\n"
+"        some_very_very_very_very_very_very_long_function_name\n"
+"    )\n"
+"]\n"
+msgstr ""
+"# 之後\n"
+"result = [\n"
+"    very_very_very_very_very_long_item\n"
+"    for very_very_very_very_very_long_item in (\n"
+"        some_very_very_very_very_very_very_long_function_name\n"
+"    )\n"
+"]\n"
+
+#: ../../../the_black_code_style/future_style.md:108
+msgid "This also applies to dictionary comprehensions:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:110
+msgid ""
+"# Before\n"
+"mapping = {\n"
+"    very_long_key: very_very_very_long_item\n"
+"    for very_long_key, very_very_very_long_item in "
+"very_very_very_very_long_function_name\n"
+"}\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:120
+msgid ""
+"# After\n"
+"mapping = {\n"
+"    very_long_key: very_very_very_long_item\n"
+"    for very_long_key, very_very_very_long_item in (\n"
+"        very_very_very_very_long_function_name\n"
+"    )\n"
+"}\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:132
+msgid "Simplified power operator whitespace handling"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:134
+msgid ""
+"Black's power operator \"hugging\" logic removes whitespace around `**` in "
+"simple expressions (e.g., `x**2` instead of `x ** 2`). This feature uses a "
+"simpler, more consistent implementation that also applies when "
+"exponentiation is split across lines."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:140
+msgid ""
+"# Simple expressions - whitespace is removed\n"
+"result = x**2 + y**3\n"
+"value = base**exponent\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:146
+msgid ""
+"When the exponentiation is split across lines (rare), the simplified logic "
+"ensures consistent formatting:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:149
+msgid ""
+"# Complex expression split across lines\n"
+"result = (\n"
+"    some_very_long_base_expression\n"
+"    **some_very_long_exponent_expression\n"
+"    **some_very_long_third_expression\n"
+")\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:158
+msgid ""
+"This feature primarily improves the internal consistency of Black's "
+"formatting logic rather than making dramatic visual changes to most code."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:163
+msgid "Improved parentheses management in dicts"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:165
+msgid ""
+"For dict literals with long values, they are now wrapped in parentheses. "
+"Unnecessary parentheses are now removed. For example:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:168
+msgid ""
+"my_dict = {\n"
+"    \"a key in my dict\": a_very_long_variable\n"
+"    * and_a_very_long_function_call()\n"
+"    / 100000.0,\n"
+"    \"another key\": (short_value),\n"
+"}\n"
+msgstr ""
+"my_dict = {\n"
+"    \"a key in my dict\": a_very_long_variable\n"
+"    * and_a_very_long_function_call()\n"
+"    / 100000.0,\n"
+"    \"another key\": (short_value),\n"
+"}\n"
+
+#: ../../../the_black_code_style/future_style.md:177
+#: ../../../the_black_code_style/future_style.md:472
+msgid "will be changed to:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:179
+msgid ""
+"my_dict = {\n"
+"    \"a key in my dict\": (\n"
+"        a_very_long_variable * and_a_very_long_function_call() / 100000.0\n"
+"    ),\n"
+"    \"another key\": short_value,\n"
+"}\n"
+msgstr ""
+"my_dict = {\n"
+"    \"a key in my dict\": (\n"
+"        a_very_long_variable * and_a_very_long_function_call() / 100000.0\n"
+"    ),\n"
+"    \"another key\": short_value,\n"
+"}\n"
+
+#: ../../../the_black_code_style/future_style.md:190
+msgid "Improved overload groups in stub files"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:192
+msgid ""
+"In `.pyi` stub files, Black now has improved heuristics regarding when blank "
+"lines should appear before, after or within groups of decorated functions "
+"that share the same name (such as `@overload` groups). Two rules are applied "
+"when a decorated function is determined to be part of a series of >=2 "
+"decorated functions with the same name:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:197
+msgid ""
+"**Before the decorated function**: a blank line is always inserted, unless "
+"the preceding statement is a same-name decorated function (i.e. part of an "
+"`@overload` group) or the function is the first statement in its block."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:200
+msgid ""
+"**After the decorated function**: a blank line is always inserted, unless "
+"the following statement is a same-name decorated function."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:203
+msgid ""
+"These rules apply regardless of what the adjacent statement is — whether "
+"it's another function definition, a variable annotation, or any other "
+"statement."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:206
+msgid ""
+"Previously, Black could insert unwanted blank lines _within_ an overload "
+"group when one of the overloads had a docstring, and did not consistently "
+"enforce blank lines at the boundaries of overload groups:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:210
+msgid ""
+"# Before\n"
+"\n"
+"@overload\n"
+"def foo(x: int) -> int:\n"
+"    \"\"\"Docs.\"\"\"\n"
+"\n"
+"@overload                    # unwanted blank line within group\n"
+"def foo(x: str) -> str: ...\n"
+"def bar(x): ...              # no blank line after group\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:222
+msgid ""
+"With this feature enabled, the group is kept together and clearly separated "
+"from surrounding code:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:225
+msgid ""
+"# After (with --preview)\n"
+"\n"
+"@overload\n"
+"def foo(x: int) -> int:\n"
+"    \"\"\"Docs.\"\"\"\n"
+"@overload\n"
+"def foo(x: str) -> str: ...\n"
+"\n"
+"def bar(x): ...\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:239
+msgid "Blank line before decorated classes in stub files"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:241
+msgid ""
+"In `.pyi` stub files, Black already enforces blank lines around class "
+"definitions in many situations. However, when a class has a decorator, Black "
+"previously failed to enforce this, instead _removing_ the blank line between "
+"a function and the decorator:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:245
+msgid ""
+"  # Before\n"
+"\n"
+"  def foo(): ...\n"
+"-\n"
+"  @decorator\n"
+"  class Bar: ...\n"
+"\n"
+"  def baz(): ...\n"
+"  @decorator\n"
+"  class Spam: ...\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:258
+msgid ""
+"With this feature enabled, a blank line is enforced, consistent with how "
+"undecorated classes are handled:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:261
+msgid ""
+"  # After (with --preview)\n"
+"\n"
+"  def foo(): ...\n"
+"\n"
+"  @decorator\n"
+"  class Bar: ...\n"
+"\n"
+"  def baz(): ...\n"
+"+\n"
+"  @decorator\n"
+"  class Spam: ...\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:277
+msgid "Unnecessary parentheses in indexed assignments"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:279
+msgid ""
+"When an assignment target ends with a subscript (e.g. `x[key] = expr`) and "
+"is too long to fit on one line, Black has to split at the subscript's "
+"brackets. Previously it would additionally wrap the right-hand side "
+"expression in parentheses, even when the expression fits on the closing "
+"line. With this feature enabled, Black omits those unnecessary parentheses."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:287
+msgid ""
+"# Before\n"
+"dictionary_of_arrays[\"long_key_name_for_the_example\"][\n"
+"    very_long_index_name, index_zero\n"
+"] = (10 - 5)\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:296
+msgid ""
+"# After (with --preview)\n"
+"dictionary_of_arrays[\"long_key_name_for_the_example\"][\n"
+"    very_long_index_name, index_zero\n"
+"] = 10 - 5\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:303
+msgid ""
+"Assignments whose target fits on one line are not affected: wrapping the "
+"right-hand side in parentheses remains the preferred style there."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:308
+msgid "Blank line after function docstrings in stub files"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:310
+msgid ""
+"In `.pyi` stub files, functions and methods sometimes use a docstring as "
+"their whole body. Black already separated these definitions from a following "
+"function definition, but did not consistently do the same before a following "
+"comment, conditional block, variable annotation, or other statement:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:315
+msgid ""
+"# Before\n"
+"\n"
+"class Example:\n"
+"    def method(self) -> None:\n"
+"        \"\"\"Documentation.\"\"\"\n"
+"    # comment for the next member\n"
+"    attr: int\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:325
+msgid ""
+"With this feature enabled, the docstring-only function body is consistently "
+"separated from the next comment or statement:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:328
+msgid ""
+"# After (with --preview)\n"
+"\n"
+"class Example:\n"
+"    def method(self) -> None:\n"
+"        \"\"\"Documentation.\"\"\"\n"
+"\n"
+"    # comment for the next member\n"
+"    attr: int\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:339
+msgid ""
+"Black still keeps same-name decorated functions, such as `@overload` groups "
+"and property setters, together without inserting blank lines between them."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:344
+msgid "Keep comparators next to their left operand"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:346
+msgid ""
+"When a comparator (`not in`, `==`, `is`, ...) sits inside another bracketed "
+"construct and its right operand is a bracketed expression that has to break "
+"(either via a magic trailing comma or because the line is too long), Black "
+"used to split the line right before the comparator. The left operand ended "
+"up alone on its own line, visually disconnected from the operator and the "
+"operand that explains it:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:352
+msgid ""
+"# Before\n"
+"\n"
+"x = [\n"
+"    t\n"
+"    for t in y\n"
+"    if t\n"
+"    not in {\n"
+"        LongNameOne,\n"
+"        LongNameTwo,\n"
+"        LongNameThree,\n"
+"    }\n"
+"]\n"
+msgstr ""
+"# 之前\n"
+"\n"
+"x = [\n"
+"    t\n"
+"    for t in y\n"
+"    if t\n"
+"    not in {\n"
+"        LongNameOne,\n"
+"        LongNameTwo,\n"
+"        LongNameThree,\n"
+"    }\n"
+"]\n"
+
+#: ../../../the_black_code_style/future_style.md:367
+msgid ""
+"With this feature enabled, Black skips that comparator split and lets the "
+"right-hand bracket explode instead, which it would have done anyway:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:370
+msgid ""
+"# After (with --preview)\n"
+"\n"
+"x = [\n"
+"    t\n"
+"    for t in y\n"
+"    if t not in {\n"
+"        LongNameOne,\n"
+"        LongNameTwo,\n"
+"        LongNameThree,\n"
+"    }\n"
+"]\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:384
+msgid ""
+"The fix is not limited to comprehensions. The same shape appears inside `if`/"
+"`elif` chains, `assert` statements, and parenthesized expressions, and gets "
+"the same treatment:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:387
+msgid ""
+"# Before\n"
+"\n"
+"if (\n"
+"    is_scalar(value)\n"
+"    and self.dtype\n"
+"    in (np.dtype(\"float64\"), np.dtype(\"float32\"), np.dtype(\"object\"))\n"
+"    and (limit is not None or inplace)\n"
+"):\n"
+"    ...\n"
+"\n"
+"assert (\n"
+"    bool\n"
+"    is _AnnotationExtractor(attr.fields(C).x.converter.__call__)."
+"get_return_type()\n"
+")\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:404
+msgid ""
+"# After (with --preview)\n"
+"\n"
+"if (\n"
+"    is_scalar(value)\n"
+"    and self.dtype in (\n"
+"        np.dtype(\"float64\"),\n"
+"        np.dtype(\"float32\"),\n"
+"        np.dtype(\"object\"),\n"
+"    )\n"
+"    and (limit is not None or inplace)\n"
+"):\n"
+"    ...\n"
+"\n"
+"assert (\n"
+"    bool is _AnnotationExtractor(\n"
+"        attr.fields(C).x.converter.__call__\n"
+"    ).get_return_type()\n"
+")\n"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:425
+msgid "Unstable style"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:429
+msgid ""
+"In the past, the preview style included some features with known bugs, so "
+"that we were unable to move these features to the stable style. Therefore, "
+"such features are now moved to the `--unstable` style. All features in the "
+"`--preview` style are expected to make it to next year's stable style; "
+"features in the `--unstable` style will be stabilized only if issues with "
+"them are fixed. If bugs are discovered in a `--preview` feature, it is "
+"demoted to the `--unstable` style. To avoid thrash when a feature is demoted "
+"from the `--preview` to the `--unstable` style, users can use the `--enable-"
+"unstable-feature` flag to enable specific unstable features."
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:440
+msgid "The unstable style additionally includes the following features:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:442
+msgid ""
+"`hug_parens_with_braces_and_square_brackets`: More compact formatting of "
+"nested brackets. ([see below](labels/hug-parens))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:444
+msgid ""
+"`string_processing`: Split long string literals and related changes. ([see "
+"below](labels/string-processing))"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:449
+msgid ""
+"Improved multiline dictionary and list indentation for sole function "
+"parameter"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:451
+msgid ""
+"For better readability and less verticality, _Black_ now pairs parentheses "
+"(\"(\", \")\") with braces (\"{\", \"}\") and square brackets (\"[\", \"]\") "
+"on the same line. For example:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:454
+msgid ""
+"foo(\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ]\n"
+")\n"
+"\n"
+"nested_array = [\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ]\n"
+"]\n"
+msgstr ""
+"foo(\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ]\n"
+")\n"
+"\n"
+"nested_array = [\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ]\n"
+"]\n"
+
+#: ../../../the_black_code_style/future_style.md:474
+msgid ""
+"foo([\n"
+"    1,\n"
+"    2,\n"
+"    3,\n"
+"])\n"
+"\n"
+"nested_array = [[\n"
+"    1,\n"
+"    2,\n"
+"    3,\n"
+"]]\n"
+msgstr ""
+"foo([\n"
+"    1,\n"
+"    2,\n"
+"    3,\n"
+"])\n"
+"\n"
+"nested_array = [[\n"
+"    1,\n"
+"    2,\n"
+"    3,\n"
+"]]\n"
+
+#: ../../../the_black_code_style/future_style.md:488
+msgid "This also applies to list and dictionary unpacking:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:490
+msgid ""
+"foo(\n"
+"    *[\n"
+"        a_long_function_name(a_long_variable_name)\n"
+"        for a_long_variable_name in some_generator\n"
+"    ]\n"
+")\n"
+msgstr ""
+"foo(\n"
+"    *[\n"
+"        a_long_function_name(a_long_variable_name)\n"
+"        for a_long_variable_name in some_generator\n"
+"    ]\n"
+")\n"
+
+#: ../../../the_black_code_style/future_style.md:499
+msgid "will become:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:501
+msgid ""
+"foo(*[\n"
+"    a_long_function_name(a_long_variable_name)\n"
+"    for a_long_variable_name in some_generator\n"
+"])\n"
+msgstr ""
+"foo(*[\n"
+"    a_long_function_name(a_long_variable_name)\n"
+"    for a_long_variable_name in some_generator\n"
+"])\n"
+
+#: ../../../the_black_code_style/future_style.md:508
+msgid ""
+"You can use a magic trailing comma to avoid this compacting behavior; by "
+"default, _Black_ will not reformat the following code:"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:511
+msgid ""
+"foo(\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ],\n"
+")\n"
+msgstr ""
+"foo(\n"
+"    [\n"
+"        1,\n"
+"        2,\n"
+"        3,\n"
+"    ],\n"
+")\n"
+
+#: ../../../the_black_code_style/future_style.md:523
+msgid "Improved string processing"
+msgstr ""
+
+#: ../../../the_black_code_style/future_style.md:525
+msgid ""
+"_Black_ will split long string literals and merge short ones. Parentheses "
+"are used where appropriate. When split, parts of f-strings that don't need "
+"formatting are converted to plain strings. f-strings will not be merged if "
+"they contain internal quotes and it would change their quotation mark style. "
+"Line continuation backslashes are converted into parenthesized strings. "
+"Unnecessary parentheses are stripped. The stability and status of this "
+"feature is tracked in [this issue](https://github.com/psf/black/issues/2188)."
+msgstr ""
