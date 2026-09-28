@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-09-03 15:27:06 -0500",
-      "hash" : "20622e1259c29bda81831962ace1348ba1921c84",
-      "title" : "Clarify project-root exclusion patterns (#5339)"
+      "date" : "2026-09-24 16:50:59 -0600",
+      "hash" : "8d5a2d9f49378d7abe2eb632df1601818de8c24e",
+      "title" : "Fall back to the default configuration when sources share no project root (#5386)"
     }
   },
   "type" : "branch",
