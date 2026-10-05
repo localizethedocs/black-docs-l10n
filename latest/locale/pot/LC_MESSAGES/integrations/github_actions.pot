@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:21+0000\n"
+"POT-Creation-Date: 2026-10-05 17:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,4 +196,40 @@ msgid ""
 "    src: \"./src\"\n"
 "    jupyter: true\n"
 "    version: \"21.5b1\"\n"
+msgstr ""
+
+#: ../../../integrations/github_actions.md:118
+msgid "Outputs"
+msgstr ""
+
+#: ../../../integrations/github_actions.md:120
+msgid "The action provides the following outputs:"
+msgstr ""
+
+#: ../../../integrations/github_actions.md:122
+msgid ""
+"`is_formatted`: Set to `\"true\"` if any files were reformatted (or in `--"
+"check` mode, would be reformatted); `\"false\"` otherwise. This can be used "
+"to run subsequent steps conditionally (for example, auto-committing "
+"formatted changes)."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:125
+msgid ""
+"`change_count`: Number of files that were reformatted (or would be "
+"reformatted in `--check` mode)."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:127
+msgid "`same_count`: Number of files that were left unchanged."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:128
+msgid "`failure_count`: Number of files that failed to reformat."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:130
+msgid ""
+"These outputs are only accessible if the action version as well as `with."
+"version` are both 26.10.0+."
 msgstr ""
