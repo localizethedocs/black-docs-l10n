@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-10-05 17:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,47 +69,49 @@ msgstr ""
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:25
 msgid ""
-"To override the location of these files on all systems, set the environment "
-"variable `BLACK_CACHE_DIR` to the preferred location. Alternatively on macOS "
-"and Linux, set `XDG_CACHE_HOME` to your preferred location. For example, if "
-"you want to put the cache in the directory you're running _Black_ from, set "
+"To override the location of these files on all systems, pass `--cache-dir` "
+"or set the environment variable `BLACK_CACHE_DIR` to the preferred location. "
+"Alternatively on macOS and Linux, set `XDG_CACHE_HOME` to your preferred "
+"location. For example, if you want to put the cache in the directory you're "
+"running _Black_ from, pass `--cache-dir=.cache/black` or set "
 "`BLACK_CACHE_DIR=.cache/black`. _Black_ will then write the above files to `."
-"cache/black`. Note that `BLACK_CACHE_DIR` will take precedence over "
-"`XDG_CACHE_HOME` if both are set."
+"cache/black`. The command-line option takes precedence over "
+"`BLACK_CACHE_DIR`, which takes precedence over `XDG_CACHE_HOME`."
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:32
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:33
 msgid "Disabling the cache with --no-cache"
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:34
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:35
 msgid ""
 "If you need Black to always perform a fresh analysis and not consult or "
 "update the on-disk cache, use the `--no-cache` flag. When provided, Black "
 "will neither read from nor write to the per-user cache. This is useful for "
 "debugging, for CI runs where you want a deterministic fresh run, or when you "
-"suspect cache corruption."
+"suspect cache corruption. If combined with `--cache-dir`, `--no-cache` takes "
+"precedence and the specified cache directory is not created or used."
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:39
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:42
 msgid "Example:"
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:41
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:44
 msgid "python -m black --no-cache ."
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:43
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:46
 msgid ".gitignore"
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:45
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:48
 msgid ""
 "If `--exclude` is not set, _Black_ will automatically ignore files and "
 "directories in `.gitignore` file(s), if present."
 msgstr ""
 
-#: ../../../usage_and_configuration/file_collection_and_discovery.md:48
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:51
 msgid ""
 "If you want _Black_ to continue using `.gitignore` while also configuring "
 "the exclusion rules, please use `--extend-exclude`."
