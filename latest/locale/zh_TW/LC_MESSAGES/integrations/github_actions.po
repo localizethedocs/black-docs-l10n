@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:59+0000\n"
+"POT-Creation-Date: 2026-10-23 17:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,14 +199,39 @@ msgid ""
 msgstr ""
 
 #: ../../../integrations/github_actions.md:118
-msgid "Outputs"
+msgid "Job summary and output file"
 msgstr ""
 
 #: ../../../integrations/github_actions.md:120
+msgid ""
+"By default the action also adds _Black_'s output to the workflow's job "
+"summary. Set `summary` to `false` to turn that off."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:123
+msgid ""
+"If you want to keep the output around, for example to upload it as an "
+"artifact or use it in a later step, set `output-file` to a path. The output "
+"is then written to that file as well as printed in the log."
+msgstr ""
+
+#: ../../../integrations/github_actions.md:127
+msgid ""
+"- uses: psf/black@stable\n"
+"  with:\n"
+"    summary: false\n"
+"    output-file: \"black-output.txt\"\n"
+msgstr ""
+
+#: ../../../integrations/github_actions.md:134
+msgid "Outputs"
+msgstr ""
+
+#: ../../../integrations/github_actions.md:136
 msgid "The action provides the following outputs:"
 msgstr ""
 
-#: ../../../integrations/github_actions.md:122
+#: ../../../integrations/github_actions.md:138
 msgid ""
 "`is_formatted`: Set to `\"true\"` if any files were reformatted (or in `--"
 "check` mode, would be reformatted); `\"false\"` otherwise. This can be used "
@@ -214,21 +239,21 @@ msgid ""
 "formatted changes)."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:125
+#: ../../../integrations/github_actions.md:141
 msgid ""
 "`change_count`: Number of files that were reformatted (or would be "
 "reformatted in `--check` mode)."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:127
+#: ../../../integrations/github_actions.md:143
 msgid "`same_count`: Number of files that were left unchanged."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:128
+#: ../../../integrations/github_actions.md:144
 msgid "`failure_count`: Number of files that failed to reformat."
 msgstr ""
 
-#: ../../../integrations/github_actions.md:130
+#: ../../../integrations/github_actions.md:146
 msgid ""
 "These outputs are only accessible if the action version as well as `with."
 "version` are both 26.10.0+."

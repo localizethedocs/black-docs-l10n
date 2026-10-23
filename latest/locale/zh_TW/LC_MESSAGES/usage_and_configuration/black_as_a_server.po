@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-10-23 17:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,17 +218,18 @@ msgstr ""
 
 #: ../../../usage_and_configuration/black_as_a_server.md:110
 msgid ""
-"`HTTP 400`: If the input contains a syntax error. Details of the error are "
-"returned in the response body."
+"`HTTP 400`: If the input contains a syntax error, cannot be decoded using "
+"the requested charset, or specifies an unknown charset. Details of the error "
+"are returned in the response body."
 msgstr ""
 
-#: ../../../usage_and_configuration/black_as_a_server.md:112
+#: ../../../usage_and_configuration/black_as_a_server.md:113
 msgid ""
 "`HTTP 500`: If there was any other kind of error while trying to format the "
 "input. The response body contains a textual representation of the error."
 msgstr ""
 
-#: ../../../usage_and_configuration/black_as_a_server.md:115
+#: ../../../usage_and_configuration/black_as_a_server.md:116
 msgid ""
 "The response headers include a `X-Black-Version` header containing the "
 "version of _Black_."
