@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:21+0000\n"
+"POT-Creation-Date: 2026-10-23 17:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgid "Can I run Black with PyPy?"
 msgstr ""
 
 #: ../../../faq.md:101
-msgid "Yes, there is support for PyPy 3.8 and higher."
+msgid "Yes, there is support for PyPy 3.10 and higher."
 msgstr ""
 
 #: ../../../faq.md:103
