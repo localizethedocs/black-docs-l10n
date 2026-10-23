@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-10 13:47:34 -0600",
-      "hash" : "11cff1312bf96e02bce9a467d0b5a2dd65300642",
-      "title" : "Remove redundant parentheses around lists (#608) (#5431)"
+      "date" : "2026-10-23 10:52:04 -0600",
+      "hash" : "165b9e293354760104fed7482c6466f510a44188",
+      "title" : "Fix crash on `# fmt: skip` on a bracket followed by `if`/`else` (#5586)"
     }
   },
   "type" : "branch",
