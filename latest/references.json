@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-09-03 15:27:06 -0500",
-        "hash" : "20622e1259c29bda81831962ace1348ba1921c84",
-        "title" : "Clarify project-root exclusion patterns (#5339)"
+        "date" : "2026-10-10 13:47:34 -0600",
+        "hash" : "11cff1312bf96e02bce9a467d0b5a2dd65300642",
+        "title" : "Remove redundant parentheses around lists (#608) (#5431)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-09-03 15:27:06 -0500",
-        "hash" : "20622e1259c29bda81831962ace1348ba1921c84",
-        "title" : "Clarify project-root exclusion patterns (#5339)"
+        "date" : "2026-10-10 13:47:34 -0600",
+        "hash" : "11cff1312bf96e02bce9a467d0b5a2dd65300642",
+        "title" : "Remove redundant parentheses around lists (#608) (#5431)"
       }
     }
   },
