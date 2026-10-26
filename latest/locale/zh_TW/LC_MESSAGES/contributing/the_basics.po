@@ -303,6 +303,3 @@ msgid ""
 "Thanks again for your interest in improving the project! You're taking "
 "action when most people decide to sit and watch."
 msgstr ""
-
-#~ msgid "`--print-tree-diff`"
-#~ msgstr "`--print-tree-diff`"
