@@ -48,25 +48,18 @@ msgid ""
 "\\Users\\<username>\\AppData\\Local\\black\\black\\Cache\\<version>\\cache."
 "<line-length>.<file-mode>.pickle`"
 msgstr ""
-"Windows：`C:"
-"\\Users\\<username>\\AppData\\Local\\black\\black\\Cache\\<version>\\cache."
-"<line-length>.<file-mode>.pickle`"
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:17
 msgid ""
 "macOS: `/Users/<username>/Library/Caches/black/<version>/cache.<line-length>."
 "<file-mode>.pickle`"
 msgstr ""
-"macOS：`/Users/<username>/Library/Caches/black/<version>/cache.<line-length>."
-"<file-mode>.pickle`"
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:19
 msgid ""
 "Linux: `/home/<username>/.cache/black/<version>/cache.<line-length>.<file-"
 "mode>.pickle`"
 msgstr ""
-"Linux：`/home/<username>/.cache/black/<version>/cache.<line-length>.<file-"
-"mode>.pickle`"
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:22
 msgid ""
@@ -106,7 +99,7 @@ msgstr "範例："
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:44
 msgid "python -m black --no-cache ."
-msgstr "python -m black --no-cache ."
+msgstr ""
 
 #: ../../../usage_and_configuration/file_collection_and_discovery.md:46
 msgid ".gitignore"
