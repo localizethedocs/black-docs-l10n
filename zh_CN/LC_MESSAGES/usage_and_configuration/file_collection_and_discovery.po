@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-Present, Łukasz Langa and contributors to Black
+# This file is distributed under the same license as the Black package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Black latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-23 17:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:1
+msgid "File collection and discovery"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:3
+msgid ""
+"You can directly pass _Black_ files, but you can also pass directories and "
+"_Black_ will walk them, collecting files to format. It determines what files "
+"to format or skip automatically using the inclusion and exclusion regexes "
+"and as well their modification time."
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:8
+msgid "Ignoring unmodified files"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:10
+msgid ""
+"_Black_ remembers files it has already formatted, unless code is passed via "
+"standard input or the `--no-cache` flag is used. This information is stored "
+"per-user. The exact location of the file depends on the _Black_ version and "
+"the system on which _Black_ is run. The file is non-portable. The standard "
+"location on common operating systems is:"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:15
+msgid ""
+"Windows: `C:"
+"\\Users\\<username>\\AppData\\Local\\black\\black\\Cache\\<version>\\cache."
+"<mode-key>.pickle`"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:17
+msgid ""
+"macOS: `/Users/<username>/Library/Caches/black/<version>/cache.<mode-key>."
+"pickle`"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:18
+msgid ""
+"Linux: `/home/<username>/.cache/black/<version>/cache.<mode-key>.pickle`"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:20
+msgid ""
+"`mode-key` identifies the formatting options used for the cached files. "
+"Formatting with different options uses a different cache file."
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:23
+msgid ""
+"To override the location of these files on all systems, pass `--cache-dir` "
+"or set the environment variable `BLACK_CACHE_DIR` to the preferred location. "
+"Alternatively on macOS and Linux, set `XDG_CACHE_HOME` to your preferred "
+"location. For example, if you want to put the cache in the directory you're "
+"running _Black_ from, pass `--cache-dir=.cache/black` or set "
+"`BLACK_CACHE_DIR=.cache/black`. _Black_ will then write the above files to `."
+"cache/black`. The command-line option takes precedence over "
+"`BLACK_CACHE_DIR`, which takes precedence over `XDG_CACHE_HOME`."
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:31
+msgid "Disabling the cache with --no-cache"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:33
+msgid ""
+"If you need Black to always perform a fresh analysis and not consult or "
+"update the on-disk cache, use the `--no-cache` flag. When provided, Black "
+"will neither read from nor write to the per-user cache. This is useful for "
+"debugging, for CI runs where you want a deterministic fresh run, or when you "
+"suspect cache corruption. If combined with `--cache-dir`, `--no-cache` takes "
+"precedence and the specified cache directory is not created or used."
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:40
+msgid "Example:"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:42
+msgid "python -m black --no-cache .\n"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:46
+msgid ".gitignore"
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:48
+msgid ""
+"If `--exclude` is not set, _Black_ will automatically ignore files and "
+"directories in `.gitignore` file(s), if present."
+msgstr ""
+
+#: ../../../usage_and_configuration/file_collection_and_discovery.md:51
+msgid ""
+"If you want _Black_ to continue using `.gitignore` while also configuring "
+"the exclusion rules, please use `--extend-exclude`."
+msgstr ""
