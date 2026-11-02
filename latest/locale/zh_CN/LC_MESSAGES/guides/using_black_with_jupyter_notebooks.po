@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:25
 msgid ""
-"You can also format entire directories containing a mix of `.py` and `."
-"ipynb` files:"
+"You can also format entire directories containing a mix of `.py` and "
+"`.ipynb` files:"
 msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:27

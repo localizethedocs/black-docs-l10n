@@ -51,8 +51,8 @@ msgstr ""
 #: ../../../integrations/doctest_formatting.md:17
 msgid ""
 "[`blacken-docs`](https://github.com/adamchainz/blacken-docs) is primarily "
-"used to apply _Black_ formatting to code in documentation files (e.g. `."
-"rst`, `.md`, `.tex`)."
+"used to apply _Black_ formatting to code in documentation files (e.g. "
+"`.rst`, `.md`, `.tex`)."
 msgstr ""
 
 #: ../../../integrations/doctest_formatting.md:20

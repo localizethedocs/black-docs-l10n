@@ -154,10 +154,10 @@ msgstr ""
 #: ../../../contributing/the_basics.md:83
 msgid ""
 "If the change is implemented under the `--preview` or `--unstable` style, "
-"please include the change in the [Future Style document](https://black."
-"readthedocs.io/en/latest/the_black_code_style/future_style.html) instead. "
-"Additionally, please ensure you include the changelog entry under the "
-"dedicated \"Preview style\" heading."
+"please include the change in the [Future Style document](https://"
+"black.readthedocs.io/en/latest/the_black_code_style/future_style.html) "
+"instead. Additionally, please ensure you include the changelog entry under "
+"the dedicated \"Preview style\" heading."
 msgstr ""
 
 #: ../../../contributing/the_basics.md:89

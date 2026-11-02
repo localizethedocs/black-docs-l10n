@@ -233,8 +233,8 @@ msgstr ""
 msgid ""
 "When processing Jupyter Notebooks, add the given magic to the list of known "
 "python- magics. Useful for formatting cells with custom python magics. See "
-"the [Jupyter Notebooks guide](../guides/using_black_with_jupyter_notebooks."
-"md) for more details."
+"the [Jupyter Notebooks guide](../guides/"
+"using_black_with_jupyter_notebooks.md) for more details."
 msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:130
@@ -457,8 +457,8 @@ msgstr ""
 msgid ""
 "_Black_ may still format lines outside of the ranges for multi-line "
 "statements. Formatting more than one file or any Jupyter Notebooks with this "
-"option is not supported. This option cannot be specified in the `pyproject."
-"toml` config."
+"option is not supported. This option cannot be specified in the "
+"`pyproject.toml` config."
 msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:262
@@ -549,10 +549,10 @@ msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:317
 msgid ""
-"Default Exclusions: `['.direnv', '.eggs', '.git', '.hg', '."
-"ipynb_checkpoints',  '.mypy_cache', '.nox', '.pytest_cache', '.ruff_cache', "
-"'.tox', '.svn', '.venv', '.vscode',  '__pypackages__', '_build', 'buck-out', "
-"'build', 'dist', 'venv'] `"
+"Default Exclusions: `['.direnv', '.eggs', '.git', '.hg', "
+"'.ipynb_checkpoints',  '.mypy_cache', '.nox', '.pytest_cache', "
+"'.ruff_cache', '.tox', '.svn', '.venv', '.vscode',  '__pypackages__', "
+"'_build', 'buck-out', 'build', 'dist', 'venv'] `"
 msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:320
@@ -642,8 +642,8 @@ msgid ""
 "also be specified via the `BLACK_NUM_WORKERS` environment variable. Defaults "
 "to the number of CPUs in the system. On Windows the number of workers used "
 "is capped at 60, even when a higher value is set via this option or the "
-"environment variable, to work around [CPython issue 26903](https://bugs."
-"python.org/issue26903)."
+"environment variable, to work around [CPython issue 26903](https://"
+"bugs.python.org/issue26903)."
 msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:369
@@ -939,8 +939,8 @@ msgstr ""
 
 #: ../../../usage_and_configuration/the_basics.md:541
 msgid ""
-"As the file extension suggests, `pyproject.toml` is a [TOML](https://toml."
-"io) file. It contains separate sections for different tools. _Black_ is "
+"As the file extension suggests, `pyproject.toml` is a [TOML](https://"
+"toml.io) file. It contains separate sections for different tools. _Black_ is "
 "using the `[tool.black]` section. The option keys are the same as long names "
 "of options on the command line."
 msgstr ""

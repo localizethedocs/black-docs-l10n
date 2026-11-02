@@ -39,8 +39,8 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:12
 msgid ""
 "This document describes the current formatting style. If you're interested "
-"in trying out where the style is heading, see [future style](./future_style."
-"md) and try running `black --preview`."
+"in trying out where the style is heading, see [future style](./"
+"future_style.md) and try running `black --preview`."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:16
@@ -237,8 +237,8 @@ msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:159
 msgid ""
-"See [Using _Black_ with other tools](../guides/using_black_with_other_tools."
-"md) about linter compatibility."
+"See [Using _Black_ with other tools](../guides/"
+"using_black_with_other_tools.md) about linter compatibility."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:162
@@ -302,8 +302,8 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:206
 msgid ""
 "_Black_ will enforce single empty lines between a class-level docstring and "
-"the first following field or method. This conforms to [PEP 257](https://peps."
-"python.org/pep-0257/#multi-line-docstrings)."
+"the first following field or method. This conforms to [PEP 257](https://"
+"peps.python.org/pep-0257/#multi-line-docstrings)."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:210
@@ -399,11 +399,11 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:264
 msgid ""
 "Why settle on double quotes? They anticipate apostrophes in English text. "
-"They match the docstring standard described in [PEP 257](https://peps.python."
-"org/pep-0257/#what-is-a-docstring). An empty string in double quotes "
-"(`\"\"`) is impossible to confuse with a single double-quote regardless of "
-"fonts and syntax highlighting used. On top of this, double quotes for "
-"strings are consistent with C which Python interacts a lot with."
+"They match the docstring standard described in [PEP 257](https://"
+"peps.python.org/pep-0257/#what-is-a-docstring). An empty string in double "
+"quotes (`\"\"`) is impossible to confuse with a single double-quote "
+"regardless of fonts and syntax highlighting used. On top of this, double "
+"quotes for strings are consistent with C which Python interacts a lot with."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:271
@@ -493,11 +493,10 @@ msgid ""
 "except if a parameter is omitted (e.g. `ham[1 + 1 :]`). It recommends no "
 "spaces around `:` operators for \"simple expressions\" (`ham[lower:upper]`), "
 "and extra space for \"complex expressions\" (`ham[lower : upper + offset]`). "
-"_Black_ treats anything more than variable names as "
-"\"complex\" (`ham[lower : upper + 1]`). It also states that for extended "
-"slices, both `:` operators have to have the same amount of spacing, except "
-"if a parameter is omitted (`ham[1 + 1 ::]`). _Black_ enforces these rules "
-"consistently."
+"_Black_ treats anything more than variable names as \"complex\" "
+"(`ham[lower : upper + 1]`). It also states that for extended slices, both "
+"`:` operators have to have the same amount of spacing, except if a parameter "
+"is omitted (`ham[1 + 1 ::]`). _Black_ enforces these rules consistently."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:334
@@ -634,12 +633,13 @@ msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:397
 msgid ""
-"To solve this, [stub files with the `.pyi` file extension](https://peps."
-"python.org/pep-0484/#stub-files) can be used to describe typing information "
-"for an external module. Those stub files omit the implementation of classes "
-"and functions they describe, instead they only contain the structure of the "
-"file (listing globals, functions, and classes with their members). The "
-"recommended code style for those files is more terse than PEP 8:"
+"To solve this, [stub files with the `.pyi` file extension](https://"
+"peps.python.org/pep-0484/#stub-files) can be used to describe typing "
+"information for an external module. Those stub files omit the implementation "
+"of classes and functions they describe, instead they only contain the "
+"structure of the file (listing globals, functions, and classes with their "
+"members). The recommended code style for those files is more terse than PEP "
+"8:"
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:404

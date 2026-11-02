@@ -112,11 +112,11 @@ msgstr ""
 #: ../../../integrations/github_actions.md:56
 msgid ""
 "To read the version from the `pyproject.toml` file instead, set "
-"`use_pyproject` to `true`. This will first look into the `tool.black."
-"required-version` field, then the `dependency-groups` table, then the "
-"`project.dependencies` array and finally the `project.optional-dependencies` "
-"table. Note that this requires Python >= 3.11, so using the setup-python "
-"action may be required, for example:"
+"`use_pyproject` to `true`. This will first look into the "
+"`tool.black.required-version` field, then the `dependency-groups` table, "
+"then the `project.dependencies` array and finally the `project.optional-"
+"dependencies` table. Note that this requires Python >= 3.11, so using the "
+"setup-python action may be required, for example:"
 msgstr ""
 
 #: ../../../integrations/github_actions.md:62
@@ -134,9 +134,9 @@ msgstr ""
 #: ../../../integrations/github_actions.md:74
 msgid ""
 "This action only reads version specifiers from standard `pyproject.toml` "
-"locations. Poetry-specific dependency tables such as `tool.poetry."
-"dependencies` are not parsed. If you manage `black` with Poetry, set `tool."
-"black.required-version` or use the `version` input."
+"locations. Poetry-specific dependency tables such as "
+"`tool.poetry.dependencies` are not parsed. If you manage `black` with "
+"Poetry, set `tool.black.required-version` or use the `version` input."
 msgstr ""
 
 #: ../../../integrations/github_actions.md:80
@@ -255,6 +255,6 @@ msgstr ""
 
 #: ../../../integrations/github_actions.md:146
 msgid ""
-"These outputs are only accessible if the action version as well as `with."
-"version` are both 26.10.0+."
+"These outputs are only accessible if the action version as well as "
+"`with.version` are both 26.10.0+."
 msgstr ""
