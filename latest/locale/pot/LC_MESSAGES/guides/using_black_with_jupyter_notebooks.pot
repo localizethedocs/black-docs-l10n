@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-23 17:47+0000\n"
+"POT-Creation-Date: 2026-11-02 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:25
 msgid ""
-"You can also format entire directories containing a mix of `.py` and `."
-"ipynb` files:"
+"You can also format entire directories containing a mix of `.py` and "
+"`.ipynb` files:"
 msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:27
@@ -164,69 +164,76 @@ msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:76
 msgid ""
+"**IPython syntax that can't be put back as written** — e.g. help after an "
+"object (`df.head?`), wildcard searches (`np.*load*?`) and pasted `>>>` "
+"prompts"
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:78
+msgid ""
 "**Invalid syntax** — as it cannot be safely distinguished from automagics "
 "without a running IPython kernel."
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:79
+#: ../../../guides/using_black_with_jupyter_notebooks.md:81
 msgid ""
 "If you notice a cell is not being formatted, it is likely because it "
 "contains one of the above constructs."
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:82
+#: ../../../guides/using_black_with_jupyter_notebooks.md:84
 msgid ""
 "Additionally, _Black_ cannot format Jupyter Notebooks with the `--line-"
 "ranges` option."
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:84
+#: ../../../guides/using_black_with_jupyter_notebooks.md:86
 msgid "Cell magics"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:86
+#: ../../../guides/using_black_with_jupyter_notebooks.md:88
 msgid ""
 "_Black_ understands IPython magics, but is conservative about which cells it "
 "will format. By default, _Black_ recognizes standard IPython magics."
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:89
+#: ../../../guides/using_black_with_jupyter_notebooks.md:91
 msgid "Custom python cell magics"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:91
+#: ../../../guides/using_black_with_jupyter_notebooks.md:93
 msgid ""
 "If you use custom cell magics that contain Python code, you can tell _Black_ "
 "about them using the `--python-cell-magics` flag:"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:94
+#: ../../../guides/using_black_with_jupyter_notebooks.md:96
 msgid "black --python-cell-magics writefile notebook.ipynb\n"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:98
+#: ../../../guides/using_black_with_jupyter_notebooks.md:100
 msgid "This also works in `pyproject.toml`:"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:100
+#: ../../../guides/using_black_with_jupyter_notebooks.md:102
 msgid ""
 "[tool.black]\n"
 "python-cell-magics = [\"writefile\", \"my_custom_magic\"]\n"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:105
+#: ../../../guides/using_black_with_jupyter_notebooks.md:107
 msgid "Integrations"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:107
+#: ../../../guides/using_black_with_jupyter_notebooks.md:109
 msgid "pre-commit"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:109
+#: ../../../guides/using_black_with_jupyter_notebooks.md:111
 msgid "Simply replace the `black` hook with `black-jupyter`."
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:111
+#: ../../../guides/using_black_with_jupyter_notebooks.md:113
 msgid ""
 "repos:\n"
 "  - repo: https://github.com/psf/black-pre-commit-mirror\n"
@@ -236,29 +243,28 @@ msgid ""
 "        language_version: python3.11\n"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:120
+#: ../../../guides/using_black_with_jupyter_notebooks.md:122
 msgid ""
-"See the [source version control integration](../integrations/"
-"source_version_control.md) docs for more examples of using Black with pre-"
-"commit."
-msgstr ""
-
-#: ../../../guides/using_black_with_jupyter_notebooks.md:123
-msgid "GitHub Actions"
+"See the [pre-commit integration](../integrations/pre-commit.md) docs for "
+"more examples of using Black with pre-commit."
 msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:125
-msgid "Set the `jupyter` option to `true`."
+msgid "GitHub Actions"
 msgstr ""
 
 #: ../../../guides/using_black_with_jupyter_notebooks.md:127
+msgid "Set the `jupyter` option to `true`."
+msgstr ""
+
+#: ../../../guides/using_black_with_jupyter_notebooks.md:129
 msgid ""
 "- uses: psf/black@stable\n"
 "  with:\n"
 "    jupyter: true\n"
 msgstr ""
 
-#: ../../../guides/using_black_with_jupyter_notebooks.md:133
+#: ../../../guides/using_black_with_jupyter_notebooks.md:135
 msgid ""
 "See the [GitHub Actions integration](../integrations/github_actions.md) docs "
 "for more examples of using Black with GitHub Actions."

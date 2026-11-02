@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:21+0000\n"
+"POT-Creation-Date: 2026-11-02 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "{doc}`GitHub Actions <./github_actions>`"
 msgstr ""
 
 #: ../../../integrations/index.md:20
-msgid "{doc}`Source version control <./source_version_control>`"
+msgid "{doc}`Pre-commit <./pre-commit>`"
 msgstr ""
 
 #: ../../../integrations/index.md:21
@@ -55,9 +55,9 @@ msgstr ""
 #: ../../../integrations/index.md:27
 msgid ""
 "Any tool can pipe code through _Black_ using its stdio mode (just [use `-` "
-"as the file name](https://www.tldp.org/LDP/abs/html/special-chars."
-"html#DASHREF2)). The formatted code will be returned on stdout (unless `--"
-"check` was passed). _Black_ will still emit messages on stderr but that "
+"as the file name](https://www.tldp.org/LDP/abs/html/special-"
+"chars.html#DASHREF2)). The formatted code will be returned on stdout (unless "
+"`--check` was passed). _Black_ will still emit messages on stderr but that "
 "shouldn't affect your use case."
 msgstr ""
 

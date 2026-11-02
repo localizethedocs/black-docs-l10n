@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:59+0000\n"
+"POT-Creation-Date: 2026-11-02 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,8 +249,8 @@ msgstr ""
 
 #: ../../../integrations/editors.md:144
 msgid ""
-"Make sure you have the [File Watchers](https://plugins.jetbrains.com/"
-"plugin/7177-file-watchers) plugin installed."
+"Make sure you have the [File Watchers](https://plugins.jetbrains.com/plugin/"
+"7177-file-watchers) plugin installed."
 msgstr ""
 
 #: ../../../integrations/editors.md:147
@@ -446,8 +446,8 @@ msgstr ""
 
 #: ../../../integrations/editors.md:235
 msgid ""
-"This plugin **requires Vim 7.0+ built with Python 3.10+ support**. It needs "
-"Python 3.10 to be able to run _Black_ inside the Vim process which is much "
+"This plugin **requires Vim 7.0+ built with Python 3.11+ support**. It needs "
+"Python 3.11 to be able to run _Black_ inside the Vim process which is much "
 "faster than calling an external command."
 msgstr ""
 
@@ -548,8 +548,8 @@ msgid ""
 "mkdir -p ~/.vim/pack/python/start/black/autoload\n"
 "curl https://raw.githubusercontent.com/psf/black/stable/plugin/black.vim -o "
 "~/.vim/pack/python/start/black/plugin/black.vim\n"
-"curl https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim -"
-"o ~/.vim/pack/python/start/black/autoload/black.vim\n"
+"curl https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim "
+"-o ~/.vim/pack/python/start/black/autoload/black.vim\n"
 msgstr ""
 
 #: ../../../integrations/editors.md:304
@@ -831,11 +831,11 @@ msgstr ""
 
 #: ../../../integrations/editors.md:472
 msgid ""
-"Alternatively the pre-release [Black Formatter](https://marketplace."
-"visualstudio.com/items?itemName=ms-python.black-formatter) extension can be "
-"used which runs a [Language Server Protocol](https://langserver.org/) server "
-"for Black. Formatting is much more responsive using this extension, **but "
-"the minimum supported version of Black is 22.3.0**."
+"Alternatively the pre-release [Black Formatter](https://"
+"marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) "
+"extension can be used which runs a [Language Server Protocol](https://"
+"langserver.org/) server for Black. Formatting is much more responsive using "
+"this extension, **but the minimum supported version of Black is 22.3.0**."
 msgstr ""
 
 #: ../../../integrations/editors.md:478
@@ -862,11 +862,11 @@ msgstr ""
 
 #: ../../../integrations/editors.md:491
 msgid ""
-"If your editor supports the [Language Server Protocol](https://langserver."
-"org/) (Atom, Sublime Text, Visual Studio Code and many more), you can use "
-"the [Python LSP Server](https://github.com/python-lsp/python-lsp-server) "
-"with the [python-lsp-black](https://github.com/python-lsp/python-lsp-black) "
-"plugin."
+"If your editor supports the [Language Server Protocol](https://"
+"langserver.org/) (Atom, Sublime Text, Visual Studio Code and many more), you "
+"can use the [Python LSP Server](https://github.com/python-lsp/python-lsp-"
+"server) with the [python-lsp-black](https://github.com/python-lsp/python-lsp-"
+"black) plugin."
 msgstr ""
 
 #: ../../../integrations/editors.md:496
