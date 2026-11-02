@@ -42,9 +42,9 @@ msgid ""
 "However, we recognise that using tabs is an accessibility issue as well. "
 "While the option will never be added to _Black_, visually impaired "
 "developers may find conversion tools such as `expand/unexpand` (for Linux) "
-"useful when contributing to Python projects. A workflow might consist of e."
-"g. setting up appropriate pre-commit and post-merge git hooks, and scripting "
-"`unexpand` to run after applying _Black_."
+"useful when contributing to Python projects. A workflow might consist of "
+"e.g. setting up appropriate pre-commit and post-merge git hooks, and "
+"scripting `unexpand` to run after applying _Black_."
 msgstr ""
 
 #: ../../../faq.md:23
@@ -55,8 +55,8 @@ msgstr ""
 msgid ""
 "Not yet. _Black_ is fundamentally a command line tool. Many [integrations](/"
 "integrations/index.md) are provided, but a Python interface is not one of "
-"them. A simple API is being [planned](https://github.com/psf/black/"
-"issues/779) though."
+"them. A simple API is being [planned](https://github.com/psf/black/issues/"
+"779) though."
 msgstr ""
 
 #: ../../../faq.md:30

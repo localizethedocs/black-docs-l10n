@@ -67,8 +67,9 @@ msgid ""
 "Since version 5.0.0, isort supports [profiles](https://isort.readthedocs.io/"
 "en/latest/configuration/profiles.html) to allow easy interoperability with "
 "common code styles. You can set the black profile in any of the [config "
-"files](https://isort.readthedocs.io/en/latest/configuration/config_files."
-"html) supported by isort. Below, an example for `pyproject.toml`:"
+"files](https://isort.readthedocs.io/en/latest/configuration/"
+"config_files.html) supported by isort. Below, an example for "
+"`pyproject.toml`:"
 msgstr ""
 
 #: ../../../guides/using_black_with_other_tools.md:33

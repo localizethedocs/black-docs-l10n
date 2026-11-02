@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:3
 msgid ""
-"Official _Black_ Docker images are available on [Docker Hub](https://hub."
-"docker.com/r/pyfound/black)."
+"Official _Black_ Docker images are available on [Docker Hub](https://"
+"hub.docker.com/r/pyfound/black)."
 msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:6
@@ -89,9 +89,9 @@ msgstr ""
 #: ../../../usage_and_configuration/black_docker_image.md:31
 msgid ""
 "A permanent container doesn't have to be created to use _Black_ as a Docker "
-"image. It's enough to run _Black_ commands for the chosen image denoted as `:"
-"tag`. In the below examples, the `latest_release` tag is used. If `:tag` is "
-"omitted, the `latest` tag will be used."
+"image. It's enough to run _Black_ commands for the chosen image denoted as "
+"`:tag`. In the below examples, the `latest_release` tag is used. If `:tag` "
+"is omitted, the `latest` tag will be used."
 msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:36
@@ -114,8 +114,8 @@ msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:47
 msgid ""
-"$ docker run --rm --volume $(pwd):/src --workdir /src pyfound/black:"
-"latest_release black --check .\n"
+"$ docker run --rm --volume $(pwd):/src --workdir /src pyfound/"
+"black:latest_release black --check .\n"
 msgstr ""
 
 #: ../../../usage_and_configuration/black_docker_image.md:51

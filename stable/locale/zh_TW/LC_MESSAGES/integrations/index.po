@@ -55,9 +55,9 @@ msgstr ""
 #: ../../../integrations/index.md:27
 msgid ""
 "Any tool can pipe code through _Black_ using its stdio mode (just [use `-` "
-"as the file name](https://www.tldp.org/LDP/abs/html/special-chars."
-"html#DASHREF2)). The formatted code will be returned on stdout (unless `--"
-"check` was passed). _Black_ will still emit messages on stderr but that "
+"as the file name](https://www.tldp.org/LDP/abs/html/special-"
+"chars.html#DASHREF2)). The formatted code will be returned on stdout (unless "
+"`--check` was passed). _Black_ will still emit messages on stderr but that "
 "shouldn't affect your use case."
 msgstr ""
 

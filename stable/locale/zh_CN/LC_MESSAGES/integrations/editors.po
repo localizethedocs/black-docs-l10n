@@ -249,8 +249,8 @@ msgstr ""
 
 #: ../../../integrations/editors.md:144
 msgid ""
-"Make sure you have the [File Watchers](https://plugins.jetbrains.com/"
-"plugin/7177-file-watchers) plugin installed."
+"Make sure you have the [File Watchers](https://plugins.jetbrains.com/plugin/"
+"7177-file-watchers) plugin installed."
 msgstr ""
 
 #: ../../../integrations/editors.md:147
@@ -548,8 +548,8 @@ msgid ""
 "mkdir -p ~/.vim/pack/python/start/black/autoload\n"
 "curl https://raw.githubusercontent.com/psf/black/stable/plugin/black.vim -o "
 "~/.vim/pack/python/start/black/plugin/black.vim\n"
-"curl https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim -"
-"o ~/.vim/pack/python/start/black/autoload/black.vim\n"
+"curl https://raw.githubusercontent.com/psf/black/stable/autoload/black.vim "
+"-o ~/.vim/pack/python/start/black/autoload/black.vim\n"
 msgstr ""
 
 #: ../../../integrations/editors.md:304
@@ -831,11 +831,11 @@ msgstr ""
 
 #: ../../../integrations/editors.md:472
 msgid ""
-"Alternatively the pre-release [Black Formatter](https://marketplace."
-"visualstudio.com/items?itemName=ms-python.black-formatter) extension can be "
-"used which runs a [Language Server Protocol](https://langserver.org/) server "
-"for Black. Formatting is much more responsive using this extension, **but "
-"the minimum supported version of Black is 22.3.0**."
+"Alternatively the pre-release [Black Formatter](https://"
+"marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) "
+"extension can be used which runs a [Language Server Protocol](https://"
+"langserver.org/) server for Black. Formatting is much more responsive using "
+"this extension, **but the minimum supported version of Black is 22.3.0**."
 msgstr ""
 
 #: ../../../integrations/editors.md:478
@@ -862,11 +862,11 @@ msgstr ""
 
 #: ../../../integrations/editors.md:491
 msgid ""
-"If your editor supports the [Language Server Protocol](https://langserver."
-"org/) (Atom, Sublime Text, Visual Studio Code and many more), you can use "
-"the [Python LSP Server](https://github.com/python-lsp/python-lsp-server) "
-"with the [python-lsp-black](https://github.com/python-lsp/python-lsp-black) "
-"plugin."
+"If your editor supports the [Language Server Protocol](https://"
+"langserver.org/) (Atom, Sublime Text, Visual Studio Code and many more), you "
+"can use the [Python LSP Server](https://github.com/python-lsp/python-lsp-"
+"server) with the [python-lsp-black](https://github.com/python-lsp/python-lsp-"
+"black) plugin."
 msgstr ""
 
 #: ../../../integrations/editors.md:496
