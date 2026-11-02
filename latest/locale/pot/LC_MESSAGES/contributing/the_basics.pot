@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:59+0000\n"
+"POT-Creation-Date: 2026-11-02 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,8 @@ msgstr ""
 
 #: ../../../contributing/the_basics.md:9
 msgid ""
-"Development on the latest version of Python is preferred. You can use any "
-"operating system."
+"Development requires Python 3.13+; the latest version is preferred. You can "
+"use any operating system."
 msgstr ""
 
 #: ../../../contributing/the_basics.md:12
@@ -154,10 +154,10 @@ msgstr ""
 #: ../../../contributing/the_basics.md:83
 msgid ""
 "If the change is implemented under the `--preview` or `--unstable` style, "
-"please include the change in the [Future Style document](https://black."
-"readthedocs.io/en/latest/the_black_code_style/future_style.html) instead. "
-"Additionally, please ensure you include the changelog entry under the "
-"dedicated \"Preview style\" heading."
+"please include the change in the [Future Style document](https://"
+"black.readthedocs.io/en/latest/the_black_code_style/future_style.html) "
+"instead. Additionally, please ensure you include the changelog entry under "
+"the dedicated \"Preview style\" heading."
 msgstr ""
 
 #: ../../../contributing/the_basics.md:89
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../../contributing/the_basics.md:137
 msgid ""
-"_Black_ also has two unique CLI options that serve to help depug failing "
+"_Black_ also has two unique CLI options that serve to help debug failing "
 "test files in `tests/data/`. These can be passed to `pytest` through `tox` "
 "as shown above, or directly into pytest if not using `tox`."
 msgstr ""

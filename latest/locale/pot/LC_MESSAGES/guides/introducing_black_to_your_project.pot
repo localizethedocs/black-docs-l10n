@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-11-02 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,17 +21,82 @@ msgstr ""
 msgid "Introducing _Black_ to your project"
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:4
-msgid ""
-"This guide is incomplete. Contributions are welcomed and would be deeply "
-"appreciated!"
+#: ../../../guides/introducing_black_to_your_project.md:3
+msgid "Tips for existing projects"
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:7
-msgid "Avoiding ruining git blame"
+#: ../../../guides/introducing_black_to_your_project.md:5
+msgid ""
+"There is no single way to introduce _Black_ to an existing project. The "
+"right approach depends on the size of the codebase, active development, and "
+"the team's review workflow. The following tips can help keep the change "
+"manageable."
 msgstr ""
 
 #: ../../../guides/introducing_black_to_your_project.md:9
+msgid ""
+"Agreeing on which files to format and recording options (such as target "
+"Python versions and line length) in `pyproject.toml` can make the initial "
+"reformat easier to review. Pinning the same _Black_ version in local "
+"development and CI also helps contributors produce consistent results."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:14
+msgid ""
+"If the project already has established string conventions, using `--skip-"
+"string-normalization` can reduce churn during the initial adoption. Treat "
+"this as an adoption aid rather than a recommended default for new projects, "
+"where _Black_'s standard string normalization keeps formatting consistent."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:19
+msgid ""
+"Running the project's tests before and after formatting helps check for "
+"unexpected changes. Keeping the formatting in its own commit, without "
+"refactors or behavior changes, makes review and future history easier to "
+"follow. A single reformat may suit a small project; for a larger one, "
+"formatting one directory or package at a time may be easier to coordinate."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:25
+msgid ""
+"To keep new changes formatted, consider adding `black --check .` to CI and "
+"using the {doc}`pre-commit integration </integrations/pre-commit>` for local "
+"feedback. Configuration, formatting, and enforcement can be reviewed "
+"together or in separate pull requests. If you want to ignore the formatting "
+"commit in `git blame`, choose a merge method that preserves that commit "
+"separately from other changes. Separate pull requests are one option for "
+"projects that use squash merges."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:32
+msgid "Coordinating active branches"
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:34
+msgid ""
+"A repository-wide formatting commit can conflict with long-running branches "
+"that edit the same lines. Announcing the planned merge time can help "
+"contributors coordinate changes around it. Once the formatting commit is on "
+"the target branch, contributors can update their branch, resolve any "
+"semantic conflicts, and run _Black_ over the result. The final diff against "
+"the newly formatted target branch will then mostly contain the intended code "
+"changes."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:41
+msgid ""
+"Avoid combining the reformat with automatic conflict strategies that always "
+"choose one side: they can silently discard real changes. For especially busy "
+"repositories, merging small or nearly complete branches before the rollout "
+"can reduce the number of conflicts considerably."
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:46
+msgid "Avoiding ruining git blame"
+msgstr ""
+
+#: ../../../guides/introducing_black_to_your_project.md:48
 msgid ""
 "A long-standing argument against moving to automated code formatters like "
 "_Black_ is that the migration will clutter up the output of `git blame`. "
@@ -44,7 +109,7 @@ msgid ""
 "blamed on the previous revision that modified those lines."
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:18
+#: ../../../guides/introducing_black_to_your_project.md:57
 msgid ""
 "So when migrating your project's code style to _Black_, reformat everything "
 "and commit the changes (preferably in one massive commit). Then put the full "
@@ -52,19 +117,19 @@ msgid ""
 "ignore-revs` at the root of your project directory."
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:23
+#: ../../../guides/introducing_black_to_your_project.md:62
 msgid ""
 "# Migrate code style to Black\n"
 "5b4ab991dede475d393e9d69ec388fd6bd949699\n"
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:28
+#: ../../../guides/introducing_black_to_your_project.md:67
 msgid ""
 "Afterwards, you can pass that file to `git blame` and see clean and "
 "meaningful blame information."
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:31
+#: ../../../guides/introducing_black_to_your_project.md:70
 msgid ""
 "$ git blame important.py --ignore-revs-file .git-blame-ignore-revs\n"
 "7a1ae265 (John Smith 2019-04-15 15:55:13 -0400 1) def "
@@ -72,21 +137,21 @@ msgid ""
 "abdfd8b0 (Alice Doe  2019-09-23 11:39:32 -0400 2)     text = text.lstrip()\n"
 "7a1ae265 (John Smith 2019-04-15 15:55:13 -0400 3)     with open(file, \"r+"
 "\") as f:\n"
-"7a1ae265 (John Smith 2019-04-15 15:55:13 -0400 4)         f."
-"write(formatted)\n"
+"7a1ae265 (John Smith 2019-04-15 15:55:13 -0400 4)         "
+"f.write(formatted)\n"
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:39
+#: ../../../guides/introducing_black_to_your_project.md:78
 msgid ""
 "You can even configure `git` to automatically ignore revisions listed in a "
 "file on every call to `git blame`."
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:42
+#: ../../../guides/introducing_black_to_your_project.md:81
 msgid "$ git config blame.ignoreRevsFile .git-blame-ignore-revs\n"
 msgstr ""
 
-#: ../../../guides/introducing_black_to_your_project.md:46
+#: ../../../guides/introducing_black_to_your_project.md:85
 msgid ""
 "**The one caveat is that some online Git-repositories do not yet support "
 "ignoring revisions using their native blame UI.** So blame information will "
