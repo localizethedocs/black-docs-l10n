@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-11-16 18:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,774 +17,774 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../../AUTHORS.md:2
+#: ../../../../AUTHORS.md:1
 msgid "Authors"
 msgstr ""
 
-#: ../../../../AUTHORS.md:4
+#: ../../../../AUTHORS.md:3
 msgid "Glued together by [Łukasz Langa](mailto:lukasz@langa.pl)."
 msgstr ""
 
-#: ../../../../AUTHORS.md:6
+#: ../../../../AUTHORS.md:5
 msgid "Maintained with:"
 msgstr ""
 
-#: ../../../../AUTHORS.md:8
+#: ../../../../AUTHORS.md:7
 msgid "[Carol Willing](mailto:carolcode@willingconsulting.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:9
+#: ../../../../AUTHORS.md:8
 msgid "[Carl Meyer](mailto:carl@oddbird.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:10
+#: ../../../../AUTHORS.md:9
 msgid "[Jelle Zijlstra](mailto:jelle.zijlstra@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:11
+#: ../../../../AUTHORS.md:10
 msgid "[Mika Naylor](mailto:mail@autophagy.io)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:12
+#: ../../../../AUTHORS.md:11
 msgid "[Zsolt Dollenstein](mailto:zsol.zsol@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:13
+#: ../../../../AUTHORS.md:12
 msgid "[Cooper Lees](mailto:me@cooperlees.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:14
+#: ../../../../AUTHORS.md:13
 msgid "[Richard Si](mailto:sichard26@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:15
+#: ../../../../AUTHORS.md:14
 msgid "[Felix Hildén](mailto:felix.hilden@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:16
+#: ../../../../AUTHORS.md:15
 msgid "[Batuhan Taskaya](mailto:batuhan@python.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:17
+#: ../../../../AUTHORS.md:16
 msgid "[Shantanu Jain](mailto:hauntsaninja@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:19
+#: ../../../../AUTHORS.md:18
 msgid "Multiple contributions by:"
 msgstr ""
 
-#: ../../../../AUTHORS.md:21
+#: ../../../../AUTHORS.md:20
 msgid "[Abdur-Rahmaan Janhangeer](mailto:arj.python@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:22
+#: ../../../../AUTHORS.md:21
 msgid "[Adam Johnson](mailto:me@adamj.eu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:23
+#: ../../../../AUTHORS.md:22
 msgid "[Adam Williamson](mailto:adamw@happyassassin.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:24
+#: ../../../../AUTHORS.md:23
 msgid "[Alexander Huynh](mailto:ahrex-gh-psf-black@e.sc)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:25
+#: ../../../../AUTHORS.md:24
 msgid "[Alexandr Artemyev](mailto:mogost@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:26
+#: ../../../../AUTHORS.md:25
 msgid "[Alex Vandiver](mailto:github@chmrr.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:27
+#: ../../../../AUTHORS.md:26
 msgid "[Allan Simon](mailto:allan.simon@supinfo.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:28
+#: ../../../../AUTHORS.md:27
 msgid "Anders-Petter Ljungquist"
 msgstr ""
 
-#: ../../../../AUTHORS.md:29
+#: ../../../../AUTHORS.md:28
 msgid "[Amethyst Reese](mailto:amy@n7.gg)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:30
+#: ../../../../AUTHORS.md:29
 msgid "[Andrew Thorp](mailto:andrew.thorp.dev@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:31
+#: ../../../../AUTHORS.md:30
 msgid "[Andrew Zhou](mailto:andrewfzhou@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:32
+#: ../../../../AUTHORS.md:31
 msgid "[Andrey](mailto:dyuuus@yandex.ru)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:33
+#: ../../../../AUTHORS.md:32
 msgid "[Andy Freeland](mailto:andy@andyfreeland.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:34
+#: ../../../../AUTHORS.md:33
 msgid "[Anthony Sottile](mailto:asottile@umich.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:35
+#: ../../../../AUTHORS.md:34
 msgid "[Antonio Ossa Guerra](mailto:aaossa+black@uc.cl)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:36
+#: ../../../../AUTHORS.md:35
 msgid "[Arjaan Buijk](mailto:arjaan.buijk@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:37
+#: ../../../../AUTHORS.md:36
 msgid "[Arnav Borbornah](mailto:arnavborborah11@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:38
+#: ../../../../AUTHORS.md:37
 msgid "[Artem Malyshev](mailto:proofit404@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:39
+#: ../../../../AUTHORS.md:38
 msgid "[Asger Hautop Drewsen](mailto:asgerdrewsen@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:40
+#: ../../../../AUTHORS.md:39
 msgid "[Augie Fackler](mailto:raf@durin42.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:41
+#: ../../../../AUTHORS.md:40
 msgid "[Aviskar KC](mailto:aviskarkc10@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:42
+#: ../../../../AUTHORS.md:41
 msgid "Batuhan Taşkaya"
 msgstr ""
 
-#: ../../../../AUTHORS.md:43
+#: ../../../../AUTHORS.md:42
 msgid "[Benjamin Wohlwend](mailto:bw@piquadrat.ch)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:44
+#: ../../../../AUTHORS.md:43
 msgid "[Benjamin Woodruff](mailto:github@benjam.info)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:45
+#: ../../../../AUTHORS.md:44
 msgid "[Bharat Raghunathan](mailto:bharatraghunthan9767@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:46
+#: ../../../../AUTHORS.md:45
 msgid "[Brandt Bucher](mailto:brandtbucher@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:47
+#: ../../../../AUTHORS.md:46
 msgid "[Brett Cannon](mailto:brett@python.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:48
+#: ../../../../AUTHORS.md:47
 msgid "[Bryan Bugyi](mailto:bryan.bugyi@rutgers.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:49
+#: ../../../../AUTHORS.md:48
 msgid "[Bryan Forbes](mailto:bryan@reigndropsfall.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:50
+#: ../../../../AUTHORS.md:49
 msgid "[Calum Lind](mailto:calumlind@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:51
+#: ../../../../AUTHORS.md:50
 msgid "[Charles](mailto:peacech@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:52
+#: ../../../../AUTHORS.md:51
 msgid "Charles Reid"
 msgstr ""
 
-#: ../../../../AUTHORS.md:53
+#: ../../../../AUTHORS.md:52
 msgid "[Christian Clauss](mailto:cclauss@bluewin.ch)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:54
+#: ../../../../AUTHORS.md:53
 msgid "[Christian Heimes](mailto:christian@python.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:55
+#: ../../../../AUTHORS.md:54
 msgid "[Chuck Wooters](mailto:chuck.wooters@microsoft.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:56
+#: ../../../../AUTHORS.md:55
 msgid "[Chris Rose](mailto:offline@offby1.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:57
+#: ../../../../AUTHORS.md:56
 msgid "Codey Oxley"
 msgstr ""
 
-#: ../../../../AUTHORS.md:58
+#: ../../../../AUTHORS.md:57
 msgid "[Cong](mailto:congusbongus@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:59
+#: ../../../../AUTHORS.md:58
 msgid "[Cooper Ry Lees](mailto:me@cooperlees.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:60
+#: ../../../../AUTHORS.md:59
 msgid "[Dan Davison](mailto:dandavison7@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:61
+#: ../../../../AUTHORS.md:60
 msgid "[Daniel Hahler](mailto:github@thequod.de)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:62
+#: ../../../../AUTHORS.md:61
 msgid "[Daniel M. Capella](mailto:polycitizen@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:63
+#: ../../../../AUTHORS.md:62
 msgid "Daniele Esposti"
 msgstr ""
 
-#: ../../../../AUTHORS.md:64
+#: ../../../../AUTHORS.md:63
 msgid "[David Hotham](mailto:david.hotham@metaswitch.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:65
+#: ../../../../AUTHORS.md:64
 msgid "[David Lukes](mailto:dafydd.lukes@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:66
+#: ../../../../AUTHORS.md:65
 msgid "[David Szotten](mailto:davidszotten@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:67
+#: ../../../../AUTHORS.md:66
 msgid "[Denis Laxalde](mailto:denis@laxalde.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:68
+#: ../../../../AUTHORS.md:67
 msgid "[Douglas Thor](mailto:dthor@transphormusa.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:69
+#: ../../../../AUTHORS.md:68
 msgid "dylanjblack"
 msgstr ""
 
-#: ../../../../AUTHORS.md:70
+#: ../../../../AUTHORS.md:69
 msgid "[Eli Treuherz](mailto:eli@treuherz.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:71
+#: ../../../../AUTHORS.md:70
 msgid "[Emil Hessman](mailto:emil@hessman.se)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:72
+#: ../../../../AUTHORS.md:71
 msgid "[Felix Kohlgrüber](mailto:felix.kohlgrueber@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:73
+#: ../../../../AUTHORS.md:72
 msgid "[Florent Thiery](mailto:fthiery@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:74
+#: ../../../../AUTHORS.md:73
 msgid "Francisco"
 msgstr ""
 
-#: ../../../../AUTHORS.md:75
+#: ../../../../AUTHORS.md:74
 msgid "[Giacomo Tagliabue](mailto:giacomo.tag@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:76
+#: ../../../../AUTHORS.md:75
 msgid "[Greg Gandenberger](mailto:ggandenberger@shoprunner.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:77
+#: ../../../../AUTHORS.md:76
 msgid "[Gregory P. Smith](mailto:greg@krypto.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:78
+#: ../../../../AUTHORS.md:77
 msgid "Gustavo Camargo"
 msgstr ""
 
-#: ../../../../AUTHORS.md:79
+#: ../../../../AUTHORS.md:78
 msgid "hauntsaninja"
 msgstr ""
 
-#: ../../../../AUTHORS.md:80
+#: ../../../../AUTHORS.md:79
 msgid "[Hadi Alqattan](mailto:alqattanhadizaki@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:81
+#: ../../../../AUTHORS.md:80
 msgid "[Hassan Abouelela](mailto:hassan@hassanamr.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:82
+#: ../../../../AUTHORS.md:81
 msgid "[Heaford](mailto:dan@heaford.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:83
+#: ../../../../AUTHORS.md:82
 msgid "[Hugo Barrera](mailto:hugo@barrera.io)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:84
+#: ../../../../AUTHORS.md:83
 msgid "Hugo van Kemenade"
 msgstr ""
 
-#: ../../../../AUTHORS.md:85
+#: ../../../../AUTHORS.md:84
 msgid "[Hynek Schlawack](mailto:hs@ox.cx)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:86
+#: ../../../../AUTHORS.md:85
 msgid "[Ionite](mailto:dev@ionite.io)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:87
+#: ../../../../AUTHORS.md:86
 msgid "[Ivan Katanić](mailto:ivan.katanic@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:88
+#: ../../../../AUTHORS.md:87
 msgid "[Jakub Kadlubiec](mailto:jakub.kadlubiec@skyscanner.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:89
+#: ../../../../AUTHORS.md:88
 msgid "[Jakub Warczarek](mailto:jakub.warczarek@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:90
+#: ../../../../AUTHORS.md:89
 msgid "[Jan Hnátek](mailto:jan.hnatek@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:91
+#: ../../../../AUTHORS.md:90
 msgid "[Jason Fried](mailto:me@jasonfried.info)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:92
+#: ../../../../AUTHORS.md:91
 msgid "[Jason Friedland](mailto:jason@friedland.id.au)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:93
+#: ../../../../AUTHORS.md:92
 msgid "[jgirardet](mailto:ijkl@netc.fr)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:94
+#: ../../../../AUTHORS.md:93
 msgid "Jim Brännlund"
 msgstr ""
 
-#: ../../../../AUTHORS.md:95
+#: ../../../../AUTHORS.md:94
 msgid "[Jimmy Jia](mailto:tesrin@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:96
+#: ../../../../AUTHORS.md:95
 msgid "[Joe Antonakakis](mailto:jma353@cornell.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:97
+#: ../../../../AUTHORS.md:96
 msgid "[Jon Dufresne](mailto:jon.dufresne@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:98
+#: ../../../../AUTHORS.md:97
 msgid "[Jonas Obrist](mailto:ojiidotch@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:99
+#: ../../../../AUTHORS.md:98
 msgid "[Jonty Wareing](mailto:jonty@jonty.co.uk)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:100
+#: ../../../../AUTHORS.md:99
 msgid "[Jose Nazario](mailto:jose.monkey.org@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:101
+#: ../../../../AUTHORS.md:100
 msgid "[Joseph Larson](mailto:larson.joseph@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:102
+#: ../../../../AUTHORS.md:101
 msgid "[Josh Bode](mailto:joshbode@fastmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:103
+#: ../../../../AUTHORS.md:102
 msgid "[Josh Holland](mailto:anowlcalledjosh@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:104
+#: ../../../../AUTHORS.md:103
 msgid "[Joshua Cannon](mailto:joshdcannon@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:105
+#: ../../../../AUTHORS.md:104
 msgid "[José Padilla](mailto:jpadilla@webapplicate.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:106
+#: ../../../../AUTHORS.md:105
 msgid "[Juan Luis Cano Rodríguez](mailto:hello@juanlu.space)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:107
+#: ../../../../AUTHORS.md:106
 msgid "[kaiix](mailto:kvn.hou@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:108
+#: ../../../../AUTHORS.md:107
 msgid "[Katie McLaughlin](mailto:katie@glasnt.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:109
+#: ../../../../AUTHORS.md:108
 msgid "Katrin Leinweber"
 msgstr ""
 
-#: ../../../../AUTHORS.md:110
+#: ../../../../AUTHORS.md:109
 msgid "[Keith Smiley](mailto:keithbsmiley@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:111
+#: ../../../../AUTHORS.md:110
 msgid "[Kenyon Ralph](mailto:kenyon@kenyonralph.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:112
+#: ../../../../AUTHORS.md:111
 msgid "[Kevin Kirsche](mailto:Kev.Kirsche+GitHub@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:113
+#: ../../../../AUTHORS.md:112
 msgid "[Kyle Hausmann](mailto:kyle.hausmann@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:114
+#: ../../../../AUTHORS.md:113
 msgid "[Kyle Sunden](mailto:sunden@wisc.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:115
+#: ../../../../AUTHORS.md:114
 msgid "Lawrence Chan"
 msgstr ""
 
-#: ../../../../AUTHORS.md:116
+#: ../../../../AUTHORS.md:115
 msgid "[Linus Groh](mailto:mail@linusgroh.de)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:117
+#: ../../../../AUTHORS.md:116
 msgid "[Loren Carvalho](mailto:comradeloren@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:118
+#: ../../../../AUTHORS.md:117
 msgid "[Luka Sterbic](mailto:luka.sterbic@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:119
+#: ../../../../AUTHORS.md:118
 msgid "[LukasDrude](mailto:mail@lukas-drude.de)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:120
+#: ../../../../AUTHORS.md:119
 msgid "Mahmoud Hossam"
 msgstr ""
 
-#: ../../../../AUTHORS.md:121
+#: ../../../../AUTHORS.md:120
 msgid "Mariatta"
 msgstr ""
 
-#: ../../../../AUTHORS.md:122
+#: ../../../../AUTHORS.md:121
 msgid "[Matt VanEseltine](mailto:vaneseltine@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:123
+#: ../../../../AUTHORS.md:122
 msgid "[Matthew Clapp](mailto:itsayellow+dev@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:124
+#: ../../../../AUTHORS.md:123
 msgid "[Matthew Walster](mailto:matthew@walster.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:125
+#: ../../../../AUTHORS.md:124
 msgid "Max Smolens"
 msgstr ""
 
-#: ../../../../AUTHORS.md:126
+#: ../../../../AUTHORS.md:125
 msgid "[Michael Aquilina](mailto:michaelaquilina@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:127
+#: ../../../../AUTHORS.md:126
 msgid "[Michael Flaxman](mailto:michael.flaxman@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:128
+#: ../../../../AUTHORS.md:127
 msgid "[Michael J. Sullivan](mailto:sully@msully.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:129
+#: ../../../../AUTHORS.md:128
 msgid "[Michael McClimon](mailto:michael@mcclimon.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:130
+#: ../../../../AUTHORS.md:129
 msgid "[Miguel Gaiowski](mailto:miggaiowski@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:131
+#: ../../../../AUTHORS.md:130
 msgid "[Mike](mailto:roshi@fedoraproject.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:132
+#: ../../../../AUTHORS.md:131
 msgid "[mikehoyio](mailto:mikehoy@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:133
+#: ../../../../AUTHORS.md:132
 msgid "[Min ho Kim](mailto:minho42@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:134
+#: ../../../../AUTHORS.md:133
 msgid "[Miroslav Shubernetskiy](mailto:miroslav@miki725.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:135
+#: ../../../../AUTHORS.md:134
 msgid "MomIsBestFriend"
 msgstr ""
 
-#: ../../../../AUTHORS.md:136
+#: ../../../../AUTHORS.md:135
 msgid "[Nathan Goldbaum](mailto:ngoldbau@illinois.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:137
+#: ../../../../AUTHORS.md:136
 msgid "[Nathan Hunt](mailto:neighthan.hunt@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:138
+#: ../../../../AUTHORS.md:137
 msgid "[Neraste](mailto:neraste.herr10@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:139
+#: ../../../../AUTHORS.md:138
 msgid "[Nikolaus Waxweiler](mailto:madigens@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:140
+#: ../../../../AUTHORS.md:139
 msgid "[Ofek Lev](mailto:ofekmeister@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:141
+#: ../../../../AUTHORS.md:140
 msgid "[Osaetin Daniel](mailto:osaetindaniel@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:142
+#: ../../../../AUTHORS.md:141
 msgid "[otstrel](mailto:otstrel@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:143
+#: ../../../../AUTHORS.md:142
 msgid "[Pablo Galindo](mailto:Pablogsal@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:144
+#: ../../../../AUTHORS.md:143
 msgid "[Paul Ganssle](mailto:p.ganssle@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:145
+#: ../../../../AUTHORS.md:144
 msgid "[Paul Meinhardt](mailto:mnhrdt@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:146
+#: ../../../../AUTHORS.md:145
 msgid "[Paul S. Reid](mailto:paul@reid-family.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:147
+#: ../../../../AUTHORS.md:146
 msgid "[Peter Bengtsson](mailto:mail@peterbe.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:148
+#: ../../../../AUTHORS.md:147
 msgid "[Peter Grayson](mailto:pete@jpgrayson.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:149
+#: ../../../../AUTHORS.md:148
 msgid "[Peter Stensmyr](mailto:peter.stensmyr@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:150
+#: ../../../../AUTHORS.md:149
 msgid "pmacosta"
 msgstr ""
 
-#: ../../../../AUTHORS.md:151
+#: ../../../../AUTHORS.md:150
 msgid "[Quentin Pradet](mailto:quentin@pradet.me)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:152
+#: ../../../../AUTHORS.md:151
 msgid "[Ralf Schmitt](mailto:ralf@systemexit.de)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:153
+#: ../../../../AUTHORS.md:152
 msgid "[Ramón Valles](mailto:mroutis@protonmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:154
+#: ../../../../AUTHORS.md:153
 msgid "[Richard Fearn](mailto:richardfearn@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:155
+#: ../../../../AUTHORS.md:154
 msgid "[Rishikesh Jha](mailto:rishijha424@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:156
+#: ../../../../AUTHORS.md:155
 msgid "[Rupert Bedford](mailto:rupert@rupertb.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:157
+#: ../../../../AUTHORS.md:156
 msgid "Russell Davis"
 msgstr ""
 
-#: ../../../../AUTHORS.md:158
+#: ../../../../AUTHORS.md:157
 msgid "[Sagi Shadur](mailto:saroad2@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:159
+#: ../../../../AUTHORS.md:158
 msgid "[Rémi Verschelde](mailto:rverschelde@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:160
+#: ../../../../AUTHORS.md:159
 msgid "[Sami Salonen](mailto:sakki@iki.fi)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:161
+#: ../../../../AUTHORS.md:160
 msgid "[Samuel Cormier-Iijima](mailto:samuel@cormier-iijima.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:162
+#: ../../../../AUTHORS.md:161
 msgid "[Sanket Dasgupta](mailto:sanketdasgupta@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:163
+#: ../../../../AUTHORS.md:162
 msgid "Sergi"
 msgstr ""
 
-#: ../../../../AUTHORS.md:164
+#: ../../../../AUTHORS.md:163
 msgid "[Scott Stevenson](mailto:scott@stevenson.io)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:165
+#: ../../../../AUTHORS.md:164
 msgid "Shantanu"
 msgstr ""
 
-#: ../../../../AUTHORS.md:166
+#: ../../../../AUTHORS.md:165
 msgid "[shaoran](mailto:shaoran@sakuranohana.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:167
+#: ../../../../AUTHORS.md:166
 msgid "[Shinya Fujino](mailto:shf0811@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:168
+#: ../../../../AUTHORS.md:167
 msgid "springstan"
 msgstr ""
 
-#: ../../../../AUTHORS.md:169
+#: ../../../../AUTHORS.md:168
 msgid "[Stavros Korokithakis](mailto:hi@stavros.io)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:170
+#: ../../../../AUTHORS.md:169
 msgid "[Stephen Rosen](mailto:sirosen@globus.org)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:171
+#: ../../../../AUTHORS.md:170
 msgid "[Steven M. Vascellaro](mailto:S.Vascellaro@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:172
+#: ../../../../AUTHORS.md:171
 msgid "[Sunil Kapil](mailto:snlkapil@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:173
+#: ../../../../AUTHORS.md:172
 msgid "[Sébastien Eustace](mailto:sebastien.eustace@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:174
+#: ../../../../AUTHORS.md:173
 msgid "[Tal Amuyal](mailto:TalAmuyal@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:175
+#: ../../../../AUTHORS.md:174
 msgid "[Terrance](mailto:git@terrance.allofti.me)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:176
+#: ../../../../AUTHORS.md:175
 msgid "[Thom Lu](mailto:thomas.c.lu@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:177
+#: ../../../../AUTHORS.md:176
 msgid "[Thomas Grainger](mailto:tagrain@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:178
+#: ../../../../AUTHORS.md:177
 msgid "[Tim Gates](mailto:tim.gates@iress.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:179
+#: ../../../../AUTHORS.md:178
 msgid "[Tim Swast](mailto:swast@google.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:180
+#: ../../../../AUTHORS.md:179
 msgid "[Timo](mailto:timo_tk@hotmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:181
+#: ../../../../AUTHORS.md:180
 msgid "Toby Fleming"
 msgstr ""
 
-#: ../../../../AUTHORS.md:182
+#: ../../../../AUTHORS.md:181
 msgid "[Tom Christie](mailto:tom@tomchristie.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:183
+#: ../../../../AUTHORS.md:182
 msgid "[Tony Narlock](mailto:tony@git-pull.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:184
+#: ../../../../AUTHORS.md:183
 msgid "[Tsuyoshi Hombashi](mailto:tsuyoshi.hombashi@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:185
+#: ../../../../AUTHORS.md:184
 msgid "[Tushar Chandra](mailto:tusharchandra2018@u.northwestern.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:186
+#: ../../../../AUTHORS.md:185
 msgid "[Tushar Sadhwani](mailto:tushar.sadhwani000@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:187
+#: ../../../../AUTHORS.md:186
 msgid "[Tzu-ping Chung](mailto:uranusjr@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:188
+#: ../../../../AUTHORS.md:187
 msgid "[Utsav Shah](mailto:ukshah2@illinois.edu)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:189
+#: ../../../../AUTHORS.md:188
 msgid "utsav-dbx"
 msgstr ""
 
-#: ../../../../AUTHORS.md:190
+#: ../../../../AUTHORS.md:189
 msgid "vezeli"
 msgstr ""
 
-#: ../../../../AUTHORS.md:191
+#: ../../../../AUTHORS.md:190
 msgid "[Ville Skyttä](mailto:ville.skytta@iki.fi)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:192
+#: ../../../../AUTHORS.md:191
 msgid "[Vishwas B Sharma](mailto:sharma.vishwas88@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:193
+#: ../../../../AUTHORS.md:192
 msgid "[Vlad Emelianov](mailto:volshebnyi@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:194
+#: ../../../../AUTHORS.md:193
 msgid "[williamfzc](mailto:178894043@qq.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:195
+#: ../../../../AUTHORS.md:194
 msgid "[wouter bolsterlee](mailto:wouter@bolsterl.ee)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:196
+#: ../../../../AUTHORS.md:195
 msgid "Yazdan"
 msgstr ""
 
-#: ../../../../AUTHORS.md:197
+#: ../../../../AUTHORS.md:196
 msgid "[Yngve Høiseth](mailto:yngve@hoiseth.net)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:198
+#: ../../../../AUTHORS.md:197
 msgid "[Yurii Karabas](mailto:1998uriyyo@gmail.com)"
 msgstr ""
 
-#: ../../../../AUTHORS.md:199
+#: ../../../../AUTHORS.md:198
 msgid "[Zac Hatfield-Dodds](mailto:zac@zhd.dev)"
 msgstr ""

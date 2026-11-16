@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-23 10:52:04 -0600",
-      "hash" : "165b9e293354760104fed7482c6466f510a44188",
-      "title" : "Fix crash on `# fmt: skip` on a bracket followed by `if`/`else` (#5586)"
+      "date" : "2026-11-15 17:02:13 -0700",
+      "hash" : "8f4a058eeb2c664ef1cc2847d3882fc4a82fe3fa",
+      "title" : "Fix copy.deepcopy() on blib2to3 nodes (#5697)"
     }
   },
   "type" : "branch",
