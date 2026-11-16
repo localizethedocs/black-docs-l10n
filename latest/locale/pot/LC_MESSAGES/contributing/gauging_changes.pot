@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-11-16 18:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,35 +64,35 @@ msgid ""
 "and compares two revisions of _Black_ according to these rules:"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:25
 msgid "Baseline revision"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:25
 msgid "Target revision"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:25
 msgid "On PRs"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:25
 msgid "latest commit on PR base branch"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:25
 msgid "PR commit with `main` merged"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:27
 msgid "On pushes (main only)"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:27
 msgid "latest PyPI version"
 msgstr ""
 
-#: ../../../contributing/gauging_changes.md:0
+#: ../../../contributing/gauging_changes.md:27
 msgid "the pushed commit"
 msgstr ""
 
