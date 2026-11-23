@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:59+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,8 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:12
 msgid ""
 "This document describes the current formatting style. If you're interested "
-"in trying out where the style is heading, see [future style](./future_style."
-"md) and try running `black --preview`."
+"in trying out where the style is heading, see [future style](./"
+"future_style.md) and try running `black --preview`."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:16
@@ -237,8 +237,8 @@ msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:159
 msgid ""
-"See [Using _Black_ with other tools](../guides/using_black_with_other_tools."
-"md) about linter compatibility."
+"See [Using _Black_ with other tools](../guides/"
+"using_black_with_other_tools.md) about linter compatibility."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:162
@@ -302,8 +302,8 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:206
 msgid ""
 "_Black_ will enforce single empty lines between a class-level docstring and "
-"the first following field or method. This conforms to [PEP 257](https://peps."
-"python.org/pep-0257/#multi-line-docstrings)."
+"the first following field or method. This conforms to [PEP 257](https://"
+"peps.python.org/pep-0257/#multi-line-docstrings)."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:210
@@ -399,11 +399,11 @@ msgstr ""
 #: ../../../the_black_code_style/current_style.md:264
 msgid ""
 "Why settle on double quotes? They anticipate apostrophes in English text. "
-"They match the docstring standard described in [PEP 257](https://peps.python."
-"org/pep-0257/#what-is-a-docstring). An empty string in double quotes "
-"(`\"\"`) is impossible to confuse with a single double-quote regardless of "
-"fonts and syntax highlighting used. On top of this, double quotes for "
-"strings are consistent with C which Python interacts a lot with."
+"They match the docstring standard described in [PEP 257](https://"
+"peps.python.org/pep-0257/#what-is-a-docstring). An empty string in double "
+"quotes (`\"\"`) is impossible to confuse with a single double-quote "
+"regardless of fonts and syntax highlighting used. On top of this, double "
+"quotes for strings are consistent with C which Python interacts a lot with."
 msgstr ""
 
 #: ../../../the_black_code_style/current_style.md:271
@@ -429,26 +429,30 @@ msgid ""
 "corrected for both quotations and the text within, although relative "
 "indentation in the text is preserved. Superfluous trailing whitespace on "
 "each line and unnecessary new lines at the end of the docstring are removed. "
-"All leading tabs are converted to spaces, but tabs inside text are "
-"preserved. Whitespace leading and trailing one-line docstrings is removed."
+"In multiline docstrings containing `>>>`, trailing whitespace is preserved "
+"because it can be significant in both doctest source and expected output. If "
+"such a docstring contains literal tabs, its indentation is also preserved, "
+"since reindentation changes how doctest expands tabs. Otherwise, leading "
+"tabs are converted to spaces, but tabs inside text are preserved. Whitespace "
+"leading and trailing one-line docstrings is removed."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:288
+#: ../../../the_black_code_style/current_style.md:291
 msgid "Numeric literals"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:290
+#: ../../../the_black_code_style/current_style.md:293
 msgid ""
 "_Black_ standardizes most numeric literals to use lowercase letters for the "
 "syntactic parts and uppercase letters for the digits themselves: `0xAB` "
 "instead of `0XAB` and `1e10` instead of `1E10`."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:294
+#: ../../../the_black_code_style/current_style.md:297
 msgid "Line breaks & binary operators"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:296
+#: ../../../the_black_code_style/current_style.md:299
 msgid ""
 "_Black_ will break a line before a binary operator when splitting a block of "
 "code over multiple lines. This is so that _Black_ is compliant with the "
@@ -457,7 +461,7 @@ msgid ""
 "that this approach improves readability."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:301
+#: ../../../the_black_code_style/current_style.md:304
 msgid ""
 "Almost all operators will be surrounded by single spaces, the only "
 "exceptions are unary operators (`+`, `-`, and `~`), and power operators when "
@@ -466,7 +470,7 @@ msgid ""
 "access is allowed), with or without a preceding unary operator."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:307
+#: ../../../the_black_code_style/current_style.md:310
 msgid ""
 "# For example, these won't be surrounded by whitespace\n"
 "a = x**y\n"
@@ -481,11 +485,11 @@ msgid ""
 "h = config['base'] ** 2\n"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:321
+#: ../../../the_black_code_style/current_style.md:324
 msgid "Slices"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:323
+#: ../../../the_black_code_style/current_style.md:326
 msgid ""
 "PEP 8 [recommends](https://peps.python.org/pep-0008/#whitespace-in-"
 "expressions-and-statements) to treat `:` in slices as a binary operator with "
@@ -493,72 +497,71 @@ msgid ""
 "except if a parameter is omitted (e.g. `ham[1 + 1 :]`). It recommends no "
 "spaces around `:` operators for \"simple expressions\" (`ham[lower:upper]`), "
 "and extra space for \"complex expressions\" (`ham[lower : upper + offset]`). "
-"_Black_ treats anything more than variable names as "
-"\"complex\" (`ham[lower : upper + 1]`). It also states that for extended "
-"slices, both `:` operators have to have the same amount of spacing, except "
-"if a parameter is omitted (`ham[1 + 1 ::]`). _Black_ enforces these rules "
-"consistently."
+"_Black_ treats anything more than variable names as \"complex\" "
+"(`ham[lower : upper + 1]`). It also states that for extended slices, both "
+"`:` operators have to have the same amount of spacing, except if a parameter "
+"is omitted (`ham[1 + 1 ::]`). _Black_ enforces these rules consistently."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:334
+#: ../../../the_black_code_style/current_style.md:337
 msgid ""
 "This behaviour may raise `E203 whitespace before ':'` warnings in style "
 "guide enforcement tools like Flake8. Since `E203` is not PEP 8 compliant, "
 "you should tell Flake8 to ignore these warnings."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:338
+#: ../../../the_black_code_style/current_style.md:341
 msgid "Parentheses"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:340
+#: ../../../the_black_code_style/current_style.md:343
 msgid ""
 "Some parentheses are optional in the Python grammar. Any expression can be "
 "wrapped in a pair of parentheses to form an atom. There are a few "
 "interesting cases:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:343
+#: ../../../the_black_code_style/current_style.md:346
 msgid "`if (...):`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:344
+#: ../../../the_black_code_style/current_style.md:347
 msgid "`while (...):`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:345
+#: ../../../the_black_code_style/current_style.md:348
 msgid "`for (...) in (...):`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:346
+#: ../../../the_black_code_style/current_style.md:349
 msgid "`assert (...), (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:347
+#: ../../../the_black_code_style/current_style.md:350
 msgid "`from X import (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:348
+#: ../../../the_black_code_style/current_style.md:351
 msgid "assignments like:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:349
+#: ../../../the_black_code_style/current_style.md:352
 msgid "`target = (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:350
+#: ../../../the_black_code_style/current_style.md:353
 msgid "`target: type = (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:351
+#: ../../../the_black_code_style/current_style.md:354
 msgid "`some, *un, packing = (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:352
+#: ../../../the_black_code_style/current_style.md:355
 msgid "`augmented += (...)`"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:354
+#: ../../../the_black_code_style/current_style.md:357
 msgid ""
 "In those cases, parentheses are removed when the entire statement fits in "
 "one line, or if the inner expression doesn't have any delimiters to further "
@@ -568,24 +571,24 @@ msgid ""
 "Otherwise, the parentheses are added."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:360
+#: ../../../the_black_code_style/current_style.md:363
 msgid ""
 "Please note that _Black_ does not add or remove any additional nested "
 "parentheses that you might want to have for clarity or further code "
 "organization. For example those parentheses are not going to be removed:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:364
+#: ../../../the_black_code_style/current_style.md:367
 msgid ""
 "return not (this or that)\n"
 "decision = (maybe.this() and values > 0) or (maybe.that() and values < 0)\n"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:369
+#: ../../../the_black_code_style/current_style.md:372
 msgid "Call chains"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:371
+#: ../../../the_black_code_style/current_style.md:374
 msgid ""
 "Some popular APIs, like ORMs, use call chaining. This API style is known as "
 "a [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface). "
@@ -594,7 +597,7 @@ msgid ""
 "behavior than to explain it. Look at the example:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:377
+#: ../../../the_black_code_style/current_style.md:380
 msgid ""
 "def example(session):\n"
 "    result = (\n"
@@ -608,11 +611,11 @@ msgid ""
 "    )\n"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:390
+#: ../../../the_black_code_style/current_style.md:393
 msgid "Typing stub files"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:392
+#: ../../../the_black_code_style/current_style.md:395
 msgid ""
 "PEP 484 describes the syntax for type hints in Python. One of the use cases "
 "for typing is providing type annotations for modules which cannot contain "
@@ -620,71 +623,72 @@ msgid ""
 "their implementation may be overly dynamic, and so on)."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:397
+#: ../../../the_black_code_style/current_style.md:400
 msgid ""
-"To solve this, [stub files with the `.pyi` file extension](https://peps."
-"python.org/pep-0484/#stub-files) can be used to describe typing information "
-"for an external module. Those stub files omit the implementation of classes "
-"and functions they describe, instead they only contain the structure of the "
-"file (listing globals, functions, and classes with their members). The "
-"recommended code style for those files is more terse than PEP 8:"
+"To solve this, [stub files with the `.pyi` file extension](https://"
+"peps.python.org/pep-0484/#stub-files) can be used to describe typing "
+"information for an external module. Those stub files omit the implementation "
+"of classes and functions they describe, instead they only contain the "
+"structure of the file (listing globals, functions, and classes with their "
+"members). The recommended code style for those files is more terse than PEP "
+"8:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:404
+#: ../../../the_black_code_style/current_style.md:407
 msgid "prefer `...` on the same line as the class/function signature;"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:405
+#: ../../../the_black_code_style/current_style.md:408
 msgid ""
 "avoid vertical whitespace between consecutive module-level functions, names, "
 "or methods and fields within a single class;"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:407
+#: ../../../the_black_code_style/current_style.md:410
 msgid ""
 "use a single blank line between top-level class definitions, or none if the "
 "classes are very small."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:410
+#: ../../../the_black_code_style/current_style.md:413
 msgid ""
 "_Black_ enforces the above rules. There are additional guidelines for "
 "formatting `.pyi` files that are not enforced yet but might be in a future "
 "version of the formatter:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:413
+#: ../../../the_black_code_style/current_style.md:416
 msgid "prefer `...` over `pass`;"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:414
+#: ../../../the_black_code_style/current_style.md:417
 msgid ""
 "avoid using string literals in type annotations, stub files support forward "
 "references natively (like Python 3.7 code with `from __future__ import "
 "annotations`);"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:416
+#: ../../../the_black_code_style/current_style.md:419
 msgid ""
 "use variable annotations instead of type comments, even for stubs that "
 "target older versions of Python."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:419
+#: ../../../the_black_code_style/current_style.md:422
 msgid "Line endings"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:421
+#: ../../../the_black_code_style/current_style.md:424
 msgid ""
 "_Black_ will normalize line endings (`\\n` or `\\r\\n`) based on the first "
 "line ending of the file."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:424
+#: ../../../the_black_code_style/current_style.md:427
 msgid "Form feed characters"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:426
+#: ../../../the_black_code_style/current_style.md:429
 msgid ""
 "_Black_ will retain form feed characters on otherwise empty lines at the "
 "module level. Only one form feed is retained for a group of consecutive "
@@ -692,11 +696,11 @@ msgid ""
 "placed on the second line."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:430
+#: ../../../the_black_code_style/current_style.md:433
 msgid "Pragmatism"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:432
+#: ../../../the_black_code_style/current_style.md:435
 msgid ""
 "Early versions of _Black_ used to be absolutist in some respects. They took "
 "after its initial author. This was fine at the time as it made the "
@@ -706,25 +710,25 @@ msgid ""
 "and why this is the case."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:440
+#: ../../../the_black_code_style/current_style.md:443
 msgid "The magic trailing comma"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:442
+#: ../../../the_black_code_style/current_style.md:445
 msgid "_Black_ in general does not take existing formatting into account."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:444
+#: ../../../the_black_code_style/current_style.md:447
 msgid ""
 "However, there are cases where you put a short collection or function call "
 "in your code but you anticipate it will grow in the future."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:447
+#: ../../../the_black_code_style/current_style.md:450
 msgid "For example:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:449
+#: ../../../the_black_code_style/current_style.md:452
 msgid ""
 "TRANSLATIONS = {\n"
 "    \"en_us\": \"English (US)\",\n"
@@ -732,7 +736,7 @@ msgid ""
 "}\n"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:456
+#: ../../../the_black_code_style/current_style.md:459
 msgid ""
 "Early versions of _Black_ used to ruthlessly collapse those into one line "
 "(it fits!). Now, you can communicate that you don't want that by putting a "
@@ -740,23 +744,23 @@ msgid ""
 "always explode your collection into one item per line."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:461
+#: ../../../the_black_code_style/current_style.md:464
 msgid ""
 "How do you make it stop? Just delete that trailing comma and _Black_ will "
 "collapse your collection into one line if it fits."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:464
+#: ../../../the_black_code_style/current_style.md:467
 msgid ""
 "If you must, you can recover the behaviour of early versions of _Black_ with "
 "the option `--skip-magic-trailing-comma` / `-C`."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:467
+#: ../../../the_black_code_style/current_style.md:470
 msgid "r\"strings\" and R\"strings\""
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:469
+#: ../../../the_black_code_style/current_style.md:472
 msgid ""
 "_Black_ normalizes string quotes as well as string prefixes, making them "
 "lowercase. One exception to this rule is r-strings. It turns out that the "
@@ -767,11 +771,11 @@ msgid ""
 "true raw strings with no special semantics."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:478
+#: ../../../the_black_code_style/current_style.md:481
 msgid "AST before and after formatting"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:480
+#: ../../../the_black_code_style/current_style.md:483
 msgid ""
 "When run with `--safe` (the default), _Black_ checks that the code before "
 "and after is semantically equivalent. This check is done by comparing the "
@@ -779,7 +783,7 @@ msgid ""
 "in which the AST does differ:"
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:484
+#: ../../../the_black_code_style/current_style.md:487
 msgid ""
 "_Black_ cleans up leading and trailing whitespace of docstrings, re-"
 "indenting them if needed. It's been one of the most popular user-reported "
@@ -789,14 +793,14 @@ msgid ""
 "we're aware of sanitize indentation and leading/trailing whitespace anyway."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:491
+#: ../../../the_black_code_style/current_style.md:494
 msgid ""
 "_Black_ manages optional parentheses for some statements. In the case of the "
 "`del` statement, presence of wrapping parentheses or lack thereof changes "
 "the resulting AST but is semantically equivalent in the interpreter."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:495
+#: ../../../the_black_code_style/current_style.md:498
 msgid ""
 "_Black_ might move comments around, which includes type comments. Those are "
 "part of the AST as of Python 3.8. While the tool implements a number of "
@@ -805,7 +809,7 @@ msgid ""
 "behavior of the source code."
 msgstr ""
 
-#: ../../../the_black_code_style/current_style.md:500
+#: ../../../the_black_code_style/current_style.md:503
 msgid ""
 "To put things in perspective, the code equivalence check is a feature of "
 "_Black_ which other formatters don't implement at all. It is of crucial "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Black latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 14:39+0000\n"
+"POT-Creation-Date: 2026-11-23 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,15 +21,15 @@ msgstr ""
 msgid "License"
 msgstr ""
 
-#: ../../../../LICENSE:2
+#: ../../../../LICENSE:1
 msgid "The MIT License (MIT)"
 msgstr ""
 
-#: ../../../../LICENSE:4
+#: ../../../../LICENSE:3
 msgid "Copyright (c) 2018 Łukasz Langa"
 msgstr ""
 
-#: ../../../../LICENSE:6
+#: ../../../../LICENSE:5
 msgid ""
 "Permission is hereby granted, free of charge, to any person obtaining a copy "
 "of this software and associated documentation files (the \"Software\"), to "
@@ -39,13 +39,13 @@ msgid ""
 "furnished to do so, subject to the following conditions:"
 msgstr ""
 
-#: ../../../../LICENSE:13
+#: ../../../../LICENSE:12
 msgid ""
 "The above copyright notice and this permission notice shall be included in "
 "all copies or substantial portions of the Software."
 msgstr ""
 
-#: ../../../../LICENSE:16
+#: ../../../../LICENSE:15
 msgid ""
 "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
 "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
